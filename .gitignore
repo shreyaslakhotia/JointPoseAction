@@ -1,4 +1,19 @@
-"data/" 
-"output_visualization.mp4" 
-".ipynb_checkpoints/" 
-"__pycache__/" 
+# Datasets and Annotations
+data/
+
+# Video Outputs
+output_*/
+output_visualization.mp4
+*.mp4
+*.avi
+
+# External Cloned Repositories
+assemblyhands-toolkit/
+mistake_repo/
+
+# Python Environments & Caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+venv/
