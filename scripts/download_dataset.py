@@ -35,7 +35,7 @@ def download_calibrations_remotely():
         print(f"Remote extraction failed: {e}")
         print("Ensure you have a stable internet connection for the HTTP stream.")
 
-def download_video_batch(num_videos=50):
+def download_video_batch(num_videos=100):
     print(f"\n--- Phase 2: Downloading {num_videos} Exocentric Videos ---")
     csv_dir = Path("mistake_repo/annots")
     
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     # 1. Grab the camera parameters remotely first
     download_calibrations_remotely()
     
-    # 2. Download the 50 videos and their JSONs
-    download_video_batch(num_videos=50)
+    # 2. Download the 100 videos and their JSONs
+    download_video_batch(num_videos=100)
     
     print("\n✅ Pipeline complete! You are ready for (Multi-GPU Processing).")
