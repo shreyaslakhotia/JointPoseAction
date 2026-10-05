@@ -117,7 +117,7 @@ def main():
     tasks = []
     
     # 1. Build the task list and mirror the directory structure
-    for video_dir in sorted(glob.glob(f"{INPUT_DIR}/*")):
+    for video_dir in sorted(glob.glob(f"{INPUT_DIR}/*"))[:15]: # Limit to 15 videos for testing
         video_id = os.path.basename(video_dir)
         
         # Mirror the folder in output

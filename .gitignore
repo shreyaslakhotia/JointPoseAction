@@ -17,3 +17,8 @@ __pycache__/
 .ipynb_checkpoints/
 .env
 venv/
+
+# SAM-2 Experiment Data
+experiments/sam2_test/frames/
+experiments/sam2_test/masks/
+experiments/sam2_test/mask_overlays/
