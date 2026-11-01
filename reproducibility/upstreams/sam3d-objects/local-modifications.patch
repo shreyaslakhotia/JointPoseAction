@@ -1,0 +1,42 @@
+diff --git a/sam3d_objects/model/backbone/tdfy_dit/models/sparse_structure_vae.py b/sam3d_objects/model/backbone/tdfy_dit/models/sparse_structure_vae.py
+index 0db7f57..552ab70 100644
+--- a/sam3d_objects/model/backbone/tdfy_dit/models/sparse_structure_vae.py
++++ b/sam3d_objects/model/backbone/tdfy_dit/models/sparse_structure_vae.py
+@@ -342,11 +342,16 @@ class SparseStructureDecoder(nn.Module):
+         ).permute(0, 4, 1, 2, 3)
+         return latent
+ 
+-
+ class SparseStructureDecoderTdfyWrapper(SparseStructureDecoder):
+     def __init__(self, *args, **kwargs):
++        print("\n========== SS DECODER DEBUG ==========")
++        print("Positional argument count:", len(args))
++        print("Keyword arguments:", kwargs)
++        print("======================================\n")
++
+         pretrained_ckpt_path = kwargs.pop("pretrained_ckpt_path", None)
+         super().__init__(*args, **kwargs)
++
+         if pretrained_ckpt_path is not None:
+             if os.path.exists(pretrained_ckpt_path):
+                 logger.info(
+diff --git a/sam3d_objects/pipeline/inference_pipeline.py b/sam3d_objects/pipeline/inference_pipeline.py
+index d34d5c2..6634cb6 100644
+--- a/sam3d_objects/pipeline/inference_pipeline.py
++++ b/sam3d_objects/pipeline/inference_pipeline.py
+@@ -268,8 +268,15 @@ class InferencePipeline:
+         state_dict_key="state_dict",
+         device="cuda", 
+     ):
++        print("\n========== MODEL CONFIG DEBUG ==========")
++        print("Config type:", type(config))
++        print("Config contents:")
++        print(OmegaConf.to_yaml(config, resolve=True))
++        print("========================================\n")
++
+         model = instantiate(config)
+ 
++
+         if ckpt_path.endswith(".safetensors"):
+             state_dict = load_file(ckpt_path, device="cuda")
+             if state_dict_fn is not None:

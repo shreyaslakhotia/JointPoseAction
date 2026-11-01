@@ -1,0 +1,142 @@
+{
+  "snapshot_date": "2026-11-01",
+  "scope": "All discovered custom project Python/notebook, local upstream modifications and checkpoint YAMLs.",
+  "files": [
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/custom_inference.py",
+      "preserved_as": "reproducibility/upstreams/sam3d-objects/custom_inference.py",
+      "sha256": "7c0a5cddb5b880ab4c3409152f74c1efcb6068ccaf3343ec25e3f93a55ab6c84",
+      "method": "byte-identical snapshot"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/checkpoints/hf/pipeline.yaml",
+      "preserved_as": "reproducibility/upstreams/sam3d-objects/checkpoints/hf/pipeline.yaml",
+      "sha256": "53c3d226b21df85c0bb3d16e6e4fa63abde0d6167525765eb929d02bfa9d358c",
+      "method": "byte-identical snapshot"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/checkpoints/hf/slat_decoder_gs.yaml",
+      "preserved_as": "reproducibility/upstreams/sam3d-objects/checkpoints/hf/slat_decoder_gs.yaml",
+      "sha256": "53f054e02a0c185f0a6885d30bb6ca0ec92efe0a98148688e7f05f7c26afe670",
+      "method": "byte-identical snapshot"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/checkpoints/hf/slat_decoder_gs_4.yaml",
+      "preserved_as": "reproducibility/upstreams/sam3d-objects/checkpoints/hf/slat_decoder_gs_4.yaml",
+      "sha256": "3d1dfd4c56cdac56f30e0cf5eb310d4df973fe25c60ac0a462c86ca4e3bf8b48",
+      "method": "byte-identical snapshot"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/checkpoints/hf/slat_decoder_mesh.yaml",
+      "preserved_as": "reproducibility/upstreams/sam3d-objects/checkpoints/hf/slat_decoder_mesh.yaml",
+      "sha256": "8f46952764aa985c50109a56f0b4f07625cdb06457aaded74957d26f3520c69e",
+      "method": "byte-identical snapshot"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/checkpoints/hf/slat_encoder.yaml",
+      "preserved_as": "reproducibility/upstreams/sam3d-objects/checkpoints/hf/slat_encoder.yaml",
+      "sha256": "ca80da7f1395a2acef9c6cea30ec3ccc89321ef890c644860f316a4ef1e8ebdb",
+      "method": "byte-identical snapshot"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/checkpoints/hf/slat_generator.yaml",
+      "preserved_as": "reproducibility/upstreams/sam3d-objects/checkpoints/hf/slat_generator.yaml",
+      "sha256": "53029fadff6fe34a0344381a16d64d65d0567d603484952712e8969319559c4e",
+      "method": "byte-identical snapshot"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/checkpoints/hf/ss_decoder.yaml",
+      "preserved_as": "reproducibility/upstreams/sam3d-objects/checkpoints/hf/ss_decoder.yaml",
+      "sha256": "baacff269b664f84f7aa1896ebd66128065f6568cdb88d419d5c3d2ccb4193ae",
+      "method": "byte-identical snapshot"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/checkpoints/hf/ss_encoder.yaml",
+      "preserved_as": "reproducibility/upstreams/sam3d-objects/checkpoints/hf/ss_encoder.yaml",
+      "sha256": "d3df5e18b2cbe87697d319adce0fe7e4fb6266809ad9d2f8c502761739bc4a06",
+      "method": "byte-identical snapshot"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/checkpoints/hf/ss_generator.yaml",
+      "preserved_as": "reproducibility/upstreams/sam3d-objects/checkpoints/hf/ss_generator.yaml",
+      "sha256": "3c265448bca7c057f94e3ef56adea3a895a10bcd9f15f992a41dd03fa35412cd",
+      "method": "byte-identical snapshot"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/sam3d_objects/model/backbone/tdfy_dit/models/sparse_structure_vae.py",
+      "upstream_commit": "f91db411c50efee93d8db7aeb323885650f6f722",
+      "patch": "reproducibility/upstreams/sam3d-objects/local-modifications.patch",
+      "relative_path": "sam3d_objects/model/backbone/tdfy_dit/models/sparse_structure_vae.py",
+      "sha256": "c90b035772a5aa8847bbdd1abbd15ca356fb2da05416c09827c6b750adf51a5f",
+      "method": "HEAD plus patch; reconstructed bytes verified"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo/sam3d_objects/pipeline/inference_pipeline.py",
+      "upstream_commit": "f91db411c50efee93d8db7aeb323885650f6f722",
+      "patch": "reproducibility/upstreams/sam3d-objects/local-modifications.patch",
+      "relative_path": "sam3d_objects/pipeline/inference_pipeline.py",
+      "sha256": "4080d11e5d2226b0346ad1f0fd45f4b111b2dcd5a586205d5b291167e1673b93",
+      "method": "HEAD plus patch; reconstructed bytes verified"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/scripts/download_dataset.py",
+      "preserved_as": "scripts/download_dataset.py",
+      "sha256": "fa9560f59f8b1eb29ae3d5e6039a2f7b838f28bdb94781c0737d28f791773dbe",
+      "method": "original file committed unchanged"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/scripts/extract_sam3_masks.py",
+      "preserved_as": "scripts/extract_sam3_masks.py",
+      "sha256": "322df56106eb2a7793d321d2336bc34c5037e97d6bc6a999d728bdae672b884f",
+      "method": "original file committed unchanged"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/scripts/package_reconstruction_data.py",
+      "preserved_as": "scripts/package_reconstruction_data.py",
+      "sha256": "34aba33b574c8c51b47a846bd43482c9e73b08a149fad05884b6d48c96af819a",
+      "method": "original file committed unchanged"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/scripts/render_all_views.py",
+      "preserved_as": "scripts/render_all_views.py",
+      "sha256": "2d1b5f9e1bab940569ee9eea2ada28d437e898e4d9ebaf4fa49b07ef3b43ded0",
+      "method": "original file committed unchanged"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/scripts/render_batch.py",
+      "preserved_as": "scripts/render_batch.py",
+      "sha256": "799edae4b05da78b2fe6a8da87f6857222184219fd251d2c071ec789193593cf",
+      "method": "original file committed unchanged"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/scripts/visualize_single.py",
+      "preserved_as": "scripts/visualize_single.py",
+      "sha256": "76c447b1a2a0605fa29dc44707628cb393028ecd7490d975a9696f9c628051b8",
+      "method": "original file committed unchanged"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/experiments/sam2_test/check_bboxes.py",
+      "preserved_as": "experiments/sam2_test/check_bboxes.py",
+      "sha256": "01365173e9ef1527d24c791d14048f4a501fababbb1a61465c164500371235a4",
+      "method": "original file committed unchanged"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/experiments/sam2_test/generate_masks.py",
+      "preserved_as": "experiments/sam2_test/generate_masks.py",
+      "sha256": "fe6c033778a113e6c9438c2f7dfc56e62e35495180cc4dc19917078f3f2b24db",
+      "method": "original file committed unchanged"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d/run_reconstruction.py",
+      "preserved_as": "3D_reconstruction/single_view/sam3d/run_reconstruction.py",
+      "sha256": "e3279afdb38816e7078a6fc93157bb1f629eeb812cb9102bf20bb5916b3e1887",
+      "method": "original file committed unchanged"
+    },
+    {
+      "original": "/home/mlda/shreyas_projects/JointPoseAction/notebooks/visualize_poses.ipynb",
+      "preserved_as": "notebooks/visualize_poses.ipynb",
+      "sha256": "e4040fbf134c4f6a28cbbfbd10c3d9c057844f827b2d051e3d2aa4e44d44a658",
+      "method": "original file committed unchanged"
+    }
+  ]
+}

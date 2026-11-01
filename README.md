@@ -1,5 +1,12 @@
 # JointPoseAction
 
+**Workstation preservation / cluster restore:** start with
+[docs/MIGRATION_MANIFEST.md](docs/MIGRATION_MANIFEST.md) and
+[docs/CLUSTER_RESTORE.md](docs/CLUSTER_RESTORE.md). These record the current code,
+exact upstream revisions and local patches, environment snapshots, selected
+recordings, excluded assets, and known defects. The historical setup/roadmap
+below is retained; it is not a validated end-to-end pipeline.
+
 A research project on 3D hand and object pose estimation from egocentric assembly videos. The long-term goal is to improve pose tracking in difficult cases such as heavy hand-object occlusion and fast motion blur, supporting fine-grained action recognition and procedural mistake detection.
 
 ## Project Overview

@@ -1,0 +1,66 @@
+[
+  {
+    "camera": "C10095_rgb",
+    "unique_calibrations": 11,
+    "max_E_difference": 707.3596552925477,
+    "max_focal_difference": 1.936245124657944,
+    "det": 1.000000000000001,
+    "orthogonality_error": 8.881784197001252e-16
+  },
+  {
+    "camera": "C10395_rgb",
+    "unique_calibrations": 11,
+    "max_E_difference": 974.7686320967973,
+    "max_focal_difference": 2.4798894072184794,
+    "det": 1.0000000000000004,
+    "orthogonality_error": 4.440892098500626e-16
+  },
+  {
+    "camera": "C10118_rgb",
+    "unique_calibrations": 11,
+    "max_E_difference": 972.9108678891209,
+    "max_focal_difference": 1.2734037038262613,
+    "det": 1.0000000000000009,
+    "orthogonality_error": 8.881784197001252e-16
+  },
+  {
+    "camera": "C10379_rgb",
+    "unique_calibrations": 11,
+    "max_E_difference": 910.9738811096099,
+    "max_focal_difference": 2.4679263167392946,
+    "det": 1.0000000000000002,
+    "orthogonality_error": 2.220446049250313e-16
+  },
+  {
+    "camera": "C10404_rgb",
+    "unique_calibrations": 11,
+    "max_E_difference": 734.8055376033128,
+    "max_focal_difference": 4.136342597271778,
+    "det": 1.0000000000000009,
+    "orthogonality_error": 8.881784197001252e-16
+  },
+  {
+    "camera": "C10115_rgb",
+    "unique_calibrations": 11,
+    "max_E_difference": 965.4158502940944,
+    "max_focal_difference": 1.1069339846803814,
+    "det": 1.0000000000000002,
+    "orthogonality_error": 2.220446049250313e-16
+  },
+  {
+    "camera": "C10119_rgb",
+    "unique_calibrations": 11,
+    "max_E_difference": 826.476616530833,
+    "max_focal_difference": 1.4517744390752796,
+    "det": 1.000000000000001,
+    "orthogonality_error": 1.1102230246251565e-15
+  },
+  {
+    "camera": "C10390_rgb",
+    "unique_calibrations": 11,
+    "max_E_difference": 830.1568589481817,
+    "max_focal_difference": 1.527234861089255,
+    "det": 1.0000000000000004,
+    "orthogonality_error": 6.661338147750939e-16
+  }
+]

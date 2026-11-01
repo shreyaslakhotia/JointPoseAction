@@ -1,0 +1,94 @@
+[
+  {
+    "name": "packaging",
+    "version": "24.2",
+    "direct_url": {
+      "dir_info": {},
+      "url": "file:///home/conda/feedstock_root/build_artifacts/packaging_1733203243479/work",
+      "note": "Original local build/editable path; replace using upstream restore instructions."
+    }
+  },
+  {
+    "name": "gsplat",
+    "version": "1.5.3",
+    "direct_url": {
+      "url": "https://github.com/nerfstudio-project/gsplat.git",
+      "vcs_info": {
+        "commit_id": "2323de5905d5e90e035f792fe65bad0fedd413e7",
+        "requested_revision": "2323de5905d5e90e035f792fe65bad0fedd413e7",
+        "vcs": "git"
+      }
+    }
+  },
+  {
+    "name": "pip",
+    "version": "25.0.1",
+    "direct_url": {
+      "dir_info": {},
+      "url": "file:///home/conda/feedstock_root/build_artifacts/pip_1739142759263/work",
+      "note": "Original local build/editable path; replace using upstream restore instructions."
+    }
+  },
+  {
+    "name": "torch",
+    "version": "2.5.1+cu121",
+    "direct_url": null
+  },
+  {
+    "name": "moge",
+    "version": "1.0.0",
+    "direct_url": {
+      "url": "https://github.com/microsoft/MoGe.git",
+      "vcs_info": {
+        "commit_id": "a8c37341bc0325ca99b9d57981cc3bb2bd3e255b",
+        "requested_revision": "a8c37341bc0325ca99b9d57981cc3bb2bd3e255b",
+        "vcs": "git"
+      }
+    }
+  },
+  {
+    "name": "pytorch3d",
+    "version": "0.7.8",
+    "direct_url": {
+      "url": "https://github.com/facebookresearch/pytorch3d.git",
+      "vcs_info": {
+        "commit_id": "75ebeeaea0908c5527e7b1e305fbc7681382db47",
+        "requested_revision": "75ebeeaea0908c5527e7b1e305fbc7681382db47",
+        "vcs": "git"
+      }
+    }
+  },
+  {
+    "name": "utils3d",
+    "version": "0.0.2",
+    "direct_url": {
+      "url": "https://github.com/EasternJournalist/utils3d.git",
+      "vcs_info": {
+        "commit_id": "3913c65d81e05e47b9f367250cf8c0f7462a0900",
+        "requested_revision": "3913c65d81e05e47b9f367250cf8c0f7462a0900",
+        "vcs": "git"
+      }
+    }
+  },
+  {
+    "name": "sam3d_objects",
+    "version": "0.0.1",
+    "direct_url": {
+      "dir_info": {
+        "editable": true
+      },
+      "url": "file:///home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo",
+      "note": "Original local build/editable path; replace using upstream restore instructions."
+    }
+  },
+  {
+    "name": "hydra-core",
+    "version": "1.3.2",
+    "direct_url": null
+  },
+  {
+    "name": "torchvision",
+    "version": "0.20.1+cu121",
+    "direct_url": null
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "camera": "C10095",
+    "extraction_matches_stored": true,
+    "sam2_frame0005_area": 18314,
+    "sam2_frame0005_components": 1
+  },
+  {
+    "camera": "C10115",
+    "extraction_matches_stored": true,
+    "sam2_frame0005_area": 13324,
+    "sam2_frame0005_components": 42
+  },
+  {
+    "camera": "C10118",
+    "extraction_matches_stored": true,
+    "sam2_frame0005_area": 53291,
+    "sam2_frame0005_components": 12
+  },
+  {
+    "camera": "C10119",
+    "extraction_matches_stored": true,
+    "sam2_frame0005_area": 20366,
+    "sam2_frame0005_components": 6
+  },
+  {
+    "camera": "C10379",
+    "extraction_matches_stored": true,
+    "sam2_frame0005_area": 38431,
+    "sam2_frame0005_components": 6
+  },
+  {
+    "camera": "C10390",
+    "extraction_matches_stored": true,
+    "sam2_frame0005_area": 12031,
+    "sam2_frame0005_components": 1
+  },
+  {
+    "camera": "C10395",
+    "extraction_matches_stored": true,
+    "sam2_frame0005_area": 25457,
+    "sam2_frame0005_components": 91
+  },
+  {
+    "camera": "C10404",
+    "extraction_matches_stored": true,
+    "sam2_frame0005_area": 11726,
+    "sam2_frame0005_components": 120
+  }
+]

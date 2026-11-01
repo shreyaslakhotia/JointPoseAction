@@ -1,0 +1,50 @@
+[
+  {
+    "camera": "C10095",
+    "mask_equals_source": true,
+    "rgba_alpha_equals_mask": true,
+    "rgba_rgb_equals_rgb": true
+  },
+  {
+    "camera": "C10115",
+    "mask_equals_source": true,
+    "rgba_alpha_equals_mask": true,
+    "rgba_rgb_equals_rgb": true
+  },
+  {
+    "camera": "C10118",
+    "mask_equals_source": true,
+    "rgba_alpha_equals_mask": true,
+    "rgba_rgb_equals_rgb": true
+  },
+  {
+    "camera": "C10119",
+    "mask_equals_source": true,
+    "rgba_alpha_equals_mask": true,
+    "rgba_rgb_equals_rgb": true
+  },
+  {
+    "camera": "C10379",
+    "mask_equals_source": true,
+    "rgba_alpha_equals_mask": true,
+    "rgba_rgb_equals_rgb": true
+  },
+  {
+    "camera": "C10390",
+    "mask_equals_source": true,
+    "rgba_alpha_equals_mask": true,
+    "rgba_rgb_equals_rgb": true
+  },
+  {
+    "camera": "C10395",
+    "mask_equals_source": true,
+    "rgba_alpha_equals_mask": true,
+    "rgba_rgb_equals_rgb": true
+  },
+  {
+    "camera": "C10404",
+    "mask_equals_source": true,
+    "rgba_alpha_equals_mask": true,
+    "rgba_rgb_equals_rgb": true
+  }
+]

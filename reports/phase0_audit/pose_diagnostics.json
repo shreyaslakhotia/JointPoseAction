@@ -1,0 +1,197 @@
+[
+  {
+    "file": "data/poses/poses@60fps/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253.json",
+    "rows": 14242,
+    "first_index": 0,
+    "last_index": 14241,
+    "nonconsecutive": 0,
+    "first_timestamp": 8298.766,
+    "last_timestamp": 8536.116,
+    "timestamp_step_quantiles": [
+      0.01599999999962165,
+      0.016999999999825377,
+      0.017000000001644366
+    ],
+    "missing_hand_rows": 0,
+    "sampled_rows": 201,
+    "sample_zero_joints": 3,
+    "sample_nonfinite_coordinates": 0,
+    "sample_zero_confidence_hands": 3,
+    "sample_confidence_range": [
+      0.0,
+      0.9828534357514161
+    ],
+    "projection_plausibility_only": [
+      {
+        "camera": "C10095_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.9850746268656716
+      },
+      {
+        "camera": "C10395_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.9971570717839374
+      },
+      {
+        "camera": "C10118_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.997867803837953
+      },
+      {
+        "camera": "C10379_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.9675432361999526
+      },
+      {
+        "camera": "C10404_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.9959725183605781
+      },
+      {
+        "camera": "C10115_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.9912343046671405
+      },
+      {
+        "camera": "C10119_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.9947879649372187
+      },
+      {
+        "camera": "C10390_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.9998815446576641
+      }
+    ]
+  },
+  {
+    "file": "data/poses/poses@60fps/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+    "rows": 17275,
+    "first_index": 0,
+    "last_index": 17274,
+    "nonconsecutive": 0,
+    "first_timestamp": 11951.566,
+    "last_timestamp": 12239.466,
+    "timestamp_step_quantiles": [
+      0.01599999999962165,
+      0.016999999999825377,
+      0.017000000001644366
+    ],
+    "missing_hand_rows": 0,
+    "sampled_rows": 201,
+    "sample_zero_joints": 1,
+    "sample_nonfinite_coordinates": 0,
+    "sample_zero_confidence_hands": 1,
+    "sample_confidence_range": [
+      0.0,
+      0.9834943032256918
+    ],
+    "projection_plausibility_only": [
+      {
+        "camera": "C10095_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      },
+      {
+        "camera": "C10395_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      },
+      {
+        "camera": "C10118_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      },
+      {
+        "camera": "C10379_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.9998815446576641
+      },
+      {
+        "camera": "C10404_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      },
+      {
+        "camera": "C10115_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.998223169864961
+      },
+      {
+        "camera": "C10119_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      },
+      {
+        "camera": "C10390_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      }
+    ]
+  },
+  {
+    "file": "data/poses/poses@60fps/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410.json",
+    "rows": 17693,
+    "first_index": 0,
+    "last_index": 17692,
+    "nonconsecutive": 0,
+    "first_timestamp": 79726.69900000001,
+    "last_timestamp": 80021.566,
+    "timestamp_step_quantiles": [
+      0.015999999988707714,
+      0.01699999999254942,
+      0.017000000007101335
+    ],
+    "missing_hand_rows": 0,
+    "sampled_rows": 202,
+    "sample_zero_joints": 3,
+    "sample_nonfinite_coordinates": 0,
+    "sample_zero_confidence_hands": 3,
+    "sample_confidence_range": [
+      0.0,
+      0.9814467321303175
+    ],
+    "projection_plausibility_only": [
+      {
+        "camera": "C10095_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      },
+      {
+        "camera": "C10395_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.9998821310702499
+      },
+      {
+        "camera": "C10118_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      },
+      {
+        "camera": "C10379_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 0.9998821310702499
+      },
+      {
+        "camera": "C10404_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      },
+      {
+        "camera": "C10115_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      },
+      {
+        "camera": "C10119_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      },
+      {
+        "camera": "C10390_rgb",
+        "positive_depth_fraction": 1.0,
+        "in_image_fraction": 1.0
+      }
+    ]
+  }
+]

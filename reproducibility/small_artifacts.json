@@ -1,0 +1,2706 @@
+{
+  "capture_date": "2026-11-01",
+  "note": "Original small images/masks/labels preserved despite incomplete semantic provenance. SHA256 confirms bytes, not correctness.",
+  "files": [
+    {
+      "path": "experiments/sam2_test/frames/C10095_0001.jpg",
+      "size_bytes": 86146,
+      "sha256": "9ed2e63547909480f0bca561927ee5090369ddcdf1c9a43b210be70a6677ffad"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10095_0002.jpg",
+      "size_bytes": 119646,
+      "sha256": "98771d67f64eaf0c07107f9b806882514b7ff0ef77581a0b263813d9a204dca9"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10095_0003.jpg",
+      "size_bytes": 225830,
+      "sha256": "0927f8bfc38ba8d69a6a03e542d31e5bb97ef0c8ea9a549f22b9719f14b98a4e"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10095_0004.jpg",
+      "size_bytes": 156155,
+      "sha256": "d818f6ee1d6bd8921cebdf9ba538e873e47d602d7f5e65e65abc7d8211dc81c0"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10095_0005.jpg",
+      "size_bytes": 118668,
+      "sha256": "f1a79889b836571e3699fd698fad05c90225d486b77c73c428b3fd914a74c12a"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10095_0006.jpg",
+      "size_bytes": 73229,
+      "sha256": "3787cc6000d6225031f3c2eb4f02e089a752c56e308562ab8cd15cc6c055784b"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10095_0007.jpg",
+      "size_bytes": 55695,
+      "sha256": "a7d5cf2cee20cca3731f6f96fd228c9018f5340edb86f1a8876c27438cc74bf9"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10095_0008.jpg",
+      "size_bytes": 49668,
+      "sha256": "d67766f9a213138e2b25770baf862f8bee294d822a94e4d1cc0daa091b938cb8"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10095_0009.jpg",
+      "size_bytes": 44664,
+      "sha256": "520f30918cad8d1c46a7369c96fae8abcc4078e2a6451891d6f1442468d88051"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10095_0010.jpg",
+      "size_bytes": 41665,
+      "sha256": "0252df4bd1ebc5e371069332cd8993671a1af1a65dbe76df2bf09a37676e94de"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10095_0011.jpg",
+      "size_bytes": 39394,
+      "sha256": "1640de69878c3c6ec2f185c0b1ea65aaca3a3239afa9e8c7b7e578c74aab1b88"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0001.jpg",
+      "size_bytes": 88320,
+      "sha256": "90ffb24064e18cd335732e1cbc772ecdf1946634f69ef98a9b98360dddd9f767"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0002.jpg",
+      "size_bytes": 124484,
+      "sha256": "681ef3c131ba51656d9eea401e0e827d0cd2b9be6caecc8654b4c83ed88d35d6"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0003.jpg",
+      "size_bytes": 231804,
+      "sha256": "0dcb59d993b2af563fb2e4d9f3eb069f977f644eb5ef0848115d1367056d8d5f"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0004.jpg",
+      "size_bytes": 161076,
+      "sha256": "66744fcb1e767e8a7ffe95f387cb7cdfce7b96c84706ba5e4d431e8ebe6c6e4d"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0005.jpg",
+      "size_bytes": 102911,
+      "sha256": "f58cf94e3e13fd2e4589244790077fd7559a3cea61007c6b4584538309b36956"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0006.jpg",
+      "size_bytes": 75450,
+      "sha256": "8d20d0feff807817c009ff0ec8143adb0c9ad7b90ffcb092c37c8d09f897feec"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0007.jpg",
+      "size_bytes": 57624,
+      "sha256": "94ee85f8d4d87559d5d231d63accd0a7d4f8eb1fb878b41d920bfc4350ce54dc"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0008.jpg",
+      "size_bytes": 49496,
+      "sha256": "23eab4230c88b1c35f9e47a64c58fb35038c42219d5c697bf0a2689e520bf243"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0009.jpg",
+      "size_bytes": 44855,
+      "sha256": "152a875887688f6eb57e2c8fea00617070b48f54b9b329460b25c7438ef7ccb1"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0010.jpg",
+      "size_bytes": 43320,
+      "sha256": "e4a3e3cfce267e3ea9c5f967febc181ab8101c5e6cf7899ef681cd74371a5f23"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10115_0011.jpg",
+      "size_bytes": 41116,
+      "sha256": "f1e8b670c6858648cc5c7b0bb1bf3cd7fdea20f03699e3338e0c776b07618e37"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0001.jpg",
+      "size_bytes": 70390,
+      "sha256": "2de18f31e08fd68077f981c4b87c32e7965ef7184c9a2c133f8eebdbb04dcdd8"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0002.jpg",
+      "size_bytes": 103783,
+      "sha256": "d8e894b736acd9c3aac7e2bf89fbc69685745cd027e14b4d6912a7fe26bc3a83"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0003.jpg",
+      "size_bytes": 212840,
+      "sha256": "36cd2310bd36010d32fb2118a4267ec11522684aa13272e6cf92cefb25fb9b20"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0004.jpg",
+      "size_bytes": 139891,
+      "sha256": "d85d3e23065fab50be6ec83bcea64c49432e10467d9bc23d5175524808a89e1f"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0005.jpg",
+      "size_bytes": 103892,
+      "sha256": "d88e6c6cf631d55068fbe12b94251a7031e2359d74c9a31ba1065fe955226a45"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0006.jpg",
+      "size_bytes": 58219,
+      "sha256": "97dac37931e7d8ba6edc72e077382a5cd79ce3be6f49b5ea64ba909f1fcd0f95"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0007.jpg",
+      "size_bytes": 47906,
+      "sha256": "2120926f8fc00632754e9e056d0b6632052018a6d7c0e38d24cfd71f4283df3c"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0008.jpg",
+      "size_bytes": 40446,
+      "sha256": "fa6aadb7b678895b45f0a0f4ea27b47e6dda5c712189dcac5cbcdf7675920d16"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0009.jpg",
+      "size_bytes": 37281,
+      "sha256": "48c651565a272aa2241e60df17f03d1ed664bbba27ce9a534d6fe2ffb5213943"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0010.jpg",
+      "size_bytes": 35284,
+      "sha256": "fced899e9a9c49ec5b5c23a0290ebcd9ba67b93194b353d2a34704fbebd13a20"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10118_0011.jpg",
+      "size_bytes": 33989,
+      "sha256": "0f2bdb87be7646d7933e1acd41e2ef0c07a8d071aac3825758746a6b7f1d62f1"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0001.jpg",
+      "size_bytes": 83871,
+      "sha256": "d7a1b01f91fa107a6b1a285dffc6fc918313b2407487bc094878a5f4f158790b"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0002.jpg",
+      "size_bytes": 119486,
+      "sha256": "4b5fa08c507d83bee240382537f8ecad5545cc40f153d8e3c855d078a7ed3112"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0003.jpg",
+      "size_bytes": 229040,
+      "sha256": "33a120f8b0cf4862333007ddb92887ec3bec7131a2f0e6fb75f32ab9ebddb223"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0004.jpg",
+      "size_bytes": 157919,
+      "sha256": "dc958597e608abb552dc0b9de6acd96fe94a8e9bc18152f14d323a4924c85856"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0005.jpg",
+      "size_bytes": 97309,
+      "sha256": "f366d828bb2365b5678983d127261ae827577ae7eb566b51658121d8026f2000"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0006.jpg",
+      "size_bytes": 70865,
+      "sha256": "84809d139b46c85fbb60ac6f1a70bd896d472f2bb79e378da512f2c431e8b1e5"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0007.jpg",
+      "size_bytes": 53670,
+      "sha256": "d8c22d40521ea4506735f0ddb883814278b645b5ac96f3fb1193b5234adbbd7f"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0008.jpg",
+      "size_bytes": 46058,
+      "sha256": "3e5f64a0354cb970dc4cd4b1fea14807831741b40448d04d520ff2493ad096cc"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0009.jpg",
+      "size_bytes": 41965,
+      "sha256": "9a138c13b0123268b1c41b570a656ef469f2e1bc3d9b95ce4dbdb3a9833dd0b5"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0010.jpg",
+      "size_bytes": 39591,
+      "sha256": "fcdf53cd4734c52844a3154218e249daba3a8307375e005a9717c87b6620218c"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10119_0011.jpg",
+      "size_bytes": 38495,
+      "sha256": "d9e32ca58733e7b490d634585350841039794704b97073b75c1403e9beeee742"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0001.jpg",
+      "size_bytes": 85682,
+      "sha256": "72a29520f48f6a797547067b33f25b7d0dd1da4d9e24cf9461307cbe1054147e"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0002.jpg",
+      "size_bytes": 106929,
+      "sha256": "308e9de115ff929bcc6ae710b586d8a65183e5470c9917e90cbcbb034b9a8b3b"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0003.jpg",
+      "size_bytes": 190883,
+      "sha256": "9bfbcacb294885cdc26a3466eb39b32298674ad82f4169f1123e9466e283e1a0"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0004.jpg",
+      "size_bytes": 150173,
+      "sha256": "38746661500dc63148fbcfc33ee50bfedbadfd3f31d2504bd11c3acff22ac519"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0005.jpg",
+      "size_bytes": 106498,
+      "sha256": "a0b822cdd224ca1232024a0ade38851910f867b7f69230432636c443126239ea"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0006.jpg",
+      "size_bytes": 84578,
+      "sha256": "bc6942928086a1922553f6185ae381a39e0d420cab8a9cb8c3e602fcc0977c3b"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0007.jpg",
+      "size_bytes": 69074,
+      "sha256": "77502b2a1963e0fb1b32c7e12757c7f5ff33bdad9849b04cf46716b214cd9a74"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0008.jpg",
+      "size_bytes": 60487,
+      "sha256": "b8f46e90f42e3bb3f88ce0f1efbf9ae5ea83f4bc435ee5c8568dbecce1b7a89a"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0009.jpg",
+      "size_bytes": 55385,
+      "sha256": "69caae4a53dd70bc79b9f42dea851f7d6e89a8be8d12c0269da91fd5193d8db1"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0010.jpg",
+      "size_bytes": 52062,
+      "sha256": "f8e2087a8f5f0607724c37476bf8bef9b806e62a1197c9aa22379f67113a26d4"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10379_0011.jpg",
+      "size_bytes": 49404,
+      "sha256": "0e92e60da7246e542658cf77f19603c8128bda1ac073339973aa749a9f30831f"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0001.jpg",
+      "size_bytes": 85136,
+      "sha256": "6e4a605906068b61842b08606b7cc68da76b9c42f0e77d17395d39d106b6aa99"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0002.jpg",
+      "size_bytes": 116023,
+      "sha256": "ffdc9cd2e6426d2fa746ab518d31ee48d191bd6203c28a0bc473206e21c11703"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0003.jpg",
+      "size_bytes": 209118,
+      "sha256": "e1e31f86cc71ce9576e8a75b53f2ec0d010245b4d25dffe9ec48737681febf28"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0004.jpg",
+      "size_bytes": 148434,
+      "sha256": "e59b1ef17104c518f894832228487a40aaaa33dc4b5cb42a5a3e4fd69b89ce29"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0005.jpg",
+      "size_bytes": 97761,
+      "sha256": "3aed177542e390c9129decf3a7f554c259b56b5acf413d72bce7c7f0da739f3c"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0006.jpg",
+      "size_bytes": 74900,
+      "sha256": "cb86333c726c333f6251e1748af3031ae8ec45f520d095d62ddda19cd1301471"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0007.jpg",
+      "size_bytes": 58700,
+      "sha256": "5c9c0281e19ed1bce87345e4b23e76f2474142816e3da10da3b19ed16c930d9c"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0008.jpg",
+      "size_bytes": 50866,
+      "sha256": "f6feb6ecee3ae7058976a722b410107ed22fb983c936438c11c69f30266c44da"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0009.jpg",
+      "size_bytes": 46296,
+      "sha256": "6e157b4154eb85c4b9715506cc81311cec2fe98ac4eff61d14b7bf53c1ff189d"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0010.jpg",
+      "size_bytes": 43497,
+      "sha256": "b6a565fe82699cf43961c10aeff548f1d4347153c3aa062afde214839e906112"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10390_0011.jpg",
+      "size_bytes": 41482,
+      "sha256": "38b3ff19083c6b262d6d15b3154a47e7bb5260842e1808a00f84670cfa042f95"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0001.jpg",
+      "size_bytes": 87244,
+      "sha256": "e8596730462d53de6800048c94453a9a8a9e1f6b1d7a7917d48cbf88fe315693"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0002.jpg",
+      "size_bytes": 115782,
+      "sha256": "0de0d1c15ad50892885c4d23923dceb16bc28c1593072573488c6e47ae810d85"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0003.jpg",
+      "size_bytes": 176303,
+      "sha256": "9d449bdf0760b02a8e67ec11415ba744ebedc51adeeeddf1a303bc503442e316"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0004.jpg",
+      "size_bytes": 176476,
+      "sha256": "968d2c596c2a0516884318f0afceb4a7b08347a5bcd5cbb773d5db539630af05"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0005.jpg",
+      "size_bytes": 115912,
+      "sha256": "7fbae5a31d97102e52b048f23e99139eff98ea6929795b7766112e1a212f13f9"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0006.jpg",
+      "size_bytes": 77817,
+      "sha256": "c4dfb6617ead3ca331283d4a97b3cb257828af77a384932465df6fcfafd7af4f"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0007.jpg",
+      "size_bytes": 67143,
+      "sha256": "8127e2eaa56699bc38214651e02bdbac7b2660f3b3c0a724bbf52289db0960dc"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0008.jpg",
+      "size_bytes": 57729,
+      "sha256": "c0a1b27b60b9116b73595ade9cfbfe33ee067d89308bd85c5e7e8ba1e652427d"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0009.jpg",
+      "size_bytes": 52226,
+      "sha256": "7aab48eecd30ef90b73ea798bc7d068d37a5aac8fa1aa1efa116bf96997a7663"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0010.jpg",
+      "size_bytes": 49012,
+      "sha256": "344da46d3da019780cbd861c0b6cb9d3a52dcd92e0e65e4dc7395754d6cf5160"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10395_0011.jpg",
+      "size_bytes": 46351,
+      "sha256": "227ce22be7cc86cc9d3921de9f4900220ba5e77782f9053deecaec45eac4fa04"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0001.jpg",
+      "size_bytes": 81633,
+      "sha256": "4b3b86cc24d16177789e51ec02fb9d66e6a300013edc31655b021e6bd9091302"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0002.jpg",
+      "size_bytes": 109808,
+      "sha256": "89f2c5abbf774cfe0f4ce93ed90b78fe9e55ee2d8c3389b4a9a446530fd7b7db"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0003.jpg",
+      "size_bytes": 196420,
+      "sha256": "a0648a78933391125639897bdface9ea8a31b078fccb67d0e2d07951c6acd079"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0004.jpg",
+      "size_bytes": 139635,
+      "sha256": "7707d36eaad71b0dd6aca3aab584bd7ae846b13aac2182efdc0800f0eb2b457f"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0005.jpg",
+      "size_bytes": 109571,
+      "sha256": "8022a21c2943ec8a88febbaaf9be7c3f95edf19fdc7ed71d8d5296b67dfde5f8"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0006.jpg",
+      "size_bytes": 71691,
+      "sha256": "d9c6f27cfa7166d1fb2419e51d97230fc36343826f59ed562e0e54ccf06fc090"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0007.jpg",
+      "size_bytes": 56847,
+      "sha256": "f378f3f56f5877af9446f09f7201f87adfe1ea5e9bf2412457689abaabac92b3"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0008.jpg",
+      "size_bytes": 51411,
+      "sha256": "85c1ccc166c16ad8ae89bafd325d246ae9ac5eff928e3dc8a58e17290007f88e"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0009.jpg",
+      "size_bytes": 46754,
+      "sha256": "3f0ba64a5a94cd4bcd4119031f05c35af0a6d7ef68b9eee987f2f7094d98f58e"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0010.jpg",
+      "size_bytes": 43958,
+      "sha256": "406f8c04b93ab733383a339ea2b6637c51ada4e1505ac80ce1915b7fed259386"
+    },
+    {
+      "path": "experiments/sam2_test/frames/C10404_0011.jpg",
+      "size_bytes": 41622,
+      "sha256": "de72c3d0659f4bce16748a884d1a6285333dbf2d1307e9c9fa7d25015e3d4a4b"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0001_mask.png",
+      "size_bytes": 4750,
+      "sha256": "b77f888dc928738dbf39ff486003d6bc697fd97ca0ad1b3883bec0bff46b27d9"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0002_mask.png",
+      "size_bytes": 4773,
+      "sha256": "e30201b494cbc6beafbcd081810b1e0645ebde0d85950dca7346c89ef80f89b8"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0003_mask.png",
+      "size_bytes": 4761,
+      "sha256": "d14dbabb70123d1e83330d90d2c4ea2f55de2253633b3a35e9eb44f3051310ae"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0004_mask.png",
+      "size_bytes": 4775,
+      "sha256": "60e30398d22560afb0ee086378a52f299d329d6060e1cb925892f2ead98093be"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0005_mask.png",
+      "size_bytes": 4794,
+      "sha256": "91c41f7f25aa527611124e61e27e26544269fea1e30e30ae4ad4b392bdf49f2c"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0006_mask.png",
+      "size_bytes": 4706,
+      "sha256": "6fd78685c725000c7d2565565bad5db84d48a618119a5e31f6c92bafb71c97c3"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0007_mask.png",
+      "size_bytes": 4701,
+      "sha256": "c28d6f3e0c24f5cd4029370bbfe403da81484229bd33598947d085749d979c6d"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0008_mask.png",
+      "size_bytes": 4679,
+      "sha256": "802fbd851440f14e5bef23519001a8fa186c706ea4c3cf39dec889d4e6717be9"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0009_mask.png",
+      "size_bytes": 4627,
+      "sha256": "fa05b1e127c1629fb1f96faf7caf3368d38728175827a3d9f965e2f103b4b61a"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0010_mask.png",
+      "size_bytes": 4619,
+      "sha256": "69addd2e5a39348fc37df4b63faa1d219ae0f5335ca87cdb30088ac6718af2ee"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10095_0011_mask.png",
+      "size_bytes": 4613,
+      "sha256": "b6fba70a33191bfe4a4c4936ab22ae924ed7c9bcb321034b90d5e946f2b27681"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0001_mask.png",
+      "size_bytes": 5893,
+      "sha256": "611ac1729541394b51bc5728716482f189f321e688a81498d6add1006c2e52c5"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0002_mask.png",
+      "size_bytes": 4695,
+      "sha256": "80721b9003000ac62f34dd9a3b2006eb081f0b05b99c0252639aa36b12517185"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0003_mask.png",
+      "size_bytes": 5029,
+      "sha256": "f6e61b27831c3db4ed90bbccd9fd75efb50c8fc60891c1a4538994284ea15753"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0004_mask.png",
+      "size_bytes": 4635,
+      "sha256": "765b69fff34d538119ebe21a9a9f1123bbe8e85f68488b5bc04582072f1a3fc3"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0005_mask.png",
+      "size_bytes": 4943,
+      "sha256": "104b93fea349672a91f1a0e1ff9311585beff5c790a13999772f72ecce7bbc37"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0006_mask.png",
+      "size_bytes": 4650,
+      "sha256": "e3659191b6a1323a316256190513d212d2393c51f93c8989f7e07b510ad66a7d"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0007_mask.png",
+      "size_bytes": 4686,
+      "sha256": "f07674ea89a245d52177f74b18edb5eb059ebc64680fff23f0087b6246f8eb62"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0008_mask.png",
+      "size_bytes": 4749,
+      "sha256": "f37146a28607cbe411e56abd40e0de61d50fc382e3a7ced948ab43fac087ad50"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0009_mask.png",
+      "size_bytes": 4620,
+      "sha256": "644b2d0030e9e0cd93e8e1f95eaf28eb6204999c7fba6e6b9d5bd6483aa59364"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0010_mask.png",
+      "size_bytes": 4557,
+      "sha256": "a59e1609bb90ce8cea87e127219479e75d4ee7193c504c109863c41b619269ca"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10115_0011_mask.png",
+      "size_bytes": 5475,
+      "sha256": "7f632f69be097050d1b0222aac08a8d6cb3aa0834a73003cc750bea8596b17f9"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0001_mask.png",
+      "size_bytes": 5953,
+      "sha256": "cb21f8402cc608960c17a75eed2a8717dc109c4008e7193f548736b84e2ab1fa"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0002_mask.png",
+      "size_bytes": 6036,
+      "sha256": "89308910528ca044a4601920d66b2b972522ab600f20be3784e592dba4f6f6ee"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0003_mask.png",
+      "size_bytes": 5790,
+      "sha256": "4496b9296dfc29b09e0e854cd3a1c62a36a8dc7ba8ab862a49317a48188e227e"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0004_mask.png",
+      "size_bytes": 5794,
+      "sha256": "3748d9deffed49aa3f66883f8e9bdf65e0c9fd9f2b18a4986c26414489688187"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0005_mask.png",
+      "size_bytes": 6174,
+      "sha256": "9deb54281f220a669061177b0f4bf0748bb748f663b44afe711516549d1d07dd"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0006_mask.png",
+      "size_bytes": 6142,
+      "sha256": "a6a23008b2cff0d6e5e9cd38a56915ef8c44278eec233e284e3e22b4824725df"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0007_mask.png",
+      "size_bytes": 5997,
+      "sha256": "689169c1a851c789f4ae1d64d4b21f216551d3202ca3acaca355cb923b6b90d5"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0008_mask.png",
+      "size_bytes": 6066,
+      "sha256": "3624a1712a33b25858f0e3635899cf4a515971bdca2f5a68cc935920046ce548"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0009_mask.png",
+      "size_bytes": 5577,
+      "sha256": "9c69f73709897e788cc8cf45adb8017662d299ac831ff9004d2027c8319da4ff"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0010_mask.png",
+      "size_bytes": 5486,
+      "sha256": "89a6f69aba973e3a3ac4f60aa04b8e3e8faa95916c66222a5ba4c86393516760"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10118_0011_mask.png",
+      "size_bytes": 5618,
+      "sha256": "b3d32088056a3e3ef409a01d4d53c583df3ff5aca8cc3bd789052a88eef54c64"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0001_mask.png",
+      "size_bytes": 4993,
+      "sha256": "39b36d0c58534a41f5d831419d0b729ebf9a53cfab257fc6b8b257e0f7bed402"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0002_mask.png",
+      "size_bytes": 4981,
+      "sha256": "d349f34ec81e52cd86de1d12a0a7188c4326e89ab8ef83f5755c61612fe5d1bb"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0003_mask.png",
+      "size_bytes": 5157,
+      "sha256": "8589803541a1ebf1e1d317feabc9ac6852859f4966b21079a6c5a0fa7c0d0f3c"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0004_mask.png",
+      "size_bytes": 5150,
+      "sha256": "7d915349fafe07b4ed209a931a55cbcb1597bd9e1a13b2819a4b876496a05298"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0005_mask.png",
+      "size_bytes": 4918,
+      "sha256": "803075d1a9d7131c9cfb825bfaf50216390be783bb44e3fd338fc5c7a1ec400d"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0006_mask.png",
+      "size_bytes": 4906,
+      "sha256": "965cb2778e7d6bab90523bf625d3a8a5ba643616d65e6f9a8ed6bb3011e58aa3"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0007_mask.png",
+      "size_bytes": 4841,
+      "sha256": "a4bb7ba02fd725ab3804679ef19ac8af847246806081eb8ac10b330feed9cb85"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0008_mask.png",
+      "size_bytes": 4880,
+      "sha256": "b9e88871b60aabe94de1b48bbbed4fd01030565e834cd88a314f5b5adf682ff9"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0009_mask.png",
+      "size_bytes": 4818,
+      "sha256": "ad586371e2995351e6e620d5f8e4848de7eb6344aa97a543449ba8b8a4021b43"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0010_mask.png",
+      "size_bytes": 4798,
+      "sha256": "b751ccabf54f2b425c5120d8474b211eb3a34fba1661c8cd501b35c38c82bf86"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10119_0011_mask.png",
+      "size_bytes": 4820,
+      "sha256": "d64b8f0e3a3890a7ba8688b46977f60694abcea4cd4cbe1dd8c474d000a2037f"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0001_mask.png",
+      "size_bytes": 6926,
+      "sha256": "1f90a14acae2bd4d6eea0cf3b7d6b4c5f536b55892df77f8ed8df0f4b50ba3d1"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0002_mask.png",
+      "size_bytes": 6647,
+      "sha256": "6ca7418c60787111f7450053e85c2551942e877d38fc3b4bdf996f7832efa4e3"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0003_mask.png",
+      "size_bytes": 7302,
+      "sha256": "100b5340905d75b608d0b3c75eb208f4d406f8b77ff343003d2b2c29849cc0b3"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0004_mask.png",
+      "size_bytes": 6514,
+      "sha256": "86f10acc8f75b53ede9b69a424b60adb36846e3f3d97c3f25ecc696f7de621d7"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0005_mask.png",
+      "size_bytes": 6153,
+      "sha256": "f092a36f2728d07bcd17a55579631c9ad72517609ea6a4706c21aec7e3653b45"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0006_mask.png",
+      "size_bytes": 6181,
+      "sha256": "9b9976a95f65bb625c01e9e9f9c1cb7d248ba792ff6db4e1eed104dc27a79ecb"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0007_mask.png",
+      "size_bytes": 6191,
+      "sha256": "af470228f16a613857b65b26d79c1fe41f0258deafce8733aa275dce8e4b09e2"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0008_mask.png",
+      "size_bytes": 6687,
+      "sha256": "efa5992006db4c709b33732007e89f5b269fda48ff4ca6ca6713ffdb1360c12b"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0009_mask.png",
+      "size_bytes": 5924,
+      "sha256": "9d05e2b2e5bab18fb8b888a796838f7dd164dd037368bbcfe8e33baf1f1ca0a2"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0010_mask.png",
+      "size_bytes": 5911,
+      "sha256": "c8d2fea31dca38cc78181ebe5158d6f1294728d3ba627509b2fef74029652244"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10379_0011_mask.png",
+      "size_bytes": 6012,
+      "sha256": "1d5e3e113186215e52ead8cc8416f62b18fd34a163d1c8a462cae12d8938bd8a"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0001_mask.png",
+      "size_bytes": 4745,
+      "sha256": "659453c9b8da3db1944dba548806172323386e37153c273505bd9da44c234a50"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0002_mask.png",
+      "size_bytes": 4739,
+      "sha256": "b9932fecddc75a95b0f73d33b3796575c62a326bf15ee99ccd219327e1f9b57d"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0003_mask.png",
+      "size_bytes": 4736,
+      "sha256": "e58cfc9f26841a588e0e3d5c5bbf3468738ce98ee88010b55844a4a26ff83157"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0004_mask.png",
+      "size_bytes": 4742,
+      "sha256": "ea0e9379c71b4561863ffa4f0e26d69d4aedbaed62f1e37ed7660eefd9f12cf7"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0005_mask.png",
+      "size_bytes": 4741,
+      "sha256": "e5910ad1fb97c18f0306fb23cc290603d736d19144e99e04143e80bc94e058fe"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0006_mask.png",
+      "size_bytes": 4736,
+      "sha256": "461c6e99cea0f44fa1fd39956537abc4186039458c026b9c138e58ad9ef16c22"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0007_mask.png",
+      "size_bytes": 4736,
+      "sha256": "517248deffb1edda4c773663fb8bd8ffa252757d519e15aa75f91ba2376af4d8"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0008_mask.png",
+      "size_bytes": 4740,
+      "sha256": "4027b2cc11f84507b4346b8bbf771a5ffaaefacf147a47788bbc706d44ae4b70"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0009_mask.png",
+      "size_bytes": 4748,
+      "sha256": "53c1159cdaca1aa300a5de8d7c166a1f69de5959a90e2ae1ed0496fe809b334d"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0010_mask.png",
+      "size_bytes": 4743,
+      "sha256": "99509eff671f317796bf13cb17375fba31cadb8023e2becff2baf5ac3c73378a"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10390_0011_mask.png",
+      "size_bytes": 4732,
+      "sha256": "8610041dd25899df2a25feda1a854341b43b91ed94a674eaa6643efe9c19b150"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0001_mask.png",
+      "size_bytes": 5201,
+      "sha256": "71e17e0f7e144d6424412440960431faecd5d04e1b5788791f645f61df6c8e29"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0002_mask.png",
+      "size_bytes": 5172,
+      "sha256": "e6a23673c77165c5264c0ec6550b6117e2baf2fd8b2f2e983427cea6a26e366a"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0003_mask.png",
+      "size_bytes": 4914,
+      "sha256": "142af59e3de39d47a3ea79676436b6ac88ccd11adbb264b9e7c7b525c55c8608"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0004_mask.png",
+      "size_bytes": 5029,
+      "sha256": "d554d76c0c940a26dc0a52eb57f8175de0ba834974a6ad787a6b131ae379a553"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0005_mask.png",
+      "size_bytes": 6961,
+      "sha256": "be96bdf3d4c53434f95c5bbcd5a907d2482762cc2a3d9ec1302a6e4a0bb263d1"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0006_mask.png",
+      "size_bytes": 5126,
+      "sha256": "f93cb8e89ecb270d5adda3e3a9e5b9a8e260f61c79858d5c16923047a536eb6c"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0007_mask.png",
+      "size_bytes": 5210,
+      "sha256": "259347242a9cc5f13224dd58127b835c001e9e990947e8f69ffdd979e1cff390"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0008_mask.png",
+      "size_bytes": 7138,
+      "sha256": "d67d8f809e0b5dc95c101baa0d049d59680c3ac1f6137bf2a894060bfcda9034"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0009_mask.png",
+      "size_bytes": 6710,
+      "sha256": "719a045c69f94d7c0ee2a4d691bcf729d03f1b9278bc7786a4e9c07f71bbb791"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0010_mask.png",
+      "size_bytes": 8026,
+      "sha256": "7e9e6042b00cce1831ce4d68bf2af87101a0b0a41ac4f9ca525cef17c071f51a"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10395_0011_mask.png",
+      "size_bytes": 8828,
+      "sha256": "e705d10a06b48bb9e85108d80c129e9e08ccf7ef581ecd26cc90f88daf2fc9d7"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0001_mask.png",
+      "size_bytes": 5640,
+      "sha256": "798bd94ee35a88a1031ff804fadc643466fe3d2e1c75adcab012996ee766fd19"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0002_mask.png",
+      "size_bytes": 6071,
+      "sha256": "fefd8ab575d5ff30e5d57cff57c7a1f25bdcff9502818c871f63870fbcb9e92c"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0003_mask.png",
+      "size_bytes": 4807,
+      "sha256": "c3600595aedf62d8e2411c03b1d4d143cfbfe14f497e99f292764a18e83f81e5"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0004_mask.png",
+      "size_bytes": 4718,
+      "sha256": "78a8889668226edb2d42271c4249cdd5ef3c3bbe9a5a70f1cfa373c25f95e2ea"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0005_mask.png",
+      "size_bytes": 5704,
+      "sha256": "1d6fbab46f5bad27d6e561ecc5b93419e2b251c991248d404bf084e8dbf6c3eb"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0006_mask.png",
+      "size_bytes": 5957,
+      "sha256": "e0bcbf4589539de54f49cd9ec5d1cd636292bfc64bc5d6c28a178206389727a7"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0007_mask.png",
+      "size_bytes": 6180,
+      "sha256": "f7d47ece066d9bcddaea72394755853fc142d14bfecc2e19854035567c127ffa"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0008_mask.png",
+      "size_bytes": 5186,
+      "sha256": "9848ccf58edddd1f08af98d0430fe28e73e57c31fea80c1ed5da9a426d271edd"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0009_mask.png",
+      "size_bytes": 5118,
+      "sha256": "dcf052e49322c9f0d3f528c72c9332cb8e96b71605158a1241371da8525a6d04"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0010_mask.png",
+      "size_bytes": 5516,
+      "sha256": "82e5e3b19acd2a2ca41705604ca286dce698c56bed364de0b4f35d696c4be6b4"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/masks/C10404_0011_mask.png",
+      "size_bytes": 6490,
+      "sha256": "ba8c2d570533c5222ef1c748896a12dc65aeb2d69a696733c91cc043e5bf58f5"
+    },
+    {
+      "path": "experiments/sam2_test/bbox_validation/C10095_bbox.jpg",
+      "size_bytes": 252733,
+      "sha256": "ac7ccdc8bb72f274f53d8f5bcf1e30da52186dc79d91d46fea5eacc81c580d61"
+    },
+    {
+      "path": "experiments/sam2_test/bbox_validation/C10115_bbox.jpg",
+      "size_bytes": 363666,
+      "sha256": "4c74634c37dee78fce0bfd5e554c9fb78d07448995075f9cf34daa8261bd7a81"
+    },
+    {
+      "path": "experiments/sam2_test/bbox_validation/C10118_bbox.jpg",
+      "size_bytes": 174270,
+      "sha256": "f51a4bc1efa59e395f844f1d20cfd302688596c7d1e8289442ac2cbf3183df41"
+    },
+    {
+      "path": "experiments/sam2_test/bbox_validation/C10119_bbox.jpg",
+      "size_bytes": 302909,
+      "sha256": "4d3f1ef6d8c3da9b94907f4f63b31f55a65cfa123cac8c0cb9a531bae5637214"
+    },
+    {
+      "path": "experiments/sam2_test/bbox_validation/C10379_bbox.jpg",
+      "size_bytes": 246708,
+      "sha256": "718870d145b80c038b1cd92ce9a172f8f72e5e7c77bcb611b318e3dc90c19f73"
+    },
+    {
+      "path": "experiments/sam2_test/bbox_validation/C10390_bbox.jpg",
+      "size_bytes": 328900,
+      "sha256": "819697fb496b794ab8b2c330214c6d9631351ab25270d1420bf1a720db09c35e"
+    },
+    {
+      "path": "experiments/sam2_test/bbox_validation/C10395_bbox.jpg",
+      "size_bytes": 332617,
+      "sha256": "eb8824301cd22f404ed09b94d4c6aac72074993920f0324497afeafb83425066"
+    },
+    {
+      "path": "experiments/sam2_test/bbox_validation/C10404_bbox.jpg",
+      "size_bytes": 141778,
+      "sha256": "ee23dd22034fbdec99e68d1a9b74473175b2bbf3d107458d8711ad8434f9650a"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_segmentations/C10095.png",
+      "size_bytes": 1922321,
+      "sha256": "9e6d8d649c61abc81945056b7dc9ccdc376315be6ee6f877e343c3bea055955c"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_segmentations/C10115.png",
+      "size_bytes": 2322454,
+      "sha256": "63a6347cf453d3d5313e0539dc074b4aa8255607412cfbdcd4f0d291b8681041"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_segmentations/C10118.png",
+      "size_bytes": 1303594,
+      "sha256": "98eba85914fa423a4e669afb73cb78afc1388a1ace46612cbede0d4f25e13fa1"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_segmentations/C10119.png",
+      "size_bytes": 2126807,
+      "sha256": "5361718909a42b5699967334ef18a5b0cf253cc1e03edb83c53df0c5f84c073b"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_segmentations/C10379.png",
+      "size_bytes": 1811659,
+      "sha256": "5e9d8ecb9132ec09b9fe67ffce8fd87f0605d6e62dcfdf6773adf3c36595f258"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_segmentations/C10390.png",
+      "size_bytes": 2249328,
+      "sha256": "271c09e175c70eb44a0364430167b8f3a8e511abfed382240fc472a8482d2e3f"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_segmentations/C10395.png",
+      "size_bytes": 2171335,
+      "sha256": "ecf14fc1c5651dbb9206a1096f962345206a9bbdc37d785be67fa9482a28abc4"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_segmentations/C10404.png",
+      "size_bytes": 1276971,
+      "sha256": "27d38925da179ceec7f679f37b751ea59d3bb31f821af2acdd36c8d1ef1d3fb0"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/C10095_mask.png",
+      "size_bytes": 4495,
+      "sha256": "f4f021791f5fc57b2ad06760bfeeadd450b6cb4c97d4ee2ffce6e940fae41f9d"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/C10115_mask.png",
+      "size_bytes": 4461,
+      "sha256": "c3d93d3639a861ad1994d1bd46d9695f47e39eac9d83e9da044799947f781bbe"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/C10118_mask.png",
+      "size_bytes": 5079,
+      "sha256": "63f3178369bfaf1dc84934fde2d46f5bd5bb5449be1b3f001ad716aa3dc742f6"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/C10119_mask.png",
+      "size_bytes": 4713,
+      "sha256": "41ffa912345c2cbfbf21953777bc84416ab5331f9b1a1a76a201ae5ed4e2fd98"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/C10379_mask.png",
+      "size_bytes": 4723,
+      "sha256": "29024ca161ab0e53dd018387d946a463bb4b1b1b36dac0765093eb69c2a3269a"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/C10390_mask.png",
+      "size_bytes": 4521,
+      "sha256": "5b3f96f9da638f697ea00b815081049e558c660a4aef076a49baf1cbed22a6cc"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/C10395_mask.png",
+      "size_bytes": 4602,
+      "sha256": "71e24937c457df3558f479a9f8be83e87ee5e9b11c7b4f5109212b3cbe36da78"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/C10404_mask.png",
+      "size_bytes": 4552,
+      "sha256": "95da6501557185958c290f0d2d8d4f185c33d5713b7eebe191ba4da43dea4feb"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/overlays/C10095_overlay.jpg",
+      "size_bytes": 235402,
+      "sha256": "50ee3eed06f08b2fda095e63a4d264b2fa87d3f39bc0d2b685f3a171057ea7e0"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/overlays/C10115_overlay.jpg",
+      "size_bytes": 308012,
+      "sha256": "a1d756d7efb777ec9a29116d76f57b0e2195b6c6c034809e70154956f469442f"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/overlays/C10118_overlay.jpg",
+      "size_bytes": 175557,
+      "sha256": "e7e82b9801794bfe6a762ed66af1929e487d4a4e58af566483ad0a2f160dcbe8"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/overlays/C10119_overlay.jpg",
+      "size_bytes": 269836,
+      "sha256": "2bfc75abe7c2bdf6438df603379482471577c32edb95504a0a83aa737fe1c889"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/overlays/C10379_overlay.jpg",
+      "size_bytes": 239276,
+      "sha256": "29a3d5af8247b67f58a6d2ff2638b9d9f2abf205fe24092655ef65006f8144f1"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/overlays/C10390_overlay.jpg",
+      "size_bytes": 286920,
+      "sha256": "3cf2027551cf4c9a6c03bbc012311b56ab9a7e8fda667e26671bcaba49181f04"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/overlays/C10395_overlay.jpg",
+      "size_bytes": 299030,
+      "sha256": "fcc72822910b88bb8f3f67401a773ccf1834083a48594a34b262acdab8db2479"
+    },
+    {
+      "path": "experiments/sam2_test/sam3_binary_masks/overlays/C10404_overlay.jpg",
+      "size_bytes": 148002,
+      "sha256": "5fc14027c2daae2e50d6ffe541b9ee814ba2a698ad49e9022f5b59de8e27e9d2"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253.csv",
+      "size_bytes": 251,
+      "sha256": "316335163bb7716df611360a75b2b9f4dd54615ffb47bcc4a897520999d7d27a"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736.csv",
+      "size_bytes": 365,
+      "sha256": "e768f929c4fd2328b55d549abb21de9b9dbab3c4b58df204b5fc3389392f3044"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620.csv",
+      "size_bytes": 562,
+      "sha256": "28e3752231e3b81030c4e34dfb2137ad0aaef6fac5b310853ee12e7095b27e2f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239.csv",
+      "size_bytes": 342,
+      "sha256": "f16d8fd81a57f8ee4276265a3517afa14fdbdc03d0803ae1d44438b54965a70f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915.csv",
+      "size_bytes": 727,
+      "sha256": "2307e03a79a27c6d09ca62cfb1759499e97b8100afcb598226b31ca3c1f2246e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904.csv",
+      "size_bytes": 596,
+      "sha256": "f76efa07ca8b12e4ef5f813704f987a6dd0d0bc96296e9398d82140892a89de9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209.csv",
+      "size_bytes": 588,
+      "sha256": "eac02f48d053fd769785a4f5c7a375e25bd2a0dfa044d701d51081b10b0ca0f1"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713.csv",
+      "size_bytes": 255,
+      "sha256": "e24efc60c0ebe11f68b9c1acf8426fcf71b8fad092b49539a6107279f70af329"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034.csv",
+      "size_bytes": 540,
+      "sha256": "7c07ba8168e53a4cbb7da04b81df8cb31ecf4bba98c75ef3576dbd33e931b280"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.csv",
+      "size_bytes": 244,
+      "sha256": "aaf58872d001923b7ee287071135610006bb3e8457980b3a61979fae3ebd813b"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944.csv",
+      "size_bytes": 599,
+      "sha256": "d517b72c1ae49037dfd25ac8fdbb5a102848af4d68cbf963998ee8364efb289f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807.csv",
+      "size_bytes": 712,
+      "sha256": "214a585e33d4f07b9480cab06cf40581295ee4cc86e72f2fc42692e0184bef65"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923.csv",
+      "size_bytes": 443,
+      "sha256": "99fc998599edc75018246f46013cec6ce272fe248e6295076e253c6845666db0"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446.csv",
+      "size_bytes": 417,
+      "sha256": "0de252fea9d88d349b6463146724e93e6a34c416f6eddc0f4952fbbd140eda1c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410.csv",
+      "size_bytes": 273,
+      "sha256": "746381d08cc0e575fb39afa2eae5189a1187aaee995b10c9f200c3cb636a50de"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951.csv",
+      "size_bytes": 1733,
+      "sha256": "9adaca6537194073323f9fe96ffa4c9b99ff2891e0caa08d4fde892f97a31e91"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945.csv",
+      "size_bytes": 125,
+      "sha256": "0c5e06b60bae972c420c3c2592b9b96b470cbac76604ebb1d606e9b8606b8f56"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800.csv",
+      "size_bytes": 330,
+      "sha256": "c366164351abe3c7574f6fbe0fc716425ff8a079afdcb82f783f797497b53e04"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628.csv",
+      "size_bytes": 160,
+      "sha256": "2f99d4cc487d13b598792117d7c76142340fc035bcf03877017a90c0d09a3a0a"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248.csv",
+      "size_bytes": 1076,
+      "sha256": "9ac0a3e2c32d3fb8b286f30b0360a79b645a94219b16b1df770b6538c684c17f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9014-c01b_9014_user_id_2021-02-02_150612.csv",
+      "size_bytes": 285,
+      "sha256": "d40a47160f055a70d96021f16c8388c375066ded5b59a72214df7130cf2e0d6e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9014-c13e_9014_user_id_2021-02-02_151834.csv",
+      "size_bytes": 244,
+      "sha256": "044675140a78d97d5c76d73885f1ac553e4edbfec4aea42eeccd8d9879bf2327"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9015-a08_9015_user_id_2021-02-02_155549.csv",
+      "size_bytes": 203,
+      "sha256": "26a9e4fa2684e4a7d5c285fbeaa29cefc7c90d8e382444a03576b32829791774"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9015-a09_9015_user_id_2021-02-02_160807.csv",
+      "size_bytes": 298,
+      "sha256": "4360b3bcd9a918c86229cc942e34f69db12cabb36d9b5fbe739bc404c3e0b663"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.csv",
+      "size_bytes": 477,
+      "sha256": "1a069126085be09fe804de73018c7309f0820f468efad754faef6109e7e589c6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9015-c03a_9015_user_id_2021-02-02_163503.csv",
+      "size_bytes": 753,
+      "sha256": "a2a5b0fe2f7abfd2abc37a60044b029fad10fd2ad41c6913aa97cc81a548affa"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9015-c04a_9015_user_id_2021-02-02_164257.csv",
+      "size_bytes": 1159,
+      "sha256": "875434c2ea988d8937b8d8755e7381616d5f89e847cf14dd8b49345f05d64b5f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9015-c10c_9015_user_id_2021-02-02_165955.csv",
+      "size_bytes": 2142,
+      "sha256": "fe0f5c4e388a71e31ec5fdd6b2a713091a6b4660c906acab304e367c4504e675"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9016-a24_9016_user_id_2021-02-17_135905.csv",
+      "size_bytes": 726,
+      "sha256": "8e604561fce0bd7df5242ab343077376e1eb4c4ff9efe5156b01bfae6961df94"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9016-b03a_9016_user_id_2021-02-17_140509.csv",
+      "size_bytes": 371,
+      "sha256": "819fe0fcb1e5e3d79a58447c1f53de92c540e97546e30fc037743cae946e768e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9016-b06a_9016_user_id_2021-02-17_141229.csv",
+      "size_bytes": 208,
+      "sha256": "ccfda3f09766096d9069dd35d49eeca1f455f66509f93dda5595680587b79b90"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9016-c01d_9016_user_id_2021-02-17_141821.csv",
+      "size_bytes": 423,
+      "sha256": "72ab0b0e2429ddf906d58e2d37cdfce9ebd3e73577150d52f86ba02b21a508a3"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9016-c03c_9016_user_id_2021-02-17_142449.csv",
+      "size_bytes": 242,
+      "sha256": "805ce1ffb2ffcc7c67e04e5a395576053b0c7eb0cb989999a4d5c83b360956a4"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9016-c10b_9016_user_id_2021-02-17_143201.csv",
+      "size_bytes": 500,
+      "sha256": "dae73bfe6172339295a5e5fb72bd8377f01a231430bf6be932db9108eb03e0d8"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9021-a14_9021_user_id_2021-02-03_100733.csv",
+      "size_bytes": 1137,
+      "sha256": "e99c8b023dc5005bdaad826019033d3c422da5cc6b433d09a48b7b190dc5d21f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9021-a14_9021_user_id_2021-02-23_092806.csv",
+      "size_bytes": 375,
+      "sha256": "e9dc0550e119358ee692c604154aace2c51d7c73561c48f957faac4bcd76f0ef"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9021-a27_9021_user_id_2021-02-03_103039.csv",
+      "size_bytes": 1104,
+      "sha256": "d254acd5925af3249420d32f5f4b695ea52e2c32b43eb4fe0ae0fe440e631104"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9021-a27_9021_user_id_2021-02-23_093522.csv",
+      "size_bytes": 607,
+      "sha256": "882fdcd447dc4c44a1c278a14e48705b79e83d413c8a3d4e9e34db2e45b32028"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9021-a29_9021_user_id_2021-02-03_105247.csv",
+      "size_bytes": 285,
+      "sha256": "c66b47a8fc3f3a3617d1f414815c80afcf9078fef90ed49174d65d599b4ec5f7"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9021-a29_9021_user_id_2021-02-23_094113.csv",
+      "size_bytes": 284,
+      "sha256": "e46076dc3d91b2eeb755db601babe7d486ca0e716e5abd828e13bddd13c597a0"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9021-b05c_9021_user_id_2021-02-23_094649.csv",
+      "size_bytes": 844,
+      "sha256": "aa8023d58d75d595a7931464b1b0dd450f0b81735644043fedc5dc448198a818"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9021-c03d_9021_user_id_2021-02-23_100036.csv",
+      "size_bytes": 238,
+      "sha256": "88c363e93bb6e862001eae625d919c69d65d108dbf72a1837e8c0ab7e4268898"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9021-c10a_9021_user_id_2021-02-23_100458.csv",
+      "size_bytes": 459,
+      "sha256": "1b2d1c3a384df70ad4a469b4edef73690bc8f6e7a54b74acc6422baefff52af6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9022-a15_9022_user_id_2021-02-03_111237.csv",
+      "size_bytes": 212,
+      "sha256": "bf25a0541ad21c41ee89762b96c9a2ba0a000c823bd9002fb8f71bc98c950fcc"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9022-a15_9022_user_id_2021-02-23_104138.csv",
+      "size_bytes": 207,
+      "sha256": "fabc76fb5dc27b627cd930a6a72acce616f9711670d21cc34c6b2622dc58e8c9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9022-a18_9022_user_id_2021-02-03_112259.csv",
+      "size_bytes": 272,
+      "sha256": "646986bb3ee92e7a95c1494aecdb4f3a3173018465628336eb01e02339266e4f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9022-a18_9022_user_id_2021-02-23_104757.csv",
+      "size_bytes": 261,
+      "sha256": "be076a3cf35c358d74634204e4712068382f28427e2e66e90a45b4a12053e5fa"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9022-b03b_9022_user_id_2021-02-03_113201.csv",
+      "size_bytes": 166,
+      "sha256": "ec8997f1d2aa7186d84c89bb43540c8f7d7b493368109935762c659bc9514062"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9022-b03b_9022_user_id_2021-02-23_105258.csv",
+      "size_bytes": 245,
+      "sha256": "43ecd02e48d499091458430b8d6077312cd42f36906b2d39a862f806c5c67a12"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9022-b06c_9022_user_id_2021-02-03_114112.csv",
+      "size_bytes": 272,
+      "sha256": "21e54a9f9e344df9e2a913298780568b897adb442de079a257dfecd555324ac3"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9022-b06c_9022_user_id_2021-02-23_112257.csv",
+      "size_bytes": 257,
+      "sha256": "ade9f34b28da9fa56c29cc2943f7eaf3101d919842fbf405244da94c1b82aba2"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9022-c01a_9022_user_id_2021-02-23_111001.csv",
+      "size_bytes": 421,
+      "sha256": "887f100b66345b178cbf0916f681aee87fb7c29fa0cae4a1a0e839ad5c4240eb"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9022-c03e_9022_user_id_2021-02-23_111647.csv",
+      "size_bytes": 382,
+      "sha256": "8739bb0a025c26c6ce567c09e7b77ecacb35739e50a26a341c16dac657cbb9a9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9023-a03_9023_user_id_2021-02-03_131031.csv",
+      "size_bytes": 380,
+      "sha256": "2f04afbfffd9ad7445190aaf27c92849030e2e05c02a449fdbd9fdd438d7c4bb"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9023-a03_9023_user_id_2021-02-23_133018.csv",
+      "size_bytes": 528,
+      "sha256": "eb72e079597fc8c27b5ea05cf621fb78b8c61b6edb0acac3ce2ecdcb7e0e33ef"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9023-a19_9023_user_id_2021-02-03_132936.csv",
+      "size_bytes": 164,
+      "sha256": "75e19692369dd5f06f6b601d12ff4e4f1114810b002b385ec68db8a64200cc95"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9023-a19_9023_user_id_2021-02-23_133654.csv",
+      "size_bytes": 247,
+      "sha256": "466766d47819ff207b5d67f9e73dfe280d81ed88ffdcf651a22452b5109d5214"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9023-b05d_9023_user_id_2021-02-03_134815.csv",
+      "size_bytes": 523,
+      "sha256": "8da1200d7ccf8e6eb8fd45a0ad9c2c0b7b7853cbf58a31ce16e292990c799b94"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9023-c04b_9023_user_id_2021-02-03_135504.csv",
+      "size_bytes": 2751,
+      "sha256": "ff4940421e3423ab329c68f14a0bef117eb9d06417e785a75f3eca4eb10ad13c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9023-c04b_9023_user_id_2021-02-23_144136.csv",
+      "size_bytes": 319,
+      "sha256": "c3180caf6ad1e5e393104e9c4aedee770cdf018c1fed810f06f26f5d5dc58c22"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9023-c05b_9023_user_id_2021-02-23_144552.csv",
+      "size_bytes": 872,
+      "sha256": "d14e63e5fd15594bcd7a4d9c54bf49408f30d5e9191ca39741d0e19c004186fb"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9023-c09c_9023_user_id_2021-02-03_133550.csv",
+      "size_bytes": 956,
+      "sha256": "ec8d65400e0568a5cef9d6a861466d8eced8be10b84667129deb25f7182722dd"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9023-c09c_9023_user_id_2021-02-23_134459.csv",
+      "size_bytes": 423,
+      "sha256": "9eb88eca3c40faef5394c8d7a46361e6c02071ca7536d525b0a65e2ee4ee5563"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9024-b08b_9024_user_id_2021-02-03_141607.csv",
+      "size_bytes": 493,
+      "sha256": "c36dbc21401bc7a145c51fe623803db674ffd5ca21e5aaddb12b0801599bc583"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9024-b08b_9024_user_id_2021-02-23_150955.csv",
+      "size_bytes": 405,
+      "sha256": "9df6c027c5a3050e444d6e5431494bb34455be161a5377084978272e082c7760"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9024-c04c_9024_user_id_2021-02-03_142724.csv",
+      "size_bytes": 1030,
+      "sha256": "dac2004f176c8b313e5e82a2c4188eec3c55769a4e1c37211bccd8d3633f0fde"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9024-c04c_9024_user_id_2021-02-23_151613.csv",
+      "size_bytes": 489,
+      "sha256": "c468a1a723fbe248591faed6069c2351b09db3cab22df6eedd1ba397cfc7fdc8"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9024-c09b_9024_user_id_2021-02-03_143716.csv",
+      "size_bytes": 1041,
+      "sha256": "fbc9d39f143a6dc4dd2072163271bd6dae42336dc343d7ceadcae823f1cf17e6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9024-c09b_9024_user_id_2021-02-23_152108.csv",
+      "size_bytes": 460,
+      "sha256": "98596dccd90b1ae8a224b802616aa905f140f470873a16cdecd17655cc502896"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9024-c11a_9024_user_id_2021-02-03_144917.csv",
+      "size_bytes": 341,
+      "sha256": "b7e34b9b6ff5d994dc6ab9c8c394c55604b198db589eb783073da10462d47c2b"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9024-c11a_9024_user_id_2021-02-23_153251.csv",
+      "size_bytes": 501,
+      "sha256": "c6f3283c23e3458eb2cbed28fc9a9f27ec8076461f8b435c380144c35d82b282"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9024-c12c_9024_user_id_2021-02-23_153804.csv",
+      "size_bytes": 458,
+      "sha256": "e8defcaf29fe8be1ee76b57b65348811af176caa05b0b566229ded3517222642"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9024-c13b_9024_user_id_2021-02-23_150503.csv",
+      "size_bytes": 347,
+      "sha256": "04d8006678d8d416c7c9186fe931deb8d138a99628a14689b18e2c36c613dd5c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-a20_9025_user_id_2021-02-03_150504.csv",
+      "size_bytes": 423,
+      "sha256": "712f783cba2e613d1b26c34768fc36542d18954f93d4c24767c732026f97ca58"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-a20_9025_user_id_2021-02-18_095735.csv",
+      "size_bytes": 305,
+      "sha256": "2d6798b9e756d188a980f2a5ba0ee7f2ab64736f549b2553015cdc6b1037a7e0"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-a26_9025_user_id_2021-02-03_152505.csv",
+      "size_bytes": 239,
+      "sha256": "d3d61e84d6ec4eae16abd98c010eb7e6e67012f1f8ea8c4b5d1d84eb28536ae8"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-a26_9025_user_id_2021-02-18_101010.csv",
+      "size_bytes": 237,
+      "sha256": "a2350b370384e13585b7e38bada6ae5a40217f0582b2d1339952de7956fb83aa"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-b08d_9025_user_id_2021-02-03_153246.csv",
+      "size_bytes": 307,
+      "sha256": "489ea3d9bb26775d3cfea962e4b607919cb9a13777197d2d2ca2e10da1364bd2"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-b08d_9025_user_id_2021-02-18_101512.csv",
+      "size_bytes": 231,
+      "sha256": "84afcc6d09b47c395917ac8d303b3d14966ab57b0c1ce2ed82c1992829f1e2b9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-c05a_9025_user_id_2021-02-03_155604.csv",
+      "size_bytes": 365,
+      "sha256": "f6927746d46f31bdf98db16729a34bca9572112edc9ee8b22c523dc2fecc1071"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-c05a_9025_user_id_2021-02-18_102043.csv",
+      "size_bytes": 576,
+      "sha256": "ccb2a430f7224deefb86c33957a7fd726175fe0f9be86f6b6446728f7aef45fe"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-c06b_9025_user_id_2021-02-03_160657.csv",
+      "size_bytes": 349,
+      "sha256": "05bc61e2c85f2ff9ccf227cc4f87607e9c54d2ada9d4afcfe09ff96ca30f8db5"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-c06b_9025_user_id_2021-02-18_105233.csv",
+      "size_bytes": 288,
+      "sha256": "987123cdb1af56241948028bb211c0b96c4cdd69fb847a4113a73bbae7d8be1d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9025-c12a_9025_user_id_2021-02-18_111731.csv",
+      "size_bytes": 579,
+      "sha256": "6d0524ad5b6c81aa98215b5dd61f844afc354903a76b709acd2b4b028655072e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9026-a07_9026_user_id_2021-02-03_162446.csv",
+      "size_bytes": 242,
+      "sha256": "9b2f0d421969fb2a5d3f150f037dc97dc7a61e5d225da551c45b20d033685cd4"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9026-b04b_9026_user_id_2021-02-03_163855.csv",
+      "size_bytes": 703,
+      "sha256": "6b47a8a3106af4a5e88b739ad9ca9bffe7e2100ac6107d08cb409652312fe197"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9026-b08a_9026_user_id_2021-02-03_165029.csv",
+      "size_bytes": 283,
+      "sha256": "99062d492d935ce8fc55e913c2b8a16a761bb41a8a34bc5cf68b71ac01524e0c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9026-c06e_9026_user_id_2021-02-03_170116.csv",
+      "size_bytes": 393,
+      "sha256": "14fb0a0517a642d0ab50c86b7ecd80b57f5939c0d01d25975d726e01903d8cfd"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9026-c12b_9026_user_id_2021-02-03_171236.csv",
+      "size_bytes": 449,
+      "sha256": "a677cecce939fac6aa8e6a44583ec716f85a6bd493d15e79da8b5f2b1419eb3b"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9026-c13c_9026_user_id_2021-02-03_172406.csv",
+      "size_bytes": 312,
+      "sha256": "0c3f84aa9377db69be12025df3f32a13413b9919fb7b58ab3ea04a1fdf91736b"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-a13_9031_user_id_2021-02-23_160001.csv",
+      "size_bytes": 462,
+      "sha256": "254c30e799ed535578ec6948a751bd518a10dae6906a17a3d167d50e02f134f9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-b01b_9031_user_id_2021-02-04_102950.csv",
+      "size_bytes": 659,
+      "sha256": "6a9768b3b3bf3dba932fd92d04abbdc2183c76dae1ffa568011c08ca1c44a8f0"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-b01b_9031_user_id_2021-02-23_164014.csv",
+      "size_bytes": 383,
+      "sha256": "d6eb04a60a00322c2441d7c333163c6ce31dff68c39794647e2366d7ec63da2c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-c04d_9031_user_id_2021-02-04_104130.csv",
+      "size_bytes": 431,
+      "sha256": "42c1e9254676d69d21baaaa1b9d5da7a82598cc7221d46c40af96acf56687966"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-c04d_9031_user_id_2021-02-23_163320.csv",
+      "size_bytes": 329,
+      "sha256": "09a5d03c16d54f3c5af213c115c0a8f687442023ebbe9a53d19900cb116abda6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-c06c_9031_user_id_2021-02-23_164844.csv",
+      "size_bytes": 618,
+      "sha256": "76d7c84a5f93a11b3105692d307d0166d84c48ebb66cfbb5ef1afad32d5b3583"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-c10b_9031_user_id_2021-02-04_101552.csv",
+      "size_bytes": 338,
+      "sha256": "c645389df18ede5bce0376a2221efc2df3d6c4c37e9056603171f87416f240a6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-c11b_9031_user_id_2021-02-04_104944.csv",
+      "size_bytes": 348,
+      "sha256": "5d349779a09febb546873885c34a3df3947a8c17133862b64ee8f9e08b148a0c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-c11b_9031_user_id_2021-02-23_165714.csv",
+      "size_bytes": 229,
+      "sha256": "84f943ae3c9472882100415c6eab4e66b02ed3aa9a8d9ca95118bfb51a6b5749"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-c12d_9031_user_id_2021-02-04_105807.csv",
+      "size_bytes": 1612,
+      "sha256": "3eda1ee54e409df22d6fdef4821f36c8a1079d5212a01464407ce20fd9348f70"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9031-c12d_9031_user_id_2021-02-23_170320.csv",
+      "size_bytes": 666,
+      "sha256": "bde0bd63668358576186bfc6a1a758c5b6276b3770e3d57976b43ad483ae99bd"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9032-a03_9032_user_id_2021-02-25_155323.csv",
+      "size_bytes": 198,
+      "sha256": "2849c1494a103bf271a4c0dee2a0175391f6c7b503308866a51919063aeed7e5"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9032-a21_9032_user_id_2021-02-04_112105.csv",
+      "size_bytes": 243,
+      "sha256": "28e9e1a9fc339c8721c27c8e3a37e76295dee33028d5b2ef611503ac5a5835d4"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9032-b04a_9032_user_id_2021-02-04_113248.csv",
+      "size_bytes": 886,
+      "sha256": "cbd6df5470d27660730637d38ce27f333c102d798e4947477e81cd22d998119e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9032-c06f_9032_user_id_2021-02-04_114322.csv",
+      "size_bytes": 798,
+      "sha256": "38ba485c3f4bc0fd1251e4b9dc77106da381c82f27845728149f2d9751e881c2"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9032-c07a_9032_user_id_2021-02-04_115644.csv",
+      "size_bytes": 878,
+      "sha256": "633d9b02a0b4e71c8307ee04473613f65df9ab3ca17eb184cedeaf3c409bce08"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9032-c08a_9032_user_id_2021-02-25_154353.csv",
+      "size_bytes": 778,
+      "sha256": "f68f6c5b66b71c5cfcc77dfea15b9de8e3720be7cf081bd7d41cb2e00262f08d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9033-a30_9033_user_id_2021-02-04_132852.csv",
+      "size_bytes": 436,
+      "sha256": "b4bd2d0e7ed89bc9f0e49ab5231c2dce0ebb554698d60428da01c7221eaedc98"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9033-a30_9033_user_id_2021-02-18_141254.csv",
+      "size_bytes": 319,
+      "sha256": "5df9acd993c1c2f66fe9a56bd8c5cd129219aa48d0de18632b4f64be413eb899"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9033-b04d_9033_user_id_2021-02-04_135802.csv",
+      "size_bytes": 167,
+      "sha256": "8ce00453d71fef91f0c40daff6932b40d06bbaa1da5790b87bc66b398a008dfc"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9033-b04d_9033_user_id_2021-02-18_141950.csv",
+      "size_bytes": 462,
+      "sha256": "e812e4b83cbd06c13a6f54b6be7d0820abbafb325ec9eb995e485736667ef8b5"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9033-c02a_9033_user_id_2021-02-04_140532.csv",
+      "size_bytes": 1505,
+      "sha256": "5586fda75ed1937a8b7777808e158a6c5a98bfcc6e408b0dc60ffec047b76b79"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9033-c02a_9033_user_id_2021-02-18_143949.csv",
+      "size_bytes": 544,
+      "sha256": "68ce127ae7567c4ec0a3403507645c62b4a8cab6e676cb4290a5de68ea8a8cc6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9033-c06a_9033_user_id_2021-02-18_144743.csv",
+      "size_bytes": 326,
+      "sha256": "c16c466b4d1b9bb99bd14b9f9a20ca5a35e43923d925ca5752b2d3a0db95afc1"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9033-c12e_9033_user_id_2021-02-18_150129.csv",
+      "size_bytes": 684,
+      "sha256": "4ef4f1f14412765c065b14fc9c74279296d4761243acda05f14d4364dff42173"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9033-c13a_9033_user_id_2021-02-18_151004.csv",
+      "size_bytes": 865,
+      "sha256": "141edcaad16c494f840133506a8d9bb119994f868f85bec535e2b748c0484fa8"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9034-a31_9034_user_id_2021-02-04_152413.csv",
+      "size_bytes": 1498,
+      "sha256": "8fc189d851f4c592a8488abdf80d0c44ff4f73f42ee5d6e4394b6c615ce4fab9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9034-a31_9034_user_id_2021-02-23_171931.csv",
+      "size_bytes": 1137,
+      "sha256": "89f3409adedf754fbe4ecca8005b4057555c12943f4a2e1a2ffea2569ec747d0"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9034-b02b_9034_user_id_2021-02-04_153734.csv",
+      "size_bytes": 406,
+      "sha256": "291108be2a1a0fa5739e1f050183e8d93e0df7b86345f8ce7e42fbab19536734"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9034-b02b_9034_user_id_2021-02-23_172457.csv",
+      "size_bytes": 387,
+      "sha256": "f7f38f12f185f01f623fdac348899bdeb9c2f044019edb1731ca5f529074e87d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9034-b04c_9034_user_id_2021-02-04_155013.csv",
+      "size_bytes": 393,
+      "sha256": "66bd8a1f0ca963aaec7698d0fe645d190d47ea4a553959ebc998501bac17ee6c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9034-b04c_9034_user_id_2021-02-23_173159.csv",
+      "size_bytes": 665,
+      "sha256": "16089b6311c75fa6b189e86b733abe3902e5e4c9d0f9816783c27f07dc1d32d3"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9034-c02b_9034_user_id_2021-02-23_173828.csv",
+      "size_bytes": 320,
+      "sha256": "7fe0885fdd10624e3b6feec003f0c4d22764351b759289ad3b6c88ed40075778"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726.csv",
+      "size_bytes": 336,
+      "sha256": "dbed7180cc680fc606a5c95993ce00d24f4ba8595e520909207c5a889518163f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-23_175357.csv",
+      "size_bytes": 482,
+      "sha256": "29477d960c0980072f101727a04e6c2a2e796115099f75fe7500015aa262c888"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9034-c13f_9034_user_id_2021-02-23_180813.csv",
+      "size_bytes": 280,
+      "sha256": "4efff809696fafc9095437bc9c637f278d161db38bfa05925bfde03d25dad62e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9035-a06_9035_user_id_2021-02-04_163525.csv",
+      "size_bytes": 542,
+      "sha256": "3c52dc2eac62a51a21530a3a5ecc82a51c462537be818510c9cc84a5e9f78b00"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9035-a06_9035_user_id_2021-02-18_152536.csv",
+      "size_bytes": 468,
+      "sha256": "3fd1ab2db353604ea8c5813d247cdffa169ca47a2c3079f8fd380152887d0fa6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9035-c02c_9035_user_id_2021-02-04_170431.csv",
+      "size_bytes": 253,
+      "sha256": "42a355912a14a8bfe915f6549006c62f8f68876cd0f1595ecceebfa6d48ffdde"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9035-c02c_9035_user_id_2021-02-18_153533.csv",
+      "size_bytes": 707,
+      "sha256": "180e32c633cecec75d07e98fdd59d2bd1d6e5afa0a8336d025eeda396f2871d2"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9035-c07b_9035_user_id_2021-02-04_171214.csv",
+      "size_bytes": 433,
+      "sha256": "0897e5e5d0cce39206ce292d52f8b4570644aa5e08d75545b0086235649c4348"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9035-c07b_9035_user_id_2021-02-18_154148.csv",
+      "size_bytes": 585,
+      "sha256": "065ffdc27d4b2b56a49a331329dae313c8811e3f6782829d12a80f3f1f521d82"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9035-c08c_9035_user_id_2021-02-04_172543.csv",
+      "size_bytes": 571,
+      "sha256": "9d0153fd649e626926a49133ea03c5f76616ac2e24bdabc83323d6070ccbaf63"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9035-c08c_9035_user_id_2021-02-18_163203.csv",
+      "size_bytes": 374,
+      "sha256": "42f2228285b0e4fb19f7fc7b681cfd7503defb276264e3f20c6968fe9841a324"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9035-c09a_9035_user_id_2021-02-18_163930.csv",
+      "size_bytes": 363,
+      "sha256": "eb093d3c941537a2de259f3f9b900783c3be707470b8455f928a6135de4fda1c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9035-c14a_9035_user_id_2021-02-18_164650.csv",
+      "size_bytes": 934,
+      "sha256": "f81fa64b3a85e5d018037d28e6283b687a1a5663def61943aeda5f6b4102597d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9036-a01_9036_user_id_2021-02-17_162038.csv",
+      "size_bytes": 235,
+      "sha256": "df9a2b2b91517fbdfdd5c65de4a22c9dcda98f369c2ba3500950f07dc1ff29f2"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9036-b02a_9036_user_id_2021-02-17_162715.csv",
+      "size_bytes": 123,
+      "sha256": "7422b4cdf5245bae01d9c7ead545d39fca1f13864ca9ceb26a9149cf852c4b13"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9036-b08c_9036_user_id_2021-02-17_163111.csv",
+      "size_bytes": 914,
+      "sha256": "b53dced07b98aa1581299226d69ba0ab6ab8608143419b39aa4fc299853fa980"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9036-c01c_9036_user_id_2021-02-18_092539.csv",
+      "size_bytes": 414,
+      "sha256": "518499c9672ed36b857f98e2cef74d64f352013676a96fabc49180b8d9bde7fa"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9036-c03f_9036_user_id_2021-02-18_093646.csv",
+      "size_bytes": 300,
+      "sha256": "2a0c5a5d997cb54fd4b57a0c08354982e1dcfe6b959ee1d3946ddfa138fed690"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9036-c13b_9036_user_id_2021-02-18_094212.csv",
+      "size_bytes": 612,
+      "sha256": "b3f211bede63c8fcd6e34ca81fe25144280e337a7ba49b9f48c28449227d5c66"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9041-a16_9041_user_id_2021-02-05_095801.csv",
+      "size_bytes": 579,
+      "sha256": "cc55e3b7ecc27793ad8a244966e12cd2e91f28f8e5fbbfa4d57026251a9b80d9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9041-a17_9041_user_id_2021-02-05_101033.csv",
+      "size_bytes": 584,
+      "sha256": "3e45a7f1c23788314deb4651324819a0d758865b7396b1ebb1e9478eb9df11f8"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9041-b06d_9041_user_id_2021-02-05_102410.csv",
+      "size_bytes": 298,
+      "sha256": "9ae5bb41b5a0d8018d3d8fb2276f8c8f5305152056cbf19c18f94c24417f9d60"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9041-c07c_9041_user_id_2021-02-05_104114.csv",
+      "size_bytes": 346,
+      "sha256": "6c343702971b09385e9a80a704264abe1f947611015ffae6537b493cb9acf446"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9041-c13f_9041_user_id_2021-02-05_103116.csv",
+      "size_bytes": 250,
+      "sha256": "907aa49c14a4ea55e8d5f7e0110a488059e63d26a763630608fd4701b407d875"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9041-c14b_9041_user_id_2021-02-05_104936.csv",
+      "size_bytes": 789,
+      "sha256": "51fb92f7f6aeb490c963675dea7bac7e5cc1e5ae1fcc9bf6a0673356ff0bd8e4"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9042-a02_9042_user_id_2021-02-05_111642.csv",
+      "size_bytes": 249,
+      "sha256": "8fe4e817b74eb62f4ef8d7cfd6e8674a9399cb82deb2ad6583155fcb3b9c2385"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9042-a11_9042_user_id_2021-02-05_112612.csv",
+      "size_bytes": 514,
+      "sha256": "bc7ed73b5ecfd36b10f9544d48b4143c664fbd4c89aa5a04a33b389ce9ed04f6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9042-a28_9042_user_id_2021-02-05_113759.csv",
+      "size_bytes": 333,
+      "sha256": "5e1b5eb7fb5c9ae68e0e25b5788f2f61cc912451a1e2c0fdc17e1a9195320835"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9042-b05c_9042_user_id_2021-02-05_115957.csv",
+      "size_bytes": 388,
+      "sha256": "0fbe61805b00319dfc4042dc3bde0d430bad477094e6de4c05e2b69973a737d8"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9042-c03b_9042_user_id_2021-02-05_120824.csv",
+      "size_bytes": 315,
+      "sha256": "cbb04b8caaf25564e6f61175257409fde9c25654dc113205159866ee6da9026f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9042-c09c_9042_user_id_2021-02-17_102611.csv",
+      "size_bytes": 545,
+      "sha256": "1b13b30a4bad1c96bdb55fa91512f04feaaa40fda619c21aedcc4c55d1e15e95"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9043-a12_9043_user_id_2021-02-05_130910.csv",
+      "size_bytes": 124,
+      "sha256": "abb35a7aee03b2210c567832f059fb1a541f630dc3a97410620d748a672d3e33"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9043-a24_9043_user_id_2021-02-05_133010.csv",
+      "size_bytes": 704,
+      "sha256": "40fe6e767ca1a1b5384671046bf80a269ff0f369ee39b9dd8ed60149e02f3092"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9043-b03b_9043_user_id_2021-02-05_133926.csv",
+      "size_bytes": 165,
+      "sha256": "923f59c3473de534ae48bca150579a3e9223ba8fbd544fe0f90719b8c9b4a291"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9043-b05a_9043_user_id_2021-02-05_134455.csv",
+      "size_bytes": 1118,
+      "sha256": "09f3961c8c9449dbc8723a9e34493c11e6c688470378996c82585ca4943076ef"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9043-c01b_9043_user_id_2021-02-05_140432.csv",
+      "size_bytes": 756,
+      "sha256": "0c7c944fe68cd27ec1435c64124241603e8dee6d4fc72f3c4e776cf14a3c8320"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9043-c03c_9043_user_id_2021-02-05_141851.csv",
+      "size_bytes": 193,
+      "sha256": "f46117358722527ff260f8aecf967f9ffd3c5bdb1ea5bbcad7badff2c20579b9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9044-a08_9044_user_id_2021-02-05_154403.csv",
+      "size_bytes": 486,
+      "sha256": "c56f37667c53dba5ae499801f5229fc13cb85ee6297cec5629029af3d2bcd0ef"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9044-a08_9044_user_id_2021-02-19_083738.csv",
+      "size_bytes": 526,
+      "sha256": "b1140091f8e9961bd6b7e0beb870c5a991bf0b0cd79bb2e5b5fa080784a89ae0"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9044-a09_9044_user_id_2021-02-05_155544.csv",
+      "size_bytes": 810,
+      "sha256": "899260dde19a4071a276ce8a76c7aaf327a8c4c6238b712ed39d4ddee7b9e1e5"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9044-a09_9044_user_id_2021-02-19_084540.csv",
+      "size_bytes": 305,
+      "sha256": "1e17909a968275488433aa7df3888bc107ff449b401e6c3de2c304f862b5ba9a"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9044-b01a_9044_user_id_2021-02-05_160818.csv",
+      "size_bytes": 1017,
+      "sha256": "2e04a5cbe84e89150ff41f60ec82981b7c8fb74b7c1c9905f5ca59b5bbdda148"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9044-b01a_9044_user_id_2021-02-19_085343.csv",
+      "size_bytes": 1378,
+      "sha256": "a1b967481ccab88c916a668a829c6e63f3c13c7beaa65c3d55adc3bc3e63ebd4"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9044-b05b_9044_user_id_2021-02-05_163057.csv",
+      "size_bytes": 396,
+      "sha256": "2266944dee029897b2e748850e38b1637ef3777f4802b9e5e8bb73a6c09f83f6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9044-b05b_9044_user_id_2021-02-19_091348.csv",
+      "size_bytes": 634,
+      "sha256": "e10221f7b5eacbb92bba446b98d2e4df5fd7dbca24cd4204f38de1c4f2e48882"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9044-b06a_9044_user_id_2021-02-19_092710.csv",
+      "size_bytes": 352,
+      "sha256": "a33024b9d8bbc6dfc0159971e9c9b6ad12e0b8f0537352bbaf9f595e2ebb6ee9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9044-c03a_9044_user_id_2021-02-19_093447.csv",
+      "size_bytes": 228,
+      "sha256": "5b8698ae48db3ed01448d4efdda36be06db2e4bdd318bd0f55ddaf1e34d12337"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9045-a23_9045_user_id_2021-02-05_165228.csv",
+      "size_bytes": 2125,
+      "sha256": "40331c0ccc47393a3ce62977eb05774909a2425da6f48ad337e91d20f0c203ad"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9045-a23_9045_user_id_2021-02-19_102455.csv",
+      "size_bytes": 443,
+      "sha256": "06356c45f86122f4c0445f2005e3635e69e669f453e35518d6d55a2bdc0cb26b"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9045-b05d_9045_user_id_2021-02-05_171423.csv",
+      "size_bytes": 256,
+      "sha256": "f18deaea5ca4d27b1295ec78e1b472466c166e027526d5a9e1677e4fd6689376"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9045-b05d_9045_user_id_2021-02-19_103439.csv",
+      "size_bytes": 246,
+      "sha256": "3b712210b2f6676072636179fbd684ef840a7fccc6fd7b1a3b12210e5f75d377"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9045-b06c_9045_user_id_2021-02-05_173118.csv",
+      "size_bytes": 262,
+      "sha256": "581f9c07aebb5205c51507af8cdc9c4433b3010405a78dd3b5897cd6a35a6b60"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9045-b06c_9045_user_id_2021-02-19_121606.csv",
+      "size_bytes": 365,
+      "sha256": "13ac59ca223395fc676b6d7710e0f57eeb16677088e56efa7e6bb0681be3cc0b"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9045-c03e_9045_user_id_2021-02-19_122426.csv",
+      "size_bytes": 454,
+      "sha256": "d333e3a97c41979249eef1a917960c625c9cda1898566d844ed076b1b430b826"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9045-c13e_9045_user_id_2021-02-19_134158.csv",
+      "size_bytes": 392,
+      "sha256": "cf9a0fd56d1d116b2cf5a2dd49216dbfc078e3ec7e9f019bdc668119914b78f7"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9046-a14_9046_user_id_2021-02-22_104013.csv",
+      "size_bytes": 412,
+      "sha256": "0fb7cc543d9db29596894e6b65bbcf2e2c689b707caa72d52628e5a25b945301"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9046-a27_9046_user_id_2021-02-22_104709.csv",
+      "size_bytes": 490,
+      "sha256": "0178373d7dff9675daceaa4f6d816891ff56a67f62b22f8fddbda26da3950f66"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9046-a29_9046_user_id_2021-02-22_105358.csv",
+      "size_bytes": 285,
+      "sha256": "172cd1c23a03013a4365ea4e814ca2a9dddbab04e6b17f2c41c524a725399b3f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9046-b06b_9046_user_id_2021-02-22_105953.csv",
+      "size_bytes": 251,
+      "sha256": "86d4f76904371067e5633556de2b31efad78ba4c1ed997cf3f68a9a004ff5671"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9046-c01d_9046_user_id_2021-02-22_110733.csv",
+      "size_bytes": 364,
+      "sha256": "f9573028ceb8f975c02419fc348516d749a42ad234637a891068f67a8c903a64"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9046-c10b_9046_user_id_2021-02-22_111419.csv",
+      "size_bytes": 504,
+      "sha256": "3a02a0af39894847d565549db0cc68ba88abaaa8242c791e5b9c13814a81d23a"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9051-b03a_9051_user_id_2021-02-22_114140.csv",
+      "size_bytes": 326,
+      "sha256": "7765ca6f1c676a60a4f701d869d090d4b6840cd036038477e89c054ff9ffe5dc"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9051-c08a_9051_user_id_2021-02-22_115717.csv",
+      "size_bytes": 520,
+      "sha256": "4b02ec65e5cda856e3b724967f28303ff10f95d73f88439f684109524c25aeff"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9051-c10a_9051_user_id_2021-02-22_120421.csv",
+      "size_bytes": 621,
+      "sha256": "1e51c9cfd45b32c227645f08107606902204acf82834fdb2cba09b18f11fa4c2"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9051-c12a_9051_user_id_2021-02-22_121059.csv",
+      "size_bytes": 383,
+      "sha256": "ecf2ee8435b60e34751bf012518c92b16632f4ace4c50bfa586e17d3534b2ac9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9051-c13a_9051_user_id_2021-02-22_121941.csv",
+      "size_bytes": 661,
+      "sha256": "99acc31ca91754e7f1d9551fe9450d301c7b5f72c421a30d2611573403fcd502"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9052-b06a_9052_user_id_2021-02-08_110734.csv",
+      "size_bytes": 210,
+      "sha256": "037aeddec1b62101dd4ca5b3fc45820e55d389f3a801b8a9321d7e3768d5bfcc"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9052-c03d_9052_user_id_2021-02-25_170244.csv",
+      "size_bytes": 196,
+      "sha256": "22fb4db0ce74224d13dd1b54bd97cd69ca259626741b821d44bc5b8cd9bac908"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9052-c04c_9052_user_id_2021-02-08_112641.csv",
+      "size_bytes": 1055,
+      "sha256": "69468077404d79a8aace02c9db14ed0ac96c002532d61d099b2c40b87c4ce92a"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9052-c12c_9052_user_id_2021-02-08_114847.csv",
+      "size_bytes": 837,
+      "sha256": "782d927d65993c3522d1a5867c08303334815359ac2816c4fb6713802df9a6c7"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9052-c13d_9052_user_id_2021-02-08_111738.csv",
+      "size_bytes": 554,
+      "sha256": "a36cfc39a49fe0621558f21a43dd763781a2ec5fc8c5c51f22bd40567e93cf8f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9052-c14a_9052_user_id_2021-02-25_170706.csv",
+      "size_bytes": 471,
+      "sha256": "ebbc3c36d9fd88eea489d1c503dddb5c1917e6947a97ac9db692f7d77acc00eb"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9053-c01d_9053_user_id_2021-02-08_141432.csv",
+      "size_bytes": 1831,
+      "sha256": "c15c5470ace952fd002efe5210168efee00e8618234ebc1f0a8ba90b2ce1bef6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9053-c03e_9053_user_id_2021-02-08_135619.csv",
+      "size_bytes": 560,
+      "sha256": "572afac83bb7cc41b5fe5fd5dccfc35be08f8c2af01a55925a00af0b50a6995d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9053-c08b_9053_user_id_2021-02-08_140757.csv",
+      "size_bytes": 245,
+      "sha256": "6e7deb50ffbe39fb6347bd963625f8572d6a3ea87c73d2f3a03c66e51a72d712"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9053-c09a_9053_user_id_2021-02-08_134120.csv",
+      "size_bytes": 696,
+      "sha256": "aae875ea9ccba07031de0086f963453c97ecd27f1722a362dc922806fa35eea1"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9053-c10b_9053_user_id_2021-02-08_143830.csv",
+      "size_bytes": 478,
+      "sha256": "f6a8d0ba9370f021ad51ea8d0774d46d7cd70e8e891c91813e7f990f63e3b81e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9053-c12e_9053_user_id_2021-02-08_142744.csv",
+      "size_bytes": 936,
+      "sha256": "8bbaf220b1f6b69a319a3c223c5b7843b74e931a562ebdcd47dd43a9714f758b"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9054-a14_9054_user_id_2021-02-08_152449.csv",
+      "size_bytes": 500,
+      "sha256": "70547ef55eecb0e218178cdaaa5d3fd647302660c5f316c6fb7791aa12f4d958"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9054-a18_9054_user_id_2021-02-08_153620.csv",
+      "size_bytes": 268,
+      "sha256": "658e12f1a6e501d9068a7b2df52cce54e47be37afd7d6f5f8ce9a0c5710a32a2"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9054-c01a_9054_user_id_2021-02-08_154802.csv",
+      "size_bytes": 607,
+      "sha256": "9f6acdab057e3499172ecce77b72e955aa2fe41a94f415c7fa3f7f5b5916f06d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9054-c01a_9054_user_id_2021-02-08_160424.csv",
+      "size_bytes": 366,
+      "sha256": "5f12f794636c5172c9a668ff18f013cdf2a65a44076e408753bc83b4a05bddac"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9054-c05a_9054_user_id_2021-02-08_160931.csv",
+      "size_bytes": 795,
+      "sha256": "f9f388e8a41fd9a77e42c6929d46ec3ab2101ec2b25314febf45fd1f81d4a53c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9054-c06a_9054_user_id_2021-02-08_150948.csv",
+      "size_bytes": 619,
+      "sha256": "cb46e43e018a6d9090f6f64b57bd027c9b9d0ffdf28248914195070c214273a0"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9054-c11a_9054_user_id_2021-02-08_162610.csv",
+      "size_bytes": 1198,
+      "sha256": "b58a417580cb41b9993daa0d92a80d8ad4c978c0d56f3c53dc9dda6222100211"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9055-a07_9055_user_id_2021-02-24_102820.csv",
+      "size_bytes": 1047,
+      "sha256": "bf09d35222e5846de8d7ec37b23ad519da58ac7ef9d0cd9c01d88db0bd9e1ea4"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9055-b04c_9055_user_id_2021-02-24_103545.csv",
+      "size_bytes": 407,
+      "sha256": "4c6a9bd01d3dd1391fd6aa9182aebb446a671a5203bfd4fc7a1039f77f012a87"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9055-b08b_9055_user_id_2021-02-09_100238.csv",
+      "size_bytes": 341,
+      "sha256": "7431ec377749dbc11ca87ce1dfbcfd74c0e735de1fb65816bdee63fadd724e9d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9055-b08b_9055_user_id_2021-02-24_104106.csv",
+      "size_bytes": 272,
+      "sha256": "013f1b2c25b1c94a2903a99e2e80a4d2f207f77644126664b649897fd055f2f5"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9055-c04b_9055_user_id_2021-02-09_102558.csv",
+      "size_bytes": 2470,
+      "sha256": "67369705b2de36bef0cb04bdd772fe4321aef1d6dc34db8e87baba3a88b616b6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9055-c04b_9055_user_id_2021-02-24_110239.csv",
+      "size_bytes": 705,
+      "sha256": "aab8acfc7d7609808064548214f9e11ef8c104aa3a438a6a3bfe2a87dd5b2438"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9055-c06e_9055_user_id_2021-02-09_100939.csv",
+      "size_bytes": 928,
+      "sha256": "49de8d3adf6bf92e6669a550631c90ca670a818e1f32a00e721e98ca8d1e4264"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9055-c06e_9055_user_id_2021-02-24_105542.csv",
+      "size_bytes": 599,
+      "sha256": "45f34ec533195c8b30e7053dd55160b04136b0089acdd4d5f1b0cb24ac271864"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9055-c12b_9055_user_id_2021-02-24_111107.csv",
+      "size_bytes": 422,
+      "sha256": "c36b27dce770cab70a40b0e993ab8a84b519cd017f127629902eaf8fa5490a35"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9056-a19_9056_user_id_2021-02-09_112504.csv",
+      "size_bytes": 526,
+      "sha256": "2b90664451cd8064b146cb824edae5aa0ff67466608c1dbaf8b39aa6c6b21b23"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9056-a19_9056_user_id_2021-02-22_141312.csv",
+      "size_bytes": 198,
+      "sha256": "89a52aecb19e5ea281c5e116f6e2ea698a9ebf8d9e791599a1e59efc1f097776"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9056-b08a_9056_user_id_2021-02-09_114053.csv",
+      "size_bytes": 288,
+      "sha256": "5c01854141ad948bb92af33e32e668109c15db30537e4cc42732dc1a82f55f36"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9056-b08a_9056_user_id_2021-02-22_141934.csv",
+      "size_bytes": 693,
+      "sha256": "2c777df43280e6add04ddba3002690503b350b7c0f49e7f8c5255bcdf52a79c1"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9056-c01c_9056_user_id_2021-02-22_143138.csv",
+      "size_bytes": 955,
+      "sha256": "bd4d7b4a2c500640abb4f0386ee71439f3b7f314a43a79fb867af69ec79acf41"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9056-c09a_9056_user_id_2021-02-22_140419.csv",
+      "size_bytes": 514,
+      "sha256": "26d0eef02b8ce988f052d6d58bf40d7646fe93a9f8a02a433fd90dd6c748c00b"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9056-c10b_9056_user_id_2021-02-09_105117.csv",
+      "size_bytes": 2622,
+      "sha256": "84ae6ed9e40bd9bb93716a4dd78c96ccad55b1b24a6af9b4655231138d4eb133"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9056-c12d_9056_user_id_2021-02-22_144251.csv",
+      "size_bytes": 437,
+      "sha256": "e2dac22f3cb66d0f5d730838d2fa6c7484ea74700e26f405812fc39418a9237b"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9056-c13a_9056_user_id_2021-02-22_145733.csv",
+      "size_bytes": 534,
+      "sha256": "b617249857cf167a1d18e75b2046571005f942a8fb61f167111ce546a9e5a051"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9061-a01_9061_user_id_2021-02-09_134524.csv",
+      "size_bytes": 1494,
+      "sha256": "ae38824efa8a6217f6aab8f90ab58fc413cab9ef65ecda537f8d8f25e3b874dd"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9061-b04a_9061_user_id_2021-02-09_135722.csv",
+      "size_bytes": 1627,
+      "sha256": "1e540e3a1ea1b33c9dc24165624671306fa22ea521cb633842700562e14831e3"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9061-b08d_9061_user_id_2021-02-09_141038.csv",
+      "size_bytes": 232,
+      "sha256": "2cb117405012254cfc9e7aaa9960e1a05566e230c5aa515a017a07af4b8f3505"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9061-c02a_9061_user_id_2021-02-09_141537.csv",
+      "size_bytes": 1269,
+      "sha256": "b349f350d175f761ce2e77fc9f478f09ef28a5b8ee60a959efd22cd58bae848c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9061-c09b_9061_user_id_2021-02-09_143132.csv",
+      "size_bytes": 424,
+      "sha256": "49cc2389c3a57daa217443b7a7b545aa618f8f0a9e42e55615ed5f150a421e05"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9061-c13d_9061_user_id_2021-02-09_143830.csv",
+      "size_bytes": 435,
+      "sha256": "09e37fc615f5bcfb23b89eb070ce4724e16d8a07585d90d95e8ff1153af5634f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9062-a21_9062_user_id_2021-02-09_151231.csv",
+      "size_bytes": 159,
+      "sha256": "00922711d1e2dd4fbab58f3e7895576b16f69a76c359c525d9be7e4a34242471"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9062-b02b_9062_user_id_2021-02-09_152026.csv",
+      "size_bytes": 392,
+      "sha256": "54bdf9e257452db16b83c6dfb07ad78c5d8e83c3764db385831961c6adc55773"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9062-b04d_9062_user_id_2021-02-09_152854.csv",
+      "size_bytes": 925,
+      "sha256": "dc9cfd76125a13303fecf98cb64b99409d82d0f8e7f5ce5cc1db58373146bfe1"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9062-c06b_9062_user_id_2021-02-09_154158.csv",
+      "size_bytes": 264,
+      "sha256": "f8dfdae3dcc5e297f6fb72ce76fa0fc95e1455d8b155c455f75e491fc750ef43"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9062-c07a_9062_user_id_2021-02-09_155212.csv",
+      "size_bytes": 703,
+      "sha256": "ded9cd20258ade76eb87927e886580322272ce1096a19b8041d7b12df6d036b1"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9062-c08c_9062_user_id_2021-02-09_160823.csv",
+      "size_bytes": 402,
+      "sha256": "55a7440df7b5764ba6e655de5018e60e77ede13ac12451d152826bd7e471ec26"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9063-a31_9063_user_id_2021-02-17_091930.csv",
+      "size_bytes": 398,
+      "sha256": "fe9a8fb28179913d372ac9f23cb0be9041a2ab9335d5cd5eb6ac4ed267480a48"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9063-b01b_9063_user_id_2021-02-17_092512.csv",
+      "size_bytes": 547,
+      "sha256": "0057f7e5ec6cba90a83a9f7b73913ef63c5f46d843d8d83b6bd5bfa3af2304d7"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9063-c02b_9063_user_id_2021-02-17_094025.csv",
+      "size_bytes": 473,
+      "sha256": "80449b1fdf2adf75178df552b5a519a0fb702f45c90585efc24e5b5d97ac333c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9063-c07b_9063_user_id_2021-02-17_095115.csv",
+      "size_bytes": 499,
+      "sha256": "664e7cd1a1961b0b3c4304358469f924f8c8927813b04773ca5a1af8ab9f6941"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9063-c13f_9063_user_id_2021-02-17_100446.csv",
+      "size_bytes": 410,
+      "sha256": "a687ba010c31e8b91679d07b8f2166ebbbda3513f993b173972472ff66d8e3e0"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9063-c14a_9063_user_id_2021-02-17_101116.csv",
+      "size_bytes": 901,
+      "sha256": "b7bc58009e3303f05dd4c5adbe2aa2a0d035c481edab93432a1afa7841215bc3"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9064-a20_9064_user_id_2021-02-22_161628.csv",
+      "size_bytes": 254,
+      "sha256": "c8b0133731a6bbe9fbbdb659a186f329bbe1aa9bc10d3849035a7fe6b4e56904"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9064-a30_9064_user_id_2021-02-22_162122.csv",
+      "size_bytes": 1105,
+      "sha256": "872d993621054e021989377e3db4be01bfc4c1033c0e4fa27ebd70d88f2a432d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9064-c02c_9064_user_id_2021-02-22_163357.csv",
+      "size_bytes": 766,
+      "sha256": "31df4da32887197d974b21659b1c5a49b53242c7062c0b0c2d88e9dee72bb321"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9064-c08a_9064_user_id_2021-02-22_164245.csv",
+      "size_bytes": 759,
+      "sha256": "c24a748ad5d19db955884f27a538e40868e5d870f9c01c441cf9a0cef2b30770"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9064-c09a_9064_user_id_2021-02-22_165525.csv",
+      "size_bytes": 326,
+      "sha256": "39470a0cbe7575c9fac3108da17ced97454e191d2a33adc942608bc30c1c0998"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9064-c13a_9064_user_id_2021-02-22_170304.csv",
+      "size_bytes": 1811,
+      "sha256": "988cbc18c062dadb8b201f89cb9d749cc43764bc5fdfdd2b903fb31ad9ed2410"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9065-a17_9095_user_id_2021-02-17_114124.csv",
+      "size_bytes": 982,
+      "sha256": "2c8cf9a7158c045a79dfa6d68723cd7f6d604bf8c3588879937a2368063818eb"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9065-a24_9095_user_id_2021-02-17_121359.csv",
+      "size_bytes": 423,
+      "sha256": "0d3cd9b4e4f8017b30031ac12b5a9f9b3e3c182db6df4aa93159cca4711e35d9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9065-a28_9095_user_id_2021-02-17_122244.csv",
+      "size_bytes": 241,
+      "sha256": "9dda87c8cf0316ada01df27624d03f8ae83b3392b123b7007934014084006721"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9065-b05a_9095_user_id_2021-02-17_122813.csv",
+      "size_bytes": 786,
+      "sha256": "238ce75130f166688e14f3220c6f6cca75683d444d8fed282ae89509fea36072"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9065-b06d_9095_user_id_2021-02-17_123817.csv",
+      "size_bytes": 293,
+      "sha256": "d7a568f863d160b28a727202dec6da826ea21fd726b238f7d3a52dd71d5329fc"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9065-c09c_9095_user_id_2021-02-17_124439.csv",
+      "size_bytes": 618,
+      "sha256": "56b9dac96b5d8533115bc54c8c7925baa9436afebec3d66218c1a1835b31eb90"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9066-a08_9066_user_id_2021-02-17_151541.csv",
+      "size_bytes": 297,
+      "sha256": "88c1537eb7a7d450e6c674ac61a5c617b729d0a463b404e3b8e5b2208c851473"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9066-a09_9066_user_id_2021-02-17_152039.csv",
+      "size_bytes": 282,
+      "sha256": "7cf8935e12906e214e4148a698944ff9de67abecf1a5df76656d7a6fd7019293"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9066-a16_9066_user_id_2021-02-17_152811.csv",
+      "size_bytes": 374,
+      "sha256": "22684b42aba68276a52176c9eb5f7025dc5c256c1e1feb6dd4a22191805d5f39"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9066-b03b_9066_user_id_2021-02-17_153607.csv",
+      "size_bytes": 349,
+      "sha256": "49bb463bbdba687b96d52eb4df331cd9a7ce69bd55f83de431918efc24411096"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9066-b05b_9066_user_id_2021-02-17_154153.csv",
+      "size_bytes": 813,
+      "sha256": "b608af7ad203eb8f443a803dbbd4e056827f2ac462595eda10a768051cf07b10"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9066-b06a_9066_user_id_2021-02-17_155256.csv",
+      "size_bytes": 208,
+      "sha256": "086a8e3b4bc54001e9ff05e29fc90e4110f8f673302c36faef33212c7ed7fe1d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9071-b05d_9071_user_id_2021-02-11_094129.csv",
+      "size_bytes": 254,
+      "sha256": "2d2eb192560f52a3c139da5635e1a8c1734b0c4c8231d99da543256a8cb6d88a"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9071-b06b_9071_user_id_2021-02-11_100739.csv",
+      "size_bytes": 256,
+      "sha256": "b82338b0e8b50709c865cb6057d8614f0cb8e73cd7a7a40d2ebf55a3c5c70af3"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9071-c03e_9071_user_id_2021-02-11_101746.csv",
+      "size_bytes": 377,
+      "sha256": "23e2083d0d6cbb765713d0eba30271b539d490df754c343b4c1e17d102e7adbc"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9071-c12c_9071_user_id_2021-02-11_102615.csv",
+      "size_bytes": 1757,
+      "sha256": "8d517e767490bffc5ab9394f600127ff4ceffd34c24023127a6173a6f165a313"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9071-c13a_9071_user_id_2021-02-11_090900.csv",
+      "size_bytes": 826,
+      "sha256": "74b0ae7ff1514cb175b503842bc1b9827100b38bc952efaa7cbfddf3dbfc231c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9071-c14a_9071_user_id_2021-02-11_092353.csv",
+      "size_bytes": 408,
+      "sha256": "ac382d6b9d3ec2e8d82e3a11e8d477ccbe112ad6646a4d39b4fcbad4a45c0c0c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9072-a14_9071_user_id_2021-02-11_104901.csv",
+      "size_bytes": 838,
+      "sha256": "06b5344770792198acb96ee699f7f34f99f4b98952e65ea72ad3cc7f77ba8763"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9072-a15_9072_user_id_2021-02-11_110655.csv",
+      "size_bytes": 207,
+      "sha256": "56d3d07639e08e05ef952e5eb5feef947138d411c29e3a733ba316478d4e6b2d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9072-b03a_9072_user_id_2021-02-11_111335.csv",
+      "size_bytes": 431,
+      "sha256": "3824879a861b3d5241e4322330698513e8065845876c532d18751d96c02fc20e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9072-c04d_9072_user_id_2021-02-11_113148.csv",
+      "size_bytes": 390,
+      "sha256": "036cae860daf966775e0c9e393c53d3309e5216ee0cca68903941d6b083bfd12"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9072-c10a_9072_user_id_2021-02-11_112415.csv",
+      "size_bytes": 291,
+      "sha256": "36c091424710a9b512c24ba9e80a9c911f1654d261febecc5cafff6e6fa145b9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9072-c12d_9072_user_id_2021-02-11_114038.csv",
+      "size_bytes": 753,
+      "sha256": "4204256053c84c867165f8db03b98fb53020537a39bddba8d0beefb1dbed9084"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9073-a10_9073_user_id_2021-02-25_150711.csv",
+      "size_bytes": 670,
+      "sha256": "0e9cffc4a455c765a9b66ace75197cafdc0005196ffb35d3eb9ebcdf59ad0e2a"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9073-a18_9073_user_id_2021-02-11_140513.csv",
+      "size_bytes": 259,
+      "sha256": "2e8468e170804b99063bbe7b797ad803a184e4f0fbb97a056a91a07d97e416b6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9073-b06c_9073_user_id_2021-02-11_135342.csv",
+      "size_bytes": 512,
+      "sha256": "7b5d85c397555d721d58fe602ce6a0c0f5d541fc2eac9d67d3467d9b6a639a78"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9073-b08a_9073_user_id_2021-02-11_145217.csv",
+      "size_bytes": 247,
+      "sha256": "d4afa4a5355d83fb3ae0c18de97701743a43e75dd9671bbb6de7ee2e6ee90beb"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9073-c04a_9073_user_id_2021-02-11_142611.csv",
+      "size_bytes": 2896,
+      "sha256": "10aef621c256012e828d9c9232cab2db190ef62973db5ad63d9c5f141612ce40"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9073-c12a_9073_user_id_2021-02-11_141222.csv",
+      "size_bytes": 515,
+      "sha256": "394ffbd73c31a7742df85c6d500ee63f3b234efca26c10da4999b5d3ca70c50f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9074-a03_9074_user_id_2021-02-11_151600.csv",
+      "size_bytes": 157,
+      "sha256": "2e62671ec58f55a263f27439854624f225f323e032db869686824129578719a0"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9074-a14_9074_user_id_2021-02-11_152306.csv",
+      "size_bytes": 449,
+      "sha256": "1579a150914b2f2220be54b9072f47cb82194bae3fa1c26d6a88bbe9a1d23524"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9074-a29_9074_user_id_2021-02-11_154856.csv",
+      "size_bytes": 206,
+      "sha256": "aa7f6991c83f152683480346b98b2a80d3b318b058a950e360281655a9dbdb43"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9074-c06b_9074_user_id_2021-02-11_160509.csv",
+      "size_bytes": 580,
+      "sha256": "1c892f38d834dbd19769a5151f7354152e6d16b8abe7fea3e52cadb87f7bcfde"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9074-c12e_9074_user_id_2021-02-11_155839.csv",
+      "size_bytes": 1248,
+      "sha256": "dacc5122390ad586a252319b859cda9391ad5b8c1063c97059fd4fdcdd02d8b6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9075-a06_9075_user_id_2021-02-12_092222.csv",
+      "size_bytes": 642,
+      "sha256": "8de5a3f1d33c2f9e177237a27247d4206eb4bb7c4a76dcd84a9f66d445c39429"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9075-a07_9075_user_id_2021-02-12_093237.csv",
+      "size_bytes": 439,
+      "sha256": "c5bbc3f388d355592de372f65381e87e336839768d252f081e2f83795be7d649"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9075-b01b_9075_user_id_2021-02-12_102823.csv",
+      "size_bytes": 749,
+      "sha256": "aadef2794adeaab3ac7e78f02a517874407427772636e64db0fe420d3a59b1b4"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9075-c08b_9075_user_id_2021-02-12_101609.csv",
+      "size_bytes": 838,
+      "sha256": "777c2c7e84872862fa114208598e5aa74a468857b551ea26c10c2429753a54cb"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9075-c10c_9075_user_id_2021-02-12_100519.csv",
+      "size_bytes": 703,
+      "sha256": "c06bd9ca0bffdddd40e3c1c723b11e170021be23fae005603e16cf901a2be762"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9076-a13_9076_user_id_2021-02-12_104816.csv",
+      "size_bytes": 661,
+      "sha256": "3628dff256cbf4fb6a261bec915e2900f2dc75c4df3b0f0b7d568f2d82233218"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9076-a20_9076_user_id_2021-02-12_110652.csv",
+      "size_bytes": 592,
+      "sha256": "de8a4d64f365406af7446cadce4997b0c6f2af4ad372d2bd72ebc1338989b1a2"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9076-c06a_9076_user_id_2021-02-12_112908.csv",
+      "size_bytes": 354,
+      "sha256": "994fb6f53a93fb689a66a146a265bc151c2b203effa73bf43442b51b9a53701d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9076-c08c_9076_user_id_2021-02-12_111652.csv",
+      "size_bytes": 477,
+      "sha256": "763c452d4e9f3ab1369e8990671342ecae531c49830c9ecd046c5b9e1484e95d"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9076-c12c_9076_user_id_2021-02-12_113921.csv",
+      "size_bytes": 625,
+      "sha256": "d30a276b3106866d647e596c716fd8be44bd415757ec8ad5cc5f3a5f81882d17"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9076-c13d_9076_user_id_2021-02-12_115510.csv",
+      "size_bytes": 829,
+      "sha256": "7920660ca615f0500f6b48bdef5310b46ccca1fcd65d598ab4c92f37111c056f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9081-a21_9081_user_id_2021-02-12_155024.csv",
+      "size_bytes": 198,
+      "sha256": "ba661fa1efa5c3f1573ae9d480af442fd53ce8eb6ae4ec15a6e63443b5172c5c"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9081-a30_9081_user_id_2021-02-12_155525.csv",
+      "size_bytes": 319,
+      "sha256": "eaa922cf4df40eccee0be442cf527d4d7a7956a11f752aecb082470f9300c1e6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9081-b04d_9081_user_id_2021-02-12_160020.csv",
+      "size_bytes": 567,
+      "sha256": "123cdc968aa29e9e9932d4babdb4f58ebe82c9aec2010e5b36cfa5b430fd31f9"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9081-c08a_9081_user_id_2021-02-12_160626.csv",
+      "size_bytes": 517,
+      "sha256": "5caa5c117696f4416f987e68e7e597fa9d2b5f917243dc786dd64d4ad7bc247f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9081-c11b_9081_user_id_2021-02-12_161433.csv",
+      "size_bytes": 233,
+      "sha256": "f04664356906ae688e87dc8064a2fc60fba43a325a7a8b362a92177a9f3d3b89"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9081-c13a_9081_user_id_2021-02-12_162453.csv",
+      "size_bytes": 579,
+      "sha256": "2c2d15cf018f151c819f1d094c9735cf557f1e26ab4f98ea0454ad16c2a9d72f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9082-a10_9082_user_id_2021-02-16_134840.csv",
+      "size_bytes": 1257,
+      "sha256": "cdc10a0f038e2ffedb9900f8119996a2f941a920739fd6af4573ff81e0f1b891"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9082-a31_9082_user_id_2021-02-16_132731.csv",
+      "size_bytes": 876,
+      "sha256": "b650b3924e3393b5de24c10a6eae95ce4cf6d71251cd6cfddfac4c7c9c6d6a01"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9082-c07b_9082_user_id_2021-02-16_133255.csv",
+      "size_bytes": 505,
+      "sha256": "94ea2597cec2c70a58874b6d58a493e8f4e01676db1c628341e826f6910ca21f"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9082-c08c_9082_user_id_2021-02-16_094651.csv",
+      "size_bytes": 543,
+      "sha256": "22e3ce16a0c972af6263e7fd3919455bebe6bbfa64d211c435c5521e77f1cff8"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9082-c09b_9082_user_id_2021-02-16_134010.csv",
+      "size_bytes": 413,
+      "sha256": "a83b379225eee514723e9e0d9b1b856b6bfa1c3a9f7573b845471f75687a823e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9082-c13f_9082_user_id_2021-02-16_140937.csv",
+      "size_bytes": 321,
+      "sha256": "0da02fcc11e073648252dba6ea3fa8daa82c6ca23f546c639e26e47f495170d3"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9083-a19_9083_user_id_2021-02-16_111909.csv",
+      "size_bytes": 241,
+      "sha256": "905b7fd9bdf142a17c53023a71b21031a7705a9f22788b510da9b5d5d9d72fad"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9083-a26_9083_user_id_2021-02-16_112714.csv",
+      "size_bytes": 237,
+      "sha256": "4c6d024d46118f43db32c66501c5655ba8cf598e8617d12b606226d58641b777"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9083-b06a_9083_user_id_2021-02-16_113603.csv",
+      "size_bytes": 377,
+      "sha256": "a22e622523f02d7304ca8122a70361cb1b753b8a44863f99e81818ef97d61bae"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9083-c03a_9083_user_id_2021-02-16_114344.csv",
+      "size_bytes": 516,
+      "sha256": "93a42f61653b9f7829708f3fffc3a41d2058a27760f712228d824919e0cd4a99"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9083-c08c_9083_user_id_2021-02-16_110837.csv",
+      "size_bytes": 508,
+      "sha256": "9f1c2116a106261980af314762352eaf7b05ac28c26b05fc0413c2ba3ec801ce"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9084-b02b_9084_user_id_2021-02-25_141202.csv",
+      "size_bytes": 355,
+      "sha256": "45b4b1ce1e2268b7769611a335d39a36c077c4eeeea60d0993c66165c4edfee3"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9084-b04c_9084_user_id_2021-02-25_144254.csv",
+      "size_bytes": 406,
+      "sha256": "37cc739f17cea8c8897cdcc680a99f28cb8526d5a89dcad71b7e79f19437adfe"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9084-b05c_9084_user_id_2021-02-25_152453.csv",
+      "size_bytes": 301,
+      "sha256": "0412be690c0bb787b1049d6a7280bfaf41109f1673233cc98d6142775a6a5b0e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9084-c02a_9084_user_id_2021-02-25_140008.csv",
+      "size_bytes": 638,
+      "sha256": "3b339e7c77901ed5082f269def911450b08f743392f43af635d8e84fed813217"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9084-c09b_9084_user_id_2021-02-25_140624.csv",
+      "size_bytes": 457,
+      "sha256": "35b3711bbd071e96e309bcc3ca4d4c3e1f2e87557ae0f866ac4adb6a83faf5aa"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9085-b05c_9085_user_id_2021-02-22_173439.csv",
+      "size_bytes": 488,
+      "sha256": "f92a44ccc0af748cbf42bdd8a891c5bd92e1f97a25e2ee2dc466f175cf5a9eb5"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9085-c01c_9085_user_id_2021-02-22_175419.csv",
+      "size_bytes": 568,
+      "sha256": "4662a0a844d99d1ea1cc90a00e86859a00b1fce7d3afccafd0692a8903ed7312"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9085-c01d_9085_user_id_2021-02-22_172144.csv",
+      "size_bytes": 328,
+      "sha256": "aa87f38647f573d07c9a382f94087599a41efafb501c259070634c4bfdd4879b"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9085-c03d_9085_user_id_2021-02-22_174243.csv",
+      "size_bytes": 238,
+      "sha256": "d46ae2a3c0f2d5eebc19549915ed8d3b0a89126649a179cf77084a393e7dc710"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9085-c10a_9085_user_id_2021-02-22_174720.csv",
+      "size_bytes": 413,
+      "sha256": "33d11cf302741ef836ac1555d1188d7c477f524611da43644c790069369d8825"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9086-c03d_9086_user_id_2021-02-16_153418.csv",
+      "size_bytes": 120,
+      "sha256": "d7a25738a088db75ee22f63305af76ebae5f84f87666acf77933206b832d09eb"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9086-c04c_9086_user_id_2021-02-16_154811.csv",
+      "size_bytes": 297,
+      "sha256": "6ddc4e33a6d1d29f80def59bec128eee2d3d1a9c0acb92796eabf1a05a27c9b6"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9086-c09b_9086_user_id_2021-02-16_155556.csv",
+      "size_bytes": 549,
+      "sha256": "d505212b6fc0fa2140cf21e13db651498b04c13119e2c06abd44615d6c95b93e"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9086-c13a_9086_user_id_2021-02-16_152408.csv",
+      "size_bytes": 852,
+      "sha256": "d41f3ff4a90e09fd3070dfae0b66dc66777a7363f32bd80c05b58cd2a2003ff5"
+    },
+    {
+      "path": "mistake_repo/annots/nusar-2021_action_both_9086-c14a_9086_user_id_2021-02-16_153910.csv",
+      "size_bytes": 359,
+      "sha256": "994086dbf7f2611cac175096391c5e04a6a21db9674f0e2f2f593fa63319b3cb"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/mask_overlays/C10118_0005_overlay.jpg",
+      "size_bytes": 240040,
+      "sha256": "b560d5c8150dc7e8535c30fbd0acaa360af0a97f2e67aefe585a82b973f8a4d9"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/mask_overlays/C10379_0005_overlay.jpg",
+      "size_bytes": 246313,
+      "sha256": "ca34189cc5f246479137072fe2daa051ebd701c645a74c46da50b650f50d9d3d"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/mask_overlays/C10395_0005_overlay.jpg",
+      "size_bytes": 269824,
+      "sha256": "0651bf0b56fa63236382ec5028b7e06e2ee3bb43753898e6d40119560d173054"
+    },
+    {
+      "path": "experiments/sam2_test/deprecated/mask_overlays/C10404_0005_overlay.jpg",
+      "size_bytes": 232274,
+      "sha256": "c388fbda45c18307b6d9d4a66c4627f8ca694cd7939137e773370a9f7529e8bd"
+    }
+  ]
+}

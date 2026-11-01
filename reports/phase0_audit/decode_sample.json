@@ -1,0 +1,194 @@
+[
+  {
+    "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253/C10095_rgb.mp4",
+    "samples": [
+      {
+        "index": 0,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 7121,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 14241,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253/C10118_rgb.mp4",
+    "samples": [
+      {
+        "index": 0,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 7119,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 14238,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10095_rgb.mp4",
+    "samples": [
+      {
+        "index": 0,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 8637,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 17274,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10118_rgb.mp4",
+    "samples": [
+      {
+        "index": 0,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 8636,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 17272,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410/C10095_rgb.mp4",
+    "samples": [
+      {
+        "index": 0,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 8844,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 17688,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410/C10118_rgb.mp4",
+    "samples": [
+      {
+        "index": 0,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 8845,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      },
+      {
+        "index": 17689,
+        "decoded": true,
+        "shape": [
+          1080,
+          1920,
+          3
+        ]
+      }
+    ]
+  }
+]

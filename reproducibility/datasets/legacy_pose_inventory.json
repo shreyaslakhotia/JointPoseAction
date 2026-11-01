@@ -1,0 +1,618 @@
+{
+  "repo_id": "cvml-nus/assembly101",
+  "repo_type": "dataset",
+  "source": "https://huggingface.co/datasets/cvml-nus/assembly101",
+  "annotation_product": "legacy poses@60fps, not cleaned AssemblyPoses.zip or refined AssemblyHands",
+  "provenance_note": "Revisions/ETags copied from local Hugging Face download metadata; pose binaries not rehashed. Video revision unknown.",
+  "files": [
+    {
+      "session": "nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253.json",
+      "size_bytes": 38636745,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "7e56f159381c1c37d5de98705c8a3cb488da82edf4d3101df56616f931b5115c"
+    },
+    {
+      "session": "nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736.json",
+      "size_bytes": 63493471,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "98f28fba153075ed5c2a9d985aa619b8ba6b2bc90733a378e40865edbba5194f"
+    },
+    {
+      "session": "nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620.json",
+      "size_bytes": 55473836,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "8777d125ad4677bdb45d017ea3dd97b4da56c5babe7d888dbf27409c7886deb3"
+    },
+    {
+      "session": "nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239.json",
+      "size_bytes": 37430160,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "90e051a05976a89476a6e147608554f2d81fa11bcb5e44d264cf3eb56837e989"
+    },
+    {
+      "session": "nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915.json",
+      "size_bytes": 57622045,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "f0899a3a9af8a8c11c2ca8d9a9d4a2f03ff7197adcf5ecdd234597fa5a378a42"
+    },
+    {
+      "session": "nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904.json",
+      "size_bytes": 70788007,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "46620f0b43406c23804a32d5bb8d09614504dd10180b09a4fc3063057051b734"
+    },
+    {
+      "session": "nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209.json",
+      "size_bytes": 58472068,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "fee26b97f13cef00f88836de78b298f69d895b82722afa5cce76e806f9381101"
+    },
+    {
+      "session": "nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713.json",
+      "size_bytes": 45632186,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "4632fb8d42ad4ba99cb48e708f126be2a32e94790adf6d3215448597cbf6b4a2"
+    },
+    {
+      "session": "nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034.json",
+      "size_bytes": 48115354,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "06c2521e361bba077143d37c640041f4785b18b7b9e2b9521c352c73367b488e"
+    },
+    {
+      "session": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+      "size_bytes": 46934780,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "b34edfec28e725376ba3cdee2fa6146782d90eceff3b6cba2fdab352dd3abdfc"
+    },
+    {
+      "session": "nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944.json",
+      "size_bytes": 77171322,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "92bde3fe5bf5432a371c16abd4bf778d92f4cb5eb51df7b2a8569e409b2d0674"
+    },
+    {
+      "session": "nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807.json",
+      "size_bytes": 93565309,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "9f3654cefd593c91132ea1d9a99902e8c9bb02423a43eb659f6883adfa7f7076"
+    },
+    {
+      "session": "nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923.json",
+      "size_bytes": 37972099,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "d801c36c7e49aa367de91a281effb614a828c3b8f2654e532a643346ffa6aaa2"
+    },
+    {
+      "session": "nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446.json",
+      "size_bytes": 67751205,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "c17053062c24e7cf9b8ebbafd6f61b0d119d7adf101c66794f4dd5c73f779467"
+    },
+    {
+      "session": "nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410.json",
+      "size_bytes": 48104713,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "ebb91e3bc78d676240883f80b7d53aa7681284251d81c3a7e57e0836b74b2b7f"
+    },
+    {
+      "session": "nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951.json",
+      "size_bytes": 83026325,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "c9a9cc8d43bc1aac20983949ffc5518242bf122442adcf8537c48e186c4ae99c"
+    },
+    {
+      "session": "nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945.json",
+      "size_bytes": 67069989,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "3d5c00bbfa93d6ac39cc03d30518d926660e40ecb8767f121bf84037a0cc8033"
+    },
+    {
+      "session": "nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800.json",
+      "size_bytes": 71479084,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "f1e76e670976d067eb4c98755071287f4a711846695086e5c97cfa27d7a6b7e4"
+    },
+    {
+      "session": "nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628.json",
+      "size_bytes": 54405971,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "028f7a79b09ca98a68cb926ef914029fc0d1955f9a860bd4ead07c6c7f8feb99"
+    },
+    {
+      "session": "nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248.json",
+      "size_bytes": 154762110,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "1d560d368c3208824050d01207a9b2b27191c94fa9faa2a8a12410dab9cd4dfe"
+    },
+    {
+      "session": "nusar-2021_action_both_9014-c01b_9014_user_id_2021-02-02_150612",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9014-c01b_9014_user_id_2021-02-02_150612.json",
+      "size_bytes": 45426704,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "faba7fd418708f2a474e4bfd9c7e593653df914a414e5df17175221a723ae057"
+    },
+    {
+      "session": "nusar-2021_action_both_9014-c13e_9014_user_id_2021-02-02_151834",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9014-c13e_9014_user_id_2021-02-02_151834.json",
+      "size_bytes": 75955050,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "a941b8c3400172b232bef15137cf2d5fb2303b912af646ce51df25cefa27da8f"
+    },
+    {
+      "session": "nusar-2021_action_both_9015-a08_9015_user_id_2021-02-02_155549",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9015-a08_9015_user_id_2021-02-02_155549.json",
+      "size_bytes": 71323150,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "5c58c73d7f36eea4c249a3207d3f7628aa2a0fe75e8eceb6c5d733e0c0297882"
+    },
+    {
+      "session": "nusar-2021_action_both_9015-a09_9015_user_id_2021-02-02_160807",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9015-a09_9015_user_id_2021-02-02_160807.json",
+      "size_bytes": 73415004,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "5028dfca402f8ca74ea1e43b852d752ade9b523b15155f4fbfdc9f054bf86a2b"
+    },
+    {
+      "session": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.json",
+      "size_bytes": 94528733,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "d687083bac1de5e590597a0f8d52891814b9791ad39f1400979bab9c47763370"
+    },
+    {
+      "session": "nusar-2021_action_both_9015-c03a_9015_user_id_2021-02-02_163503",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9015-c03a_9015_user_id_2021-02-02_163503.json",
+      "size_bytes": 65374129,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "8d89ad8782d1849d4864bddbc0e325a518c4bcd57d7de5b03e2b6070c6539e84"
+    },
+    {
+      "session": "nusar-2021_action_both_9015-c04a_9015_user_id_2021-02-02_164257",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9015-c04a_9015_user_id_2021-02-02_164257.json",
+      "size_bytes": 109942617,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "4fa1d29daf22916b80469d884757e776abc7b8bc9b37bff8c714b86e1139bfd0"
+    },
+    {
+      "session": "nusar-2021_action_both_9015-c10c_9015_user_id_2021-02-02_165955",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9015-c10c_9015_user_id_2021-02-02_165955.json",
+      "size_bytes": 100261791,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "f85ec982c934a9fea943a36286b5ffd8cbb86048d27ee91a121ebfc8e985069d"
+    },
+    {
+      "session": "nusar-2021_action_both_9016-a24_9016_user_id_2021-02-17_135905",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9016-a24_9016_user_id_2021-02-17_135905.json",
+      "size_bytes": 40604531,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "d8cd2c66b5ac3dc3a35c7b8d2b3f4301b51f03a0f9154dbf27c573d1f3d6c7fc"
+    },
+    {
+      "session": "nusar-2021_action_both_9016-b03a_9016_user_id_2021-02-17_140509",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9016-b03a_9016_user_id_2021-02-17_140509.json",
+      "size_bytes": 49626058,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "7face2c29d839bb7f075609a9aa985228cf88fe2842460dd2ec38c67e1e878d0"
+    },
+    {
+      "session": "nusar-2021_action_both_9016-b06a_9016_user_id_2021-02-17_141229",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9016-b06a_9016_user_id_2021-02-17_141229.json",
+      "size_bytes": 27902587,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "679e2afab87a5d58a68a29aba0c2964c746dbba6bd46861701a2534646b6e234"
+    },
+    {
+      "session": "nusar-2021_action_both_9016-c01d_9016_user_id_2021-02-17_141821",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9016-c01d_9016_user_id_2021-02-17_141821.json",
+      "size_bytes": 55568777,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "ae3e41e4072418d3dc667365783c865307c3caba9fa38393658252351363a163"
+    },
+    {
+      "session": "nusar-2021_action_both_9016-c03c_9016_user_id_2021-02-17_142449",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9016-c03c_9016_user_id_2021-02-17_142449.json",
+      "size_bytes": 30740861,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "455997e3b12553e4618ec517cf270610551f4bc31fee49f3bda632a22649da53"
+    },
+    {
+      "session": "nusar-2021_action_both_9016-c10b_9016_user_id_2021-02-17_143201",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9016-c10b_9016_user_id_2021-02-17_143201.json",
+      "size_bytes": 66171233,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "6d82723186f0121b04d6cbc74b422e79c3bc9f81580f0d62a5e11d4362f165f9"
+    },
+    {
+      "session": "nusar-2021_action_both_9021-a14_9021_user_id_2021-02-03_100733",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9021-a14_9021_user_id_2021-02-03_100733.json",
+      "size_bytes": 184218518,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "edc274d2a05fbd0f62a546f995f79463d5a62e653314fb6edb46e03cecd3d717"
+    },
+    {
+      "session": "nusar-2021_action_both_9021-a14_9021_user_id_2021-02-23_092806",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9021-a14_9021_user_id_2021-02-23_092806.json",
+      "size_bytes": 56895817,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "c9a0247dd22de041ba0eee875e75c758f2c5aadf358565bad1e073116b90c43a"
+    },
+    {
+      "session": "nusar-2021_action_both_9021-a27_9021_user_id_2021-02-03_103039",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9021-a27_9021_user_id_2021-02-03_103039.json",
+      "size_bytes": 183138258,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "67055a7a5c9d2c983d4ac54a0453433c4254467cefa41aebbf4f3429b6267a08"
+    },
+    {
+      "session": "nusar-2021_action_both_9021-a27_9021_user_id_2021-02-23_093522",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9021-a27_9021_user_id_2021-02-23_093522.json",
+      "size_bytes": 49442604,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "9ca150067895f34fe08bb1fb8fdc41fbfdf875faf888a473cf751e26812da371"
+    },
+    {
+      "session": "nusar-2021_action_both_9021-a29_9021_user_id_2021-02-03_105247",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9021-a29_9021_user_id_2021-02-03_105247.json",
+      "size_bytes": 67010435,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "33082f229a633d4955ddf27bc92385b53c7737e0e4db3c997adf594a57e30d44"
+    },
+    {
+      "session": "nusar-2021_action_both_9021-a29_9021_user_id_2021-02-23_094113",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9021-a29_9021_user_id_2021-02-23_094113.json",
+      "size_bytes": 41219412,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "c161d8fada6fb911f79b1f4c8f568db290b996483611d664ab8d6e20a17e45b9"
+    },
+    {
+      "session": "nusar-2021_action_both_9021-b05c_9021_user_id_2021-02-23_094649",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9021-b05c_9021_user_id_2021-02-23_094649.json",
+      "size_bytes": 66780897,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "6f6956606948551cd21cdb76fea9d33c3a26e8cb513127ee7b7d93ac93ce4b50"
+    },
+    {
+      "session": "nusar-2021_action_both_9021-c03d_9021_user_id_2021-02-23_100036",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9021-c03d_9021_user_id_2021-02-23_100036.json",
+      "size_bytes": 37941752,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "0042c1cf50b4bd230bded26eb45cf0f364f0a5a300ab859621a1fac8a149be17"
+    },
+    {
+      "session": "nusar-2021_action_both_9021-c10a_9021_user_id_2021-02-23_100458",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9021-c10a_9021_user_id_2021-02-23_100458.json",
+      "size_bytes": 43059517,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "898059fb825cf6a26959af3bc709ca10e0819594f626afbe1989203f18d3cc21"
+    },
+    {
+      "session": "nusar-2021_action_both_9022-a15_9022_user_id_2021-02-03_111237",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9022-a15_9022_user_id_2021-02-03_111237.json",
+      "size_bytes": 75826422,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "bb68874d055db1aec5a634df8c7eaf5ef6906b9158193237632e5c0dbbab06cd"
+    },
+    {
+      "session": "nusar-2021_action_both_9022-a15_9022_user_id_2021-02-23_104138",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9022-a15_9022_user_id_2021-02-23_104138.json",
+      "size_bytes": 36531272,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "e3e8d4f14e27ffc4ad56c1d293068e1aa46317d43a2514a54ba565f20dd90c08"
+    },
+    {
+      "session": "nusar-2021_action_both_9022-a18_9022_user_id_2021-02-03_112259",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9022-a18_9022_user_id_2021-02-03_112259.json",
+      "size_bytes": 83735777,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "2535353834cf64d8f19cb8301b19e55406c996162274ab15519e31565d4281c7"
+    },
+    {
+      "session": "nusar-2021_action_both_9022-a18_9022_user_id_2021-02-23_104757",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9022-a18_9022_user_id_2021-02-23_104757.json",
+      "size_bytes": 40692105,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "8e6842e65de1ffe407bea0e53b8c74a227c62c98cfa26c2a56479df1ea3a43dc"
+    },
+    {
+      "session": "nusar-2021_action_both_9022-b03b_9022_user_id_2021-02-03_113201",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9022-b03b_9022_user_id_2021-02-03_113201.json",
+      "size_bytes": 57472278,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "5a0055e9fcccd1291433fd2faddc3f4d5e713c1647082226559941a252c1075f"
+    },
+    {
+      "session": "nusar-2021_action_both_9022-b03b_9022_user_id_2021-02-23_105258",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9022-b03b_9022_user_id_2021-02-23_105258.json",
+      "size_bytes": 29551010,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "119a76141ea9218f9f9ce128ddcae149f27e122944575e60016f594ee69b8acd"
+    },
+    {
+      "session": "nusar-2021_action_both_9022-b06c_9022_user_id_2021-02-03_114112",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9022-b06c_9022_user_id_2021-02-03_114112.json",
+      "size_bytes": 72647964,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "04e89ce11be3459e5271ef316a6a3e87076d8e8851b6d1acc4cd1c5bc1800333"
+    },
+    {
+      "session": "nusar-2021_action_both_9022-b06c_9022_user_id_2021-02-23_112257",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9022-b06c_9022_user_id_2021-02-23_112257.json",
+      "size_bytes": 39859576,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "4d00b10e06ab0be3b3c851228acf065d4dfc9387c7775ea186dc31120dfaf38b"
+    },
+    {
+      "session": "nusar-2021_action_both_9022-c01a_9022_user_id_2021-02-23_111001",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9022-c01a_9022_user_id_2021-02-23_111001.json",
+      "size_bytes": 50623720,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "6fe7a566c06b4b12e6c3b147c7ee556eb51aed25dcc206bc795d8d4b47cf16fa"
+    },
+    {
+      "session": "nusar-2021_action_both_9022-c03e_9022_user_id_2021-02-23_111647",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9022-c03e_9022_user_id_2021-02-23_111647.json",
+      "size_bytes": 38635279,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "fa8d94cfbb4a7dfb978f7a47c1d387f1ee596e71fbb5fd8099e1b215f5447da9"
+    },
+    {
+      "session": "nusar-2021_action_both_9023-a03_9023_user_id_2021-02-03_131031",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9023-a03_9023_user_id_2021-02-03_131031.json",
+      "size_bytes": 67091396,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "a26f62cd4e12608eb9dcdd73e552e81f258cd1bd69f45028bcd86e6993eb5813"
+    },
+    {
+      "session": "nusar-2021_action_both_9023-a03_9023_user_id_2021-02-23_133018",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9023-a03_9023_user_id_2021-02-23_133018.json",
+      "size_bytes": 55609991,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "8baace68f870a5c89db27528a594f9fa13a128c2c4b03256fa410a64ebf7580a"
+    },
+    {
+      "session": "nusar-2021_action_both_9023-a19_9023_user_id_2021-02-03_132936",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9023-a19_9023_user_id_2021-02-03_132936.json",
+      "size_bytes": 47494138,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "72fed76a126f52cdebf8f7cbee24fcade4c5c70453649f76736aff984edd8049"
+    },
+    {
+      "session": "nusar-2021_action_both_9023-a19_9023_user_id_2021-02-23_133654",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9023-a19_9023_user_id_2021-02-23_133654.json",
+      "size_bytes": 50625415,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "e5090851c5e0526a7c57182c555b644289617dcd46ab48de7eead6070ec1663a"
+    },
+    {
+      "session": "nusar-2021_action_both_9023-b05d_9023_user_id_2021-02-03_134815",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9023-b05d_9023_user_id_2021-02-03_134815.json",
+      "size_bytes": 56952963,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "91414b4f6deb9c437c7bc667f54133da8c2118ae52d9cb3aaa8f7d932df17d3c"
+    },
+    {
+      "session": "nusar-2021_action_both_9023-c04b_9023_user_id_2021-02-03_135504",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9023-c04b_9023_user_id_2021-02-03_135504.json",
+      "size_bytes": 125428284,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "910b26640b7e8a4d8ba5c4958f10749dac5ec7cbe3c202677d0adbfb83ae8953"
+    },
+    {
+      "session": "nusar-2021_action_both_9023-c04b_9023_user_id_2021-02-23_144136",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9023-c04b_9023_user_id_2021-02-23_144136.json",
+      "size_bytes": 36124332,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "6d467b0eda2d7c232fdf06a1e1a3b6164146089216cdce4c3d5ea28a64acd4f9"
+    },
+    {
+      "session": "nusar-2021_action_both_9023-c05b_9023_user_id_2021-02-23_144552",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9023-c05b_9023_user_id_2021-02-23_144552.json",
+      "size_bytes": 66851982,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "4cc29579009074afdcca43ee2ea7a21713c9a59143e0ec48b88c52874a37d4b5"
+    },
+    {
+      "session": "nusar-2021_action_both_9023-c09c_9023_user_id_2021-02-03_133550",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9023-c09c_9023_user_id_2021-02-03_133550.json",
+      "size_bytes": 85031161,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "c6d35e435f1a12c3f28b8fd1469074bfa139e1fe6a4ebb689e70e0094bb673cb"
+    },
+    {
+      "session": "nusar-2021_action_both_9023-c09c_9023_user_id_2021-02-23_134459",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9023-c09c_9023_user_id_2021-02-23_134459.json",
+      "size_bytes": 59550272,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "ab185cd5afc3bf0371953c5f5da6c48493382a3901b382c12177102f7872e969"
+    },
+    {
+      "session": "nusar-2021_action_both_9024-b08b_9024_user_id_2021-02-03_141607",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9024-b08b_9024_user_id_2021-02-03_141607.json",
+      "size_bytes": 69466975,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "15ad97376e9473260f83958803c4e7107033ec863970cd01966a7932e5a512db"
+    },
+    {
+      "session": "nusar-2021_action_both_9024-c04c_9024_user_id_2021-02-03_142724",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9024-c04c_9024_user_id_2021-02-03_142724.json",
+      "size_bytes": 19416054,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "de513f8ca67ad06c780c2f0b8b41e8a81048bb83f629d7ae8abf20ef3519271a"
+    },
+    {
+      "session": "nusar-2021_action_both_9024-c04c_9024_user_id_2021-02-23_151613",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9024-c04c_9024_user_id_2021-02-23_151613.json",
+      "size_bytes": 41831576,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "e8ff7f2123bae007730d02788dc5357de2696563830022b1ea8d9bf7122c151b"
+    },
+    {
+      "session": "nusar-2021_action_both_9024-c09b_9024_user_id_2021-02-23_152108",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9024-c09b_9024_user_id_2021-02-23_152108.json",
+      "size_bytes": 47781627,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "1f75688e520b3b76b87c6d25726af418b25e32b814e3cb53ca3337176c2e551f"
+    },
+    {
+      "session": "nusar-2021_action_both_9024-c11a_9024_user_id_2021-02-03_144917",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9024-c11a_9024_user_id_2021-02-03_144917.json",
+      "size_bytes": 45237836,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "f8e517667451f435b77b290a8a1e4a5448ba6306cf02f6e82441b4938b160c8c"
+    },
+    {
+      "session": "nusar-2021_action_both_9024-c11a_9024_user_id_2021-02-23_153251",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9024-c11a_9024_user_id_2021-02-23_153251.json",
+      "size_bytes": 42928554,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "ad2126b0256e069c215a6579e39c900b6ab76d9d4f1466fa87da99a7ff8400cd"
+    },
+    {
+      "session": "nusar-2021_action_both_9024-c12c_9024_user_id_2021-02-23_153804",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9024-c12c_9024_user_id_2021-02-23_153804.json",
+      "size_bytes": 48389553,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "313d349d3233c22bdd0084f3a0f5d1b233634c143585fa4b72c2d6bf929517a3"
+    },
+    {
+      "session": "nusar-2021_action_both_9024-c13b_9024_user_id_2021-02-23_150503",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9024-c13b_9024_user_id_2021-02-23_150503.json",
+      "size_bytes": 39249648,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "03484247b9aae7bcbe7f12aab8f7c936d3f8ba42926bd582739506b6e278791e"
+    },
+    {
+      "session": "nusar-2021_action_both_9025-a20_9025_user_id_2021-02-03_150504",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9025-a20_9025_user_id_2021-02-03_150504.json",
+      "size_bytes": 134030595,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "36305de66f5faba3ac22555f5307a0a96447bf1308516ac2299dda2a7b8ca2fc"
+    },
+    {
+      "session": "nusar-2021_action_both_9025-a20_9025_user_id_2021-02-18_095735",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9025-a20_9025_user_id_2021-02-18_095735.json",
+      "size_bytes": 63649194,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "411bcb5a52280a299192060d90d93496540977ee7bbd129cb7dae69a639f6e72"
+    },
+    {
+      "session": "nusar-2021_action_both_9025-a26_9025_user_id_2021-02-03_152505",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9025-a26_9025_user_id_2021-02-03_152505.json",
+      "size_bytes": 71446986,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "99903b243860089302c68d657626b268844a7f47a475386362b248d923241d95"
+    },
+    {
+      "session": "nusar-2021_action_both_9025-a26_9025_user_id_2021-02-18_101010",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9025-a26_9025_user_id_2021-02-18_101010.json",
+      "size_bytes": 37024511,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "ff16b13c73f74c275583c53753a6aa2fc82ab308bd4d9cfe2bc8159406326c99"
+    },
+    {
+      "session": "nusar-2021_action_both_9025-b08d_9025_user_id_2021-02-03_153246",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9025-b08d_9025_user_id_2021-02-03_153246.json",
+      "size_bytes": 94371301,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "037b3ffa57a768f26d57ece618a5c72b0effc2605df9bfcaa08818f448cb9b15"
+    },
+    {
+      "session": "nusar-2021_action_both_9025-b08d_9025_user_id_2021-02-18_101512",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9025-b08d_9025_user_id_2021-02-18_101512.json",
+      "size_bytes": 40061851,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "02add040bbd51645019c6ff5717df8e0dadb8556f7e4970de62082f8aa202b72"
+    },
+    {
+      "session": "nusar-2021_action_both_9025-c05a_9025_user_id_2021-02-03_155604",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9025-c05a_9025_user_id_2021-02-03_155604.json",
+      "size_bytes": 96107857,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "4bd72c5ef1f6a1662a5576d626d74f4b65cb477f2d65bdc9704b6bf5bd8882b5"
+    },
+    {
+      "session": "nusar-2021_action_both_9025-c05a_9025_user_id_2021-02-18_102043",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9025-c05a_9025_user_id_2021-02-18_102043.json",
+      "size_bytes": 82673192,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "ed166b85d0adb0256332627de04af35d24825df18977e772dc42dc3300a0c607"
+    },
+    {
+      "session": "nusar-2021_action_both_9025-c06b_9025_user_id_2021-02-03_160657",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9025-c06b_9025_user_id_2021-02-03_160657.json",
+      "size_bytes": 108200106,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "14b2e16f8c3a133105d5b8c97996c5da93809f7fd9c2cdecefa55e7208151066"
+    },
+    {
+      "session": "nusar-2021_action_both_9025-c06b_9025_user_id_2021-02-18_105233",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9025-c06b_9025_user_id_2021-02-18_105233.json",
+      "size_bytes": 38947827,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "2be83502307ca340341b27c234b0c79e1ed3f810b45d0e686368e50ae059c355"
+    },
+    {
+      "session": "nusar-2021_action_both_9026-a07_9026_user_id_2021-02-03_162446",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9026-a07_9026_user_id_2021-02-03_162446.json",
+      "size_bytes": 82779794,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "a6c379580e1283f2ed760fc7a65bd11a2366a362114db3dd1c153b93c32606d6"
+    },
+    {
+      "session": "nusar-2021_action_both_9026-b04b_9026_user_id_2021-02-03_163855",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9026-b04b_9026_user_id_2021-02-03_163855.json",
+      "size_bytes": 8037238,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "5a87d9d540e548328e63e238946804d47d14b491"
+    },
+    {
+      "session": "nusar-2021_action_both_9026-c06e_9026_user_id_2021-02-03_170116",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9026-c06e_9026_user_id_2021-02-03_170116.json",
+      "size_bytes": 101374150,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "9ab61253aaa433f05260ab99a9f073a4bc417fb428f2cf279976bceb6e4b2a6a"
+    },
+    {
+      "session": "nusar-2021_action_both_9026-c12b_9026_user_id_2021-02-03_171236",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9026-c12b_9026_user_id_2021-02-03_171236.json",
+      "size_bytes": 81122993,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "9d7aa5c599e92ee7608f7238b750dd63fed9f659508d7bafc8b24094be2798ec"
+    },
+    {
+      "session": "nusar-2021_action_both_9026-c13c_9026_user_id_2021-02-03_172406",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9026-c13c_9026_user_id_2021-02-03_172406.json",
+      "size_bytes": 79620260,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "854a39c119f7837976ad875079639a2800ef294b0cc2a57919dc01adc8596e22"
+    },
+    {
+      "session": "nusar-2021_action_both_9031-a13_9031_user_id_2021-02-23_160001",
+      "relative_path": "poses@60fps/nusar-2021_action_both_9031-a13_9031_user_id_2021-02-23_160001.json",
+      "size_bytes": 61814379,
+      "cached_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+      "cached_etag": "82c9980bb26b5737d4724dbd36cd8fabd8ffbc83388f609c0aeb479fd2e0ab0f"
+    }
+  ]
+}

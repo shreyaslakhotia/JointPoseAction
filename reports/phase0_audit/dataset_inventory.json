@@ -1,0 +1,3759 @@
+[
+  {
+    "session": "nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253/C10095_rgb.mp4",
+        "size_bytes": 691147511,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "237.366667",
+              "nb_frames": "14242"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253/C10115_rgb.mp4",
+        "size_bytes": 660165991,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "237.316667",
+              "nb_frames": "14239"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253/C10118_rgb.mp4",
+        "size_bytes": 1018568834,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "237.316667",
+              "nb_frames": "14239"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253/C10119_rgb.mp4",
+        "size_bytes": 594456609,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "237.350000",
+              "nb_frames": "14241"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253/C10379_rgb.mp4",
+        "size_bytes": 562811873,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "237.333333",
+              "nb_frames": "14240"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253/C10390_rgb.mp4",
+        "size_bytes": 475351158,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "237.266667",
+              "nb_frames": "14236"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253/C10395_rgb.mp4",
+        "size_bytes": 492935708,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "237.283333",
+              "nb_frames": "14237"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b06b_9011_user_id_2021-02-01_154253/C10404_rgb.mp4",
+        "size_bytes": 504284884,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "237.333333",
+              "nb_frames": "14240"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 6,
+    "verbs": {
+      "attach": 6
+    },
+    "labels": {
+      "correct": 6
+    },
+    "objects": [
+      "arm",
+      "cabin",
+      "chassis",
+      "hook",
+      "interior",
+      "turntable top",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 6394,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736/C10095_rgb.mp4",
+        "size_bytes": 1159243012,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "389.616667",
+              "nb_frames": "23377"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736/C10115_rgb.mp4",
+        "size_bytes": 1102703037,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "389.616667",
+              "nb_frames": "23377"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736/C10118_rgb.mp4",
+        "size_bytes": 1669376356,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "389.500000",
+              "nb_frames": "23370"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736/C10119_rgb.mp4",
+        "size_bytes": 1000245331,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "389.566667",
+              "nb_frames": "23374"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736/C10379_rgb.mp4",
+        "size_bytes": 960740163,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "389.516667",
+              "nb_frames": "23371"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736/C10390_rgb.mp4",
+        "size_bytes": 788970799,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "389.466667",
+              "nb_frames": "23368"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736/C10395_rgb.mp4",
+        "size_bytes": 840816998,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "389.450000",
+              "nb_frames": "23367"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-b08c_9011_user_id_2021-02-01_154736/C10404_rgb.mp4",
+        "size_bytes": 846568206,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "389.600000",
+              "nb_frames": "23376"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 9,
+    "verbs": {
+      "attach": 9
+    },
+    "labels": {
+      "correct": 9
+    },
+    "objects": [
+      "arm",
+      "arm connector",
+      "base",
+      "bucket",
+      "cabin",
+      "chassis",
+      "interior",
+      "nut",
+      "roof",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 10680,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620/C10095_rgb.mp4",
+        "size_bytes": 1016520437,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "340.100000",
+              "nb_frames": "20406"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620/C10115_rgb.mp4",
+        "size_bytes": 972893036,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "339.950000",
+              "nb_frames": "20397"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620/C10118_rgb.mp4",
+        "size_bytes": 1429428434,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "340.050000",
+              "nb_frames": "20403"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620/C10119_rgb.mp4",
+        "size_bytes": 890122927,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "340.016667",
+              "nb_frames": "20401"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620/C10379_rgb.mp4",
+        "size_bytes": 831026599,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "340.016667",
+              "nb_frames": "20401"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620/C10390_rgb.mp4",
+        "size_bytes": 698381706,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "340.066667",
+              "nb_frames": "20404"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620/C10395_rgb.mp4",
+        "size_bytes": 762255872,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "339.933333",
+              "nb_frames": "20396"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c01c_9011_user_id_2021-02-01_155620/C10404_rgb.mp4",
+        "size_bytes": 731171035,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "340.016667",
+              "nb_frames": "20401"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 13,
+    "verbs": {
+      "attach": 12,
+      "detach": 1
+    },
+    "labels": {
+      "correct": 11,
+      "mistake": 1,
+      "correction": 1
+    },
+    "objects": [
+      "arm",
+      "base",
+      "boom",
+      "bumper",
+      "cabin",
+      "cabin window",
+      "chassis",
+      "hook",
+      "interior",
+      "roof",
+      "turntable base",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 9617,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239/C10095_rgb.mp4",
+        "size_bytes": 678924332,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "230.366667",
+              "nb_frames": "13822"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239/C10115_rgb.mp4",
+        "size_bytes": 651567050,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "230.316667",
+              "nb_frames": "13819"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239/C10118_rgb.mp4",
+        "size_bytes": 976770937,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "230.300000",
+              "nb_frames": "13818"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239/C10119_rgb.mp4",
+        "size_bytes": 604873927,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "230.300000",
+              "nb_frames": "13818"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239/C10379_rgb.mp4",
+        "size_bytes": 562158608,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "230.316667",
+              "nb_frames": "13819"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239/C10390_rgb.mp4",
+        "size_bytes": 467925007,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "230.300000",
+              "nb_frames": "13818"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239/C10395_rgb.mp4",
+        "size_bytes": 497368408,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "230.316667",
+              "nb_frames": "13819"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c03f_9011_user_id_2021-02-01_160239/C10404_rgb.mp4",
+        "size_bytes": 503247878,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "230.333333",
+              "nb_frames": "13820"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 8,
+    "verbs": {
+      "attach": 8
+    },
+    "labels": {
+      "correct": 8
+    },
+    "objects": [
+      "arm",
+      "arm connector",
+      "body",
+      "cabin",
+      "cabin window",
+      "chassis",
+      "roller",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 6370,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915/C10095_rgb.mp4",
+        "size_bytes": 1143947988,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "354.616667",
+              "nb_frames": "21277"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915/C10115_rgb.mp4",
+        "size_bytes": 1012650027,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "354.566667",
+              "nb_frames": "21274"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915/C10118_rgb.mp4",
+        "size_bytes": 1517323900,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "354.566667",
+              "nb_frames": "21274"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915/C10119_rgb.mp4",
+        "size_bytes": 921801520,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "354.550000",
+              "nb_frames": "21273"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915/C10379_rgb.mp4",
+        "size_bytes": 937648225,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "354.550000",
+              "nb_frames": "21273"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915/C10390_rgb.mp4",
+        "size_bytes": 778969938,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "354.583333",
+              "nb_frames": "21275"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915/C10395_rgb.mp4",
+        "size_bytes": 849097031,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "354.433333",
+              "nb_frames": "21266"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9011-c13b_9011_user_id_2021-02-01_160915/C10404_rgb.mp4",
+        "size_bytes": 754126934,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "354.516667",
+              "nb_frames": "21271"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 17,
+    "verbs": {
+      "attach": 13,
+      "detach": 4
+    },
+    "labels": {
+      "correct": 9,
+      "mistake": 4,
+      "correction": 4
+    },
+    "objects": [
+      "arm",
+      "body",
+      "boom",
+      "cabin",
+      "chassis",
+      "jackhammer",
+      "light",
+      "step",
+      "strap",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 9984,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904/C10095_rgb.mp4",
+        "size_bytes": 1245205039,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "435.483333",
+              "nb_frames": "26129"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904/C10115_rgb.mp4",
+        "size_bytes": 1267773110,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "435.450000",
+              "nb_frames": "26127"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904/C10118_rgb.mp4",
+        "size_bytes": 1766874724,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "435.333333",
+              "nb_frames": "26120"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904/C10119_rgb.mp4",
+        "size_bytes": 1080877405,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "435.333333",
+              "nb_frames": "26120"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904/C10379_rgb.mp4",
+        "size_bytes": 1101749083,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "435.366667",
+              "nb_frames": "26122"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904/C10390_rgb.mp4",
+        "size_bytes": 800299559,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "435.450000",
+              "nb_frames": "26127"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904/C10395_rgb.mp4",
+        "size_bytes": 945815291,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "435.316667",
+              "nb_frames": "26119"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a16_9012_user_id_2021-02-01_162904/C10404_rgb.mp4",
+        "size_bytes": 759371934,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "435.400000",
+              "nb_frames": "26124"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 13,
+    "verbs": {
+      "attach": 11,
+      "detach": 2
+    },
+    "labels": {
+      "correct": 11,
+      "mistake": 2
+    },
+    "objects": [
+      "base",
+      "basket",
+      "body",
+      "bumper",
+      "cabin",
+      "chassis",
+      "interior",
+      "ladder",
+      "roof",
+      "turntable top",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 12717,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209/C10095_rgb.mp4",
+        "size_bytes": 1054245005,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "358.950000",
+              "nb_frames": "21537"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209/C10115_rgb.mp4",
+        "size_bytes": 1041291766,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "358.866667",
+              "nb_frames": "21532"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209/C10118_rgb.mp4",
+        "size_bytes": 1483225502,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "358.783333",
+              "nb_frames": "21527"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209/C10119_rgb.mp4",
+        "size_bytes": 907412661,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "358.916667",
+              "nb_frames": "21535"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209/C10379_rgb.mp4",
+        "size_bytes": 940272062,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "358.916667",
+              "nb_frames": "21535"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209/C10390_rgb.mp4",
+        "size_bytes": 637576840,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "358.883333",
+              "nb_frames": "21533"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209/C10395_rgb.mp4",
+        "size_bytes": 785494781,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "358.666667",
+              "nb_frames": "21520"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-a17_9012_user_id_2021-02-01_162209/C10404_rgb.mp4",
+        "size_bytes": 618164691,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "358.916667",
+              "nb_frames": "21535"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 13,
+    "verbs": {
+      "attach": 11,
+      "detach": 2
+    },
+    "labels": {
+      "correct": 9,
+      "mistake": 2,
+      "correction": 2
+    },
+    "objects": [
+      "base",
+      "bumper",
+      "cabin",
+      "chassis",
+      "fire extinguisher",
+      "interior",
+      "roof",
+      "turntable top",
+      "water tank",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 10300,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713/C10095_rgb.mp4",
+        "size_bytes": 829388756,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "279.800000",
+              "nb_frames": "16788"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713/C10115_rgb.mp4",
+        "size_bytes": 776919983,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "279.783333",
+              "nb_frames": "16787"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713/C10118_rgb.mp4",
+        "size_bytes": 1225093364,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "279.716667",
+              "nb_frames": "16783"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713/C10119_rgb.mp4",
+        "size_bytes": 684112685,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "279.733333",
+              "nb_frames": "16784"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713/C10379_rgb.mp4",
+        "size_bytes": 812482496,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "279.750000",
+              "nb_frames": "16785"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713/C10390_rgb.mp4",
+        "size_bytes": 519905913,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "279.733333",
+              "nb_frames": "16784"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713/C10395_rgb.mp4",
+        "size_bytes": 763509037,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "279.716667",
+              "nb_frames": "16783"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-b06d_9012_user_id_2021-02-01_163713/C10404_rgb.mp4",
+        "size_bytes": 499394382,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "279.750000",
+              "nb_frames": "16785"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 6,
+    "verbs": {
+      "attach": 6
+    },
+    "labels": {
+      "correct": 6
+    },
+    "objects": [
+      "cabin",
+      "chassis",
+      "interior",
+      "mixer",
+      "mixer stand",
+      "tilter",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 8016,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034/C10095_rgb.mp4",
+        "size_bytes": 851036105,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.750000",
+              "nb_frames": "17685"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034/C10115_rgb.mp4",
+        "size_bytes": 962899713,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.733333",
+              "nb_frames": "17684"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034/C10118_rgb.mp4",
+        "size_bytes": 1299822210,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.750000",
+              "nb_frames": "17685"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034/C10119_rgb.mp4",
+        "size_bytes": 659077947,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.733333",
+              "nb_frames": "17684"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034/C10379_rgb.mp4",
+        "size_bytes": 880766344,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.750000",
+              "nb_frames": "17685"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034/C10390_rgb.mp4",
+        "size_bytes": 591592374,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.750000",
+              "nb_frames": "17685"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034/C10395_rgb.mp4",
+        "size_bytes": 862463375,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.750000",
+              "nb_frames": "17685"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c06d_9012_user_id_2021-02-18_121034/C10404_rgb.mp4",
+        "size_bytes": 639000065,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.733333",
+              "nb_frames": "17684"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 12,
+    "verbs": {
+      "attach": 10,
+      "detach": 2
+    },
+    "labels": {
+      "correct": 8,
+      "mistake": 2,
+      "correction": 2
+    },
+    "objects": [
+      "base",
+      "cabin",
+      "chassis",
+      "interior",
+      "roof",
+      "sound module",
+      "water tank",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 8630,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10095_rgb.mp4",
+        "size_bytes": 857912509,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "287.916667",
+              "nb_frames": "17275"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10115_rgb.mp4",
+        "size_bytes": 803274018,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "287.866667",
+              "nb_frames": "17272"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10118_rgb.mp4",
+        "size_bytes": 1260605474,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "287.883333",
+              "nb_frames": "17273"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10119_rgb.mp4",
+        "size_bytes": 721517572,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "287.816667",
+              "nb_frames": "17269"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10379_rgb.mp4",
+        "size_bytes": 808373321,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "287.800000",
+              "nb_frames": "17268"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10390_rgb.mp4",
+        "size_bytes": 547060803,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "287.883333",
+              "nb_frames": "17273"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10395_rgb.mp4",
+        "size_bytes": 770498754,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "287.716667",
+              "nb_frames": "17263"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10404_rgb.mp4",
+        "size_bytes": 514584823,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "287.866667",
+              "nb_frames": "17272"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 6,
+    "verbs": {
+      "attach": 6
+    },
+    "labels": {
+      "correct": 6
+    },
+    "objects": [
+      "bumper",
+      "cabin",
+      "chassis",
+      "container",
+      "interior",
+      "roof",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 7995,
+    "assemblyhands_split": "val"
+  },
+  {
+    "session": "nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944/C10095_rgb.mp4",
+        "size_bytes": 1423094058,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "474.533333",
+              "nb_frames": "28472"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944/C10115_rgb.mp4",
+        "size_bytes": 1319292690,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "474.383333",
+              "nb_frames": "28463"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944/C10118_rgb.mp4",
+        "size_bytes": 2061697705,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "474.350000",
+              "nb_frames": "28461"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944/C10119_rgb.mp4",
+        "size_bytes": 1195525078,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "474.483333",
+              "nb_frames": "28469"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944/C10379_rgb.mp4",
+        "size_bytes": 1307657126,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "474.483333",
+              "nb_frames": "28469"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944/C10390_rgb.mp4",
+        "size_bytes": 921328241,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "474.400000",
+              "nb_frames": "28464"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944/C10395_rgb.mp4",
+        "size_bytes": 1286091560,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "474.316667",
+              "nb_frames": "28459"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9012-c14b_9012_user_id_2021-02-01_164944/C10404_rgb.mp4",
+        "size_bytes": 847834070,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "474.433333",
+              "nb_frames": "28466"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 14,
+    "verbs": {
+      "attach": 11,
+      "detach": 3
+    },
+    "labels": {
+      "correct": 11,
+      "mistake": 3
+    },
+    "objects": [
+      "arm",
+      "base",
+      "body",
+      "boom",
+      "bumper",
+      "chassis",
+      "rear body",
+      "step",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 13648,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807/C10095_rgb.mp4",
+        "size_bytes": 1902676134,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "575.850000",
+              "nb_frames": "34551"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807/C10115_rgb.mp4",
+        "size_bytes": 1835742011,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "575.783333",
+              "nb_frames": "34547"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807/C10118_rgb.mp4",
+        "size_bytes": 2767082007,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "575.850000",
+              "nb_frames": "34551"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807/C10119_rgb.mp4",
+        "size_bytes": 1688814606,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "575.816667",
+              "nb_frames": "34549"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807/C10379_rgb.mp4",
+        "size_bytes": 2057208078,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "575.850000",
+              "nb_frames": "34551"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807/C10390_rgb.mp4",
+        "size_bytes": 1503170115,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "575.816667",
+              "nb_frames": "34549"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807/C10395_rgb.mp4",
+        "size_bytes": 2219176963,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "575.816667",
+              "nb_frames": "34549"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a02_9013_user_id_2021-02-02_130807/C10404_rgb.mp4",
+        "size_bytes": 1333568764,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "575.816667",
+              "nb_frames": "34549"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 15,
+    "verbs": {
+      "attach": 9,
+      "detach": 5,
+      "position": 1
+    },
+    "labels": {
+      "correct": 8,
+      "mistake": 5,
+      "correction": 2
+    },
+    "objects": [
+      "body",
+      "bulldozer arm",
+      "cabin",
+      "chassis",
+      "figurine",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 17044,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923/C10095_rgb.mp4",
+        "size_bytes": 784061406,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "232.283333",
+              "nb_frames": "13937"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923/C10115_rgb.mp4",
+        "size_bytes": 737695683,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "232.266667",
+              "nb_frames": "13936"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923/C10118_rgb.mp4",
+        "size_bytes": 1112290806,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "232.266667",
+              "nb_frames": "13936"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923/C10119_rgb.mp4",
+        "size_bytes": 705831574,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "232.283333",
+              "nb_frames": "13937"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923/C10379_rgb.mp4",
+        "size_bytes": 766497548,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "232.283333",
+              "nb_frames": "13937"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923/C10390_rgb.mp4",
+        "size_bytes": 587212112,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "232.283333",
+              "nb_frames": "13937"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923/C10395_rgb.mp4",
+        "size_bytes": 927268267,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "232.283333",
+              "nb_frames": "13937"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-a28_9013_user_id_2021-02-02_134923/C10404_rgb.mp4",
+        "size_bytes": 553524289,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "232.283333",
+              "nb_frames": "13937"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 10,
+    "verbs": {
+      "attach": 8,
+      "detach": 2
+    },
+    "labels": {
+      "correct": 7,
+      "mistake": 2,
+      "correction": 1
+    },
+    "objects": [
+      "body",
+      "chassis",
+      "engine cover",
+      "interior",
+      "roof",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 6710,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446/C10095_rgb.mp4",
+        "size_bytes": 1343421058,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "414.450000",
+              "nb_frames": "24867"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446/C10115_rgb.mp4",
+        "size_bytes": 1241586390,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "414.433333",
+              "nb_frames": "24866"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446/C10118_rgb.mp4",
+        "size_bytes": 2057692998,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "414.450000",
+              "nb_frames": "24867"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446/C10119_rgb.mp4",
+        "size_bytes": 1172440570,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "414.450000",
+              "nb_frames": "24867"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446/C10379_rgb.mp4",
+        "size_bytes": 1314110125,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "414.450000",
+              "nb_frames": "24867"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446/C10390_rgb.mp4",
+        "size_bytes": 1001867166,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "414.433333",
+              "nb_frames": "24866"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446/C10395_rgb.mp4",
+        "size_bytes": 1480088700,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "414.450000",
+              "nb_frames": "24867"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-b01a_9013_user_id_2021-02-02_135446/C10404_rgb.mp4",
+        "size_bytes": 940638138,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "414.416667",
+              "nb_frames": "24865"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 10,
+    "verbs": {
+      "attach": 9,
+      "detach": 1
+    },
+    "labels": {
+      "correct": 9,
+      "mistake": 1
+    },
+    "objects": [
+      "arm",
+      "arm connector",
+      "bucket",
+      "cabin",
+      "chassis",
+      "interior",
+      "nut",
+      "roof",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 11465,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410/C10095_rgb.mp4",
+        "size_bytes": 467713979,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.816667",
+              "nb_frames": "17689"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410/C10115_rgb.mp4",
+        "size_bytes": 691493131,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.750000",
+              "nb_frames": "17685"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410/C10118_rgb.mp4",
+        "size_bytes": 407598904,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.833333",
+              "nb_frames": "17690"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410/C10119_rgb.mp4",
+        "size_bytes": 641098540,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.816667",
+              "nb_frames": "17689"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410/C10379_rgb.mp4",
+        "size_bytes": 469995733,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.800000",
+              "nb_frames": "17688"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410/C10390_rgb.mp4",
+        "size_bytes": 581527144,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.816667",
+              "nb_frames": "17689"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410/C10395_rgb.mp4",
+        "size_bytes": 364914292,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.750000",
+              "nb_frames": "17685"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c03b_9013_user_id_2021-02-24_113410/C10404_rgb.mp4",
+        "size_bytes": 514136437,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "294.783333",
+              "nb_frames": "17687"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 6,
+    "verbs": {
+      "attach": 6
+    },
+    "labels": {
+      "correct": 6
+    },
+    "objects": [
+      "arm connector",
+      "body",
+      "bulldozer arm",
+      "cabin",
+      "cabin window",
+      "chassis",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 8534,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951/C10095_rgb.mp4",
+        "size_bytes": 823561938,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "509.583333",
+              "nb_frames": "30575"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951/C10115_rgb.mp4",
+        "size_bytes": 1264597760,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "509.566667",
+              "nb_frames": "30574"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951/C10118_rgb.mp4",
+        "size_bytes": 688000924,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "509.633333",
+              "nb_frames": "30578"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951/C10119_rgb.mp4",
+        "size_bytes": 1094326730,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "509.583333",
+              "nb_frames": "30575"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951/C10379_rgb.mp4",
+        "size_bytes": 905518612,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "509.633333",
+              "nb_frames": "30578"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951/C10390_rgb.mp4",
+        "size_bytes": 1007874033,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "509.633333",
+              "nb_frames": "30578"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951/C10395_rgb.mp4",
+        "size_bytes": 649975120,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "509.583333",
+              "nb_frames": "30575"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9013-c09c_9013_user_id_2021-02-24_113951/C10404_rgb.mp4",
+        "size_bytes": 877302879,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "509.616667",
+              "nb_frames": "30577"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 31,
+    "verbs": {
+      "attach": 20,
+      "detach": 11
+    },
+    "labels": {
+      "correct": 16,
+      "mistake": 11,
+      "correction": 4
+    },
+    "objects": [
+      "base",
+      "bumper",
+      "cabin",
+      "chassis",
+      "door",
+      "interior",
+      "rear roof",
+      "roof",
+      "sound module",
+      "transport cabin",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 15044,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945/C10095_rgb.mp4",
+        "size_bytes": 1439895436,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "410.783333",
+              "nb_frames": "24647"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945/C10115_rgb.mp4",
+        "size_bytes": 1246548331,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "410.783333",
+              "nb_frames": "24647"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945/C10118_rgb.mp4",
+        "size_bytes": 1926851064,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "410.783333",
+              "nb_frames": "24647"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945/C10119_rgb.mp4",
+        "size_bytes": 1205802616,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "410.783333",
+              "nb_frames": "24647"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945/C10379_rgb.mp4",
+        "size_bytes": 1104375959,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "410.783333",
+              "nb_frames": "24647"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945/C10390_rgb.mp4",
+        "size_bytes": 1162225119,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "410.766667",
+              "nb_frames": "24646"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945/C10395_rgb.mp4",
+        "size_bytes": 1084175227,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "410.783333",
+              "nb_frames": "24647"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a12_9014_user_id_2021-02-02_141945/C10404_rgb.mp4",
+        "size_bytes": 993724597,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "410.733333",
+              "nb_frames": "24644"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 3,
+    "verbs": {
+      "attach": 3
+    },
+    "labels": {
+      "correct": 3
+    },
+    "objects": [
+      "bumper",
+      "chassis",
+      "dump bed",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 11936,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800/C10095_rgb.mp4",
+        "size_bytes": 1522644566,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "439.800000",
+              "nb_frames": "26388"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800/C10115_rgb.mp4",
+        "size_bytes": 1341296808,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "439.816667",
+              "nb_frames": "26389"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800/C10118_rgb.mp4",
+        "size_bytes": 2096128080,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "439.800000",
+              "nb_frames": "26388"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800/C10119_rgb.mp4",
+        "size_bytes": 1268792800,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "439.816667",
+              "nb_frames": "26389"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800/C10379_rgb.mp4",
+        "size_bytes": 1188444003,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "439.816667",
+              "nb_frames": "26389"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800/C10390_rgb.mp4",
+        "size_bytes": 1302274758,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "439.833333",
+              "nb_frames": "26390"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800/C10395_rgb.mp4",
+        "size_bytes": 1181203891,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "439.833333",
+              "nb_frames": "26390"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-a23_9014_user_id_2021-02-02_142800/C10404_rgb.mp4",
+        "size_bytes": 1078131028,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "439.783333",
+              "nb_frames": "26387"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 8,
+    "verbs": {
+      "attach": 8
+    },
+    "labels": {
+      "correct": 8
+    },
+    "objects": [
+      "body",
+      "bumper",
+      "chassis",
+      "engine",
+      "engine cover",
+      "rocker panel",
+      "roof",
+      "spoiler",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 12915,
+    "assemblyhands_split": "train"
+  },
+  {
+    "session": "nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628/C10095_rgb.mp4",
+        "size_bytes": 1145657840,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "335.433333",
+              "nb_frames": "20126"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628/C10115_rgb.mp4",
+        "size_bytes": 1021283107,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "335.433333",
+              "nb_frames": "20126"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628/C10118_rgb.mp4",
+        "size_bytes": 1539768930,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "335.433333",
+              "nb_frames": "20126"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628/C10119_rgb.mp4",
+        "size_bytes": 959416106,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "335.433333",
+              "nb_frames": "20126"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628/C10379_rgb.mp4",
+        "size_bytes": 899343096,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "335.433333",
+              "nb_frames": "20126"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628/C10390_rgb.mp4",
+        "size_bytes": 988746511,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "335.433333",
+              "nb_frames": "20126"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628/C10395_rgb.mp4",
+        "size_bytes": 874711134,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "335.416667",
+              "nb_frames": "20125"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b02a_9014_user_id_2021-02-02_143628/C10404_rgb.mp4",
+        "size_bytes": 829338377,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "335.433333",
+              "nb_frames": "20126"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 4,
+    "verbs": {
+      "attach": 4
+    },
+    "labels": {
+      "correct": 4
+    },
+    "objects": [
+      "cabin",
+      "chassis",
+      "dump bed",
+      "roof",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 9675,
+    "assemblyhands_split": null
+  },
+  {
+    "session": "nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248",
+    "videos": [
+      {
+        "camera": "C10095_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248/C10095_rgb.mp4",
+        "size_bytes": 3214798168,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "954.716667",
+              "nb_frames": "57283"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10115_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248/C10115_rgb.mp4",
+        "size_bytes": 2924158013,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "954.716667",
+              "nb_frames": "57283"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10118_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248/C10118_rgb.mp4",
+        "size_bytes": 4344121908,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "954.716667",
+              "nb_frames": "57283"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10119_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248/C10119_rgb.mp4",
+        "size_bytes": 2715376263,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "954.683333",
+              "nb_frames": "57281"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10379_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248/C10379_rgb.mp4",
+        "size_bytes": 2612479471,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "954.716667",
+              "nb_frames": "57283"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10390_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248/C10390_rgb.mp4",
+        "size_bytes": 2867437170,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "954.650000",
+              "nb_frames": "57279"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10395_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248/C10395_rgb.mp4",
+        "size_bytes": 2479773103,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "954.716667",
+              "nb_frames": "57283"
+            }
+          ]
+        },
+        "stderr": ""
+      },
+      {
+        "camera": "C10404_rgb",
+        "file": "data/raw_videos/recordings/nusar-2021_action_both_9014-b05a_9014_user_id_2021-02-02_144248/C10404_rgb.mp4",
+        "size_bytes": 2415206538,
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "60/1",
+              "start_time": "0.000000",
+              "duration": "954.666667",
+              "nb_frames": "57280"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    ],
+    "pose_available": true,
+    "mistake_rows": 20,
+    "verbs": {
+      "attach": 15,
+      "detach": 5
+    },
+    "labels": {
+      "correct": 14,
+      "mistake": 6
+    },
+    "objects": [
+      "arm",
+      "boom",
+      "bucket",
+      "bumper",
+      "cabin",
+      "chassis",
+      "interior",
+      "rear bumper",
+      "turntable base",
+      "turntable top",
+      "wheel"
+    ],
+    "bad_intervals": [],
+    "annotation_end": 28435,
+    "assemblyhands_split": null
+  }
+]

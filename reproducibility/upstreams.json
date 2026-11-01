@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "capture_date": "2026-11-01",
+  "dependencies": [
+    {
+      "name": "assemblyhands-toolkit",
+      "url": "https://github.com/facebookresearch/assemblyhands-toolkit.git",
+      "commit": "8d4b7f1bce3f99874514199aae7504f78ebf3517",
+      "original_location": "/home/mlda/shreyas_projects/JointPoseAction/assemblyhands-toolkit",
+      "restore_location": "assemblyhands-toolkit",
+      "patch": null,
+      "custom_files": []
+    },
+    {
+      "name": "sam3d-objects",
+      "url": "https://github.com/facebookresearch/sam-3d-objects.git",
+      "commit": "f91db411c50efee93d8db7aeb323885650f6f722",
+      "original_location": "/home/mlda/shreyas_projects/JointPoseAction/3D_reconstruction/single_view/sam3d_repo",
+      "restore_location": "3D_reconstruction/single_view/sam3d_repo",
+      "patch": "reproducibility/upstreams/sam3d-objects/local-modifications.patch",
+      "custom_files": [
+        {
+          "snapshot": "reproducibility/upstreams/sam3d-objects/custom_inference.py",
+          "restore_as": "custom_inference.py",
+          "sha256": "7c0a5cddb5b880ab4c3409152f74c1efcb6068ccaf3343ec25e3f93a55ab6c84"
+        }
+      ]
+    },
+    {
+      "name": "sam2",
+      "url": "https://github.com/facebookresearch/sam2.git",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "original_location": "/home/mlda/shreyas_projects/sam2",
+      "restore_location": "../sam2",
+      "patch": null,
+      "custom_files": []
+    }
+  ],
+  "annotation_source": {
+    "path": "mistake_repo/annots",
+    "url": "https://github.com/assembly-101/assembly101-mistake-detection",
+    "commit": null,
+    "note": "Data-only directory; exact upstream revision unknown. Original CSV bytes preserved."
+  }
+}

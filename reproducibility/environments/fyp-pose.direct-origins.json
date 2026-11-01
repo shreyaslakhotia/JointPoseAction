@@ -1,0 +1,37 @@
+[
+  {
+    "name": "SAM-2",
+    "version": "1.0",
+    "direct_url": {
+      "dir_info": {
+        "editable": true
+      },
+      "url": "file:///home/mlda/shreyas_projects/sam2",
+      "note": "Original local build/editable path; replace using upstream restore instructions."
+    }
+  },
+  {
+    "name": "torch",
+    "version": "2.14.1",
+    "direct_url": null
+  },
+  {
+    "name": "torchvision",
+    "version": "0.29.1",
+    "direct_url": null
+  },
+  {
+    "name": "pip",
+    "version": "26.2.1",
+    "direct_url": {
+      "dir_info": {},
+      "url": "file:///home/task_178792879927882/croot/pip_1787928831568/work",
+      "note": "Original local build/editable path; replace using upstream restore instructions."
+    }
+  },
+  {
+    "name": "hydra-core",
+    "version": "1.3.7",
+    "direct_url": null
+  }
+]
