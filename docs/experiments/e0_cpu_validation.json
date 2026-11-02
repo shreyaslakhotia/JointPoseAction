@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-02",
+  "execution": "local CPU only",
+  "python": "3.12.16",
+  "torch": "2.15.0+cpu",
+  "numpy": "2.5.4",
+  "unit_tests_passed": 24,
+  "unit_tests_failed": 0,
+  "measured_suite_seconds": 4.842,
+  "optimizer_steps": 0,
+  "gpu_jobs_submitted": 0,
+  "real_examples_processed": 0,
+  "source_sha256": {
+    "e0/__init__.py": "bc4434307a229b3b15a4f7ef6935edb088e7f1d943c5c6f739199bd7572e2f4c",
+    "e0/acquisition.py": "6d2b8e46a07826bbf06be59104c2d834dc5a5f1e3f1c00f4b3d4b13bab27ee0c",
+    "e0/data.py": "06f18caebdb392cbe04e80940c929c0a8fcb5e193f6bd385f8be085b2c8f8d2b",
+    "e0/evaluate.py": "04745f5c8645337a07808e036bb0637ed67edb3cc983e8b63ff15e66da4a228f",
+    "e0/metrics.py": "fb1fea1a3d009b5cd1e74748d33fa0d8e2faea12a08e50342b11a6f8ec7580d0",
+    "e0/model.py": "59882622836d9761b64504f76a41cf141d0a79adc1dfcd38622fdb650d267118",
+    "e0/plots.py": "150c7859da3d976a4499e0f0ca20e7f09a4bdfdb313a2e1a352a971f30c4c278",
+    "e0/preprocess.py": "99c9546a7d7644531aa751bedf646916526a7d976693cbc6711e7869e99d1f87",
+    "e0/runtime.py": "2bf19b92e5c1e25ce3fb9b8491a7bf6b6954a7944c726399216bbbe37e6f6f4e",
+    "e0/train.py": "b8c132e38bbc4128472589536753e9d53ed0202b012222cc3d69942ef4307b09",
+    "tests/test_e0.py": "924ad5654e100ad86d6b4be2efc9494676133a4017d7b25ec7f08b9f1d62f834"
+  },
+  "limitations": [
+    "Cluster pins not tested by this local run; inspection CPU job reruns tests",
+    "No real CSV payload, cleaned pose sample or training/evaluation run locally",
+    "Public-source probe succeeds; gated small-file request returned HTTP 401"
+  ]
+}

@@ -1,5 +1,10 @@
 # JointPoseAction
 
+**E0 CPU implementation:** [dataset contract](docs/experiments/E0_DATASET.md),
+[TCN and reproduction interfaces](docs/experiments/E0_IMPLEMENTATION.md), and
+[results/readiness status](docs/experiments/E0_RESULTS.md). Real data and GPU
+validation are still pending; no E0 training has run.
+
 **Current Phase 1A migration:** see [migration status](docs/cluster/MIGRATION_STATUS.md),
 [resource discovery](docs/cluster/RESOURCE_DISCOVERY.md), and
 [dataset sources](docs/data/DATASET_SOURCES.md). Only the dedicated

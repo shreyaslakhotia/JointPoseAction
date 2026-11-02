@@ -1,5 +1,13 @@
 # Phase 1B execution checkpoint — setup before E0
 
+Latest checkpoint: the user completed clone/setup submission; installation job
+241924 finished `COMPLETED / 0:0`, GPU job 241925 remains queued. Do not rerun
+the historical setup batch below. CPU E0 pipeline/model/tests are implemented
+under `e0/` and `tests/`; the immediate next task is authenticated CPU metadata
+inspection using `e0_inspect.sbatch`, not a new GPU submission or training.
+The user approved exactly 183,299,707 bytes of split/mapping metadata. Full pose
+archive/video downloads remain unauthorized. See `docs/experiments/E0_DATASET.md`.
+
 Baseline migration revision `dc9d95c992a9a380bd3c67fb47c409a9d5223a0d` was checked
 against GitHub. Work continues on dedicated `development/e0-baseline`. The user
 has authorized minimal cluster setup and a real E0 training/evaluation pipeline.

@@ -44,11 +44,12 @@ the successful JSON result; an empty error file alone is insufficient evidence.
 
 | Field | Result |
 |---|---|
-| Submission / job ID | Not submitted / none |
-| Environment | Not installed |
-| GPU / CUDA operation | Not tested |
-| Output/error logs | None |
-| Exit status | No execution |
+| Installation job | 241924; user accounting `COMPLETED`, `0:0` |
+| Environment | Install-script checks passed by exit status; exact exports/logs awaiting review |
+| GPU smoke job | 241925, queued on L40 at latest user status; unchanged |
+| GPU / CUDA operation | No successful execution reported |
+| Output/error logs | Expected `logs/jpa-install-241924.{out,err}` and `logs/jpa-smoke-241925.{out,err}`; contents not reviewed |
+| GPU exit status | Pending |
 
 Local syntax checks do not validate Bash/module behavior, node drivers, kernel
 architecture support or Slurm acceptance. All remain pending actual execution.

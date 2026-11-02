@@ -4,6 +4,13 @@ This is a documentation review, not evidence of dataset file acquisition.
 Source pages were reviewed live. File revisions/hashes and schemas requiring
 sample contents remain unverified. Existing Phase 0 findings are dated evidence.
 
+Update: public HF API inspection pinned the revision and exact official metadata
+sizes; unauthenticated small-file retrieval returned HTTP 401. The user approved
+183.30 MB official CSV/mapping acquisition on the cluster. The released cleaned
+reader contract and temporal formula were inspected at pinned source revisions.
+See `docs/experiments/E0_DATASET.md` for current evidence, implementation and
+unresolved sample/units/timing checks. No full pose archive or video was downloaded.
+
 ## Official distribution and access
 
 The [Assembly101 project](https://assembly-101.github.io/) links its

@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "batch_size": 32,
+  "epochs": 60,
+  "patience": 10,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "class_weighting": "none",
+  "model": {
+    "width": 64,
+    "dilations": [1, 2, 4],
+    "dropout": 0.2
+  }
+}

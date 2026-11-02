@@ -1,0 +1,31 @@
+{
+  "status": "blocked_pending_real_sample_validation",
+  "dataset_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+  "actions": {"path": null, "sha256": null},
+  "splits": {
+    "train": {"path": null, "sha256": null},
+    "validation": {"path": null, "sha256": null},
+    "test": {"path": null, "sha256": null}
+  },
+  "recordings": {},
+  "pose_profile": {
+    "status": "reader_contract_verified_sample_unverified",
+    "schema": "assembly101_cleaned_landmarks3D",
+    "hand_keys": ["0", "1"],
+    "hand_order": ["left", "right"],
+    "wrist_index": 5,
+    "joint_order": [],
+    "units_to_m": null,
+    "coordinate_frame": null,
+    "pose_fps": 60,
+    "annotation_fps": 30,
+    "annotation_index_base": null,
+    "pose_frame_offset": null,
+    "end_inclusive": null,
+    "zero_is_invalid": null,
+    "evidence": [
+      "HandFormer 640a10a6bd03f85842a2662e67cf30444ab1d673 Preprocess/1_get_clip_data.py",
+      "Actual cleaned sample, physical units and timing endpoint/origin evidence still required"
+    ]
+  }
+}
