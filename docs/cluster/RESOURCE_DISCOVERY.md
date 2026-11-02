@@ -1,7 +1,30 @@
 # Resource discovery — 2 November 2026
 
-Status: user password login confirmed; account/QOS and dedicated SSD allocation
-confirmed by user-supplied terminal output. Live nodes and storage path checks pending.
+Status: user password login, account/QOS, dedicated SSD canonical path, live GPU
+models, Conda and GitHub access confirmed by user terminal output. Installation
+and GPU execution remain pending.
+
+## Phase 1B evidence update
+
+- `readlink -f /projects/jointposeaction` returned `/projects/_ssd/jointposeaction`.
+  `ls -ld` showed the project link owned by `shreyas010`.
+- `conda --version` after loading Miniforge: `conda 24.11.3`.
+- `git --version`: `2.43.0`.
+- Cluster `git ls-remote` returned migration branch
+  `dc9d95c992a9a380bd3c67fb47c409a9d5223a0d`. A fresh local remote query confirmed
+  that revision before creating `development/e0-baseline`.
+- `sinfo` lists CPU nodes and `l40`, `pro6000`, `rtx5090`, `6000ada`, `a40`,
+  `a6000`, `gh200`. L40 and one PRO 6000 node were mixed; other permitted GPU
+  nodes were allocated. GH200 was idle but is not established as allowed by the
+  user's QOS rows, so it is not selected.
+- Plan: CPU install followed by one normally queued L40 smoke test. Snapshot
+  occupancy is not a reason to change QOS, reserve idle GPUs or benchmark hardware.
+- HF dataset access conditions: user confirmed approval; cluster token/session
+  authentication and file access remain untested. No credentials were requested.
+
+No need to repeat these read-only queries. The previous next-verification batch
+below is historical and superseded. Follow `PHASE1B_EXECUTION.md` for the next
+clone/setup step. Directory writability is checked by the bootstrap itself.
 
 ## Current verified evidence (user terminal)
 

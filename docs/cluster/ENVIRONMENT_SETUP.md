@@ -2,8 +2,9 @@
 
 ## Confirmed target and budget
 
-Dedicated project: `jointposeaction`, 50 GB SSD, created by the user. Expected
-path `/projects/jointposeaction`; canonical tier/access checks still pending.
+Dedicated project: `jointposeaction`, 50 GB SSD, created by the user. User terminal
+output confirms `/projects/jointposeaction` resolves to
+`/projects/_ssd/jointposeaction`; bootstrap will check directory writability.
 Independent projects are outside scope. No HDD allocation is required yet.
 
 Keep the repository at `repo/` and all newly downloaded/processed data in sibling
@@ -27,7 +28,61 @@ bash scripts/cluster/create_workspace.sh
 Prepared source has not been run on the cluster. It fails if the expected SSD
 mapping differs; inspect the actual mapping rather than weakening the guard.
 
-## Minimal installation plan — awaiting review and live nodes
+## Phase 1B installation procedure — executable, not yet run
+
+The user supplied live nodes: `l40`, `a40`, `a6000`, `6000ada`, `pro6000` and
+`rtx5090` match permitted QOS models. L40 had a mixed node in that snapshot;
+availability may change. Queue one L40 smoke test normally; no hardware benchmark
+or wait for an idle preferred model. The idle GH200 is not established as a
+permitted GPU by the user's QOS evidence and is not selected.
+
+`install_environment.sbatch` installs on a two-CPU compute allocation (45-minute
+limit), then `submit_setup.sh` submits a dependent five-minute, one-L40 test.
+The GPU is allocated only after CPU setup succeeds. Invalid dependencies are
+cancelled. Submission errors stop the helper; inspect any installation job
+already submitted rather than trying alternate scheduler flags. A persistent
+submission marker prevents accidental duplicate jobs.
+
+The clean prefix remains `environments/phase1a` to reuse the existing smoke-test
+contract; its historical name does not imply a second environment is required.
+Existing/partial prefixes are never overwritten automatically.
+
+Direct scientific/data pins are in
+`reproducibility/environments/e0-requirements.txt`. Python is constrained to 3.12
+and PyTorch to 2.14.1 from the official `cu130` index. Scientific requirements use
+PyPI and wheel-only installation. NumPy 2.2.6 is deliberately below 2.3, satisfying
+OpenCV 4.12's NumPy constraint for Python 3.12. NumPy, SciPy, pandas, OpenCV and
+PyTorch CPU bridge imports are checked together, followed by `pip check` and the
+separate GPU kernel check. No torchvision is needed. No compiler or system CUDA
+installation is performed. Versioned package metadata was inspected on PyPI.
+
+Compatibility basis: the current cluster guide reports driver 595 supporting
+CUDA 13.x, and the official PyTorch version page lists 2.14.1/cu130. The selected
+L40 is supported by this CUDA generation. The actual node's CUDA driver API
+version and GPU capability are logged during the smoke test, and a real kernel
+operation must succeed. Documentation is compatibility evidence, not a substitute
+for that execution result.
+
+Installation records under `logs/environment-JOB_ID/` include source commit,
+requirements, pip installation reports, source-integrity output, Conda explicit
+specification/environment export and pip freeze. Those exports pin the resolved
+Python patch and transitive dependencies; direct pins alone are not a full lock.
+Nothing has been installed on the cluster by preparing these files.
+
+From a clean cluster clone of the reviewed E0 branch:
+
+```bash
+bash scripts/cluster/submit_setup.sh
+```
+
+This installs the minimal environment and submits the dependent GPU check.
+Expected peak space remains approximately 15 GB environment/repository plus
+5 GB installation scratch, not measured yet. Pip wheel caching is disabled to
+avoid retaining duplicate large CUDA downloads; all other caches remain on SSD.
+Retain failures and partial state for diagnosis. No dataset/model downloads run
+as part of setup.
+
+## Historical planning notes (superseded by the executable procedure above)
 
 Use module `Miniforge3/24.11.3-1` and a prefix environment at
 `/projects/jointposeaction/environments/phase1a`, Python 3.12. Install only NumPy,

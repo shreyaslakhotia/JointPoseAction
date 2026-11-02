@@ -27,6 +27,14 @@ def main():
         raise RuntimeError("CUDA unavailable in Slurm job")
     result["gpu"] = torch.cuda.get_device_name(0)
     result["capability"] = torch.cuda.get_device_capability(0)
+    # Driver compatibility is finally established by the kernel check below;
+    # record the driver's version through the CUDA driver API when available.
+    import ctypes
+    driver = ctypes.CDLL("libcuda.so.1")
+    version = ctypes.c_int()
+    if driver.cuDriverGetVersion(ctypes.byref(version)) != 0:
+        raise RuntimeError("CUDA driver version query failed")
+    result["driver_cuda_api_version"] = version.value
     # Matrix multiplication exercises an actual GPU kernel, not just enumeration.
     a = torch.ones((32, 32), device="cuda")
     product = a @ a

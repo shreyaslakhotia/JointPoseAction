@@ -1,5 +1,10 @@
 # Slurm validation — prepared, not submitted
 
+Phase 1B: live L40 availability/model and canonical SSD path were supplied.
+Use `bash scripts/cluster/submit_setup.sh` for CPU installation plus a dependent
+one-L40 smoke test. See `PHASE1B_EXECUTION.md`. No fresh hardware discovery is
+required. Actual execution ledger below is unchanged until jobs finish.
+
 The user association is `ug-proj`, default QOS `ug`. One GPU is sufficient.
 Live node/GRES output is still missing, so no model is silently selected.
 
