@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-11-02",
+  "baseline_commit": "5567cb1d6b6bb2b445a0fd3244dc7ee79c4b4b26",
+  "preservation": {
+    "exact": 1,
+    "crlf_only_with_matching_committed_blob": 19,
+    "deferred_patch_entries": 2
+  },
+  "small_artifacts": {
+    "exact": 326,
+    "crlf_only_with_matching_committed_blob": 214
+  },
+  "syntax": {
+    "tracked_python_files": 10,
+    "notebook_code_cells": 6,
+    "tracked_json_files": 15
+  },
+  "separate_yaml_check": {
+    "parsed_files": 15,
+    "parser": "PyYAML 6.0",
+    "interpreter": "C:/anaconda/python.exe"
+  },
+  "failures": [],
+  "limits": [
+    "Checker was new and untracked during this run; checked separately before commit",
+    "Patch-only vendor modifications were not reconstructed in this session",
+    "No runtime imports of research source or cluster compute were tested",
+    "CRLF-only working files are not byte-identical to original Linux files"
+  ]
+}
