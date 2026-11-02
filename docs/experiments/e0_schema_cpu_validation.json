@@ -1,15 +1,19 @@
 {
   "date": "2026-11-02",
   "execution": "local CPU only",
-  "tests_passed": 28,
+  "tests_passed": 29,
   "tests_failed": 0,
-  "measured_suite_seconds": 4.759,
+  "measured_suite_seconds": 5.634,
   "new_regressions": [
     "Finite zero-valued wrist preserved as a possible reference origin",
-    "Cached official-metadata/pose-inventory intersection and training-only class selection"
+    "Cached official-metadata/pose-inventory intersection and training-only class selection",
+    "Full-recording diagnostics preserve zero coordinates and distinguish gaps from stationary adjacent frames"
   ],
-  "cluster_tests_previously_passed": 26,
-  "cluster_test_job": "242218",
+  "cluster_tests_previously_passed": 28,
+  "cluster_test_job": "242713",
+  "cluster_suite_seconds": 2.585,
+  "cluster_job_state": "COMPLETED",
+  "cluster_exit_code": "0:0",
   "training_runs_submitted": 0,
   "additional_gpu_jobs_submitted": 0,
   "training_ready": false,

@@ -35,8 +35,9 @@ quality exclusions. Test data will not be used for model or hyperparameter selec
 ## Actual cleaned sample evidence and limits
 
 The inspected cleaned archive has 337 landmarks3D JSON members: total compressed
-7,789,211,135 bytes and unpacked 22,415,512,050 bytes. This does not establish which
-337 overlap the 361 annotated recordings. The full archive was not acquired;
+7,789,211,135 bytes and unpacked 22,415,512,050 bytes. CPU job 242713 established
+that all 337 overlap official annotated recordings: 196 train, 58 validation,
+83 test. The full archive was not acquired;
 bounded inspection transferred 691,850 bytes.
 
 The first three sampled JSON entries have frame keys 1000/1001/1002 and two 21x3
@@ -79,3 +80,62 @@ without a materially ambiguous feature transformation. The user authorized a tin
 sanity/overfit run and one single-GPU baseline once those checks pass; no additional
 permission question is needed for those already-authorized runs. No run has been
 submitted at this checkpoint, and no result is claimed.
+
+## Feasibility result: CPU job 242713
+
+User-supplied logs establish `COMPLETED`, `0:0`, 14 seconds, with all 28 CPU
+unit/synthetic tests passing in 2.585 seconds. The saved detailed report is
+`/projects/jointposeaction/data/annotations/e0-feasibility-242713.json`.
+
+| Official split | Pose-available recordings | Pose-available segments | Candidate segments, 100 classes |
+|---|---:|---:|---:|
+| Train | 196 / 211 | 45,029 / 47,651 | 28,457 |
+| Validation | 58 / 62 | 14,926 / 15,699 | 9,060 |
+| Test | 83 / 88 | 20,954 / 21,934 | 13,256 |
+
+The candidate contains 50,773 segments. Vocabulary selection used training counts
+only (minimum 50 training examples, maximum 100 classes); these counts precede
+pose-quality and temporal-boundary exclusions. Per-class evaluation support is
+in the detailed report and must be reviewed before finalizing the corpus. Official
+recording-disjoint membership is retained; participant-independent performance
+must not be claimed.
+
+All 337 cleaned members are needed for this candidate: 7.789 GB compressed or
+22.416 GB extracted. Raw float32 features have a 2.808 GB upper bound before file
+overheads; labels, indexes, checkpoints, caches and the existing environment need
+additional space. These are decimal GB. Do not retain both a large archive and
+the extracted corpus without measuring dedicated-project free quota first.
+No full pose member or video was downloaded by the feasibility job.
+
+Training toy names are all the placeholder `-`; this is missing metadata, not
+one toy category. Validation/test list 14/15 named categories. Do not infer train
+toy diversity from this field or use evaluation categories to select classes.
+
+The right wrist is zero in frames 1000, 1001 and 1002; wrist-to-index-proximal
+distance is approximately 99.1133 source units for both hands. These diagnostics
+do not verify units or distinguish a valid origin from a stale/default pose.
+In particular, three frames with zero wrist position do not prove missingness.
+Preserve zeros, do not invent tracking confidence, and inspect complete training
+recordings with companion transforms before validating motion features.
+
+Training remains blocked on physical/reference-frame semantics, missing/stale pose
+conventions and real recording origin/endpoint checks. The next bounded acquisition
+must report member sizes first and read complete members with ZIP CRC verification.
+No new feasibility sweep or GPU reservation is needed.
+
+The subsequent user-supplied summary confirms all 100 selected classes occur in
+every split. Minimum class support is 96 train / 9 validation / 17 test; only one
+validation class has fewer than ten examples. Candidate participant counts are
+47 / 35 / 40. This supports retaining the training-selected vocabulary, with
+per-class uncertainty acknowledged and support rechecked after quality exclusions.
+
+`e0_validate_samples.sbatch` prepares the next CPU inspection. The three smallest
+training members total exactly 4,938,281 compressed bytes and 15,757,192 extracted
+bytes, as reported before acquisition. Hard-coded size checks refuse a changed
+plan; HTTP ranges are capped at 8,000,000 bytes including ZIP directory/header
+overhead, with no full-archive fallback. Each complete member is read through EOF
+for ZIP CRC verification and hashed. Companion files are inventoried only. The
+report compares candidate base/endpoint mappings without automatically selecting
+one or changing the production profile. It counts zero wrists and exact stationary
+runs as observations, never as invented confidence or invalidity labels. This
+inspection has not executed at the time of this repository update.

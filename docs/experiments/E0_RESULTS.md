@@ -1,5 +1,13 @@
 # E0 results — no trained-model results yet
 
+Current checkpoint, 2 November 2026: GPU smoke 241925 passed on L40S; authenticated
+metadata inspection 242218 passed; cached feasibility job 242713 completed `0:0`
+in 14 seconds with all 28 CPU tests passing in 2.585 seconds. The 100-class candidate
+has 28,457 / 9,060 / 13,256 train / validation / test segments before pose-quality
+exclusions. Units/reference-frame, validity conventions and full-recording temporal
+alignment still block training. See [E0_SCHEMA_VALIDATION.md](E0_SCHEMA_VALIDATION.md).
+The historical engineering snapshot below is superseded where it differs.
+
 No E0 training or real-data evaluation has run. Top-1, Top-5, verb/noun accuracy,
 F1, confusion matrices and learning curves are **not measured**. No checkpoint
 or performance figure is presented as a result.

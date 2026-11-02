@@ -318,6 +318,30 @@ class ModelMetricTests(unittest.TestCase):
 
 
 class AcquisitionTests(unittest.TestCase):
+    def test_full_sample_diagnostics_preserve_zero_and_report_gaps_and_staleness(self):
+        from scripts.data.e0_validate_samples import diagnose
+        frames = {}
+        for key in (0, 1, 3, 4):
+            frame = np.ones((2, 21, 3))
+            frame[0] *= key + 1
+            frame[1, 5] = 0  # Possible origin: not a missing-hand label.
+            frames[key] = frame
+        before = {k: v.copy() for k, v in frames.items()}
+        r = diagnose(frames, [{"start_frame": 0, "end_frame": 2}])
+        self.assertEqual(r["minimum_frame_id"], 0)
+        self.assertEqual(r["missing_ids_inside_recording_bounds"], 1)
+        self.assertEqual(r["hands"][1]["zero_wrist_frames"], 4)
+        self.assertEqual(r["hands"][1]["all_zero_hand_frames"], 0)
+        self.assertEqual(r["hands"][1]["exactly_unchanged_adjacent_pairs"], 2)
+        self.assertEqual(r["hands"][1]["longest_exactly_unchanged_run_frames"], 2)
+        inclusive = next(x for x in r["candidate_mappings"]
+                         if x["annotation_index_base"] == 0 and x["end_inclusive"])
+        self.assertEqual(inclusive["examples"][0]["pose_half_open"], [0, 6])
+        self.assertEqual(inclusive["missing_pose_frames_with_overlap_counted"], 2)
+        self.assertFalse(r["tracking_validity_verified"])
+        for key in frames:
+            np.testing.assert_array_equal(frames[key], before[key])
+
     def test_server_ignoring_or_misreporting_range_is_rejected(self):
         with self.assertRaises(RuntimeError):
             validate_range_headers(200, None, 0, 10, 100)
