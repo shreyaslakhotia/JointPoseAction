@@ -1,5 +1,14 @@
 # Phase 1A migration status — 2 November 2026
 
+Latest E0 checkpoint: CPU/GPU setup and authenticated inspection 242218 passed;
+26 tests passed on cluster. Official action CSV coverage and 337 cleaned-pose
+members are established. The user selected official recording-disjoint splits
+and authorized one sanity test plus one baseline run after validity gates pass.
+Finite zeros are preserved; unknown coordinate/validity/time semantics still
+block training. A cached-data feasibility analysis is prepared, with 28 updated
+local tests passing. See `docs/experiments/E0_SCHEMA_VALIDATION.md`; historical
+stage descriptions below are superseded where they differ.
+
 **GPU validation pending; CPU environment setup completed.** User accounting
 reports installation job 241924 `COMPLETED`, `0:0`. Repository clone and exact
 commit `b5e46b1c5eebd34027ee9e148c767ff70ef0c666` check succeeded on cluster.

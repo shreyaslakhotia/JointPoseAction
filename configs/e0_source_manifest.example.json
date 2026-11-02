@@ -22,7 +22,7 @@
     "annotation_index_base": null,
     "pose_frame_offset": null,
     "end_inclusive": null,
-    "zero_is_invalid": null,
+    "zero_is_invalid": false,
     "evidence": [
       "HandFormer 640a10a6bd03f85842a2662e67cf30444ab1d673 Preprocess/1_get_clip_data.py",
       "Actual cleaned sample, physical units and timing endpoint/origin evidence still required"

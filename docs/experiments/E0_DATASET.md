@@ -1,5 +1,12 @@
 # E0 dataset — source contract implemented; real coverage pending
 
+Latest user evidence: cluster job 242218 parsed all official label metadata,
+passed 26 tests, inventoried 337 cleaned pose members and sampled three actual
+frames. The official recording-disjoint protocol is now selected; participant
+overlap is reported. Finite zero coordinates are preserved. See
+`E0_SCHEMA_VALIDATION.md` for current measurements and unresolved semantic checks;
+earlier planning defaults below are superseded by that checkpoint.
+
 Reviewed 2 November 2026. No real E0 examples have been preprocessed. This report
 distinguishes public inventory, released reader behavior and actual file validation.
 

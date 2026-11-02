@@ -7,6 +7,8 @@ from pathlib import Path
 import tempfile
 import unittest
 import zipfile
+import contextlib
+from unittest.mock import patch
 
 import numpy as np
 import torch
@@ -70,6 +72,34 @@ def fixture(root):
 
 
 class DataTests(unittest.TestCase):
+    def test_cached_feasibility_joins_pose_inventory_and_selects_from_train(self):
+        from scripts.data.e0_feasibility import main
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            m = fixture(root)
+            train_path = Path(m["splits"]["train"]["path"])
+            with train_path.open(newline="") as stream:
+                reader = csv.DictReader(stream)
+                columns, original = reader.fieldnames, list(reader)
+            rows = [{**original[i % 2], "id": i} for i in range(100)]
+            write_csv(train_path, columns, rows)
+            files = [{"name": "actions.csv", **m["actions"]}]
+            files += [{"name": f"{split}.csv", "path": entry["path"], "sha256": sha256(entry["path"])} for split, entry in m["splits"].items()]
+            sample = next(iter(m["recordings"].values()))["path"]
+            review = {"revision": "synthetic-only", "files": files,
+                      "archive": {"sample_path": sample, "cleaned_members": [
+                          {"path": f"landmarks3D/{name}.json", "compressed_bytes": 100, "uncompressed_bytes": 500}
+                          for name in m["recordings"]]}}
+            review_path, output = root / "review.json", root / "feasibility.json"
+            review_path.write_text(json.dumps(review))
+            with patch.dict("os.environ", {"SLURM_JOB_ID": "synthetic-test-not-a-job"}), patch("sys.argv", ["test", "--review", str(review_path), "--output", str(output)]), contextlib.redirect_stdout(io.StringIO()):
+                main()
+            result = json.loads(output.read_text())
+            self.assertEqual(len(result["selection"]["class_mapping"]), 2)
+            self.assertEqual(result["coverage"]["train"]["candidate_segments"], 100)
+            self.assertEqual(result["candidate_compressed_pose_bytes"], 300)
+            self.assertFalse(result["training_ready"])
+
     def test_overlapping_segments_retained_and_views_not_multiplied(self):
         with tempfile.TemporaryDirectory() as directory:
             m = fixture(Path(directory))
@@ -123,6 +153,19 @@ class DataTests(unittest.TestCase):
         b, _ = segment_features({i: x + 30 for i, x in frames.items()}, segment, profile(), 4)
         np.testing.assert_allclose(a, b)
         self.assertGreater(float(np.abs(a[-1, 126:132]).sum()), 0)
+
+    def test_zero_wrist_can_be_a_valid_origin_and_is_not_dropped(self):
+        p = profile()
+        p["zero_is_invalid"] = False
+        frames = {i: np.ones((2, 21, 3)) for i in range(4)}
+        for value in frames.values():
+            value[1, 5] = 0
+        x, quality = segment_features(frames, {"start_frame": 0, "end_frame": 1}, p, 4)
+        self.assertTrue(np.all(x[:, 132 + 21 + 5] == 1))
+        self.assertTrue(np.all(x[:, 174 + 21 + 5] == 1))
+        self.assertTrue(np.any(x[:, 63:126] != 0))
+        self.assertEqual(quality["zero_policy"], "preserved_ambiguity_not_tracking_confidence")
+        self.assertEqual(quality["zero_coordinate_joint_count"], 4)
 
     def test_recording_and_participant_leakage(self):
         s = [{"recording_id": "r1", "participant_id": "p", "split": "train"},

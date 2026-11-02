@@ -1,5 +1,12 @@
 # E0 implementation — CPU tested, no training started
 
+Authorization update: the user permits a tiny sanity/overfit run and one
+single-GPU E0 baseline once data-validity, leakage, coverage and storage gates
+pass. No new permission is needed then. Current work stops before training
+because the cleaned coordinate/validity and endpoint/origin contract remains
+unverified. Official recording-disjoint splits are retained. See
+`E0_SCHEMA_VALIDATION.md` for the current evidence checkpoint.
+
 ## Architecture choice
 
 Reviewed the official [MS-G3D baseline](https://github.com/assembly-101/assembly101-action-recognition/tree/00d3c3bb3af75ce38ae406614a7cb034aecdebc0/MS-G3D-action-recognition)

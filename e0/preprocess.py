@@ -10,8 +10,8 @@ from .data import (SPLITS, check_leakage, choose_classes, load_actions, load_seg
                    read_cleaned, require_profile, segment_features, sha256)
 
 
-def prepare(manifest, output, samples=64, min_train_examples=10, max_classes=20,
-            min_valid_fraction=0.25, participant_policy="require_disjoint", synthetic=False):
+def prepare(manifest, output, samples=64, min_train_examples=50, max_classes=100,
+            min_valid_fraction=0.25, participant_policy="report_official_overlap", synthetic=False):
     require_profile(manifest["pose_profile"], allow_unverified=synthetic)
     if not 0 <= min_valid_fraction <= 1 or min_train_examples < 1 or max_classes < 2:
         raise ValueError("Invalid preprocessing configuration")
@@ -103,10 +103,10 @@ def main():
     parser.add_argument("--manifest", required=True)
     parser.add_argument("--output", required=True)
     parser.add_argument("--samples", type=int, default=64)
-    parser.add_argument("--min-train-examples", type=int, default=10)
-    parser.add_argument("--max-classes", type=int, default=20)
+    parser.add_argument("--min-train-examples", type=int, default=50)
+    parser.add_argument("--max-classes", type=int, default=100)
     parser.add_argument("--min-valid-fraction", type=float, default=0.25)
-    parser.add_argument("--participant-policy", choices=["require_disjoint", "report_official_overlap"], default="require_disjoint")
+    parser.add_argument("--participant-policy", choices=["require_disjoint", "report_official_overlap"], default="report_official_overlap")
     args = parser.parse_args()
     artifact = prepare(json.loads(Path(args.manifest).read_text()), args.output,
                        args.samples, args.min_train_examples, args.max_classes,

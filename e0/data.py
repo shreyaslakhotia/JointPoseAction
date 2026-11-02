@@ -80,6 +80,7 @@ def load_segments(files, actions, canonical_view="C10119_rgb.mp4"):
                 segments.append({"segment_id": source_id, "recording_id": recording,
                                  "participant_id": match[1], "source_view": view, "split": split,
                                  "start_frame": start, "end_frame": end,
+                                 "toy_id": row.get("toy_id"), "toy_name": row.get("toy_name"),
                                  "action_id": action, "verb_id": verb, "noun_id": noun})
     return segments, exclusions
 
@@ -137,6 +138,8 @@ def require_profile(profile, allow_unverified=False):
         raise ValueError("Coordinate-frame and verification evidence required")
     if not allow_unverified and (profile.get("status") != "validated_real_sample" or profile.get("synthetic")):
         raise ValueError("Real preprocessing blocked until pose/sample/time contract is validated")
+    if not allow_unverified and profile["zero_is_invalid"] and not profile.get("zero_invalid_evidence"):
+        raise ValueError("Zero-as-missing requires authoritative evidence; finite zeros must otherwise be preserved")
 
 
 def pose_bounds(segment, profile):
@@ -178,6 +181,7 @@ def segment_features(frames, segment, profile, samples=64):
         if int(frame) in frames:
             xyz[t] = frames[int(frame)]
             available[t] = True
+    zero_coordinates = available[:, None, None] & np.isfinite(xyz).all(-1) & (xyz == 0).all(-1)
     valid = np.isfinite(xyz).all(-1) & available[:, None, None]
     if profile["zero_is_invalid"]:
         valid &= np.any(xyz != 0, axis=-1)
@@ -205,4 +209,6 @@ def segment_features(frames, segment, profile, samples=64):
                       "valid_joint_fraction": float(valid.mean()),
                       "valid_local_fraction": float(local_valid.mean()),
                       "missing_sampled_frames": int((~available).sum()),
+                      "zero_coordinate_joint_count": int(zero_coordinates.sum()),
+                      "zero_policy": "invalid_by_verified_rule" if profile["zero_is_invalid"] else "preserved_ambiguity_not_tracking_confidence",
                       "confidence_available": False, "origin_m": origin.tolist()}
