@@ -1,6 +1,65 @@
 # Resource discovery — 2 November 2026
 
-Status: cluster network reachable; authentication and resource discovery pending.
+Status: user password login confirmed; account/QOS and dedicated SSD allocation
+confirmed by user-supplied terminal output. Live nodes and storage path checks pending.
+
+## Current verified evidence (user terminal)
+
+- Authenticated prompt: `shreyas010@login-1`; password-based SSH succeeded.
+- `squeue --me` returned no jobs in the supplied earlier snapshot.
+- `module avail` lists `Miniforge3/24.11.3-1`, `Miniconda3/25.5.1-0`,
+  CUDA through `13.0.0`, including `12.8.0`, plus GCC modules. Module presence
+  does not establish a compute node's driver version.
+- Association: account `ug-proj`; default QOS `ug`; permitted QOS values
+  `ug,override-limits-but-killable`. Other QOS rows in the global query are not
+  evidence that this user can select those QOS values.
+- `ug`: `MaxJobsPU=2`, `MaxSubmitPU=5`; per-user GPU TRES limits below.
+  These are ceilings, not reserved capacity or a promise a submission will run.
+
+| GPU GRES model | `ug` per-user maximum | Initial recommendation |
+|---|---:|---|
+| `a40` | 2 | One GPU for smoke test / lightweight hand recognition if available |
+| `a6000` | 2 | Equivalent first-choice alternative for those tasks |
+| `l40` | 2 | Alternative for geometry processing if needed/available |
+| `6000ada` | 2 | Alternative; no demonstrated need yet |
+| `pro6000` | 2 | Future authorized large-memory inference only if justified |
+| `rtx5090` | 1 | Alternative requiring a Blackwell-compatible build |
+
+Use ordinary `ug` QOS for this phase; no need for the killable override.
+Actual `sinfo` output, current GPU occupancy, partition details and remaining
+billing allowance have not been supplied. No GPU model has been tested.
+
+Current `storagemgr` evidence: SSD allowance 150 GB, assigned 130 GB, including
+**`jointposeaction`: 50 GB assigned, 0 B used**. The user created this project.
+HDD allowance 300 GB, assigned 200 GB; no dedicated JointPoseAction HDD project.
+Other projects are explicitly outside scope: do not inspect, reuse, modify or
+clean them. The earlier suggestion to reuse independent project storage is
+superseded by this user instruction.
+
+Use only `/projects/jointposeaction`, subject to resolving its SSD tier and
+checking permissions. No extra allocation is required to begin. Budget: 15 GB
+environment/repo, 5 GB caches/install scratch, 5 GB selected metadata/poses,
+10 GB pilot source videos, 5 GB derived outputs, 10 GB free headroom. These are
+planning ceilings, not measured dataset sizes. No full archive/video download.
+
+## Next user-executed verification batch (cluster login shell)
+
+```bash
+readlink -f /projects/jointposeaction
+ls -ld /projects/jointposeaction
+test -r /projects/jointposeaction && test -w /projects/jointposeaction && test -x /projects/jointposeaction && printf 'project-access-ok\n'
+sinfo -o "%.20N %.6c %.8m %.28G %.10t"
+module load Miniforge3/24.11.3-1
+conda --version
+git --version
+git ls-remote https://github.com/shreyaslakhotia/JointPoseAction.git refs/heads/migration/phase1a-readiness
+```
+
+These commands allocate nothing and install nothing. Return the output before
+running setup jobs. Direct agent noninteractive access remains unavailable;
+successful user login does not share that authenticated session with the agent.
+
+## Historical initial connection attempt
 
 ## Actual connection evidence
 
@@ -30,7 +89,7 @@ was enabled and no host-key error occurred. No remote discovery command executed
 An unrelated local PowerShell profile execution-policy warning also appeared;
 the SSH client nevertheless reached the server. No execution policy was changed.
 
-## Verification ledger
+## Historical ledger before the user's successful login (superseded above)
 
 | Item | Verified state |
 |---|---|
@@ -48,7 +107,7 @@ Historical 100 GB SSD / 200 GB HDD allowances and previously seen GPUs are not
 current evidence. No allocation, directory creation, installation, Slurm
 submission or dataset transfer occurred.
 
-## Next batch — user terminal
+## Historical first batch — already completed in part
 
 **Windows PowerShell:**
 

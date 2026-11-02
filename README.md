@@ -1,5 +1,11 @@
 # JointPoseAction
 
+**Current Phase 1A migration:** see [migration status](docs/cluster/MIGRATION_STATUS.md),
+[resource discovery](docs/cluster/RESOURCE_DISCOVERY.md), and
+[dataset sources](docs/data/DATASET_SOURCES.md). Only the dedicated
+`jointposeaction` cluster project is in scope. Historical setup below is not the
+current environment installation procedure.
+
 **Workstation preservation / cluster restore:** start with
 [docs/MIGRATION_MANIFEST.md](docs/MIGRATION_MANIFEST.md) and
 [docs/CLUSTER_RESTORE.md](docs/CLUSTER_RESTORE.md). These record the current code,

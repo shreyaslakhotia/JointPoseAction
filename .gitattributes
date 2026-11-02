@@ -1,0 +1,3 @@
+# Keep new Linux cluster entry points usable from Windows checkouts too.
+/scripts/cluster/*.sh text eol=lf
+/scripts/cluster/*.sbatch text eol=lf

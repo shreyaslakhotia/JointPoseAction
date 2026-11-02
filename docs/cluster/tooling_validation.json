@@ -1,0 +1,26 @@
+{
+  "checked_on": "2026-11-02",
+  "execution_location": "local Windows checkout",
+  "python_ast_files": [
+    "scripts/cluster/verify_checkout.py",
+    "scripts/cluster/gpu_validate.py",
+    "scripts/data/inventory_hf.py"
+  ],
+  "bash_syntax_passed": [
+    "scripts/cluster/env.sh",
+    "scripts/cluster/create_workspace.sh",
+    "scripts/cluster/gpu_smoke.sbatch"
+  ],
+  "manifest_json": "reproducibility/datasets/phase1a_pilot.json",
+  "guard_checks_passed": [
+    "GPU validator rejects execution without SLURM_JOB_ID before importing research dependencies",
+    "HF inventory refuses execution outside dedicated SSD project cache configuration"
+  ],
+  "cluster_runtime_tested": false,
+  "environment_installed": false,
+  "dataset_downloaded": false,
+  "notes": [
+    "No Bash syntax error does not prove correct remote modules or path mappings",
+    "No GPU computation was performed by these local checks"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "blocked_pending_official_metadata_and_review",
+  "dataset": "cvml-nus/assembly101",
+  "revision": null,
+  "workspace": "/projects/jointposeaction/data",
+  "source_video_budget_bytes": 10000000000,
+  "annotation_pose_budget_bytes": 5000000000,
+  "derived_budget_bytes": 5000000000,
+  "approved_for_download": false,
+  "selections": [],
+  "required_selection_fields": [
+    "recording_id", "official_split", "camera_ids", "source_paths",
+    "annotation_start_frame", "annotation_end_frame", "annotation_fps",
+    "endpoint_convention", "pose_source", "calibration_source",
+    "expected_source_bytes", "destination", "source_revision",
+    "provenance", "validation_status"
+  ],
+  "blockers": [
+    "Dataset access not tested for user account",
+    "Official split and action CSV payloads not retrieved",
+    "Cleaned pose and matching calibration schema/sample not inspected",
+    "No exact pilot source sizes or synchronization evidence"
+  ]
+}
