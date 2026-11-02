@@ -1,5 +1,12 @@
 # E0 results — no trained-model results yet
 
+Complete-sample checkpoint: CPU job 242734 completed `0:0`, verifying all three
+reported pose members. Two sampled recordings have severe annotation/pose coverage
+mismatches under the nominal 30/60 mapping (22/28 and 302/325 segments outside
+pose bounds). Separate timestamp/confidence/transform files exist and need
+inspection. Prior inventory-based class/sample counts do not yet describe a
+validated training corpus. See the complete-sample findings in the schema report.
+
 Current checkpoint, 2 November 2026: GPU smoke 241925 passed on L40S; authenticated
 metadata inspection 242218 passed; cached feasibility job 242713 completed `0:0`
 in 14 seconds with all 28 CPU tests passing in 2.585 seconds. The 100-class candidate

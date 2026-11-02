@@ -318,6 +318,67 @@ class ModelMetricTests(unittest.TestCase):
 
 
 class AcquisitionTests(unittest.TestCase):
+    def test_companion_entrypoint_with_complete_synthetic_zip_and_pose_provenance(self):
+        from scripts.data import e0_inspect_companions as module
+        from types import SimpleNamespace
+        from unittest.mock import MagicMock
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source_dir = root / "data/annotations/e0-samples-242734"
+            source_dir.mkdir(parents=True)
+            frames = {str(t): {str(h): np.ones((21, 3)).tolist() for h in range(2)} for t in (0, 1)}
+            source = {"revision": module.REVISION, "records": [], "companion_inventory": []}
+            buffer = io.BytesIO()
+            with zipfile.ZipFile(buffer, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+                for person in (9001, 9002, 9003):
+                    rec = recording(person)
+                    path = source_dir / f"{rec}.json"
+                    path.write_text(json.dumps(frames))
+                    source["records"].append({"recording_id": rec, "path": str(path),
+                                              "sha256": sha256(path), "zip_crc_verified": True})
+                    for kind, value in (("timestamp", {"0": 1000, "1": 1017}),
+                                        ("hand_confidences", {str(t): {"0": 0, "1": 1} for t in (0, 1)}),
+                                        ("xf_transf", {str(t): {str(h): np.eye(4).tolist() for h in range(2)} for t in (0, 1)})):
+                        name = f"assembly101_camera_and_hand_poses/{kind}/{rec}.json"
+                        archive.writestr(name, json.dumps(value))
+                        info = archive.getinfo(name)
+                        source["companion_inventory"].append({"path": name, "compressed_bytes": info.compress_size,
+                                                              "uncompressed_bytes": info.file_size})
+            (source_dir / "report.json").write_text(json.dumps(source))
+            sizes = tuple(sum(m[k] for m in source["companion_inventory"]) for k in ("compressed_bytes", "uncompressed_bytes"))
+            raw = buffer.getvalue()
+            stream = io.BytesIO(raw)
+            stream.transferred = len(raw)
+            hf = SimpleNamespace(get_token=lambda: "synthetic-test-only", hf_hub_url=lambda *a, **k: "https://example.invalid",
+                                 get_hf_file_metadata=lambda *a, **k: SimpleNamespace(size=71972006749, location="https://example.invalid"))
+            def local_path(value):
+                return root if str(value) in ("/projects/jointposeaction", "/projects/_ssd/jointposeaction") else Path(value)
+            with patch.object(module, "Path", side_effect=local_path), patch.object(module, "EXPECTED_BYTES", sizes), \
+                 patch.object(module, "RangeFile", return_value=stream), \
+                 patch.dict("sys.modules", {"huggingface_hub": hf, "httpx": SimpleNamespace(Client=MagicMock())}), \
+                 patch.dict("os.environ", {"SLURM_JOB_ID": "synthetic", "HF_HOME": str(root / "cache")}), \
+                 contextlib.redirect_stdout(io.StringIO()):
+                module.main()
+            report = json.loads((root / "data/annotations/e0-companions-synthetic/report.json").read_text())
+            self.assertNotIn("failure", report)
+            self.assertEqual(len(report["records"]), 9)
+            self.assertFalse(report["training_ready"])
+            for row in report["records"]:
+                self.assertTrue(row["zip_crc_verified"])
+                self.assertEqual(row["sha256"], sha256(row["path"]))
+
+    def test_companion_confidence_association_does_not_invent_validity_mask(self):
+        from scripts.data.e0_inspect_companions import summarize
+        frames = {i: np.ones((2, 21, 3)) for i in (0, 1)}
+        frames[0][0, 5] = 0
+        r = summarize({"0": {"0": 0, "1": 1}, "1": {"0": 1, "1": 0}}, frames, "hand_confidences")
+        self.assertEqual(r["observed_score_zero_wrist_associations"][0]["zero_wrist_and_zero_score"], 1)
+        self.assertFalse(r["tracking_mask_applied"])
+        self.assertFalse(r["score_semantics_and_threshold_verified"])
+        r = summarize({"0": 10**18, "1": 10**18 + 16666667}, frames, "timestamp")
+        self.assertEqual(r["scalar_timestamp_diagnostics"]["span_source_units"], 16666667)
+        self.assertFalse(r["scalar_timestamp_diagnostics"]["timestamp_units_and_video_clock_origin_verified"])
+
     def test_sample_inspection_loads_three_official_splits_but_returns_only_train(self):
         from scripts.data.e0_validate_samples import load_training_segments
         with tempfile.TemporaryDirectory() as directory:

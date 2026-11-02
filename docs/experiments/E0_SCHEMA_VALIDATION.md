@@ -148,3 +148,47 @@ segments only for sample diagnostics. A synthetic integration regression calls
 this exact annotation-loading helper with the real three-split loader and checks
 that evaluation rows are not returned and changed hashes are refused. The archive
 transfer plan and training gate are unchanged.
+
+## Complete-sample findings: job 242734
+
+The corrected CPU job completed `0:0` in 2m34s with empty stderr. All three pose
+members were read completely, CRC-verified and SHA-256 hashed. Actual HTTP range
+traffic was 5,597,651 bytes. No video, full pose archive or GPU was used.
+
+| Training recording suffix | Pose frame IDs | Annotated segments | Outside nominal zero-base, inclusive mapping |
+|---|---|---:|---:|
+| 9031, 2021-02-04_101221 | 0 through 1386 | 28 | 22 |
+| 9086, 2021-02-16_160311 | 0 through 1771 | 14 | 0 |
+| 9026, 2021-02-03_163855 | 2 through 2956 | 325 | 302 |
+
+Each observed ID range is internally contiguous. The prefix key 1000 was not
+the recording start. Changing annotation index base by one or switching endpoint
+inclusivity does not resolve the large coverage mismatch in recordings 9031/9026.
+Do not shift, stretch, rescale time or clamp these segments to fit the poses.
+Possible causes such as partial trajectories or a distinct timestamp convention
+remain hypotheses, not conclusions. The smallest-member selection is biased toward
+short files; these three recordings do not estimate corpus-wide exclusion rates.
+The 50,773 candidate examples and their class support remain unvalidated counts.
+
+All coordinate values are finite and no hand is entirely zero, yet recording 9031
+has zero wrists in 970/1387 left frames and 553/1387 right frames, with exact
+stationary whole-hand runs of 155/69 frames. Recording 9026 has stationary runs of
+77/42 frames. Finite numeric availability is therefore insufficient to establish
+tracking validity. Zeros remain preserved; no threshold or default-pose mask is
+introduced on this evidence alone.
+
+The complete ZIP inventory revealed separate `hand_confidences`, `timestamp` and
+`xf_transf` members for all three recordings. Earlier statements about absent
+confidence apply only to the landmarks3D JSON schema, not to the whole release.
+These companions must be inspected before deciding feature masks or time alignment.
+Their total is exactly 1,335,648 compressed bytes / 3,621,046 extracted bytes.
+`e0_inspect_companions.sbatch` acquires only those nine members with a 3,000,000-byte
+HTTP range budget, complete CRC/hash checks and no full-archive fallback. It reports
+actual structures/examples, timestamp increments, pose-key intersection, scalar
+confidence/zero-wrist associations if that schema is observed, and transform
+translation/wrist residuals if 4x4 hand-keyed matrices are observed. These are
+diagnostics, not inferred units, thresholds or synchronization guarantees.
+
+Training remains blocked. No production pose profile has been marked validated,
+and no actual recognition result is available. The companion job is prepared but
+has not yet executed at this checkpoint.
