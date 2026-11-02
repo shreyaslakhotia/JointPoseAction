@@ -1,13 +1,14 @@
 {
   "date": "2026-11-02",
   "execution": "local CPU only",
-  "tests_passed": 29,
+  "tests_passed": 30,
   "tests_failed": 0,
-  "measured_suite_seconds": 5.634,
+  "measured_suite_seconds": 4.323,
   "new_regressions": [
     "Finite zero-valued wrist preserved as a possible reference origin",
     "Cached official-metadata/pose-inventory intersection and training-only class selection",
-    "Full-recording diagnostics preserve zero coordinates and distinguish gaps from stationary adjacent frames"
+    "Full-recording diagnostics preserve zero coordinates and distinguish gaps from stationary adjacent frames",
+    "Sample inspection validates all official split hashes and returns training rows only"
   ],
   "cluster_tests_previously_passed": 28,
   "cluster_test_job": "242713",

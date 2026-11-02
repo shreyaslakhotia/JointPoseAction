@@ -139,3 +139,12 @@ report compares candidate base/endpoint mappings without automatically selecting
 one or changing the production profile. It counts zero wrists and exact stationary
 runs as observations, never as invented confidence or invalidity labels. This
 inspection has not executed at the time of this repository update.
+
+First submission 242731 failed before output-directory creation or remote pose
+access: the sample script supplied only train.csv to the shared loader, which
+requires all three official split paths. The correction verifies all CSV hashes,
+loads all official splits, rechecks recording leakage, and then retains training
+segments only for sample diagnostics. A synthetic integration regression calls
+this exact annotation-loading helper with the real three-split loader and checks
+that evaluation rows are not returned and changed hashes are refused. The archive
+transfer plan and training gate are unchanged.

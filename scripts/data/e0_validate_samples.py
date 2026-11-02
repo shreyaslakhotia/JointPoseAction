@@ -8,11 +8,22 @@ import zipfile
 import numpy as np
 
 from e0.acquisition import RangeFile, validate_range_headers
-from e0.data import load_actions, load_segments, read_cleaned, sha256
+from e0.data import SPLITS, check_leakage, load_actions, load_segments, read_cleaned, sha256
 from scripts.data.inspect_e0_sources import REVISION
 
 
 EXPECTED_SIZES = [(642036, 3539785), (1665011, 4571939), (2631234, 7645468)]
+
+
+def load_training_segments(files):
+    """Validate the official three-split contract, return training diagnostics only."""
+    for name in ("actions.csv", *(f"{split}.csv" for split in SPLITS)):
+        if sha256(files[name]["path"]) != files[name]["sha256"]:
+            raise RuntimeError("Annotation hash changed")
+    actions = load_actions(files["actions.csv"]["path"])
+    segments, _ = load_segments({split: files[f"{split}.csv"]["path"] for split in SPLITS}, actions)
+    check_leakage(segments, "report_official_overlap")
+    return [s for s in segments if s["split"] == "train"]
 
 
 def diagnose(frames, segments):
@@ -85,11 +96,7 @@ def main():
     if [(m["compressed_bytes"], m["uncompressed_bytes"]) for m in members] != EXPECTED_SIZES:
         raise RuntimeError("Reported three-member size plan changed; no acquisition")
     files = {f["name"]: f for f in review["files"]}
-    for name in ("train.csv", "actions.csv"):
-        if sha256(files[name]["path"]) != files[name]["sha256"]:
-            raise RuntimeError("Annotation hash changed")
-    actions = load_actions(files["actions.csv"]["path"])
-    segments, _ = load_segments({"train": files["train.csv"]["path"]}, actions)
+    segments = load_training_segments(files)
     output = root / f"data/annotations/e0-samples-{os.environ['SLURM_JOB_ID']}"
     output.mkdir(exist_ok=False)
     report = {"revision": REVISION, "feasibility_sha256": sha256(feasibility_path),

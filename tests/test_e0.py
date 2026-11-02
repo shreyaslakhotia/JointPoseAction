@@ -318,6 +318,20 @@ class ModelMetricTests(unittest.TestCase):
 
 
 class AcquisitionTests(unittest.TestCase):
+    def test_sample_inspection_loads_three_official_splits_but_returns_only_train(self):
+        from scripts.data.e0_validate_samples import load_training_segments
+        with tempfile.TemporaryDirectory() as directory:
+            m = fixture(Path(directory))
+            files = {"actions.csv": m["actions"],
+                     **{f"{s}.csv": entry for s, entry in m["splits"].items()}}
+            segments = load_training_segments(files)
+            self.assertEqual(len(segments), 2)
+            self.assertEqual({s["split"] for s in segments}, {"train"})
+            self.assertEqual({s["recording_id"] for s in segments}, {recording(9001)})
+            files["validation.csv"] = {**files["validation.csv"], "sha256": "changed"}
+            with self.assertRaisesRegex(RuntimeError, "hash changed"):
+                load_training_segments(files)
+
     def test_full_sample_diagnostics_preserve_zero_and_report_gaps_and_staleness(self):
         from scripts.data.e0_validate_samples import diagnose
         frames = {}
