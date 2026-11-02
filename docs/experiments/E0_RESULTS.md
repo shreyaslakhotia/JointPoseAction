@@ -1,5 +1,11 @@
 # E0 results — no trained-model results yet
 
+Current decision after successful companion job 242754: exclude recordings 9031
+and 9026 instead of attempting recovery; use source hand-confidence scores to mask
+zero-score hands, preserving zero coordinates when scores are positive. Per-recording
+cadence and segment-boundary checks are implemented. Final corpus coverage and
+feature-unit/reference-time documentation remain pending; no training has run.
+
 Complete-sample checkpoint: CPU job 242734 completed `0:0`, verifying all three
 reported pose members. Two sampled recordings have severe annotation/pose coverage
 mismatches under the nominal 30/60 mapping (22/28 and 302/325 segments outside

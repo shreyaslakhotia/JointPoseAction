@@ -167,7 +167,7 @@ def read_cleaned(path):
     return frames
 
 
-def segment_features(frames, segment, profile, samples=64):
+def segment_features(frames, segment, profile, samples=64, confidences=None):
     """Nearest-frame sampling without interpolation, smoothing or gap filling."""
     if samples < 2:
         raise ValueError("At least two temporal samples required")
@@ -183,6 +183,14 @@ def segment_features(frames, segment, profile, samples=64):
             available[t] = True
     zero_coordinates = available[:, None, None] & np.isfinite(xyz).all(-1) & (xyz == 0).all(-1)
     valid = np.isfinite(xyz).all(-1) & available[:, None, None]
+    if confidences is not None:
+        # Zero score is an explicit conservative exclusion policy, not a calibrated
+        # probability or a zero-coordinate heuristic. Missing scores are unavailable.
+        score_valid = np.zeros((samples, 2), dtype=bool)
+        for t, frame in enumerate(indices):
+            if int(frame) in confidences:
+                score_valid[t] = np.asarray(confidences[int(frame)]) > 0
+        valid &= score_valid[..., None]
     if profile["zero_is_invalid"]:
         valid &= np.any(xyz != 0, axis=-1)
     xyz = np.where(valid[..., None], xyz, 0) * profile["units_to_m"]
@@ -211,4 +219,6 @@ def segment_features(frames, segment, profile, samples=64):
                       "missing_sampled_frames": int((~available).sum()),
                       "zero_coordinate_joint_count": int(zero_coordinates.sum()),
                       "zero_policy": "invalid_by_verified_rule" if profile["zero_is_invalid"] else "preserved_ambiguity_not_tracking_confidence",
-                      "confidence_available": False, "origin_m": origin.tolist()}
+                      "confidence_available": confidences is not None,
+                      "confidence_policy": "positive_source_hand_score" if confidences is not None else None,
+                      "origin_m": origin.tolist()}

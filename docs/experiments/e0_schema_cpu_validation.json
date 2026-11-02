@@ -1,16 +1,19 @@
 {
   "date": "2026-11-02",
   "execution": "local CPU only",
-  "tests_passed": 32,
+  "tests_passed": 35,
   "tests_failed": 0,
-  "measured_suite_seconds": 4.351,
+  "measured_suite_seconds": 7.023,
   "new_regressions": [
     "Finite zero-valued wrist preserved as a possible reference origin",
     "Cached official-metadata/pose-inventory intersection and training-only class selection",
     "Full-recording diagnostics preserve zero coordinates and distinguish gaps from stationary adjacent frames",
     "Sample inspection validates all official split hashes and returns training rows only",
     "Companion entrypoint extracts nine complete synthetic ZIP members, verifies provenance and writes reports",
-    "Confidence diagnostics preserve uncertainty and large integer timestamp differences"
+    "Confidence diagnostics preserve uncertainty and large integer timestamp differences",
+    "Source confidence masks preserve positive-score zero wrists",
+    "Synthetic preprocessing checks hashed confidence and timestamp companions",
+    "Acquisition plan excludes known-bad recordings before training-only vocabulary selection"
   ],
   "cluster_tests_previously_passed": 28,
   "cluster_test_job": "242713",
@@ -21,8 +24,12 @@
   "complete_sample_job_state": "COMPLETED",
   "complete_sample_crc_verified_members": 3,
   "complete_sample_range_bytes": 5597651,
+  "companion_job": "242754",
+  "companion_job_state": "COMPLETED",
+  "companion_crc_verified_members": 9,
+  "companion_range_bytes": 1995885,
   "training_runs_submitted": 0,
   "additional_gpu_jobs_submitted": 0,
   "training_ready": false,
-  "reason": "Large nominal annotation/pose coverage mismatch in two sampled recordings; companion timestamps, confidences and transforms must resolve alignment and validity"
+  "reason": "Two anomalous recordings are excluded; final retained corpus coverage and feature-unit/reference-time contract remain pending"
 }

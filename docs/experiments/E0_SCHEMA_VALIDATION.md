@@ -192,3 +192,51 @@ diagnostics, not inferred units, thresholds or synchronization guarantees.
 Training remains blocked. No production pose profile has been marked validated,
 and no actual recognition result is available. The companion job is prepared but
 has not yet executed at this checkpoint.
+
+## Companion findings and exclusion decision: job 242754
+
+The companion job completed `0:0` in 53 seconds; all nine members passed CRC/hash
+checks, with 1,995,885 range bytes transferred. Companion keys exactly matched the
+pose keys in each recording. Observations:
+
+- 9031 timestamps span 74.8 source units across 1387 frames; increments are
+  approximately 0.049-0.067, incompatible with a uniform 60 FPS interpretation.
+- 9026 timestamps span 49.234 units across 2955 frames, with 0.016-0.017 increments,
+  but most official action segments extend past the available pose sequence.
+- 9086 timestamps span 29.517 units across 1772 frames, with 0.016-0.017 increments;
+  all 14 official segments fit the nominal reader mapping.
+- Every zero wrist coincides with score zero, and every nonzero wrist has nonzero
+  score, for both hands in all three recordings. Identity-transform counts match
+  those zero-score counts. Transform translations equal pose wrists exactly.
+
+The user prefers exclusions over expensive recovery of anomalous samples. The
+implemented policy therefore excludes entire recordings 9031 and 9026, with exact
+IDs/reasons in `e0/quality.py`. It does not infer a clock warp or retain only a
+convenient fragment of those known-bad recordings. At most 335 of the original
+337 pose-available recordings remain before further checks; no retained count or
+class-support claim is made without recomputation.
+
+Preprocessing now requires hashed timestamp and hand-confidence companions for
+real recordings. The operational confidence policy is score > 0: zero-score hands
+are masked, without claiming a calibrated probability or producer-certified
+threshold. This conservative policy is supported by the observed zero-score /
+identity-transform / default-wrist association. Finite zero coordinates with a
+positive score remain valid. Coordinates alone never determine missingness.
+Nonfinite or out-of-range scores are rejected. Source masks and local masks keep
+the 216-feature interface unchanged; E3 is not implemented.
+
+For the nominal 60 FPS path, per-step timestamp change must match frame-ID change
+divided by 60 within 0.002 seconds (allows the observed millisecond rounding).
+This is a conservative selection rule, not proof of video clock origin. Recordings
+with incompatible cadence or mismatched companion keys are excluded with reasons;
+segments outside pose bounds are excluded without clipping or stretching. Official
+splits are preserved, vocabulary remains training-only, and final support must
+pass preprocessing gates. Test performance does not guide any exclusion.
+
+`e0_plan_acquisition.sbatch` inventories the remaining pose/confidence/timestamp
+members, recomputes candidate coverage after the two exclusions, and reports exact
+compressed/uncompressed bytes before bulk acquisition. It reads the ZIP directory
+only (maximum 2 MB); it downloads no members and requests no GPU. Deep diagnosis of
+the two excluded recordings is closed. Feature units and the reference temporal
+contract still need explicit documentation before a real profile is validated;
+the prepared acquisition plan is not permission to bypass those gates.

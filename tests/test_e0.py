@@ -72,6 +72,65 @@ def fixture(root):
 
 
 class DataTests(unittest.TestCase):
+    def test_source_confidence_masks_hand_without_masking_positive_score_zero_wrist(self):
+        p = profile()
+        p["zero_is_invalid"] = False
+        frames = {i: np.ones((2, 21, 3)) for i in range(8)}
+        for xyz in frames.values():
+            xyz[1, 5] = 0
+        scores = {i: np.array([0.0, 1.0]) for i in frames}
+        features, q = segment_features(frames, {"start_frame": 1, "end_frame": 2}, p, samples=4, confidences=scores)
+        self.assertEqual(q["valid_joint_fraction"], .5)
+        self.assertEqual(q["valid_local_fraction"], .5)
+        self.assertTrue(q["confidence_available"])
+        self.assertTrue((features[:, :63] == 0).all())
+        self.assertTrue((features[:, 63:126] != 0).any())
+
+    def test_confidence_and_timestamp_companions_in_full_synthetic_preprocessing(self):
+        from e0.quality import timestamp_cadence, load_confidences
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            m = fixture(root)
+            for rec, entry in m["recordings"].items():
+                for kind, value in (("confidence", {str(i): {"0": 0.0, "1": 1.0} for i in range(12)}),
+                                    ("timestamp", {str(i): 1000 + i / 60 for i in range(12)})):
+                    path = root / f"{rec}-{kind}.json"
+                    path.write_text(json.dumps(value))
+                    entry[kind] = {"path": str(path), "sha256": sha256(path)}
+            artifact = prepare(m, root / "processed", min_train_examples=1, max_classes=2, synthetic=True)
+            self.assertTrue(artifact["ready_for_training"])
+            self.assertTrue(all(s["quality"]["valid_local_fraction"] == .5 for s in artifact["segments"]))
+            first = next(iter(m["recordings"].values()))
+            frames = read_cleaned(first["path"])
+            path = Path(first["timestamp"]["path"])
+            path.write_text(json.dumps({str(i): 1000 + i / 20 for i in frames}))
+            self.assertFalse(timestamp_cadence(path, frames)["accepted"])
+            path = Path(first["confidence"]["path"])
+            path.write_text(json.dumps({"0": {"0": -1, "1": 1}}))
+            with self.assertRaisesRegex(ValueError, "finite in"):
+                load_confidences(path)
+
+    def test_acquisition_plan_excludes_known_bad_recordings_before_training_vocabulary(self):
+        from scripts.data.e0_plan_acquisition import build_plan
+        from e0.quality import EXCLUDED_RECORDINGS
+        with tempfile.TemporaryDirectory() as directory:
+            m = fixture(Path(directory))
+            actions = load_actions(m["actions"]["path"])
+            segments, _ = load_segments({s: e["path"] for s, e in m["splits"].items()}, actions)
+            train = [s for s in segments if s["split"] == "train"]
+            segments = [s for s in segments if s["split"] != "train"] + [dict(s) for s in train for _ in range(50)]
+            bad = next(iter(EXCLUDED_RECORDINGS))
+            segments += [{**train[0], "recording_id": bad} for _ in range(100)]
+            catalog = [{"path": f"assembly101_camera_and_hand_poses/{kind}/{rec}.json",
+                        "compressed_bytes": 10, "uncompressed_bytes": 20}
+                       for rec in [*m["recordings"], bad] for kind in ("landmarks3D", "timestamp", "hand_confidences")]
+            plan = build_plan(catalog, segments, actions)
+            self.assertEqual(len(plan["members"]), 9)
+            self.assertEqual(plan["coverage"]["train"]["segments_before_quality_checks"], 100)
+            self.assertEqual(plan["compressed_bytes"], 90)
+            self.assertFalse(plan["training_ready"])
+            self.assertTrue(all(bad not in member["path"] for member in plan["members"]))
+
     def test_cached_feasibility_joins_pose_inventory_and_selects_from_train(self):
         from scripts.data.e0_feasibility import main
         with tempfile.TemporaryDirectory() as directory:
