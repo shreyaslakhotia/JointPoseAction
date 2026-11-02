@@ -34,6 +34,8 @@ def prepare(manifest, output, samples=64, min_train_examples=50, max_classes=100
                 and s["recording_id"] not in EXCLUDED_RECORDINGS]
     leakage = check_leakage(selected, participant_policy)
     vocabulary = choose_classes(selected, min_train_examples, max_classes)
+    if manifest.get("selected_action_ids") is not None and vocabulary != manifest["selected_action_ids"]:
+        raise ValueError("Training-only vocabulary differs from pinned acquisition plan")
     mapping = {a: i for i, a in enumerate(vocabulary)}
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)
@@ -73,7 +75,7 @@ def prepare(manifest, output, samples=64, min_train_examples=50, max_classes=100
             try:
                 features, quality = segment_features(frames, segment, manifest["pose_profile"], samples, confidences)
             except ValueError as error:
-                if str(error) != "interval_outside_pose_coverage":
+                if str(error) not in ("interval_outside_pose_coverage", "no_valid_hand_scale"):
                     raise
                 exclusions.append({**segment, "reason": str(error)})
                 continue
@@ -111,6 +113,8 @@ def prepare(manifest, output, samples=64, min_train_examples=50, max_classes=100
         raise ValueError("A selected class lost all training examples; review exclusions")
     if any(count < min_train_examples for count in summary["class_counts"]["train"].values()):
         raise ValueError("Selected classes fell below minimum valid training count; review exclusions")
+    if not synthetic and any(summary["class_counts"][s].get(str(a), 0) < 5 for s in ("validation", "test") for a in vocabulary):
+        raise ValueError("Selected class has fewer than five retained evaluation examples; no automatic class reselection")
     artifact["ready_for_training"] = True
     (output / "dataset.json").write_text(json.dumps(artifact, indent=2), encoding="utf-8")
     return artifact

@@ -240,3 +240,53 @@ only (maximum 2 MB); it downloads no members and requests no GPU. Deep diagnosis
 the two excluded recordings is closed. Feature units and the reference temporal
 contract still need explicit documentation before a real profile is validated;
 the prepared acquisition plan is not permission to bypass those gates.
+
+## Acquisition and recognition protocol: plan job 242776
+
+Plan 242776 completed `0:0` in 11 seconds, fetching only 658,938 ZIP directory
+bytes. All 335 selected recordings have pose, confidence and timestamp companions:
+194 train / 58 validation / 83 test, with candidate 100-class segment counts
+28,194 / 9,060 / 13,256 before quality exclusions. Total member transfer is
+7,994,397,395 bytes; extracted size is 23,098,116,832 bytes. The logged `512` usage
+measurement followed the symlink incorrectly and is not evidence of free quota.
+
+The executable recognition contract is now explicit in `e0/source_profile.py`:
+
+- The released hand keys, source landmark order and wrist index are retained.
+- Metric units remain unknown. E0 uses dimensionless coordinates: divide all
+  coordinates in each segment by the median finite, positive-confidence
+  wrist-to-index-proximal distance (joints 5 and 8). The same scalar applies to both
+  hands, articulation and wrist trajectories, preserving their relative geometry.
+  No train/validation/test statistics are fitted. A global source-unit multiplier
+  cancels exactly; this is covered by a rescaling regression. No metric claim is made.
+- [The pinned released HandFormer reader](https://github.com/s-shamil/HandFormer/blob/640a10a6bd03f85842a2662e67cf30444ab1d673/Preprocess/1_get_clip_data.py)
+  doubles annotation IDs, uses both pose offsets and includes the annotation end.
+  E0 declares the corresponding zero-offset interval `[2*s, 2*(e+1))`. It adds no
+  context and rejects intervals outside coverage instead of reproducing that
+  reader's clipping/padding. Valid frame 0 is retained rather than its start clamp
+  to frame 1. Independent RGB-clock verification is not claimed; this is a
+  documented reference-reader protocol checked against actual companion cadence.
+- Every recording must pass the cadence/key checks, and each segment must pass
+  source confidence, scale, interval and validity checks. Recorded exclusions
+  determine the final subset, with no test-performance-based decisions.
+
+These choices remove a need to guess physical calibration for hand-only E0 while
+retaining the explicit 216-feature interface. E3 will require separate metric/frame
+calibration for hand/object geometric fusion; it is not implemented here.
+
+`e0_acquire_prepare.sbatch` performs selective, resumable acquisition and CPU
+preprocessing, with an 8.1 GB HTTP range cap. It never stores the 71.97 GB archive.
+Only the exact planned members are saved, CRC-checked and hashed; reused files
+must pass size and CRC checks. Large ZIP reads are fetched in bounded 2 MB HTTP
+ranges to avoid one request per tiny JSON fragment. Signed URL renewal does not
+change the pinned revision or archive size. Exception logging excludes remote
+URLs/tokens. The initial usage check runs `du` on the resolved project directory
+and reserves extracted payload, feature upper bound and 3 GB headroom under the
+50 GB allocation before transfer. Partial files stay inside the project.
+
+Preprocessing pins the training-selected vocabulary, preserves official splits
+and writes complete exclusions. Each class needs at least 50 retained training
+examples and five retained examples in each evaluation split; failure leaves the
+artifact unready and does not silently reselect classes based on evaluation data.
+No GPU job or training is submitted by this preparation job. Actual retained
+coverage is pending execution; no accuracy or loss curve is available yet.

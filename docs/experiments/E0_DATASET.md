@@ -101,12 +101,12 @@ with the official mapping; no filename-derived labels.
 
 All source paths/hashes and selected recording split/participant identities are
 explicit. Source integrity and official recording overlap are checked before
-selection. Selected participants must be disjoint by default; an explicit
-`report_official_overlap` policy preserves official shared-participant protocols
-only with the overlap reported. Do not describe that option as participant-disjoint.
+selection. The default `report_official_overlap` policy preserves official
+recording-disjoint splits and reports shared participants. Do not describe this
+as participant-disjoint.
 
-Select classes by canonical training-event counts only: default minimum 10,
-maximum 20, frequency descending with ID tie-break, then contiguous labels ordered
+Select classes by canonical training-event counts only: default minimum 50,
+maximum 100, frequency descending with ID tie-break, then contiguous labels ordered
 by official action ID. No validation/test counts enter selection. Every omitted
 event receives a reason. If quality exclusions empty a split/class or lower its
 training count below the configured minimum, preprocessing fails and its saved
@@ -114,15 +114,19 @@ artifact remains not ready for training. No test example is silently removed.
 
 Sampling: 64 deterministic nearest-frame positions per segment; no interpolation,
 smoothing, rotation normalization or learned statistics. Missing frames and
-nonfinite coordinates are masked. A reviewed zero-invalid policy excludes zero
-placeholders. Wrist-relative joint coordinates plus both wrist trajectories
+nonfinite coordinates are masked. Source hand-confidence scores must be positive;
+finite zero coordinates alone are never a missingness test. Wrist-relative joint coordinates plus both wrist trajectories
 relative to the first available segment origin preserve inter-hand placement
 and motion. Features contain 126 local xyz, 6 wrist xyz, 42 raw-valid and 42
-local-valid indicators: **216 features per time step**. Source units convert
-to metres only after verification. Origin/frame metadata remains available for
+local-valid indicators: **216 features per time step**. The production E0 profile
+divides coordinates by the median positive-score wrist-to-index-proximal length
+within the segment. These dimensionless features are invariant to a common unknown
+source-unit multiplier; they are not labelled metres. Physical calibration remains
+necessary for metric E3 fusion. Source/frame metadata remains available for
 future geometric features. Default minimum sampled local validity is 25%; it is
 an engineering threshold requiring review on actual data, not a confidence claim.
 
 Prepared artifacts store per-segment source identity, labels, frame/time mapping,
 quality, feature hash, split summaries and complete exclusions. No output directory
-is overwritten. No real recordings, classes or sample counts are selected yet.
+is overwritten. Acquisition plan 242776 selects 335 candidate recordings and 100
+training-selected classes; final counts await acquisition and quality exclusions.

@@ -1,5 +1,13 @@
 # E0 results — no trained-model results yet
 
+Preparation checkpoint after plan job 242776: the selected 335 recordings have
+all companions, requiring 7.994 GB transfer / 23.098 GB extracted. Candidate
+100-class counts are 28,194 / 9,060 / 13,256. A resumable CPU acquisition and
+preprocessing job is prepared. E0 uses dimensionless hand-length-normalized
+features and declared reference-reader timing with cadence/boundary exclusions;
+physical metric units and independently verified RGB clocks are not asserted.
+Training readiness now awaits the real retained corpus and support checks.
+
 Current decision after successful companion job 242754: exclude recordings 9031
 and 9026 instead of attempting recovery; use source hand-confidence scores to mask
 zero-score hands, preserving zero coordinates when scores are positive. Per-recording

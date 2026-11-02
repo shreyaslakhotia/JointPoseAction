@@ -72,6 +72,55 @@ def fixture(root):
 
 
 class DataTests(unittest.TestCase):
+    def test_dimensionless_features_are_invariant_to_unknown_global_coordinate_scale(self):
+        from e0.source_profile import dimensionless_profile
+        p = dimensionless_profile()
+        require_profile(p)
+        frames = {i: np.arange(126).reshape(2, 21, 3).astype(float) + i for i in range(8)}
+        scores = {i: np.ones(2) for i in frames}
+        segment = {"start_frame": 1, "end_frame": 2}
+        first, q = segment_features(frames, segment, p, confidences=scores)
+        second, _ = segment_features({i: xyz * 1000 for i, xyz in frames.items()}, segment, p, confidences=scores)
+        np.testing.assert_allclose(first, second, atol=1e-6)
+        self.assertIsNone(p["units_to_m"])
+        self.assertNotIn("origin_m", q)
+        self.assertEqual(q["feature_units"], "dimensionless_wrist_index_length")
+
+    def test_acquisition_manifest_to_real_contract_preprocessing_using_synthetic_files(self):
+        from scripts.data.e0_acquire_prepare import assemble_manifest
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            m = fixture(root)
+            for split, entry in m["splits"].items():
+                path = Path(entry["path"])
+                with path.open(newline="") as stream:
+                    reader = csv.DictReader(stream)
+                    fields, original = reader.fieldnames, list(reader)[:2]
+                write_csv(path, fields, [{**original[i % 2], "id": i} for i in range(10)])
+                entry["sha256"] = sha256(path)
+            review = {"files": [{"name": "actions.csv", **m["actions"]},
+                                *[{"name": f"{s}.csv", **e} for s, e in m["splits"].items()]]}
+            actions = load_actions(m["actions"]["path"])
+            plan = {"plan_sha256": "synthetic-only", "class_mapping": [actions[a] for a in (10, 20)], "members": []}
+            acquired = {}
+            for rec, entry in m["recordings"].items():
+                for kind in ("landmarks3D", "timestamp", "hand_confidences"):
+                    path = Path(entry["path"]) if kind == "landmarks3D" else root / f"{kind}-{rec}.json"
+                    if kind == "timestamp":
+                        path.write_text(json.dumps({str(i): 1000 + i / 60 for i in range(12)}))
+                    elif kind == "hand_confidences":
+                        path.write_text(json.dumps({str(i): {"0": 1, "1": 1} for i in range(12)}))
+                    member = f"assembly101_camera_and_hand_poses/{kind}/{rec}.json"
+                    plan["members"].append({"path": member})
+                    acquired[member] = {"path": str(path), "sha256": sha256(path)}
+            manifest = assemble_manifest(plan, review, acquired)
+            artifact = prepare(manifest, root / "processed", min_train_examples=1, max_classes=2)
+            self.assertTrue(artifact["ready_for_training"])
+            self.assertEqual(artifact["summary"]["split_counts"], {"train": 10, "validation": 10, "test": 10})
+            manifest["selected_action_ids"] = [10]
+            with self.assertRaisesRegex(ValueError, "pinned acquisition plan"):
+                prepare(manifest, root / "wrong-vocabulary", min_train_examples=1, max_classes=2)
+
     def test_source_confidence_masks_hand_without_masking_positive_score_zero_wrist(self):
         p = profile()
         p["zero_is_invalid"] = False
@@ -377,6 +426,28 @@ class ModelMetricTests(unittest.TestCase):
 
 
 class AcquisitionTests(unittest.TestCase):
+    def test_complete_member_acquisition_reuses_verified_file_and_replaces_corrupt_cache(self):
+        from scripts.data.e0_acquire_prepare import acquire_member, local_member
+        buffer = io.BytesIO()
+        name = f"assembly101_camera_and_hand_poses/landmarks3D/{recording(9001)}.json"
+        payload = b'{"synthetic": true}'
+        with zipfile.ZipFile(buffer, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+            archive.writestr(name, payload)
+            info = archive.getinfo(name)
+        member = {"path": name, "compressed_bytes": info.compress_size, "uncompressed_bytes": len(payload)}
+        with tempfile.TemporaryDirectory() as directory, zipfile.ZipFile(io.BytesIO(buffer.getvalue())) as archive:
+            path = local_member(Path(directory), member)
+            first = acquire_member(archive, member, path)
+            self.assertFalse(first["reused"])
+            self.assertTrue(acquire_member(archive, member, path)["reused"])
+            path.write_bytes(b'x' * len(payload))
+            repaired = acquire_member(archive, member, path)
+            self.assertFalse(repaired["reused"])
+            self.assertEqual(path.read_bytes(), payload)
+            self.assertEqual(repaired["sha256"], sha256(path))
+            with self.assertRaises(ValueError):
+                local_member(Path(directory), {"path": "../outside.json"})
+
     def test_companion_entrypoint_with_complete_synthetic_zip_and_pose_provenance(self):
         from scripts.data import e0_inspect_companions as module
         from types import SimpleNamespace

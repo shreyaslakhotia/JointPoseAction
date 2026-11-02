@@ -132,7 +132,11 @@ def require_profile(profile, allow_unverified=False):
         raise ValueError("Explicit integer index origin/offset required")
     if not isinstance(profile["end_inclusive"], bool) or not isinstance(profile["zero_is_invalid"], bool):
         raise ValueError("Endpoint and zero policies must be explicit")
-    if not isinstance(profile["units_to_m"], (int, float)) or not 0 < profile["units_to_m"] < 1000:
+    dimensionless = profile.get("feature_units") == "dimensionless_wrist_index_length"
+    if dimensionless:
+        if profile["units_to_m"] is not None or profile.get("scale_joints") != [5, 8]:
+            raise ValueError("Dimensionless features require explicit wrist/index normalization, no metric conversion")
+    elif not isinstance(profile["units_to_m"], (int, float)) or not 0 < profile["units_to_m"] < 1000:
         raise ValueError("Verified units conversion required")
     if not profile["coordinate_frame"] or not profile["evidence"]:
         raise ValueError("Coordinate-frame and verification evidence required")
@@ -193,7 +197,15 @@ def segment_features(frames, segment, profile, samples=64, confidences=None):
         valid &= score_valid[..., None]
     if profile["zero_is_invalid"]:
         valid &= np.any(xyz != 0, axis=-1)
-    xyz = np.where(valid[..., None], xyz, 0) * profile["units_to_m"]
+    dimensionless = profile.get("feature_units") == "dimensionless_wrist_index_length"
+    scale = profile["units_to_m"]
+    if dimensionless:
+        lengths = np.linalg.norm(xyz[:, :, 8] - xyz[:, :, 5], axis=-1)
+        lengths = lengths[valid[:, :, 8] & valid[:, :, 5] & (lengths > 0)]
+        if not len(lengths):
+            raise ValueError("no_valid_hand_scale")
+        scale = 1.0 / float(np.median(lengths))
+    xyz = np.where(valid[..., None], xyz, 0) * scale
     wrist = profile["wrist_index"]
     wrist_valid = valid[:, :, wrist]
     local_valid = valid & wrist_valid[..., None]
@@ -221,4 +233,7 @@ def segment_features(frames, segment, profile, samples=64, confidences=None):
                       "zero_policy": "invalid_by_verified_rule" if profile["zero_is_invalid"] else "preserved_ambiguity_not_tracking_confidence",
                       "confidence_available": confidences is not None,
                       "confidence_policy": "positive_source_hand_score" if confidences is not None else None,
-                      "origin_m": origin.tolist()}
+                      "feature_units": "dimensionless_wrist_index_length" if dimensionless else "metres",
+                      "source_to_feature_scale": scale,
+                      "origin_feature_units": origin.tolist(),
+                      **({} if dimensionless else {"origin_m": origin.tolist()})}
