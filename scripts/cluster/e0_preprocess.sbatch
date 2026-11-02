@@ -11,10 +11,8 @@ set -euo pipefail
 umask 077
 cd /projects/jointposeaction/repo
 source scripts/cluster/env.sh
-module load Miniforge3/24.11.3-1
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate "$JPA_ENV"
+source scripts/cluster/use_environment.sh
 export OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2
 : "${JPA_E0_MANIFEST:?Set path to reviewed real source manifest}"
-python -m e0.preprocess --manifest "$JPA_E0_MANIFEST" \
+"$JPA_PYTHON" -m e0.preprocess --manifest "$JPA_E0_MANIFEST" \
     --output "$JPA_ROOT/data/processed/e0-$SLURM_JOB_ID"

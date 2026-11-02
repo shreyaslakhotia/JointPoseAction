@@ -12,9 +12,7 @@ set -euo pipefail
 umask 077
 cd /projects/jointposeaction/repo
 source scripts/cluster/env.sh
-module load Miniforge3/24.11.3-1
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate "$JPA_ENV"
+source scripts/cluster/use_environment.sh
 export OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2
-python -m unittest discover -s tests -v
-python -m scripts.data.inspect_e0_sources --download-approved-splits
+"$JPA_PYTHON" -m unittest discover -s tests -v
+"$JPA_PYTHON" -m scripts.data.inspect_e0_sources --download-approved-splits

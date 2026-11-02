@@ -1,4 +1,21 @@
-# Environment setup — CPU installation completed; HF CLI repair pending
+# Environment setup — CPU/GPU checks passed; inspection interpreter fix prepared
+
+## Explicit interpreter selection after inspection failure
+
+GPU test 241925 and CLI repair 242207 both completed `0:0`; user logs confirm
+L40S execution, Python 3.12.16, Torch 2.14.1+cu130, CUDA driver API 13000,
+NumPy 2.2.6 and OpenCV 4.12.0. Authentication succeeded on project storage.
+Inspection job 242209 failed importing NumPy from the module/base Python before
+downloads. Inherited activation followed by module loading is a plausible PATH
+cause; the exact shell transition has not been observed. Do not reinstall NumPy
+into the base environment or rebuild the validated project environment.
+
+All E0 job entry points now source `use_environment.sh` and invoke the absolute
+`$JPA_ENV/bin/python`. The helper removes inherited PYTHONHOME/PYTHONPATH, checks
+the actual Python prefix and imports/logs NumPy before running tests or downloads.
+It does not activate Conda, install packages, change Slurm flags or submit GPU jobs.
+The failed job did not reach the metadata downloader. Resubmission uses the
+same CPU resource request and approved data scope after updating the source.
 
 ## Targeted HF CLI repair
 

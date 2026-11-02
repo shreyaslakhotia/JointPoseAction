@@ -46,10 +46,18 @@ the successful JSON result; an empty error file alone is insufficient evidence.
 |---|---|
 | Installation job | 241924; user accounting `COMPLETED`, `0:0` |
 | Environment | Install-script checks passed by exit status; exact exports/logs awaiting review |
-| GPU smoke job | 241925, queued on L40 at latest user status; unchanged |
-| GPU / CUDA operation | No successful execution reported |
-| Output/error logs | Expected `logs/jpa-install-241924.{out,err}` and `logs/jpa-smoke-241925.{out,err}`; contents not reviewed |
-| GPU exit status | Pending |
+| GPU smoke job | 241925, `COMPLETED`, 25 seconds |
+| GPU / CUDA operation | User log: NVIDIA L40S, capability 8.9, driver CUDA API 13000; tensor and project I/O passed |
+| Output/error logs | User supplied `jpa-smoke-241925.out`; status passed, `.err` empty |
+| GPU exit status | `0:0` |
+
+Runtime log versions: Python 3.12.16, NumPy 2.2.6, OpenCV 4.12.0,
+PyTorch 2.14.1+cu130, CUDA runtime 13.0. Compiled architecture list includes
+sm_75/80/86/90/100/120; actual L40S kernel operation succeeded. CLI repair
+242207 completed `0:0` in six seconds; private HF login then succeeded.
+CPU inspection 242209 failed before downloads with a base-Python NumPy import
+error. E0 scripts now select the absolute project interpreter and verify its
+prefix rather than relying on inherited activation. No new GPU job was submitted.
 
 Local syntax checks do not validate Bash/module behavior, node drivers, kernel
 architecture support or Slurm acceptance. All remain pending actual execution.

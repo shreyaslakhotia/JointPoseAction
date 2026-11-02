@@ -11,11 +11,9 @@ set -euo pipefail
 umask 077
 cd /projects/jointposeaction/repo
 source scripts/cluster/env.sh
-module load Miniforge3/24.11.3-1
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate "$JPA_ENV"
+source scripts/cluster/use_environment.sh
 export OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2
 : "${JPA_E0_DATASET:?Set prepared dataset path}"
 : "${JPA_E0_CHECKPOINT:?Set validation-selected checkpoint path}"
-python -m e0.evaluate --dataset "$JPA_E0_DATASET" --checkpoint "$JPA_E0_CHECKPOINT" \
+"$JPA_PYTHON" -m e0.evaluate --dataset "$JPA_E0_DATASET" --checkpoint "$JPA_E0_CHECKPOINT" \
     --output "$JPA_ROOT/experiments/e0/test-$SLURM_JOB_ID"
