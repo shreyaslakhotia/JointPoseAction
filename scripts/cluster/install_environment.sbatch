@@ -43,6 +43,7 @@ python -m pip --isolated install --only-binary=:all: --no-cache-dir \
     --index-url https://download.pytorch.org/whl/cu130 \
     --report "$record/torch-install.json" torch==2.14.1
 python -m pip check
+hf auth login --help
 python scripts/cluster/validate_environment.py
 python scripts/cluster/verify_checkout.py > "$record/source-integrity.json"
 python -c 'import pathlib,yaml; paths=list(pathlib.Path("reproducibility").rglob("*.yml"))+list(pathlib.Path("reproducibility").rglob("*.yaml")); [yaml.safe_load(p.read_text()) for p in paths]; print("Parsed YAML:",len(paths))'

@@ -1,4 +1,19 @@
-# Environment setup — prepared, not installed
+# Environment setup — CPU installation completed; HF CLI repair pending
+
+## Targeted HF CLI repair
+
+The user reported `hf auth login` failed importing `click` after updating to
+`ab393c1`. Login did not occur and `set -e` prevented submission of the inspection
+job. Initial installation did not test CLI startup; its successful import/ABI
+checks therefore did not establish that the `hf` command worked. The direct
+requirements now pin `click==8.1.8`, and fresh installs check `hf auth login --help`.
+
+For the existing environment, `repair_hf_cli.sbatch` installs only Click (98,188
+wheel bytes), with no dependency changes, in a one-CPU, five-minute job. It runs
+`pip check`, tests the real authentication help command without authenticating,
+and preserves before/after package lists, install report and updated export.
+No Torch/CUDA package, GPU allocation or dataset download is included. This
+repair has been syntax-checked locally but needs actual cluster execution.
 
 ## Confirmed target and budget
 
