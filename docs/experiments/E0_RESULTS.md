@@ -1,5 +1,11 @@
 # E0 results — no trained-model results yet
 
+Unattended continuation is prepared in [E0_HANDOFF.md](E0_HANDOFF.md), attaching
+to preparation job 242798 (last user-reported running). One gated GPU sanity/baseline
+job and dependent final CPU evaluation/report will be submitted by the user-run
+helper. Local synthetic/mocked validation passes 48 tests. No real baseline has
+yet been submitted or evaluated at this repository checkpoint.
+
 Preparation checkpoint after plan job 242776: the selected 335 recordings have
 all companions, requiring 7.994 GB transfer / 23.098 GB extracted. Candidate
 100-class counts are 28,194 / 9,060 / 13,256. A resumable CPU acquisition and
