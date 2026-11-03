@@ -12,8 +12,55 @@ ROOT = Path(__file__).resolve().parents[2]
 
 def git(*args):
     return subprocess.check_output(
-        ["git", "-c", f"safe.directory={ROOT.as_posix()}", *args], cwd=ROOT
+        ["git", "-c", f"safe.directory={ROOT.as_posix()}", *args], cwd=ROOT,
+        stderr=subprocess.PIPE,
     )
+
+
+def migration_paths():
+    """Resolve current paths without rewriting dated preservation manifests."""
+    manifest = ROOT / "reproducibility/manifests/repository_hygiene.json"
+    if not manifest.is_file():
+        return {}
+    mappings = {}
+    for row in json.loads(manifest.read_text(encoding="utf-8"))["files"]:
+        original, final = row["original_path"], row["final_path"]
+        for value in (original, final):
+            candidate = Path(value)
+            if candidate.is_absolute() or ".." in candidate.parts:
+                raise ValueError(f"Unsafe preservation path: {value}")
+        if original in mappings:
+            raise ValueError(f"Duplicate preservation mapping: {original}")
+        mappings[original] = final
+    return mappings
+
+
+def resolve_preserved_path(original, mappings):
+    path = mappings.get(original, original)
+    if not (ROOT / path).is_file():
+        raise FileNotFoundError(f"Missing: {original} (resolved: {path})")
+    return path
+
+
+def verify_preserved(original, expected, mappings):
+    path = resolve_preserved_path(original, mappings)
+    raw = (ROOT / path).read_bytes()
+    digest = lambda data: hashlib.sha256(data).hexdigest()
+    if digest(raw) == expected:
+        return "exact"
+    if digest(raw.replace(b"\r\n", b"\n")) == expected:
+        # Before the hygiene commit, HEAD still names the original location.
+        # A present new blob always wins; a hash mismatch must never fall back.
+        try:
+            blob = git("show", f"HEAD:{path}")
+        except subprocess.CalledProcessError:
+            if path == original:
+                raise
+            blob = git("show", f"HEAD:{original}")
+        if digest(blob) != expected:
+            raise ValueError(f"Committed hash mismatch: {path}")
+        return "crlf_only"
+    raise ValueError(f"Hash mismatch: {path}")
 
 
 def main():
@@ -22,6 +69,7 @@ def main():
               "preservation": {}, "small_artifacts": {}, "syntax": {},
               "patch_reconstruction": "Deferred: requires pinned upstream blobs"}
     failures = []
+    mappings = migration_paths()
     for label, manifest, key in (
         ("preservation", "preservation_checksums.json", "preserved_as"),
         ("small_artifacts", "small_artifacts.json", "path"),
@@ -31,29 +79,20 @@ def main():
             if key not in entry:
                 counts["deferred_patch_entries"] += 1
                 continue
-            path = entry[key]
-            source = ROOT / path
-            if not source.is_file():
-                failures.append(f"Missing: {path}")
-                continue
-            raw = source.read_bytes()
-            digest = lambda data: hashlib.sha256(data).hexdigest()
-            if digest(raw) == entry["sha256"]:
-                counts["exact"] += 1
-            elif digest(raw.replace(b"\r\n", b"\n")) == entry["sha256"]:
-                # Also verify committed bytes; do not mistake arbitrary edits for checkout conversion.
-                blob = git("show", f"HEAD:{path}")
-                if digest(blob) != entry["sha256"]:
-                    failures.append(f"Committed hash mismatch: {path}")
-                else:
-                    counts["crlf_only"] += 1
-            else:
-                failures.append(f"Hash mismatch: {path}")
+            try:
+                counts[verify_preserved(entry[key], entry["sha256"], mappings)] += 1
+            except (OSError, ValueError, subprocess.CalledProcessError) as error:
+                failures.append(str(error))
         result[label] = counts
     counts = {"python_files": 0, "notebook_cells": 0, "json_files": 0}
     for path in tracked:
-        source = ROOT / path
         try:
+            # Updated entry points can coexist with archived original snapshots.
+            # Syntax validation covers the current tracked file at its own path;
+            # only pre-commit moves with an old index need relocation fallback.
+            source = ROOT / path
+            if not source.is_file():
+                source = ROOT / resolve_preserved_path(path, mappings)
             if path.endswith(".py"):
                 ast.parse(source.read_text(encoding="utf-8-sig"), filename=path)
                 counts["python_files"] += 1
