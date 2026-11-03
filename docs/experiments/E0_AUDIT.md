@@ -1,6 +1,47 @@
 # E0 baseline audit: 3 November 2026
 
-## Observed run, not yet independently audited
+## Completed audit: job 243446
+
+The user supplied the successful CPU audit output on 3 November 2026:
+`243446 | COMPLETED | 0:0 | 00:07:10`. The complete report remains on the
+cluster at `experiments/e0/audit-243446/audit.json`; the supplied compact stdout
+is preserved as `reproducibility/experiments/e0_audit_243446.json` with its source
+identified. This repository does not claim to have downloaded the full report.
+
+Independent saved-probability recomputation matches Top-1 28.0840%, Top-5
+54.8873%, and macro-F1 9.2211%. Prediction CSV mismatches: zero; saved confusion
+matrix matches. Weighted F1 is 22.4708% and balanced accuracy is 10.4419%.
+Nineteen classes are never predicted and 45 classes have no true positives;
+72.8689% of predictions fall in the ten most predicted classes.
+
+Original official CSV hashes, retained intervals/IDs/labels and training-only
+vocabulary were verified, with no recording-level split overlap. All 38,723
+features passed the reported frame-index/mask checks. Raw source hashes match;
+sampled independent feature reconstructions have no failures. There are 264
+exact duplicate feature groups, 209 with different labels, and none crossing
+splits. Overlapping segments can have indistinguishable pose inputs.
+
+No retained recording exceeds 50 ms accumulated timestamp drift. The overall
+maximum 117.05 seconds includes acquired recordings excluded from the retained
+population. This is not evidence of such drift in the training set. Absolute
+pose/video clock alignment remains independently unverified.
+
+The selected checkpoint achieves train Top-1/macro-F1 32.5409%/13.5244% and
+validation 26.0901%/7.6349%. CPU validation Top-1 is reproduced exactly; 300
+class-stratified test predictions match saved predictions with maximum
+probability discrepancy 1.2e-7. That 300-example sample is an integrity check,
+not a replacement test performance estimate. Validation accuracy drops to
+16.9767% on time reversal, 18.6773% on time shuffle and 0.8430% with coordinates
+removed and masks retained. These are frozen-model, potentially out-of-distribution
+sensitivity probes, not trained ablations.
+
+Conclusion: the metrics are credible, while full-vocabulary recognition is weak
+and predictions concentrate on frequent classes. Training performance is also
+weak; this is not solely a held-out generalization failure. No single causal
+explanation was established. The separate Phase 1C brief authorizes two new
+controlled recognition runs; this audit itself performed no training.
+
+## Original baseline accounting
 
 User-supplied cluster accounting reports all three stages `COMPLETED`, `0:0`:
 
@@ -13,7 +54,8 @@ User-supplied cluster accounting reports all three stages `COMPLETED`, `0:0`:
 The exported report records 100 classes, retained train/validation/test counts
 22,083 / 6,880 / 9,760, Top-1 28.08%, Top-5 54.89%, macro-F1 0.0922 (9.22%),
 training-majority Top-1 8.05%, and uniform chance Top-1 1%. These are rounded
-report values, not a local independent recomputation. Some classes with 60-90
+report values; the completed cluster audit above independently recomputes them.
+Some classes with 60-90
 test examples have zero F1. That is a material limitation of the baseline.
 
 Training source commit: `b188995a566e74de9d10f40baf0884319f2e576c`.
@@ -39,7 +81,7 @@ plausible for this network; elapsed time alone does not indicate omitted trainin
 
 - Unweighted cross-entropy and validation-loss selection optimize frequency-weighted
   error, not macro-F1. A low macro-F1 alongside higher Top-1 is mathematically
-  possible. Actual prediction concentration needs the saved probability matrix.
+  possible. The completed audit confirms that concentration above.
 - The 16-example/four-class sanity gate establishes bounded optimizer operation,
   not full-corpus alignment or 100-class learnability.
 - 11,787 of 50,510 candidate segments were removed: 23.34% overall. Per-class and
@@ -87,6 +129,6 @@ measure sensitivity, with an explicit out-of-distribution interpretation limit.
 
 The complete audit entrypoint is exercised using a synthetic cached run and an
 untrained synthetic checkpoint. No local synthetic number is a real E0 result.
-Actual audit findings are pending the cluster audit output. Until then, the
-responsible conclusion is: a weak, class-uneven baseline was produced; its root
-cause has not yet been established.
+Actual cluster audit findings are recorded at the top of this document. The
+weak, class-uneven baseline is preserved; its dominant root cause has not been
+established by these diagnostics.

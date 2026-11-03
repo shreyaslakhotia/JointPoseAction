@@ -1,9 +1,18 @@
 # JointPoseAction
 
-**E0 CPU implementation:** [dataset contract](docs/experiments/E0_DATASET.md),
-[TCN and reproduction interfaces](docs/experiments/E0_IMPLEMENTATION.md), and
-[results/readiness status](docs/experiments/E0_RESULTS.md). Real data and GPU
-validation are still pending; no E0 training has run.
+**Current Phase 1C:** [one-command TCN/HandFormer workflow](docs/cluster/PHASE1C_EXECUTION.md),
+[balanced TCN recipe](docs/experiments/B0_BALANCED_RESULTS.md),
+[official HandFormer adaptation](docs/experiments/B1_HANDFORMER_RESULTS.md), and
+[matched comparison protocol](docs/experiments/DUAL_BACKBONE_COMPARISON.md).
+The research question is whether reconstructed 3D object geometry can improve
+fine-grained recognition beyond hand poses. This phase establishes two pose-only
+backbones; reconstruction and fusion are not implemented yet.
+
+**Completed E0:** [dataset contract](docs/experiments/E0_DATASET.md),
+[original TCN interfaces](docs/experiments/E0_IMPLEMENTATION.md),
+[measured results](docs/experiments/E0_RESULTS.md), and
+[independent audit](docs/experiments/E0_AUDIT.md). The frozen 100-class baseline
+achieved 28.08% Top-1 and 9.22% macro-F1. New Phase 1C results remain pending.
 
 **Current Phase 1A migration:** see [migration status](docs/cluster/MIGRATION_STATUS.md),
 [resource discovery](docs/cluster/RESOURCE_DISCOVERY.md), and

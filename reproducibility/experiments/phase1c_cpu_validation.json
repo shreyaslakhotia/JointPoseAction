@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-03",
+  "status": "implementation_validated_cluster_runs_pending",
+  "test_command": "python -B -m unittest discover -s tests -v",
+  "full_suite_tests_passed": 82,
+  "later_targeted_phase1c_tests_passed": 29,
+  "real_upstream_architecture_cpu_forward_backward": "passed",
+  "upstream_revision": "640a10a6bd03f85842a2662e67cf30444ab1d673",
+  "parameters": {
+    "b0_tcn": 95268,
+    "b1_handformer": 3805866
+  },
+  "dataset_sha256": "f45c749371568c29f840d2613d9ed20e9859e9020d1555f039882196cd133b59",
+  "cluster_jobs_submitted": false,
+  "actual_training_results": "pending",
+  "runtime_environment": "existing local ie4483 Python3.12, CPU; existing cluster environment to be checked by CPU prepare job",
+  "new_dependencies_installed": false,
+  "checks": [
+    "training-only smoothed weights",
+    "weighted loss and ordinary CE denominators",
+    "official HandFormer loss and optimizer schedule",
+    "same-example adapter guards",
+    "explicit confidence and valid zero-coordinate handling",
+    "compact cache source hashes and storage guard",
+    "temporal crop and interpolation",
+    "actual pinned HandFormer source forward/backward",
+    "broadcast patch value and gradient parity",
+    "submission capacity dependency ordering idempotence and partial submission",
+    "original artifact preservation",
+    "original E0 export compatibility",
+    "paired recording-cluster bootstrap"
+  ]
+}

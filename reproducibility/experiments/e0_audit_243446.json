@@ -1,0 +1,429 @@
+{
+  "evidence_source": "User-supplied cluster audit compact stdout; full audit.json not transferred",
+  "job_id": "243446",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:07:10",
+  "summary": {
+    "report": "/projects/_ssd/jointposeaction/experiments/e0/audit-243446/audit.json",
+    "dataset_sha256": "f45c749371568c29f840d2613d9ed20e9859e9020d1555f039882196cd133b59",
+    "training": {
+      "epochs_executed": 25,
+      "configured_maximum_epochs": 60,
+      "configured_patience": 10,
+      "class_weighting": "none",
+      "minimum_validation_loss_epoch": 15,
+      "maximum_validation_top1_epoch": 23,
+      "first_epoch": {
+        "epoch": 1,
+        "train": {
+          "loss": 3.9097723588398043,
+          "top1": 0.11139790789294933
+        },
+        "validation": {
+          "loss": 3.6563230703043383,
+          "top1": 0.14680232558139536
+        },
+        "learning_rate": 0.001
+      },
+      "selected_epoch": {
+        "epoch": 15,
+        "train": {
+          "loss": 2.7491659884035426,
+          "top1": 0.30285740162115654
+        },
+        "validation": {
+          "loss": 3.109651297746703,
+          "top1": 0.2609011627906977
+        },
+        "learning_rate": 0.0008715724127386972
+      },
+      "last_epoch": {
+        "epoch": 25,
+        "train": {
+          "loss": 2.449981469291387,
+          "top1": 0.35769596522211655
+        },
+        "validation": {
+          "loss": 3.1581612298654957,
+          "top1": 0.2809593023255814
+        },
+        "learning_rate": 0.0006545084971874737
+      },
+      "epochs_after_best_loss": 10,
+      "training_metrics_are_online_with_dropout": true,
+      "checkpoint_selection_is_validation_loss_not_macro_f1": true,
+      "checkpoint_epoch": 15,
+      "checkpoint_selection_consistent": true
+    },
+    "failure": null,
+    "metrics": {
+      "top1": 0.28084016393442623,
+      "top5": 0.5488729508196721,
+      "macro_f1": 0.09221127073013681,
+      "weighted_f1": 0.22470849870562987,
+      "balanced_accuracy": 0.10441906014465538,
+      "production_metrics_differences": {
+        "top1": 0.0,
+        "top5": 0.0,
+        "macro_f1": -2.7755575615628914e-17
+      },
+      "confusion_matrix_matches_saved": true,
+      "prediction_csv_mismatches": 0,
+      "never_predicted_classes": [
+        18,
+        25,
+        28,
+        41,
+        43,
+        55,
+        59,
+        60,
+        62,
+        65,
+        66,
+        70,
+        71,
+        77,
+        82,
+        85,
+        91,
+        92,
+        94
+      ],
+      "zero_true_positive_classes": [
+        18,
+        22,
+        25,
+        27,
+        28,
+        29,
+        31,
+        32,
+        39,
+        41,
+        43,
+        44,
+        49,
+        55,
+        59,
+        60,
+        61,
+        62,
+        65,
+        66,
+        67,
+        69,
+        70,
+        71,
+        72,
+        73,
+        75,
+        77,
+        79,
+        80,
+        81,
+        82,
+        84,
+        85,
+        86,
+        88,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        98,
+        99
+      ],
+      "top_10_prediction_mass": 0.728688524590164,
+      "effective_predicted_classes": 21.883030087533445
+    },
+    "verb_noun_top1": [
+      0.5014344262295082,
+      0.43227459016393444
+    ],
+    "annotations": {
+      "original_csv_hashes_verified": true,
+      "canonical_counts": {
+        "train": 47651,
+        "validation": 15699,
+        "test": 21934
+      },
+      "class_mapping_mismatches": [],
+      "retained_segment_mismatch_count": 0,
+      "retained_mismatch_examples": [],
+      "retained_ids_not_found_count": 0,
+      "duplicate_retained_ids": 0,
+      "official_recordings_crossing_splits": {},
+      "training_only_vocabulary_reproduced": true
+    },
+    "exclusions": {
+      "train": {
+        "alternate_view": 519204,
+        "outside_training_selected_vocabulary": 16482,
+        "recording_not_selected": 2622,
+        "incomplete_annotation_pose_coverage": 325,
+        "non_60fps_timestamp_cadence": 6020,
+        "interval_outside_pose_coverage": 111,
+        "insufficient_valid_local_joints": 7,
+        "no_valid_hand_scale": 1
+      },
+      "validation": {
+        "alternate_view": 171089,
+        "outside_training_selected_vocabulary": 5866,
+        "recording_not_selected": 773,
+        "non_60fps_timestamp_cadence": 1921,
+        "insufficient_valid_local_joints": 5,
+        "interval_outside_pose_coverage": 251,
+        "no_valid_hand_scale": 3
+      },
+      "test": {
+        "alternate_view": 237946,
+        "outside_training_selected_vocabulary": 7698,
+        "recording_not_selected": 980,
+        "non_60fps_timestamp_cadence": 3032,
+        "interval_outside_pose_coverage": 460,
+        "insufficient_valid_local_joints": 4
+      }
+    },
+    "feature_checks": {
+      "scanned_segments": 38723,
+      "violations": {
+        "frame_indices_mismatch": 0,
+        "mask_not_binary": 0,
+        "nonzero_masked_local_coordinates": 0,
+        "nonzero_masked_roots": 0
+      },
+      "exact_duplicate_feature_groups": 264,
+      "duplicate_groups_with_different_labels": 209,
+      "duplicate_groups_crossing_splits": 0,
+      "unique_feature_vectors": 38452
+    },
+    "raw_checks": {
+      "source_hashes_verified": true,
+      "feature_reconstruction_failures": [],
+      "absolute_pose_video_clock_alignment_independently_verified": false,
+      "companion_key_mismatch_recordings": 0,
+      "retained_recordings_with_drift_over_50ms": 0,
+      "maximum_accumulated_drift_seconds": 117.04999999999708
+    },
+    "full_checkpoint_inference": {
+      "train": {
+        "samples": 22083,
+        "top1": 0.32540868541411944,
+        "macro_f1": 0.13524353942918277,
+        "balanced_accuracy": 0.14710551281027104
+      },
+      "validation": {
+        "samples": 6880,
+        "top1": 0.2609011627906977,
+        "macro_f1": 0.07634939844674529,
+        "balanced_accuracy": 0.08865480069468563
+      },
+      "test": {
+        "samples": 300,
+        "top1": 0.10666666666666667,
+        "macro_f1": 0.062161151138537055,
+        "balanced_accuracy": 0.10666666666666666,
+        "maximum_difference_from_saved_probabilities": 1.1920928955078125e-07,
+        "predictions_different_from_saved": 0
+      }
+    },
+    "validation_reproduction_differences": {
+      "top1": 0.0,
+      "macro_f1": 4.068370465584725e-06
+    },
+    "validation_sensitivity": {
+      "controls": {
+        "time_reversed": {
+          "top1": 0.1697674418604651,
+          "macro_f1": 0.056496959755276493,
+          "prediction_change_fraction": 0.4380813953488372
+        },
+        "time_shuffled": {
+          "top1": 0.1867732558139535,
+          "macro_f1": 0.06311860027873195,
+          "prediction_change_fraction": 0.4190406976744186
+        },
+        "coordinates_zeroed_masks_retained": {
+          "top1": 0.008430232558139536,
+          "macro_f1": 0.0005848205536974616,
+          "prediction_change_fraction": 0.9774709302325582
+        }
+      },
+      "selection_or_training_performed": false,
+      "interpretation_limit": "Frozen-model perturbations can be out of distribution; these are sensitivity diagnostics, not trained ablation models"
+    },
+    "most_predicted_classes": [
+      {
+        "label": 1,
+        "noun_id": 0,
+        "noun_cls": "partial toy",
+        "action_id": 1,
+        "verb_id": 3,
+        "verb_cls": "rotate",
+        "action_cls": "rotate partial toy",
+        "training_support": 1388,
+        "test_support": 663,
+        "test_predictions": 1658,
+        "test_recall": 0.55052790346908,
+        "test_f1": 0.3145196036191297
+      },
+      {
+        "label": 0,
+        "noun_id": 1,
+        "noun_cls": "screw",
+        "action_id": 0,
+        "verb_id": 0,
+        "verb_cls": "pick up",
+        "action_cls": "pick up screw",
+        "training_support": 1601,
+        "test_support": 786,
+        "test_predictions": 1074,
+        "test_recall": 0.6374045801526718,
+        "test_f1": 0.5387096774193548
+      },
+      {
+        "label": 2,
+        "noun_id": 1,
+        "noun_cls": "screw",
+        "action_id": 2,
+        "verb_id": 1,
+        "verb_cls": "put down",
+        "action_cls": "put down screw",
+        "training_support": 1306,
+        "test_support": 603,
+        "test_predictions": 1041,
+        "test_recall": 0.6252072968490879,
+        "test_f1": 0.4586374695863747
+      },
+      {
+        "label": 7,
+        "noun_id": 0,
+        "noun_cls": "partial toy",
+        "action_id": 7,
+        "verb_id": 0,
+        "verb_cls": "pick up",
+        "action_cls": "pick up partial toy",
+        "training_support": 916,
+        "test_support": 392,
+        "test_predictions": 891,
+        "test_recall": 0.42091836734693877,
+        "test_f1": 0.2572096648480125
+      },
+      {
+        "label": 4,
+        "noun_id": 2,
+        "noun_cls": "screwdriver",
+        "action_id": 4,
+        "verb_id": 1,
+        "verb_cls": "put down",
+        "action_cls": "put down screwdriver",
+        "training_support": 1026,
+        "test_support": 457,
+        "test_predictions": 713,
+        "test_recall": 0.6236323851203501,
+        "test_f1": 0.48717948717948717
+      },
+      {
+        "label": 3,
+        "noun_id": 2,
+        "noun_cls": "screwdriver",
+        "action_id": 3,
+        "verb_id": 0,
+        "verb_cls": "pick up",
+        "action_cls": "pick up screwdriver",
+        "training_support": 1125,
+        "test_support": 514,
+        "test_predictions": 655,
+        "test_recall": 0.5680933852140078,
+        "test_f1": 0.49957228400342174
+      },
+      {
+        "label": 5,
+        "noun_id": 0,
+        "noun_cls": "partial toy",
+        "action_id": 5,
+        "verb_id": 2,
+        "verb_cls": "inspect",
+        "action_cls": "inspect partial toy",
+        "training_support": 939,
+        "test_support": 362,
+        "test_predictions": 340,
+        "test_recall": 0.19060773480662985,
+        "test_f1": 0.19658119658119658
+      },
+      {
+        "label": 6,
+        "noun_id": 0,
+        "noun_cls": "partial toy",
+        "action_id": 6,
+        "verb_id": 1,
+        "verb_cls": "put down",
+        "action_cls": "put down partial toy",
+        "training_support": 948,
+        "test_support": 397,
+        "test_predictions": 335,
+        "test_recall": 0.23425692695214106,
+        "test_f1": 0.2540983606557377
+      },
+      {
+        "label": 9,
+        "noun_id": 5,
+        "noun_cls": "finished toy",
+        "action_id": 9,
+        "verb_id": 13,
+        "verb_cls": "push",
+        "action_cls": "push finished toy",
+        "training_support": 320,
+        "test_support": 137,
+        "test_predictions": 208,
+        "test_recall": 0.29927007299270075,
+        "test_f1": 0.23768115942028986
+      },
+      {
+        "label": 10,
+        "noun_id": 27,
+        "noun_cls": "hand",
+        "action_id": 10,
+        "verb_id": 18,
+        "verb_cls": "clap",
+        "action_cls": "clap hand",
+        "training_support": 303,
+        "test_support": 124,
+        "test_predictions": 197,
+        "test_recall": 0.9596774193548387,
+        "test_f1": 0.7414330218068536
+      }
+    ],
+    "test_validity_groups": [
+      {
+        "range": [
+          0.0,
+          0.5
+        ],
+        "samples": 7,
+        "top1": 0.14285714285714285
+      },
+      {
+        "range": [
+          0.5,
+          0.75
+        ],
+        "samples": 169,
+        "top1": 0.27218934911242604
+      },
+      {
+        "range": [
+          0.75,
+          1.0001
+        ],
+        "samples": 9584,
+        "top1": 0.28109348914858096
+      }
+    ]
+  }
+}

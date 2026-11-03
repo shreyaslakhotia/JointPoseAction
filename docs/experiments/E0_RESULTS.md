@@ -1,4 +1,4 @@
-# E0 results — first baseline completed; independent audit pending
+# E0 results — first baseline completed and independently audited
 
 On 3 November 2026 the user supplied successful accounting for preparation
 242798, GPU sanity/baseline 242871 and final evaluation 242872. Exported results:
@@ -13,10 +13,14 @@ On 3 November 2026 the user supplied successful accounting for preparation
 | Training-majority Top-1 | 8.05% |
 
 The 25-epoch history confirms loss-based checkpoint selection at epoch 15 and
-patience-based stopping. Strong class-level failures and a confirmed gap in
-accumulated-clock-drift validation require an independent saved-artifact audit.
-See [E0_AUDIT.md](E0_AUDIT.md). No root cause is asserted and no second baseline
-is authorized/submitted by the audit implementation.
+patience-based stopping. CPU audit job 243446 completed `0:0` in 7m10s and
+independently reproduced the metrics and exports, verified retained annotation
+identities and found no recording-level leakage. Balanced accuracy is 10.44%,
+19 classes are never predicted and 45 have zero correct predictions. No retained
+recording exceeds 50 ms accumulated drift. Absolute pose/video clock alignment
+remains unverified. See [E0_AUDIT.md](E0_AUDIT.md). The original artifacts stay
+frozen; the separate Phase 1C workflow implements the subsequently authorized
+B0-balanced and B1-HandFormer experiments.
 
 ## Historical checkpoints, superseded by the completed run above
 

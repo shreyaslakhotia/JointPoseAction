@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/s-shamil/HandFormer.git",
+  "revision": "640a10a6bd03f85842a2662e67cf30444ab1d673",
+  "architecture": "HandFormer/models/hf_pose.py:HF_Pose",
+  "source_sha256": {
+    "HandFormer/utils.py": "854865d50caffb8bcfe661c0b6c577d3e47a6d37bf899ef702b8e7101f66743c",
+    "HandFormer/models/activation.py": "24fbc6523fb0081f86047119d60c849f28a2bf2bb2047df342ee05130c5cfe6f",
+    "HandFormer/models/ms_tcn_1D.py": "68293f1a4c14a1a06376d16b5ee30b7b2fe9e3c1613964ddbcb6b34128a2f806",
+    "HandFormer/models/trajectory_self_attention.py": "62ea95053eef055a56bdf1f3bea613d95b2eb63571ffa37d0838bb36bdf9a0b7",
+    "HandFormer/models/microaction_encoder.py": "3e8799982dd6cdce1aeea306cb57e580146b1698a6de3f3919a6a632464639d0",
+    "HandFormer/models/transformer_unimodal.py": "31aed64255927856bd461509488c24a22bde429fecb86668de29516e159baafa",
+    "HandFormer/models/hf_pose.py": "8458bdbd6b8eb17b10376a108a5b2104581e996937fe90da5384b4f799e36bb1"
+  },
+  "compatibility_transformations": [
+    "Isolated module namespace; rewrite only upstream absolute models.* and utils imports",
+    "Omit __main__ profiling/demo blocks and sys.path.insert side effects",
+    "Omit thop.profile, fvcore.nn.flop_count and tqdm.tqdm imports used only by omitted profiling demos",
+    "transformer_unimodal.py: replace exact batch_seq_ain_pe.get_device() with batch_seq_ain_pe.device for CPU and CUDA device compatibility",
+    "transformer_unimodal.py: replace exact einops repeat(action_token,'() n d -> b n d',b=batch_size) with action_token.expand(batch_size,-1,-1); omit sole einops.repeat import"
+  ],
+  "preprocessing_deviations": [
+    "Use frozen E0 action IDs, labels and half-open doubled-frame intervals; no context expansion or frame-zero clamping",
+    "Reuse E0 per-segment dimensionless bone scale and shared origin with source world axes; do not fetch wrist transforms or claim authored smoothed left-wrist coordinate normalization",
+    "Mask only nonfinite joints and confidence<=0 observations, preserving finite zero coordinates with positive confidence",
+    "Temporal resize uses explicit segment length rather than inferring valid frames from nonzero coordinate sums"
+  ],
+  "pretrained_weights": null
+}

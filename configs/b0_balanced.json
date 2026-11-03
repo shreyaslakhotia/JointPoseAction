@@ -1,0 +1,17 @@
+{
+  "model_family": "tcn",
+  "expected_dataset_sha256": "f45c749371568c29f840d2613d9ed20e9859e9020d1555f039882196cd133b59",
+  "seed": 42,
+  "batch_size": 32,
+  "epochs": 60,
+  "patience": 10,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "optimizer": {"name": "AdamW"},
+  "scheduler": {"name": "cosine"},
+  "gradient_clip": 1.0,
+  "class_weighting": "inverse_sqrt_frequency",
+  "selection": "validation_macro_f1",
+  "sanity": {"classes": 4, "per_class": 4, "steps": 500, "learning_rate": 0.003},
+  "model": {"width": 64, "dilations": [1, 2, 4], "dropout": 0.2}
+}
