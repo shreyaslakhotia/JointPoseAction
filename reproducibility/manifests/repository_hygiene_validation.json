@@ -1,0 +1,50 @@
+{
+  "baseline_commit": "fcb0a40db35c1c20da76df5fa90fa7a9179d63ad",
+  "validated_commit": "6258c647420fc157c301ad96505251683eab9fb7",
+  "branch": "chore/repository-hygiene",
+  "original_files": 710,
+  "raw_byte_matches": 710,
+  "checkout_equivalent_matches": 0,
+  "protected_research_and_provenance_files": 76,
+  "current_documentation_files_checked": 29,
+  "ignore_probes": 10,
+  "failures": [],
+  "limitations": [
+    "No remote checkpoint, raw dataset or Slurm job was accessed by this local hygiene check.",
+    "Preservation and import checks do not reproduce scientific recognition results."
+  ],
+  "cpu_tests_before": {
+    "passed": 86,
+    "seconds": 21.835
+  },
+  "cpu_tests_after": {
+    "passed": 91,
+    "seconds": 29.288
+  },
+  "new_regression_tests": 5,
+  "cli_help_entry_points": 8,
+  "cluster_shell_syntax_checks": 25,
+  "preservation_manifest": {
+    "exact": 0,
+    "crlf_only": 20,
+    "deferred_patch_entries": 2
+  },
+  "small_artifact_manifest": {
+    "exact": 326,
+    "crlf_only": 214
+  },
+  "independent_review": {
+    "all_baseline_git_blobs_preserved": true,
+    "checked_text_files": 511,
+    "credential_pattern_matches": 0,
+    "files_exceeding_5MiB": 0
+  },
+  "production_worktree": {
+    "branch": "development/e0-baseline",
+    "commit": "fcb0a40db35c1c20da76df5fa90fa7a9179d63ad",
+    "clean": true
+  },
+  "cluster_checkout_modified": false,
+  "cluster_job_actions": [],
+  "scientific_results_reproduced": false
+}

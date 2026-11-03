@@ -6,8 +6,10 @@ Original production commit: `fcb0a40db35c1c20da76df5fa90fa7a9179d63ad` on
 `development/e0-baseline`. All changes are made on `chore/repository-hygiene` in
 the isolated local worktree `data/repository_hygiene_worktree`. The parent
 production worktree and cluster checkout are not edited, switched or deployed.
-The structural commit and final validation evidence are recorded when review is
-complete; this branch is not merged into production.
+Final reorganization commit: `6258c647420fc157c301ad96505251683eab9fb7`.
+The report/evidence finalization is a documentation-only successor; the exact
+review head is `git rev-parse chore/repository-hygiene`. This branch is not merged
+into production.
 
 The latest user-supplied accounting reports prepare 243530 completed `0:0` in
 31 seconds; B0-balanced 243531 completed `0:0` in 17m19s; B1-HandFormer 243532
@@ -111,8 +113,11 @@ checker does not claim YAML semantic validation.
 Independent post-move review confirmed original Git blobs as well as working
 bytes. A bounded final scan of 511 text files found zero checked credential-pattern
 matches; no candidate file exceeds 5 MiB. The largest new metadata is the
-483,043-byte complete migration map. Generated verification evidence and the
-structural commit reference are finalized after committing the reorganization.
+483,043-byte complete migration map. Post-commit verification passed at structural commit `6258c647420fc157c301ad96505251683eab9fb7`.
+Machine-readable evidence is in
+[repository_hygiene_validation.json](../../reproducibility/manifests/repository_hygiene_validation.json).
+The final production worktree check remained clean on `development/e0-baseline`
+at `fcb0a40db35c1c20da76df5fa90fa7a9179d63ad`.
 
 A bounded credential-pattern scan of 498 baseline tracked text files found no
 matches for the checked token/key/private-key/password-URL patterns. It did not
