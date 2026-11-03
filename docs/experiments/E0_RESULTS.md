@@ -1,4 +1,24 @@
-# E0 results — no trained-model results yet
+# E0 results — first baseline completed; independent audit pending
+
+On 3 November 2026 the user supplied successful accounting for preparation
+242798, GPU sanity/baseline 242871 and final evaluation 242872. Exported results:
+
+| Measure | User-reported value |
+|---|---:|
+| Classes | 100 |
+| Retained train / validation / test | 22,083 / 6,880 / 9,760 |
+| Test Top-1 | 28.08% |
+| Test Top-5 | 54.89% |
+| Test macro-F1 | 0.0922 |
+| Training-majority Top-1 | 8.05% |
+
+The 25-epoch history confirms loss-based checkpoint selection at epoch 15 and
+patience-based stopping. Strong class-level failures and a confirmed gap in
+accumulated-clock-drift validation require an independent saved-artifact audit.
+See [E0_AUDIT.md](E0_AUDIT.md). No root cause is asserted and no second baseline
+is authorized/submitted by the audit implementation.
+
+## Historical checkpoints, superseded by the completed run above
 
 Unattended continuation is prepared in [E0_HANDOFF.md](E0_HANDOFF.md), attaching
 to preparation job 242798 (last user-reported running). One gated GPU sanity/baseline

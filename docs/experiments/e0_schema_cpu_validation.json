@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "execution": "local CPU only",
-  "tests_passed": 48,
+  "tests_passed": 53,
   "tests_failed": 0,
-  "measured_suite_seconds": 5.093,
+  "measured_suite_seconds": 9.249,
   "new_regressions": [
     "Finite zero-valued wrist preserved as a possible reference origin",
     "Cached official-metadata/pose-inventory intersection and training-only class selection",
@@ -22,7 +22,11 @@
     "Failed readiness/sanity blocks training; missing training completion blocks evaluation",
     "Successful mocked stages run sanity, baseline and final evaluation once in order",
     "Measured report preserves supplied synthetic metrics and confusion counts",
-    "Bounded sanity selection excludes duplicate features and a one-step synthetic optimizer test does not falsely pass"
+    "Bounded sanity selection excludes duplicate features and a one-step synthetic optimizer test does not falsely pass",
+    "Independent metrics expose possible accuracy/macro-F1 imbalance gaps",
+    "Independent feature reconstruction matches declared dimensionless exports",
+    "Accumulated drift audit catches a counterexample passing the original local cadence gate",
+    "Complete read-only audit entrypoint runs on a synthetic saved checkpoint/dataset without optimizer updates"
   ],
   "cluster_tests_previously_passed": 28,
   "cluster_test_job": "242713",
@@ -42,9 +46,15 @@
   "planned_compressed_bytes": 7994397395,
   "planned_uncompressed_bytes": 23098116832,
   "preparation_job": "242798",
-  "preparation_job_last_user_reported_state": "RUNNING",
-  "training_runs_submitted": 0,
-  "additional_gpu_jobs_submitted": 0,
+  "preparation_job_last_user_reported_state": "COMPLETED",
+  "training_runs_submitted": 1,
+  "additional_gpu_jobs_submitted": 1,
+  "baseline_training_job": "242871",
+  "baseline_evaluation_job": "242872",
+  "baseline_completed": true,
+  "baseline_preparation_gate_passed": true,
+  "audit_complete": false,
+  "audit_gpu_jobs_submitted": 0,
   "training_ready": false,
-  "reason": "Dimensionless feature and reference-reader timing protocol declared; actual acquisition, quality exclusions and final class-support validation pending"
+  "reason": "Completed baseline has weak class-level performance; independent metric/feature/timestamp audit pending before any new training"
 }
