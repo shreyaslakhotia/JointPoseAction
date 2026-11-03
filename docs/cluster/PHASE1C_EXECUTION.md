@@ -98,6 +98,47 @@ and counted, consistent with the original confidence/missing-data policy; valid
 zero coordinates are preserved. Population changes, unsafe paths or corrupted
 sources are hard failures.
 
+## Recovery of preparation job 243518
+
+The first submission recorded prepare/B0/B1/evaluate jobs
+243518/243519/243520/243521. Preparation finished caching all 268 retained
+recordings (3,699,724,330 bytes), preserving 22,083/6,880/9,760 examples, then
+failed on the HandFormer source fingerprint. All dependent jobs were cancelled
+with zero elapsed time; neither training run started.
+
+The provenance hashes had mistakenly been generated from Windows CRLF checkout
+bytes. The pinned upstream Git objects and the Linux checkout use LF. The fix
+records canonical Git-blob SHA-256 values and independently checks both the pinned
+Git objects and working source after **only** CRLF-to-LF conversion. It accepts
+no whitespace stripping or other edits. Source verification now precedes cache
+processing. The dataset, model configurations, upstream revision and architecture
+are unchanged.
+
+After pulling the repair commit, one consolidated command resumes the workflow:
+
+```bash
+(
+  set -e
+  cd /projects/jointposeaction/repo
+  git pull --ff-only
+  bash scripts/cluster/submit_phase1c.sh --recover-preparation
+)
+```
+
+This explicitly bounded recovery is restricted to the diagnosed failure at the
+original source commit. It verifies your four old Slurm records, requires failed
+preparation and cancelled/zero-elapsed dependent jobs, and refuses recovery if a
+model's training directory or successful preparation marker exists. A complete
+cache with matching dataset hash and split counts is required. Old submission
+and failure metadata are archived under `recovery-history/preparation-243518.json`.
+
+The replacement submission pins the repaired source and retains the same output
+root/cache. The CPU stage revalidates cached hashes and model compatibility;
+successful preparation releases the two scientific runs through dependencies.
+Repeated invocation reuses the replacement IDs. A second recovery or any attempt
+to replace an executed model is refused. There is no additional scientific run
+or hyperparameter change in this repair.
+
 ## Outputs and monitoring
 
 - `submission.json`: pinned source, dataset protocol, all four job IDs and release

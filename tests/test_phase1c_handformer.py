@@ -1,17 +1,19 @@
 """CPU contracts for the official HandFormer adapter; no trained model needed."""
 import ast
+import hashlib
 import json
 import os
 from pathlib import Path
 import tempfile
 import unittest
+from unittest import mock
 
 import numpy as np
 import torch
 
 from e0.data import segment_features, sha256
 from e0.source_profile import dimensionless_profile
-from phase1c.handformer import compatible_tree, build_model, verify_upstream
+from phase1c.handformer import REVISION, compatible_tree, build_model, verify_upstream
 from phase1c.handformer_data import (HandFormerDataset, crop_and_resize,
                                    load_compatibility, prepare)
 
@@ -20,6 +22,44 @@ REPO = Path(__file__).resolve().parents[1]
 
 
 class HandFormerAdapterTests(unittest.TestCase):
+    def test_canonical_git_blob_hash_accepts_lf_and_crlf_but_rejects_edits(self):
+        canonical = b"def forward(x):\n    return x + 1\n"
+        path = "HandFormer/utils.py"
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            target = root / path
+            target.parent.mkdir(parents=True)
+            provenance = root / "provenance.json"
+            manifest = {"revision": REVISION, "source_sha256": {
+                path: hashlib.sha256(canonical).hexdigest()}}
+            provenance.write_text(json.dumps(manifest))
+
+            def git(command, **options):
+                if command[-2:] == ["rev-parse", "HEAD"]:
+                    return REVISION + "\n"
+                self.assertEqual(command[-2:], ["show", REVISION + ":" + path])
+                self.assertNotIn("text", options)  # Canonical blob read as bytes.
+                return canonical
+
+            with mock.patch("phase1c.handformer.PROVENANCE", provenance), mock.patch(
+                    "phase1c.handformer.subprocess.check_output", side_effect=git):
+                for content in (canonical, canonical.replace(b"\n", b"\r\n")):
+                    target.write_bytes(content)
+                    self.assertEqual(verify_upstream(root), manifest)
+                for content in (canonical.replace(b"+ 1", b"+ 2"), canonical + b" ",
+                                canonical.replace(b"\n", b"\r")):
+                    target.write_bytes(content)
+                    with self.assertRaisesRegex(ValueError, "source hash mismatch"):
+                        verify_upstream(root)
+            # Matching a worktree alone is insufficient: the pinned Git blob
+            # must independently match the committed canonical fingerprint.
+            target.write_bytes(canonical)
+            with mock.patch("phase1c.handformer.PROVENANCE", provenance), mock.patch(
+                    "phase1c.handformer.subprocess.check_output",
+                    side_effect=[REVISION + "\n", canonical + b"edited"]):
+                with self.assertRaisesRegex(ValueError, "pinned Git blob hash mismatch"):
+                    verify_upstream(root)
+
     def fixture(self, root):
         profile = dimensionless_profile()
         frames = {}

@@ -4,6 +4,7 @@ The checkout remains outside Git; no upstream architecture source is vendored.
 All classes and forward methods execute from the pinned upstream source AST.
 """
 import ast
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -11,7 +12,6 @@ import subprocess
 import sys
 import types
 
-from e0.data import sha256
 from .handformer_data import HandFormerDataset
 
 
@@ -65,13 +65,19 @@ def source_root(config):
 
 def verify_upstream(root):
     root = Path(root).resolve()
-    revision = subprocess.check_output(["git", "-c", f"safe.directory={root.as_posix()}",
-        "-C", str(root), "rev-parse", "HEAD"], text=True).strip()
+    git = ["git", "-c", f"safe.directory={root.as_posix()}", "-C", str(root)]
+    revision = subprocess.check_output(git + ["rev-parse", "HEAD"], text=True).strip()
     if revision != REVISION:
         raise ValueError("HandFormer upstream revision differs from the pinned source")
     manifest = json.loads(PROVENANCE.read_text(encoding="utf-8"))
     for path, expected in manifest["source_sha256"].items():
-        if sha256(root / path) != expected:
+        # Fingerprints describe the pinned Git objects, not a host's checkout
+        # filters. CRLF is the sole permitted working-tree transformation.
+        blob = subprocess.check_output(git + ["show", f"{REVISION}:{path}"])
+        if hashlib.sha256(blob).hexdigest() != expected:
+            raise ValueError(f"HandFormer pinned Git blob hash mismatch: {path}")
+        working = (root / path).read_bytes().replace(b"\r\n", b"\n")
+        if hashlib.sha256(working).hexdigest() != expected:
             raise ValueError(f"HandFormer source hash mismatch: {path}")
     return manifest
 

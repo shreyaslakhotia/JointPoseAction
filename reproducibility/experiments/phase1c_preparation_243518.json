@@ -1,0 +1,18 @@
+{
+  "evidence_source": "User-supplied Slurm accounting and preparation stdout/stderr, 2026-11-03",
+  "source_commit": "78e4bbfd34cc55eabe6c41cd857a5e88a03ffa2d",
+  "jobs": {
+    "prepare": {"id": "243518", "state": "FAILED", "exit_code": "1:0", "elapsed": "00:06:26"},
+    "b0": {"id": "243519", "state": "CANCELLED", "elapsed": "00:00:00"},
+    "b1": {"id": "243520", "state": "CANCELLED", "elapsed": "00:00:00"},
+    "evaluate": {"id": "243521", "state": "CANCELLED", "elapsed": "00:00:00"}
+  },
+  "cached_recordings": 268,
+  "cache_bytes": 3699724330,
+  "split_counts": {"train": 22083, "validation": 6880, "test": 9760},
+  "failure": "HandFormer source hash mismatch: HandFormer/utils.py",
+  "confirmed_cause": "All seven source fingerprints were Windows CRLF checkout hashes rather than canonical LF Git-blob hashes",
+  "correction": "Pin canonical Git-blob SHA-256, verify pinned blobs and working bytes allowing only CRLF-to-LF conversion; verify before cache work",
+  "dataset_or_model_configuration_changed": false,
+  "recovery_submitted": false
+}

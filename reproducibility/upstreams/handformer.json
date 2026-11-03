@@ -2,14 +2,15 @@
   "repository": "https://github.com/s-shamil/HandFormer.git",
   "revision": "640a10a6bd03f85842a2662e67cf30444ab1d673",
   "architecture": "HandFormer/models/hf_pose.py:HF_Pose",
+  "source_sha256_semantics": "SHA-256 of canonical bytes from git show <revision>:<path>; this pinned revision uses LF line endings. Working-tree comparison changes only CRLF to LF, without stripping whitespace or accepting other edits.",
   "source_sha256": {
-    "HandFormer/utils.py": "854865d50caffb8bcfe661c0b6c577d3e47a6d37bf899ef702b8e7101f66743c",
-    "HandFormer/models/activation.py": "24fbc6523fb0081f86047119d60c849f28a2bf2bb2047df342ee05130c5cfe6f",
-    "HandFormer/models/ms_tcn_1D.py": "68293f1a4c14a1a06376d16b5ee30b7b2fe9e3c1613964ddbcb6b34128a2f806",
-    "HandFormer/models/trajectory_self_attention.py": "62ea95053eef055a56bdf1f3bea613d95b2eb63571ffa37d0838bb36bdf9a0b7",
-    "HandFormer/models/microaction_encoder.py": "3e8799982dd6cdce1aeea306cb57e580146b1698a6de3f3919a6a632464639d0",
-    "HandFormer/models/transformer_unimodal.py": "31aed64255927856bd461509488c24a22bde429fecb86668de29516e159baafa",
-    "HandFormer/models/hf_pose.py": "8458bdbd6b8eb17b10376a108a5b2104581e996937fe90da5384b4f799e36bb1"
+    "HandFormer/utils.py": "4736b3cfb4ae990b53b72b72db76ac04701f07bd54949971fdffbfd94ddf9804",
+    "HandFormer/models/activation.py": "dbbbd4c002ba9351cb3fc1397e3258ad13c5ae9d22d3e4cefac8a2fd29b3cafc",
+    "HandFormer/models/ms_tcn_1D.py": "8eb3cc674f6f7bbd0dfe913c8543888b3de0dbb3dd00393134db5e28dd32166c",
+    "HandFormer/models/trajectory_self_attention.py": "9fb1210cc690cb1437d6a6b2d7132fefaf65caaf0be01641e94f30e59570e082",
+    "HandFormer/models/microaction_encoder.py": "19e06bf57b88ab926bbce1b73f10e80d87c9c866963f929b15462b481c9313f2",
+    "HandFormer/models/transformer_unimodal.py": "c07d9233cd6984fb7251bfd1dc541a8af69e6e2e184adf20cb62edc776653947",
+    "HandFormer/models/hf_pose.py": "9a53a99cd8449b45c901df9c2c7b3bdb93d990f725ff543ea885b914287681d5"
   },
   "compatibility_transformations": [
     "Isolated module namespace; rewrite only upstream absolute models.* and utils imports",

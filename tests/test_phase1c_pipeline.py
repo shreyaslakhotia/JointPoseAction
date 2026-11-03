@@ -30,6 +30,71 @@ class PipelineTests(unittest.TestCase):
         (original / "provenance.json").write_text(json.dumps({"dataset_path": str(dataset)}))
         return root, repo
 
+    def failed_preparation_fixture(self, root):
+        run = root / "experiments/phase1c/recognition-baselines"
+        contract = {"dataset_sha256": protocol.DATASET_SHA256, "counts": protocol.SPLIT_COUNTS}
+        state = {"git_commit": pipeline.SOURCE_HASH_FAILURE_COMMIT, "protocol": contract,
+                 "jobs": {"prepare": "101", "b0": "102", "b1": "103", "evaluate": "104"},
+                 "released": list(pipeline.STAGES), "run": str(run),
+                 "original": str(root / "experiments/e0/controlled-baseline")}
+        protocol.save(run / "submission.json", state)
+        protocol.save(run / "status-prepare.json", {"state": "failed", "error": "HandFormer source hash mismatch: HandFormer/utils.py"})
+        protocol.save(run / "handformer-cache/compatibility.json", {
+            "ready": True, "dataset_sha256": contract["dataset_sha256"], "split_counts": contract["counts"]})
+        accounting = "\n".join(f"{job}|user|p1c-{name}|{status}|{elapsed}" for job, name, status, elapsed in (
+            ("101", "prepare", "FAILED", "386"), ("102", "b0", "CANCELLED", "0"),
+            ("103", "b1", "CANCELLED", "0"), ("104", "eval", "CANCELLED", "0")))
+        return run, state, contract, accounting
+
+    def test_known_preparation_recovery_archives_history_and_reuses_one_pipeline(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root, repo = self.submission_fixture(temp)
+            run, previous, contract, accounting = self.failed_preparation_fixture(root)
+            def commands(args):
+                return accounting if args[0] == "sacct" else ""
+            with patch.object(pipeline, "source_commit", return_value="b" * 40), \
+                 patch.object(pipeline, "dataset_contract", return_value=contract), \
+                 patch.object(pipeline, "active_jobs", return_value=[]), \
+                 patch.object(pipeline.getpass, "getuser", return_value="user"), \
+                 patch.object(pipeline, "command", side_effect=commands), \
+                 patch.object(pipeline, "submit_job", side_effect=["201", "202", "203", "204"]) as submit:
+                current = pipeline.submit(root, repo, recover=True)
+                self.assertEqual(submit.call_count, 4)
+                self.assertEqual(current["recovery"]["previous_jobs"], previous["jobs"])
+                self.assertEqual(current["jobs"]["b0"], "202")
+                archive = protocol.read(current["recovery"]["history"])
+                self.assertEqual(archive["submission"], previous)
+                self.assertEqual(archive["slurm_accounting"], accounting)
+            with patch.object(pipeline, "source_commit", return_value="b" * 40), \
+                 patch.object(pipeline, "dataset_contract", return_value=contract), \
+                 patch.object(pipeline, "active_jobs", return_value=[]), \
+                 patch.object(pipeline, "command") as command, patch.object(pipeline, "submit_job") as submit:
+                self.assertEqual(pipeline.submit(root, repo, recover=True), current)
+                submit.assert_not_called()
+                command.assert_not_called()
+            with self.assertRaisesRegex(ValueError, "already used"):
+                pipeline.recover_preparation(run, current, "c" * 40, contract)
+
+    def test_recovery_refuses_started_models_or_different_failures(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root, _ = self.submission_fixture(temp)
+            run, state, contract, accounting = self.failed_preparation_fixture(root)
+            (run / "b0/train").mkdir(parents=True)
+            with self.assertRaisesRegex(ValueError, "model run started"):
+                pipeline.recover_preparation(run, state, "b" * 40, contract)
+            self.assertFalse((run / "recovery-history").exists())
+        with tempfile.TemporaryDirectory() as temp:
+            root, _ = self.submission_fixture(temp)
+            run, state, contract, accounting = self.failed_preparation_fixture(root)
+            protocol.save(run / "status-prepare.json", {"state": "failed", "error": "label integrity failure"})
+            with self.assertRaisesRegex(ValueError, "differs"):
+                pipeline.recover_preparation(run, state, "b" * 40, contract)
+            protocol.save(run / "status-prepare.json", {"state": "failed", "error": "HandFormer source hash mismatch: HandFormer/utils.py"})
+            with patch.object(pipeline, "command", return_value=accounting.replace("p1c-b0|CANCELLED|0", "p1c-b0|COMPLETED|100")), \
+                 patch.object(pipeline.getpass, "getuser", return_value="user"):
+                with self.assertRaisesRegex(ValueError, "without execution"):
+                    pipeline.recover_preparation(run, state, "b" * 40, contract)
+
     def test_partial_submission_resumes_without_duplicate_training(self):
         with tempfile.TemporaryDirectory() as temp:
             root, repo = self.submission_fixture(temp)
@@ -148,6 +213,7 @@ class PipelineTests(unittest.TestCase):
                  patch.object(pipeline, "assert_original_unchanged"), \
                  patch.object(pipeline, "used_project_bytes", return_value=1000), \
                  patch.object(pipeline, "setup_upstream", return_value=root / "upstreams/HandFormer"), \
+                 patch("phase1c.handformer.verify_upstream"), \
                  patch.object(pipeline, "run_python"), \
                  patch.object(train, "build_model", autospec=True, side_effect=lambda config, artifact: torch.nn.Linear(216, 100)), \
                  patch.object(train, "build_dataset", return_value=data):
@@ -155,6 +221,22 @@ class PipelineTests(unittest.TestCase):
             prepared = protocol.read(run / "prepared.json")
             self.assertTrue(prepared["ready"])
             self.assertEqual(prepared["cpu_smoke"]["b1"]["output_shape"], [2, 100])
+
+    def test_source_verification_fails_before_any_cache_processing(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root, repo = self.submission_fixture(temp)
+            run = root / "experiments/phase1c/recognition-baselines"
+            state = {"original": str(root / "experiments/e0/controlled-baseline"),
+                     "protocol": {"dataset_path": str(root / "data/processed/e0/dataset.json")}}
+            with patch("e0.runtime.load_artifact", return_value={}), \
+                 patch.object(pipeline, "original_fingerprint", return_value={}), \
+                 patch.object(pipeline, "used_project_bytes", return_value=0), \
+                 patch.object(pipeline, "setup_upstream", return_value=root / "upstreams/HandFormer"), \
+                 patch("phase1c.handformer.verify_upstream", side_effect=ValueError("source mismatch")), \
+                 patch.object(pipeline, "run_python") as processing:
+                with self.assertRaisesRegex(ValueError, "source mismatch"):
+                    pipeline.prepare(root, repo, run, state)
+                processing.assert_not_called()
 
 
 if __name__ == "__main__":

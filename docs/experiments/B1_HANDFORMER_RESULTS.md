@@ -12,6 +12,16 @@ source files have SHA-256 hashes in
 project repository at `$JPA_ROOT/upstreams/HandFormer`; it contains source only,
 without pretrained weights, RGB features, or dataset downloads.
 
+Fingerprints refer to the canonical bytes obtained from
+`git show <pinned-revision>:<path>`, which use LF in this revision. Verification
+checks those Git blobs independently and compares each working file after only
+CRLF-to-LF normalization. Windows checkout newline conversion is accepted;
+semantic changes, whitespace changes and other edits are rejected. This fixes
+the first cluster preparation attempt, which completed the 3.70 GB compact cache
+but stopped because the initial fingerprints described Windows CRLF checkout
+bytes instead of canonical Git blobs. The cached observations remain reusable;
+this failure occurred before either model trained.
+
 `phase1c/handformer.py` loads upstream `HF_Pose` and its actual component classes.
 The [commented pose-only model block in the released training YAML](https://github.com/s-shamil/HandFormer/blob/640a10a6bd03f85842a2662e67cf30444ab1d673/HandFormer/train_config.yaml)
 specifies 21 joints, 256-dimensional micro-action tokens, 15-frame windows with
@@ -116,11 +126,13 @@ additional automatic training runs are configured.
 
 ## Validation and results
 
-Seven CPU tests passed on 2026-11-03, including actual pinned-source model forward
+Eight CPU tests passed on 2026-11-03, including actual pinned-source model forward
 and backward on a synthetic `1×3×120×21×2` tensor, source-cache hash/population
 checks, exact normalization/masking, storage rejection, explicit zero-frame
 retention, internal-missing-frame accounting and zero filling, cache resumption,
 deterministic temporal preprocessing, and broadcast gradient parity.
+The source-verification regression accepts LF and CRLF checkouts and rejects
+semantic edits, other byte changes and a mismatching pinned Git blob.
 These checks do not establish recognition performance or real-data throughput.
 
 Real cache coverage and bytes, sanity outcome, Slurm IDs, training duration,

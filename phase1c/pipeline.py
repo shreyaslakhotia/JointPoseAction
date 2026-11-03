@@ -1,6 +1,7 @@
 """Four-job Slurm workflow: prepare -> two bounded model runs -> evaluation."""
 import argparse
 from datetime import datetime, timezone
+import getpass
 import json
 import os
 from pathlib import Path
@@ -13,6 +14,7 @@ from .protocol import (DATASET_SHA256, ALLOCATION_BYTES, TRAINING_RESERVE_BYTES,
                        original_fingerprint, read, save)
 
 STAGES = ("prepare", "b0", "b1", "evaluate")
+SOURCE_HASH_FAILURE_COMMIT = "78e4bbfd34cc55eabe6c41cd857a5e88a03ffa2d"
 
 
 def command(args):
@@ -42,7 +44,61 @@ def submit_job(script, exports, dependency=None):
     return job
 
 
-def submit(root, repo):
+def recover_preparation(run, state, commit, contract):
+    """One explicit non-scientific recovery, only before either model has run."""
+    if state.get("recovery"):
+        if state["git_commit"] != commit or state["protocol"] != contract:
+            raise ValueError("Preparation recovery already used; inspect instead of retrying again")
+        return state  # Repeated invocation resumes the same recorded recovery.
+    if state["git_commit"] != SOURCE_HASH_FAILURE_COMMIT or state["protocol"] != contract or set(state["jobs"]) != set(STAGES):
+        raise ValueError("Recovery is restricted to the diagnosed source-hash preparation failure")
+    failed_status = read(run / "status-prepare.json")
+    if failed_status.get("state") != "failed" or failed_status.get("error") != "HandFormer source hash mismatch: HandFormer/utils.py":
+        raise ValueError("Preparation failure differs from the diagnosed line-ending issue")
+    if (run / "prepared.json").exists() or any((run / name / "train").exists() for name in ("b0", "b1")):
+        raise ValueError("Recovery cannot replace preparation after a model run started")
+    accounting = command(["sacct", "-X", "-j", ",".join(state["jobs"][s] for s in STAGES),
+                          "--noheader", "--parsable2",
+                          "--format=JobIDRaw,User%100,JobName%100,State,ElapsedRaw"])
+    rows = {}
+    for line in accounting.splitlines():
+        fields = [part.strip() for part in line.split("|")]
+        if len(fields) < 5 or fields[0] in rows:
+            raise ValueError("Unexpected Slurm accounting rows during recovery")
+        rows[fields[0]] = fields[1:5]
+    expected_names = {"prepare": "p1c-prepare", "b0": "p1c-b0", "b1": "p1c-b1", "evaluate": "p1c-eval"}
+    if set(rows) != set(state["jobs"].values()):
+        raise ValueError("All previous Phase 1C jobs must be accounted for before recovery")
+    for stage, job in state["jobs"].items():
+        user, name, status, elapsed = rows[job]
+        if user != getpass.getuser() or name != expected_names[stage]:
+            raise ValueError("Previous job ownership/name mismatch")
+        if stage == "prepare":
+            if status != "FAILED":
+                raise ValueError("Only failed preparation can be recovered")
+        elif not status.startswith("CANCELLED") or elapsed != "0":
+            raise ValueError("Dependent jobs must have been cancelled without execution")
+    cache = read(run / "handformer-cache/compatibility.json")
+    if cache.get("ready") is not True or cache.get("dataset_sha256") != contract["dataset_sha256"] or cache.get("split_counts") != contract["counts"]:
+        raise ValueError("Completed cache must match the unchanged frozen dataset")
+    if len(active_jobs()) + len(STAGES) > 5:
+        raise ValueError("Five-job submission limit: wait for four free slots before recovery")
+    archive = run / "recovery-history" / f"preparation-{state['jobs']['prepare']}.json"
+    record = {"submission": state, "failed_status": failed_status, "slurm_accounting": accounting,
+              "reason": "Windows_CRLF_fingerprints_vs_canonical_LF_source"}
+    if archive.exists():
+        if read(archive)["submission"] != state:
+            raise ValueError("Existing recovery history disagrees with the failed submission")
+    else:
+        save(archive, record)
+    return {**state, "git_commit": commit, "jobs": {}, "released": [],
+            "recovery": {"attempt": 1, "reason": record["reason"], "previous_commit": state["git_commit"],
+                         "previous_jobs": state["jobs"], "history": str(archive),
+                         "cached_preparation_reused": True,
+                         "created_utc": datetime.now(timezone.utc).isoformat()}}
+
+
+def submit(root, repo, recover=False):
     """Submission reads only small metadata and does not run CPU preprocessing."""
     commit = source_commit(repo)
     run = root / "experiments/phase1c/recognition-baselines"
@@ -58,11 +114,15 @@ def submit(root, repo):
         stream.close()
         try:
             path = run / "submission.json"
+            if recover and not path.exists():
+                raise ValueError("Recovery requires an existing failed submission")
             state = read(path) if path.exists() else {
                 "git_commit": commit, "root": str(root), "run": str(run),
                 "original": str(original), "protocol": contract,
                 "created_utc": datetime.now(timezone.utc).isoformat(),
                 "jobs": {}, "released": [], "training_runs_authorized": ["b0", "b1"]}
+            if recover:
+                state = recover_preparation(run, state, commit, contract)
             if state["git_commit"] != commit or state["protocol"] != contract:
                 raise ValueError("Recorded Phase 1C pins another source/dataset; inspect it rather than submitting duplicates")
             missing = [name for name in STAGES if name not in state["jobs"]]
@@ -138,6 +198,7 @@ def setup_upstream(root, repo):
 def prepare(root, repo, run, state):
     from e0.runtime import load_artifact
     from .train import build_model, build_dataset
+    from .handformer import verify_upstream
     import torch
     dataset = state["protocol"]["dataset_path"]
     artifact = load_artifact(dataset)
@@ -150,6 +211,8 @@ def prepare(root, repo, run, state):
     if before + TRAINING_RESERVE_BYTES >= ALLOCATION_BYTES:
         raise ValueError("Dedicated 50 GB allocation lacks training/report headroom")
     upstream = setup_upstream(root, repo)
+    # Detect source portability/integrity problems before a long cache pass.
+    verify_upstream(upstream)
     config_paths = {"b0": repo / "configs/b0_balanced.json", "b1": repo / "configs/b1_handformer.json"}
     # Source path belongs in runtime compatibility, never in the committed model recipe.
     os.environ["JPA_HANDFORMER_ROOT"] = str(upstream)
@@ -244,7 +307,9 @@ def stage(root, repo, run, name):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
-    sub.add_parser("submit")
+    submit_parser = sub.add_parser("submit")
+    submit_parser.add_argument("--recover-preparation", action="store_true",
+                               help="One recovery of the diagnosed CRLF/LF source-hash failure; reuses completed cache")
     command_parser = sub.add_parser("stage")
     command_parser.add_argument("name", choices=STAGES)
     args = parser.parse_args()
@@ -253,7 +318,7 @@ def main():
         raise RuntimeError("Dedicated jointposeaction SSD root required")
     repo = root / "repo"
     if args.command == "submit":
-        submit(root, repo)
+        submit(root, repo, recover=args.recover_preparation)
     else:
         stage(root, repo, Path(os.environ["JPA_PHASE1C_RUN"]), args.name)
 
