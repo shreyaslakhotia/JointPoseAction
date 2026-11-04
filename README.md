@@ -1,133 +1,123 @@
 # JointPoseAction
 
-**Current Phase 1C:** [one-command TCN/HandFormer workflow](docs/cluster/PHASE1C_EXECUTION.md),
-[balanced TCN recipe](docs/experiments/B0_BALANCED_RESULTS.md),
-[official HandFormer adaptation](docs/experiments/B1_HANDFORMER_RESULTS.md), and
-[matched comparison protocol](docs/experiments/DUAL_BACKBONE_COMPARISON.md).
-The research question is whether reconstructed 3D object geometry can improve
-fine-grained recognition beyond hand poses. This phase establishes two pose-only
-backbones; reconstruction and fusion are not implemented yet.
+Can reconstructed 3D object geometry improve fine-grained assembly action
+recognition beyond hand poses alone? The project has completed pose-only TCN
+and HandFormer controls on Assembly101. Reconstruction, calibration and
+hand-object fusion are the next research stages; they are not implemented or
+validated by these recognition results.
 
-**Completed E0:** [dataset contract](docs/experiments/E0_DATASET.md),
-[original TCN interfaces](docs/experiments/E0_IMPLEMENTATION.md),
-[measured results](docs/experiments/E0_RESULTS.md), and
-[independent audit](docs/experiments/E0_AUDIT.md). The frozen 100-class baseline
-achieved 28.08% Top-1 and 9.22% macro-F1. Completed Phase 1C measurements are
-21.53% / 11.44% for B0-balanced and 36.31% / 17.09% for HandFormer
-(Top-1 / macro-F1) on the same 9,760 held-out segments; see the matched report.
+## Measured recognition results
 
-**Current Phase 1A migration:** see [migration status](docs/cluster/MIGRATION_STATUS.md),
-[resource discovery](docs/cluster/RESOURCE_DISCOVERY.md), and
-[dataset sources](docs/data/DATASET_SOURCES.md). Only the dedicated
-`jointposeaction` cluster project is in scope. Historical setup below is not the
-current environment installation procedure.
+All three frozen checkpoints were evaluated on the same **9,760 segments from
+67 recordings**, covering 100 classes. The dataset contains 22,083 training and
+6,880 validation segments. Official recording-disjoint splits are retained;
+participants overlap across splits. These are selected-subset results, not a
+full Assembly101 benchmark or participant-independent evaluation.
 
-**Workstation preservation / cluster restore:** start with
-[docs/MIGRATION_MANIFEST.md](docs/MIGRATION_MANIFEST.md) and
-[docs/CLUSTER_RESTORE.md](docs/CLUSTER_RESTORE.md). These record the current code,
-exact upstream revisions and local patches, environment snapshots, selected
-recordings, excluded assets, and known defects. The historical setup/roadmap
-below is retained; it is not a validated end-to-end pipeline.
+| Model | Top-1 | Top-5 | Macro-F1 |
+|---|---:|---:|---:|
+| Original TCN | 28.08% | 54.89% | 9.22% |
+| Balanced TCN | 21.53% | 49.26% | 11.44% |
+| HandFormer pose-only adaptation | 36.31% | 65.92% | 17.09% |
 
-A research project on 3D hand and object pose estimation from egocentric assembly videos. The long-term goal is to improve pose tracking in difficult cases such as heavy hand-object occlusion and fast motion blur, supporting fine-grained action recognition and procedural mistake detection.
+HandFormer is the strongest measured recognizer. The balanced TCN broadens
+class coverage at a substantial accuracy cost. All three are retained for
+future within-backbone comparisons; differences also include preprocessing,
+loss and checkpoint selection, so they do not isolate architecture alone.
+Read the [final comparison](docs/experiments/DUAL_BACKBONE_COMPARISON.md),
+[B0 report](docs/experiments/B0_BALANCED_RESULTS.md),
+[B1 report](docs/experiments/B1_HANDFORMER_RESULTS.md) and
+[original audit](docs/experiments/E0_AUDIT.md).
 
-## Project Overview
-
-This project uses the Assembly101 and AssemblyHands datasets, with the four egocentric HMC camera views as the primary input. The first stage focuses on understanding where baseline annotations and pose estimates fail before adding stronger models and temporal reasoning.
-
-Current Month 1 activities:
-
-- Set up a reproducible Python and Conda environment.
-- Download a small subset of baseline videos known to contain annotation errors.
-- Build OpenCV-based visualizers for inspecting video frames and annotations.
-- Project 3D hand joint coordinates into 2D image frames to compare annotations with the visible hands.
-- Record failure cases involving occlusion, motion blur, calibration, and temporal misalignment.
-
-Future experiments will investigate foundation models such as SAM-3D and FoundationPose, together with temporal modeling for more stable tracking across frames.
-
-## Tech Stack
-
-- Python 3.10
-- Conda
-- OpenCV
-- NumPy
-- Matplotlib
-- Jupyter Notebook
-- Hugging Face Hub
-
-## Local Setup
-
-Create the Conda environment and install the project dependencies:
-
-```bash
-conda create -n jointposeaction python=3.10 -y
-conda activate jointposeaction
-pip install opencv-python numpy matplotlib jupyter huggingface_hub
-```
-
-If the Hugging Face repository requires authentication, log in once with:
-
-```bash
-huggingface-cli login
-```
-
-Download the initial three-video subset:
-
-```bash
-python download_subset.py
-```
-
-The script writes videos to `data/raw_videos/`. The default Hugging Face repository can be overridden when the dataset mirror uses a different repository ID:
-
-```bash
-python download_subset.py --repo-id <owner>/<dataset-repository>
-```
-
-## Directory Structure
+## Repository structure
 
 ```text
 JointPoseAction/
-├── data/
-│   ├── raw_videos/       # Downloaded source videos; ignored by Git
-│   ├── annotations/      # Local annotation files and calibration data
-│   └── processed/        # Extracted frames, projections, and derived data
-├── notebooks/            # Exploratory analysis and visualization notebooks
-├── src/                  # Reusable dataset, projection, and modeling code
-├── download_subset.py    # Download the Month 1 Assembly101 subset
-└── README.md
+|-- e0/                 # Shared dataset/feature tools, original TCN and audit
+|-- phase1c/            # Balanced TCN, official HandFormer adapter, comparison
+|-- configs/            # Frozen dataset and experiment configurations
+|-- scripts/
+|   |-- cluster/        # Environment checks, Slurm and submission wrappers
+|   |-- data/           # Selective acquisition and dataset validation
+|   `-- reproducibility/ # Read-only repository preservation validation
+|-- tests/              # CPU regression, synthetic-data and model tests
+|-- docs/               # Current results, protocols, setup and migration map
+|-- reproducibility/    # Pins, environments, patches, manifests and evidence
+`-- legacy_files/       # Historical reconstruction, notebooks and artifacts
 ```
 
-Large videos, extracted frames, generated plots, and other local experiment outputs should remain under `data/` and should not be committed to Git. Add a `.gitignore` entry for these paths before downloading a large dataset subset.
+`e0/` and `phase1c/` are the active recognition packages. Their module names,
+imports and CLI entry points are retained to preserve tested experiment
+interfaces. No empty `src/` layer or speculative geometry API is added.
+See the [documentation index](docs/README.md),
+[archive inventory](legacy_files/README.md),
+[file migration map](docs/reproducibility/FILE_MIGRATION_MAP.md) and
+[consolidation report](docs/reproducibility/REPOSITORY_HYGIENE_REPORT.md).
+`main` is the authoritative source branch. Historical experiment source
+revisions remain recoverable through Git history after branch cleanup.
 
-## Project Roadmap
+## Setup and validation
 
-### Month 1: Baseline Investigation
+Use the dedicated `/projects/jointposeaction` allocation. The
+[environment guide](docs/cluster/ENVIRONMENT_SETUP.md) documents the restored
+project interpreter and pinned dependencies. Local CPU validation uses an
+existing compatible Python environment; it does not require downloading data
+or training a model.
 
-- Finalize the local environment and data layout.
-- Download and verify the selected Assembly101 videos.
-- Understand Assembly101 and AssemblyHands camera, annotation, and calibration formats.
-- Implement 3D-to-2D hand-joint projection and OpenCV overlays.
-- Catalogue annotation errors and difficult visual conditions.
+```bash
+python -m unittest discover -s tests -v
+python scripts/reproducibility/validate_hygiene.py
+python scripts/cluster/verify_checkout.py
+python -m phase1c.train --help
+python -m phase1c.evaluate --help
+python -m phase1c.compare --help
+```
 
-### Month 2: Baseline Reproduction
+For the official HandFormer forward/backward CPU test, set
+`JPA_HANDFORMER_ROOT` to an existing checkout of upstream revision
+`640a10a6bd03f85842a2662e67cf30444ab1d673`. Its source is verified against
+[canonical fingerprints](reproducibility/upstreams/handformer.json).
+The environment requirements and isolated source adapter are documented in
+the B1 report. Do not commit upstream clones, environments or tokens.
 
-- Reproduce a suitable hand and object pose baseline on the four HMC views.
-- Establish metrics and evaluation splits.
-- Compare baseline predictions with the visualized ground-truth annotations.
+## Data and reproduction
 
-### Month 3: Occlusion and Motion Robustness
+Read the [dataset contract](docs/experiments/E0_DATASET.md) and
+[pose schema/alignment record](docs/experiments/E0_SCHEMA_VALIDATION.md).
+Vocabulary selection uses training data only; overlapping action intervals
+remain separate examples. Positive source confidence and finite coordinates
+define validity, and valid zero coordinates are preserved. Features are
+dimensionless. Absolute pose/video synchronization and metric hand/object
+calibration remain unverified.
 
-- Develop occlusion and motion-blur failure categories.
-- Evaluate temporal smoothing and sequence-based models.
-- Measure performance separately for visible, occluded, and blurred examples.
+Frozen dataset SHA-256:
+`f45c749371568c29f840d2613d9ed20e9859e9020d1555f039882196cd133b59`.
+Original TCN training source: `b188995a566e74de9d10f40baf0884319f2e576c`.
+Balanced TCN/HandFormer training source:
+`fcb0a40db35c1c20da76df5fa90fa7a9179d63ad`.
+Completed results and history snapshots are recorded in
+[phase1c_completed_243533.json](reproducibility/experiments/phase1c_completed_243533.json).
 
-### Month 4+: Foundation Models and Integration
+The [execution guide](docs/cluster/PHASE1C_EXECUTION.md) records configurations,
+submission procedures, validation gates and source pins. For exact reproduction,
+use the recorded experiment revision in a separate checkout, retain the frozen
+dataset/configuration, and configure a new run destination. Existing pipeline
+state and outputs must not be reused or overwritten. Do not run the submission
+wrapper merely to inspect the completed experiments.
 
-- Investigate SAM-3D and FoundationPose for hand-object pose refinement.
-- Fuse hand and object representations across time.
-- Run ablations against the reproduced baseline.
-- Document limitations, qualitative results, and directions for the final system.
+Large datasets, checkpoints, histories and prediction arrays remain outside Git:
 
-## Data and Citation
+- Original TCN: `/projects/jointposeaction/experiments/e0/controlled-baseline/`.
+- Phase 1C: `/projects/jointposeaction/experiments/phase1c/recognition-baselines/`.
+  Selected checkpoints: `b0/train/best.pt` and `b1/train/best.pt`;
+  reports: `comparison/`; histories: each model's `train/history.jsonl`.
 
-Please follow the official Assembly101 and AssemblyHands terms of use, download procedures, and citation requirements. Do not commit dataset files or credentials to this repository.
+This consolidation does not alter or deploy to the cluster checkout or change
+its datasets, checkpoints or run artifacts. Local ignored videos, caches and
+source-review checkouts are retained outside version control. Historical
+reconstruction prototypes are preserved in `legacy_files/`; their dependencies
+and original path assumptions require deliberate restoration.
+
+For the next research phase, begin with
+[fusion readiness](docs/experiments/FUSION_READINESS.md). Preserve the frozen
+recognition controls and validate geometry/alignment before any fusion claim.

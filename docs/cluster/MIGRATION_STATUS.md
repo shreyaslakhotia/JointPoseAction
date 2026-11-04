@@ -1,5 +1,15 @@
 # Phase 1A migration status — 2 November 2026
 
+> **Current consolidated status (4 November 2026):** E0 and both Phase 1C
+> recognition runs are complete. The [final comparison](../experiments/DUAL_BACKBONE_COMPARISON.md)
+> records the measured results and frozen population (22,083 train / 6,880
+> validation / 9,760 test segments; 100 classes). The phase log below preserves
+> its original observations; statements about pending acquisition, validation
+> or training describe earlier stages, not current readiness. Use the
+> [environment guide](../cluster/ENVIRONMENT_SETUP.md) for setup and the final
+> experiment reports for current outcomes. Absolute video/pose synchronization
+> and metric hand/object calibration remain unverified.
+
 Latest E0 checkpoint: CPU/GPU setup and authenticated inspection 242218 passed;
 26 tests passed on cluster. Official action CSV coverage and 337 cleaned-pose
 members are established. The user selected official recording-disjoint splits

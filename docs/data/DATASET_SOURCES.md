@@ -1,5 +1,15 @@
 # Dataset sources and schema — 2 November 2026
 
+> **Current consolidated status (4 November 2026):** E0 and both Phase 1C
+> recognition runs are complete. The [final comparison](../experiments/DUAL_BACKBONE_COMPARISON.md)
+> records the measured results and frozen population (22,083 train / 6,880
+> validation / 9,760 test segments; 100 classes). The phase log below preserves
+> its original observations; statements about pending acquisition, validation
+> or training describe earlier stages, not current readiness. Use the
+> [environment guide](../cluster/ENVIRONMENT_SETUP.md) for setup and the final
+> experiment reports for current outcomes. Absolute video/pose synchronization
+> and metric hand/object calibration remain unverified.
+
 This is a documentation review, not evidence of dataset file acquisition.
 Source pages were reviewed live. File revisions/hashes and schemas requiring
 sample contents remain unverified. Existing Phase 0 findings are dated evidence.

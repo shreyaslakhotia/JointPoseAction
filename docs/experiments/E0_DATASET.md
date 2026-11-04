@@ -1,4 +1,14 @@
-# E0 dataset — source contract implemented; real coverage pending
+# E0 dataset - frozen recognition source contract
+
+> **Current consolidated status (4 November 2026):** E0 and both Phase 1C
+> recognition runs are complete. The [final comparison](../experiments/DUAL_BACKBONE_COMPARISON.md)
+> records the measured results and frozen population (22,083 train / 6,880
+> validation / 9,760 test segments; 100 classes). The phase log below preserves
+> its original observations; statements about pending acquisition, validation
+> or training describe earlier stages, not current readiness. Use the
+> [environment guide](../cluster/ENVIRONMENT_SETUP.md) for setup and the final
+> experiment reports for current outcomes. Absolute video/pose synchronization
+> and metric hand/object calibration remain unverified.
 
 Latest user evidence: cluster job 242218 parsed all official label metadata,
 passed 26 tests, inventoried 337 cleaned pose members and sampled three actual

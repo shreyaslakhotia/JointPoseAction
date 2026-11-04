@@ -1,0 +1,82 @@
+# Large datasets (small recording/annotation manifests live in reproducibility/)
+/data/
+
+# Video Outputs
+/output_*/
+/output_visualization.mp4
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# External Cloned Repositories
+/assemblyhands-toolkit/
+/3D_reconstruction/single_view/sam3d_repo/
+# Upstream revisions, custom files, YAMLs and local patches are preserved in
+# reproducibility/upstreams/ instead of committing whole third-party clones.
+# Keep the small original mistake CSV snapshots, not an external repository.
+/mistake_repo/*
+!/mistake_repo/README.md
+!/mistake_repo/annots/
+/mistake_repo/annots/*
+!/mistake_repo/annots/*.csv
+
+# Python Environments & Caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+.cache/
+.pytest_cache/
+/miniconda3/
+/anaconda3/
+/.aws/
+/.codex/
+/.agents/
+*.egg-info/
+
+# Regenerable outputs. Small provenance-unknown input JPEGs and contour images
+# are intentionally retained; see docs/MIGRATION_MANIFEST.md.
+experiments/sam2_test/masks/
+experiments/sam2_test/mask_overlays/
+/experiments/sam2_test/deprecated/mask_overlays/*
+!/experiments/sam2_test/deprecated/mask_overlays/C10118_0005_overlay.jpg
+!/experiments/sam2_test/deprecated/mask_overlays/C10379_0005_overlay.jpg
+!/experiments/sam2_test/deprecated/mask_overlays/C10395_0005_overlay.jpg
+!/experiments/sam2_test/deprecated/mask_overlays/C10404_0005_overlay.jpg
+/experiments/reconstruction_data/*/rgb/
+/experiments/reconstruction_data/*/rgba/
+/experiments/reconstruction_data/*/masks/
+/3D_reconstruction/single_view/sam3d/output/
+
+# Model weights, generated geometry, archives and installers
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.onnx
+*.bin
+*.obj
+*.ply
+*.glb
+*.gltf
+*.npz
+*.npy
+*.pkl
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+/Miniconda*.sh
+
+# Temporary/editor files and private keys
+*.tmp
+*.swp
+*~
+.DS_Store
+*.pem
+*.key

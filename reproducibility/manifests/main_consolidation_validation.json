@@ -1,0 +1,87 @@
+{
+  "validation_context": "Pre-commit main merge working tree; source parents are recorded, not claimed as the final commit SHA",
+  "source_parents": [
+    "58265c9336412ef6a0efc2a0dcb5f4dc271b0013",
+    "eb28d7ae7dc7219c7a379e02dc7e27fac31f2212"
+  ],
+  "cpu_suite": {
+    "tests": 91,
+    "passed": 91,
+    "skipped": 0,
+    "seconds": 20.937,
+    "official_handformer_forward_backward_executed": true,
+    "final_tree_recheck": true
+  },
+  "cli_help_checks": [
+    "python -m e0.preprocess --help",
+    "python -m e0.train --help",
+    "python -m e0.evaluate --help",
+    "python -m e0.pipeline --help",
+    "python -m phase1c.train --help",
+    "python -m phase1c.evaluate --help",
+    "python -m phase1c.compare --help",
+    "python -m phase1c.pipeline --help"
+  ],
+  "shell_syntax_checks": 25,
+  "import_checks": 9,
+  "json_configurations_checked": [
+    "configs\\b0_balanced.json",
+    "configs\\b1_handformer.json",
+    "configs\\e0_source_manifest.example.json",
+    "configs\\e0_tcn.json"
+  ],
+  "original_preservation": {
+    "source_snapshots": 20,
+    "small_artifacts": 540,
+    "deferred_patch_entries": 2,
+    "failures": []
+  },
+  "slurm_only_acquisition_guard": "e0_acquire_prepare rejects execution outside dedicated CPU Slurm; no guard bypass or acquisition attempted",
+  "cluster_actions": [],
+  "ignored_video_preserved_bytes": 2273834,
+  "preservation_inventory_check": {
+    "baseline_commit": "fcb0a40db35c1c20da76df5fa90fa7a9179d63ad",
+    "validated_commit": "58265c9336412ef6a0efc2a0dcb5f4dc271b0013",
+    "branch": "main",
+    "original_files": 710,
+    "raw_byte_matches": 695,
+    "checkout_equivalent_matches": 15,
+    "protected_research_and_provenance_files": 76,
+    "completed_development_files_preserved": 711,
+    "current_documentation_files_checked": 29,
+    "ignore_probes": 10,
+    "failures": [],
+    "limitations": [
+      "No remote checkpoint, raw dataset or Slurm job was accessed by this local hygiene check.",
+      "Preservation and import checks do not reproduce scientific recognition results."
+    ]
+  },
+  "staged_review": {
+    "tracked_files_checked": 745,
+    "text_files_scanned": 533,
+    "credential_pattern_matches": 0,
+    "files_over_5MiB": [],
+    "largest_staged_file_bytes": 2322454,
+    "unchanged_scientific_configuration_provenance_and_execution_blobs": 112,
+    "unresolved_conflicts": 0,
+    "diff_check_passed": true,
+    "original_baseline_git_blobs_preserved_exactly": 710,
+    "completed_development_git_blobs_preserved_exactly": 711
+  },
+  "obsolete_branch_cleanup_gate": {
+    "branches": [
+      "development/e0-baseline",
+      "chore/repository-hygiene",
+      "migration/phase1a-readiness"
+    ],
+    "require_all_tips_ancestors_of_verified_remote_main": true,
+    "hygiene_worktree_clean": true,
+    "hygiene_worktree_ignored_untracked_files": 0,
+    "removal_method": "git worktree remove without force, then merged-only git branch -d and remote branch deletion",
+    "retired_tips": {
+      "development/e0-baseline": "58265c9336412ef6a0efc2a0dcb5f4dc271b0013",
+      "chore/repository-hygiene": "eb28d7ae7dc7219c7a379e02dc7e27fac31f2212",
+      "migration/phase1a-readiness": "dc9d95c992a9a380bd3c67fb47c409a9d5223a0d"
+    }
+  }
+}

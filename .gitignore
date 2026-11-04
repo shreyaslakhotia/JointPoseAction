@@ -80,3 +80,29 @@ experiments/sam2_test/mask_overlays/
 .DS_Store
 *.pem
 *.key
+
+# Isolated experiment artifacts and external runtime dependencies
+/experiments/e0/
+/experiments/phase1c/
+/environments/
+/cache/
+/upstreams/
+
+# Preserve equivalent ignore coverage after historical files are archived.
+/legacy_files/historical_code/3D_reconstruction/single_view/sam3d_repo/
+/legacy_files/historical_code/3D_reconstruction/single_view/sam3d/output/
+/legacy_files/old_experiments/mistake_repo/*
+!/legacy_files/old_experiments/mistake_repo/README.md
+!/legacy_files/old_experiments/mistake_repo/annots/
+/legacy_files/old_experiments/mistake_repo/annots/*
+!/legacy_files/old_experiments/mistake_repo/annots/*.csv
+/legacy_files/old_experiments/experiments/sam2_test/masks/
+/legacy_files/old_experiments/experiments/sam2_test/mask_overlays/
+/legacy_files/old_experiments/experiments/sam2_test/deprecated/mask_overlays/*
+!/legacy_files/old_experiments/experiments/sam2_test/deprecated/mask_overlays/C10118_0005_overlay.jpg
+!/legacy_files/old_experiments/experiments/sam2_test/deprecated/mask_overlays/C10379_0005_overlay.jpg
+!/legacy_files/old_experiments/experiments/sam2_test/deprecated/mask_overlays/C10395_0005_overlay.jpg
+!/legacy_files/old_experiments/experiments/sam2_test/deprecated/mask_overlays/C10404_0005_overlay.jpg
+/legacy_files/old_experiments/experiments/reconstruction_data/*/rgb/
+/legacy_files/old_experiments/experiments/reconstruction_data/*/rgba/
+/legacy_files/old_experiments/experiments/reconstruction_data/*/masks/
