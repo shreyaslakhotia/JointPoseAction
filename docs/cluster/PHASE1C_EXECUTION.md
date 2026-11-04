@@ -1,9 +1,16 @@
 # Phase 1C: matched TCN and HandFormer baselines
 
-Implementation is prepared; no Phase 1C Slurm job has been submitted from the
-agent's local environment. The user's authenticated cluster shell submits the
-complete workflow using the single entry point below. Real performance and job
-IDs must come from the recorded cluster execution, never CPU synthetic tests.
+The production workflow completed successfully at source commit
+`fcb0a40db35c1c20da76df5fa90fa7a9179d63ad`: prepare 243530, balanced TCN 243531,
+HandFormer 243532 and evaluation/comparison 243533. Measured outcomes are in the
+[matched results report](../experiments/DUAL_BACKBONE_COMPARISON.md).
+
+The instructions below document the original submission and guarded recovery.
+The existing submission is complete and pins its recorded source commit; it
+should not be rerun to create replacement scientific experiments. Reproduction
+uses the recorded source/configuration and an explicitly separate run plan.
+The user's authenticated cluster shell performed the submissions; no local
+synthetic result is presented as a real recognition result.
 
 ```bash
 (

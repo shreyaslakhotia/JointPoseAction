@@ -1,7 +1,52 @@
 # B1: official HandFormer pose-only adaptation
 
-Status: implementation and CPU compatibility tests passed; real training and
-held-out evaluation are pending. No quantitative B1 performance is claimed.
+Status: training job 243532 and evaluation/comparison job 243533 completed
+successfully. The user supplied the generated cluster comparison on 4 November
+2026; the measurements below describe the fixed 100-class protocol.
+
+## Measured outcome
+
+All models use the same 9,760 held-out segments from 67 recordings.
+
+| Model | Top-1 | Top-5 | Macro-F1 | Weighted-F1 | Balanced accuracy |
+|---|---:|---:|---:|---:|---:|
+| B0-original | 28.08% | 54.89% | 9.22% | 22.47% | 10.44% |
+| B1-HandFormer | 36.31% | 65.92% | 17.09% | 32.65% | 17.95% |
+
+HandFormer improves Top-1 by 8.23 percentage points and macro-F1 by 7.87 points
+over the original TCN. The paired recording-cluster 95% interval for its Top-1
+gain is [+6.94, +9.58] points. Against B0-balanced, the Top-1 gain is 14.78 points
+with interval [+13.51, +16.04]. These intervals condition on the trained models
+and selected recordings; they do not quantify seed variability or architecture's
+isolated causal effect.
+
+Fourteen classes have zero correct predictions and five are never predicted,
+compared with 45 and 19 for the original TCN. Top-ten prediction concentration
+is 59.52%. Verb/noun accuracy is 61.08%/48.52%. HandFormer gives the strongest
+overall metrics of these runs, while B0-balanced reaches more classes at least
+once (92 versus 86). Macro-F1 of 17.09% still indicates weak average class-level
+performance, despite the improvement.
+
+Validation macro-F1 selected epoch 41. The model has 3,805,866 parameters;
+fitting time is 14,696.75 seconds (about 4h05m), and total GPU job elapsed is
+4h13m34s including sanity/startup. GPU: NVIDIA L40S; peak PyTorch allocated CUDA
+memory: 8,716,908,032 bytes (about 8.12 GiB). These are reported runtime measures,
+not an estimate from parameter count. The TCN has substantially lower resource
+cost.
+
+The user also supplied first/selected/last history snapshots: all 50 epochs ran,
+and the training-only sanity gate passed after 50 updates (7.87 seconds).
+At epoch 41, online training Top-1/macro-F1 are 49.65%/29.67%, validation is
+35.36%/16.01%, and test is 36.31%/17.09%. At epoch 50, online training improves
+to 51.87%/31.93%, but validation falls to 34.45%/15.42%; validation CE rises
+from 2.731 to 2.829. This pattern is consistent with late overfitting and
+supports keeping the validation-selected epoch 41. Online training metrics use
+dropout, augmentation and changing parameters, so their gap from validation is
+not an exact post-fit generalization-gap estimate. The snapshots do not establish
+the dominant cause of remaining errors, nor do they motivate automatic retraining.
+
+Selected checkpoint SHA-256:
+`6249b77c877b5d43f1e953721746fb89dfd82647184315131443297c1635d643`.
 
 ## Source and model
 
@@ -135,9 +180,15 @@ The source-verification regression accepts LF and CRLF checkouts and rejects
 semantic edits, other byte changes and a mismatching pinned Git blob.
 These checks do not establish recognition performance or real-data throughput.
 
-Real cache coverage and bytes, sanity outcome, Slurm IDs, training duration,
-learning curves, selected epoch, held-out metrics and per-class errors will be
-recorded by the Phase 1C workflow after execution. Until then they remain pending.
+The completed workflow records cache/sanity provenance, job IDs, histories,
+checkpoints, measured learning curves, metrics and per-class outputs under
+`/projects/jointposeaction/experiments/phase1c/recognition-baselines/b1/`.
+The same run's `comparison/` directory contains the generated reports and paired
+uncertainty estimates. Source evidence received locally is the user's supplied
+report, accounting and history snapshots; full history files/curve images and a
+separate raw-prediction audit are not claimed to have been inspected locally.
+See [the matched comparison](DUAL_BACKBONE_COMPARISON.md) and
+[rounded measurements](../../reproducibility/experiments/phase1c_completed_243533.json).
 
 ## Reproduction
 

@@ -1,0 +1,223 @@
+{
+  "evidence_source": "User-pasted generated cluster comparison, sacct accounting, and first/selected/last training history and completion/sanity summaries; test metrics are report-rounded, not locally recomputed",
+  "received_date": "2026-11-04",
+  "training_source_commit": "fcb0a40db35c1c20da76df5fa90fa7a9179d63ad",
+  "dataset_sha256": "f45c749371568c29f840d2613d9ed20e9859e9020d1555f039882196cd133b59",
+  "population": {
+    "policy": "full_frozen_test",
+    "classes": 100,
+    "test_segments": 9760,
+    "test_recordings": 67,
+    "split_segments": {
+      "train": 22083,
+      "validation": 6880,
+      "test": 9760
+    },
+    "participant_independent": false
+  },
+  "jobs": {
+    "prepare": {
+      "id": "243530",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:00:31"
+    },
+    "b0": {
+      "id": "243531",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:17:19"
+    },
+    "b1": {
+      "id": "243532",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "04:13:34"
+    },
+    "evaluate": {
+      "id": "243533",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:20:26"
+    }
+  },
+  "models": {
+    "B0-original": {
+      "metrics_percent_rounded": {
+        "top1": 28.08,
+        "top5": 54.89,
+        "macro_f1": 9.22,
+        "weighted_f1": 22.47,
+        "balanced_accuracy": 10.44,
+        "top10_prediction_concentration": 72.87,
+        "verb_top1": 50.14,
+        "noun_top1": 43.23
+      },
+      "classes_never_predicted": 19,
+      "classes_zero_correct": 45,
+      "classes_with_at_least_one_correct": 55,
+      "selected_epoch": 15,
+      "selection_criterion": "minimum_validation_cross_entropy",
+      "parameters": 95268,
+      "fitting_seconds": null,
+      "peak_allocated_cuda_bytes": null,
+      "training_job": "242871",
+      "gpu": "NVIDIA L40S"
+    },
+    "B0-balanced": {
+      "metrics_percent_rounded": {
+        "top1": 21.53,
+        "top5": 49.26,
+        "macro_f1": 11.44,
+        "weighted_f1": 21.42,
+        "balanced_accuracy": 12.41,
+        "top10_prediction_concentration": 41.42,
+        "verb_top1": 45.74,
+        "noun_top1": 37.36
+      },
+      "classes_never_predicted": 0,
+      "classes_zero_correct": 8,
+      "classes_with_at_least_one_correct": 92,
+      "selected_epoch": 54,
+      "selection_criterion": "maximum_validation_macro_f1",
+      "parameters": 95268,
+      "fitting_seconds": 907.1129569523036,
+      "peak_allocated_cuda_bytes": 85140480,
+      "training_job": "243531",
+      "gpu": "NVIDIA L40S",
+      "history_snapshots": {
+        "epochs_completed": 60,
+        "sanity_passed": true,
+        "sanity_steps": 20,
+        "sanity_seconds": 0.769909349270165,
+        "checkpoint_sha256": "ebb3fb23d226ec947df67167a5a2073fabe3021e96f4a0e961109ae691d9cc6c",
+        "first": {
+          "epoch": 1,
+          "train_top1": 0.09500520762577548,
+          "train_macro_f1": 0.01572224162118518,
+          "validation_top1": 0.12383720930232558,
+          "validation_macro_f1": 0.017581759045781437,
+          "validation_ce": 3.9294311811757643
+        },
+        "selected": {
+          "epoch": 54,
+          "train_top1": 0.34374858488430016,
+          "train_macro_f1": 0.27550965637452896,
+          "validation_top1": 0.20537790697674418,
+          "validation_macro_f1": 0.10280434061654724,
+          "validation_ce": 3.4971420276996703
+        },
+        "last": {
+          "epoch": 60,
+          "train_top1": 0.3481411040166644,
+          "train_macro_f1": 0.2806658091242684,
+          "validation_top1": 0.20537790697674418,
+          "validation_macro_f1": 0.10139160848457411,
+          "validation_ce": 3.490926125992176
+        }
+      }
+    },
+    "B1-HandFormer": {
+      "metrics_percent_rounded": {
+        "top1": 36.31,
+        "top5": 65.92,
+        "macro_f1": 17.09,
+        "weighted_f1": 32.65,
+        "balanced_accuracy": 17.95,
+        "top10_prediction_concentration": 59.52,
+        "verb_top1": 61.08,
+        "noun_top1": 48.52
+      },
+      "classes_never_predicted": 5,
+      "classes_zero_correct": 14,
+      "classes_with_at_least_one_correct": 86,
+      "selected_epoch": 41,
+      "selection_criterion": "maximum_validation_macro_f1",
+      "parameters": 3805866,
+      "fitting_seconds": 14696.752170816995,
+      "peak_allocated_cuda_bytes": 8716908032,
+      "training_job": "243532",
+      "gpu": "NVIDIA L40S",
+      "history_snapshots": {
+        "epochs_completed": 50,
+        "sanity_passed": true,
+        "sanity_steps": 50,
+        "sanity_seconds": 7.86661536199972,
+        "checkpoint_sha256": "6249b77c877b5d43f1e953721746fb89dfd82647184315131443297c1635d643",
+        "first": {
+          "epoch": 1,
+          "train_top1": 0.1158357107277091,
+          "train_macro_f1": 0.022094142543179034,
+          "validation_top1": 0.14898255813953487,
+          "validation_macro_f1": 0.024291338023098002,
+          "validation_ce": 3.6501278234082597
+        },
+        "selected": {
+          "epoch": 41,
+          "train_top1": 0.49649051306434816,
+          "train_macro_f1": 0.2967276275865853,
+          "validation_top1": 0.35363372093023254,
+          "validation_macro_f1": 0.16008890353317373,
+          "validation_ce": 2.7306430500607157
+        },
+        "last": {
+          "epoch": 50,
+          "train_top1": 0.518679527238147,
+          "train_macro_f1": 0.3192758018720793,
+          "validation_top1": 0.3444767441860465,
+          "validation_macro_f1": 0.1542155692281438,
+          "validation_ce": 2.8290015935897825
+        }
+      }
+    }
+  },
+  "paired_accuracy_differences_percentage_points": [
+    {
+      "left": "B0-original",
+      "right": "B0-balanced",
+      "difference": -6.56,
+      "ci95": [
+        -7.57,
+        -5.53
+      ]
+    },
+    {
+      "left": "B0-original",
+      "right": "B1-HandFormer",
+      "difference": 8.23,
+      "ci95": [
+        6.94,
+        9.58
+      ]
+    },
+    {
+      "left": "B0-balanced",
+      "right": "B1-HandFormer",
+      "difference": 14.78,
+      "ci95": [
+        13.51,
+        16.04
+      ]
+    }
+  ],
+  "bootstrap": {
+    "sampling_unit": "recording",
+    "replicates": 10000,
+    "seed": 20261103,
+    "training_seed_uncertainty_quantified": false
+  },
+  "raw_predictions_recomputed_locally": false,
+  "limitations": [
+    "Original test results previously inspected; subsequent comparison is diagnostic",
+    "Absolute pose/video clock and metric calibration independently unverified",
+    "Preprocessing, representation, objective and capacity differ between model families",
+    "B0-balanced changes both weighting and checkpoint selection",
+    "History review uses first/selected/last snapshots rather than full histories or curve images",
+    "Online train metrics include dropout and updates, and HandFormer augmentation; they are not post-fit training inference"
+  ],
+  "additional_training_submitted": false,
+  "history_snapshots_reviewed_locally": true,
+  "complete_histories_downloaded": false,
+  "learning_curve_images_reviewed_locally": false,
+  "completion_test_flag_note": "Training marker test_evaluated:false records no test use during fitting; separate completed job243533 subsequently evaluated test"
+}

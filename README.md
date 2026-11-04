@@ -12,7 +12,9 @@ backbones; reconstruction and fusion are not implemented yet.
 [original TCN interfaces](docs/experiments/E0_IMPLEMENTATION.md),
 [measured results](docs/experiments/E0_RESULTS.md), and
 [independent audit](docs/experiments/E0_AUDIT.md). The frozen 100-class baseline
-achieved 28.08% Top-1 and 9.22% macro-F1. New Phase 1C results remain pending.
+achieved 28.08% Top-1 and 9.22% macro-F1. Completed Phase 1C measurements are
+21.53% / 11.44% for B0-balanced and 36.31% / 17.09% for HandFormer
+(Top-1 / macro-F1) on the same 9,760 held-out segments; see the matched report.
 
 **Current Phase 1A migration:** see [migration status](docs/cluster/MIGRATION_STATUS.md),
 [resource discovery](docs/cluster/RESOURCE_DISCOVERY.md), and
