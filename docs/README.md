@@ -20,6 +20,19 @@ live evidence of the latest cluster status.
 | Matched population and comparison | [Dual-backbone comparison](experiments/DUAL_BACKBONE_COMPARISON.md) |
 | Future reconstruction/fusion gates | [Fusion readiness](experiments/FUSION_READINESS.md) |
 
+## Segmentation and reconstruction preparation
+
+- [Candidate selection and source frames](../research_artifacts/segmentation_pilot/PILOT_SELECTION.md).
+- [Calibration and correspondence evidence](../research_artifacts/segmentation_pilot/CALIBRATION_VALIDATION.md).
+- [SAM 3 diagnostic execution record](../research_artifacts/segmentation_pilot/SAM3_SEGMENTATION_RESULTS.md).
+- [Reconstruction readiness and reproduction](../research_artifacts/reconstruction_benchmark/READINESS.md).
+- [Visual-hull implementation](../research_artifacts/reconstruction_benchmark/VISUAL_HULL_IMPLEMENTATION.md).
+- [Evaluation and held-out-view contract](../research_artifacts/reconstruction_benchmark/RECONSTRUCTION_EVALUATION.md).
+- [Learned-model comparison plan](../research_artifacts/reconstruction_benchmark/3D_MODEL_COMPARISON_PLAN.md).
+
+Current geometry validation uses known synthetic primitives. Real mask review,
+camera accuracy and temporal/static correspondence are separate acceptance gates.
+
 ## Preservation and provenance
 
 - [File migration map](reproducibility/FILE_MIGRATION_MAP.md) and

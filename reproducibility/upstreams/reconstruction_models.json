@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-05",
+  "review_scope": "Official source, model-card and file-inventory metadata only; no weights downloaded, environments created or inference executed",
+  "runtime_measurements_available": false,
+  "weights_payload_sha256_verified_locally": false,
+  "models": {
+    "sam3d_objects": {
+      "name": "Meta SAM 3D Objects",
+      "source": {"repository": "https://github.com/facebookresearch/sam-3d-objects", "commit": "f91db411c50efee93d8db7aeb323885650f6f722"},
+      "weights": {"repository": "facebook/sam-3d-objects", "revision": "2e73555018d2741ccd486e56c24fac41155a1dc6", "gated": "manual", "access_verified_for_this_account": false},
+      "license": {"name": "SAM License", "url": "https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/LICENSE", "dependencies_require_separate_review": true},
+      "inputs": {"native": "RGB image plus selected object mask; optional pointmap", "calibrated_camera_in_public_wrapper": false, "background_policy_planned": "mask_as_alpha"},
+      "outputs": {"representations": ["gaussian_splat", "triangle_mesh"], "native_layout": "Predicted rotation, translation and scale in model/pointmap conventions; retain exact raw values", "units_verified": false, "assembly101_frame_alignment_verified": false},
+      "resources": {"official_gpu_vram_gb": 32, "claim_type": "minimum stated by official setup, not measured here", "runtime_seconds_measured": null, "checkpoint_inventory_note": "ss_generator.ckpt 6690136964 bytes and slat_generator.ckpt 4906537684 bytes alone; decoders, configuration and depth-model dependencies additional", "environment_plan": "Separate Linux CUDA environment; official default environment, PyTorch3D, Kaolin, sparse/compiled dependencies and patched Hydra need compatibility review"},
+      "evidence": [
+        "https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/doc/setup.md",
+        "https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/notebook/inference.py",
+        "https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/sam3d_objects/pipeline/inference_pipeline_pointmap.py",
+        "https://huggingface.co/api/models/facebook/sam-3d-objects/tree/2e73555018d2741ccd486e56c24fac41155a1dc6?recursive=true&expand=false"
+      ],
+      "remaining_prerequisites": ["Separate SAM 3D Objects checkpoint approval; SAM 3 access is insufficient", "Review gated pipeline configuration and complete transitive checkpoint inventory including depth model", "Additional storage plan before download", "Calibrated-frame and metric-scale validation after explicit alignment"]
+    },
+    "hunyuan3d_2": {
+      "name": "Tencent Hunyuan3D-2.0 shape model",
+      "source": {"repository": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2", "commit": "f8db63096c8282cb27354314d896feba5ba6ff8a"},
+      "weights": {"repository": "tencent/Hunyuan3D-2", "revision": "9cd649ba6913f7a852e3286bad86bfa9a2d83dcf", "gated": false, "selected_subfolder": "hunyuan3d-dit-v2-0", "selected_file": "model.fp16.safetensors", "selected_file_bytes": 4928151562, "access_verified_for_this_account": false},
+      "license": {"name": "Tencent Hunyuan 3D 2.0 Community License Agreement", "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2/blob/f8db63096c8282cb27354314d896feba5ba6ff8a/LICENSE", "dependencies_require_separate_review": true},
+      "inputs": {"native": "One object RGB/RGBA image; ImageProcessorV2 recenters alpha foreground, composites white, resizes 512x512", "calibrated_camera_in_public_wrapper": false, "background_policy_planned": "mask_as_alpha"},
+      "outputs": {"representations": ["triangle_mesh"], "native_layout": "trimesh in generated object coordinates; no Assembly101 world transform supplied", "units_verified": false, "assembly101_frame_alignment_verified": false},
+      "resources": {"official_gpu_vram_gb": 6, "official_shape_plus_texture_vram_gb": 16, "claim_type": "vendor README estimate, not measured here", "runtime_seconds_measured": null, "environment_plan": "Separate PyTorch/diffusers/transformers mesh-processing environment; texture CUDA rasterizer/renderer extensions deferred", "storage_note": "4.93 GB selected shape checkpoint includes model/VAE/conditioner state; model configs and any external dependencies additional. Do not download duplicate ckpt/safetensors/precision variants or texture weights"},
+      "evidence": [
+        "https://github.com/Tencent-Hunyuan/Hunyuan3D-2/blob/f8db63096c8282cb27354314d896feba5ba6ff8a/README.md",
+        "https://github.com/Tencent-Hunyuan/Hunyuan3D-2/blob/f8db63096c8282cb27354314d896feba5ba6ff8a/hy3dgen/shapegen/preprocessors.py",
+        "https://github.com/Tencent-Hunyuan/Hunyuan3D-2/blob/f8db63096c8282cb27354314d896feba5ba6ff8a/hy3dgen/shapegen/pipelines.py",
+        "https://huggingface.co/api/models/tencent/Hunyuan3D-2/tree/9cd649ba6913f7a852e3286bad86bfa9a2d83dcf?recursive=true&expand=false"
+      ],
+      "remaining_prerequisites": ["Record executed foreground recenter/pad/resize transform, not only original crop", "Review selected weights and dependency licenses before use", "Calibrated-frame and metric-scale validation after explicit alignment", "Single-image v2.0 baseline only; do not silently substitute 2.1, mini, turbo or multiview variant"]
+    },
+    "stable_fast_3d": {
+      "name": "Stability AI Stable Fast 3D",
+      "source": {"repository": "https://github.com/Stability-AI/stable-fast-3d", "commit": "ff21fc491b4dc5314bf6734c7c0dabd86b5f5bb2"},
+      "weights": {"repository": "stabilityai/stable-fast-3d", "revision": "f0c9a8ffd62cb1bbc8a7a53c9f87a0be1b6be778", "gated": "auto", "selected_file": "model.safetensors", "selected_file_bytes": 4024289892, "access_verified_for_this_account": false},
+      "license": {"name": "Stability AI Community License Agreement", "url": "https://github.com/Stability-AI/stable-fast-3d/blob/ff21fc491b4dc5314bf6734c7c0dabd86b5f5bb2/LICENSE.md", "dependencies_require_separate_review": true},
+      "inputs": {"native": "Single alpha-masked object image; foreground crop/resize before run_image", "calibrated_camera_in_public_wrapper": false, "background_policy_planned": "mask_as_alpha"},
+      "outputs": {"representations": ["triangle_mesh"], "native_layout": "GLB/trimesh with model-defined canonical radius and default conditioning camera; not calibrated world coordinates", "units_verified": false, "assembly101_frame_alignment_verified": false},
+      "resources": {"official_gpu_vram_gb": 6, "claim_type": "about 6 GB for default single image in vendor README, not measured here", "runtime_seconds_measured": null, "environment_plan": "Separate environment; official NumPy1.26.4/transformers4.42.3 pins, texture_baker and uv_unwrapper native extensions; do not modify recognition/SAM3 environments", "storage_note": "4.02 GB main checkpoint plus config, environment and dependency weights"},
+      "evidence": [
+        "https://github.com/Stability-AI/stable-fast-3d/blob/ff21fc491b4dc5314bf6734c7c0dabd86b5f5bb2/README.md",
+        "https://github.com/Stability-AI/stable-fast-3d/blob/ff21fc491b4dc5314bf6734c7c0dabd86b5f5bb2/run.py",
+        "https://github.com/Stability-AI/stable-fast-3d/blob/ff21fc491b4dc5314bf6734c7c0dabd86b5f5bb2/sf3d/system.py",
+        "https://github.com/Stability-AI/stable-fast-3d/blob/ff21fc491b4dc5314bf6734c7c0dabd86b5f5bb2/sf3d/utils.py",
+        "https://huggingface.co/api/models/stabilityai/stable-fast-3d/tree/f0c9a8ffd62cb1bbc8a7a53c9f87a0be1b6be778?recursive=true&expand=false"
+      ],
+      "remaining_prerequisites": ["Accept separate gated model terms before later download", "Preserve reviewed mask alpha and avoid rembg replacing it", "Record foreground resizing and default versus supplied camera semantics", "Calibrated-frame and metric-scale validation after explicit alignment"]
+    },
+    "instantmesh": {
+      "name": "TencentARC InstantMesh large",
+      "source": {"repository": "https://github.com/TencentARC/InstantMesh", "commit": "08822c52fdc399b93ea00e4fa9e596344ed52ccc"},
+      "weights": {"repository": "TencentARC/InstantMesh", "revision": "b785b4ecfb6636ef34a08c748f96f6a5686244d0", "gated": false, "selected_files": [{"path": "instant_mesh_large.ckpt", "bytes": 1514818077}, {"path": "diffusion_pytorch_model.bin", "bytes": 1732056502}], "access_verified_for_this_account": false},
+      "license": {"name": "Apache-2.0 for InstantMesh repository; base diffusion/dependency terms remain separate", "url": "https://github.com/TencentARC/InstantMesh/blob/08822c52fdc399b93ea00e4fa9e596344ed52ccc/LICENSE", "dependencies_require_separate_review": true},
+      "inputs": {"native": "One foreground image, then six diffusion-generated views with fixed virtual cameras; --no_rembg preserves explicit alpha", "calibrated_camera_in_public_wrapper": false, "background_policy_planned": "mask_as_alpha"},
+      "outputs": {"representations": ["triangle_mesh"], "native_layout": "OBJ vertex color or UV texture in generated virtual-camera object frame", "units_verified": false, "assembly101_frame_alignment_verified": false},
+      "resources": {"official_gpu_vram_gb": null, "claim_type": "No numeric requirement verified in reviewed official README; do not invent one", "runtime_seconds_measured": null, "environment_plan": "Separate Python>=3.10/PyTorch2.1/CUDA12.1-era environment with xformers0.0.22.post7, diffusers and mesh renderer extensions; exact compatibility unresolved", "storage_note": "3.25 GB selected reconstruction+UNet files before Zero123++ base, configs, environment and dependency weights"},
+      "additional_weights": [{"repository": "sudo-ai/zero123plus-v1.2", "revision": "2da07e89919e1a130c9b5add1584c70c7aa065fd", "license_review_complete": false, "payload_downloaded": false}],
+      "evidence": [
+        "https://github.com/TencentARC/InstantMesh/blob/08822c52fdc399b93ea00e4fa9e596344ed52ccc/README.md",
+        "https://github.com/TencentARC/InstantMesh/blob/08822c52fdc399b93ea00e4fa9e596344ed52ccc/run.py",
+        "https://huggingface.co/api/models/TencentARC/InstantMesh/tree/b785b4ecfb6636ef34a08c748f96f6a5686244d0?recursive=true&expand=false"
+      ],
+      "remaining_prerequisites": ["Audit all base diffusion/custom-pipeline licenses and immutable dependencies", "Do not treat generated virtual views as observed Assembly101 cameras", "Calibrated-frame and metric-scale validation after explicit alignment", "Keep optional until resource and dependency review justifies its inclusion"]
+    }
+  }
+}

@@ -6,6 +6,20 @@ and HandFormer controls on Assembly101. Reconstruction, calibration and
 hand-object fusion are the next research stages; they are not implemented or
 validated by these recognition results.
 
+## Segmentation and reconstruction preparation
+
+The [research-artifact index](research_artifacts/README.md) records three
+diagnostic Assembly101 segmentation candidates. SAM 3 inference job `270796`
+and dependent CPU review job `271689` are prepared; consult Slurm for live
+completion. Camera accuracy and temporal correspondence remain unresolved,
+and no pilot is accepted for reconstruction yet.
+
+The new [reconstruction implementation](research_artifacts/reconstruction_benchmark/READINESS.md)
+is validated on synthetic primitives only. It provides calibrated voxel carving,
+solid occupancy rendering, point-cloud export, held-out-camera evaluation and
+metadata adapters for future learned methods. Real-object reconstruction and
+additional GPU model inference are disabled in this phase.
+
 ## Measured recognition results
 
 All three frozen checkpoints were evaluated on the same **9,760 segments from
@@ -35,6 +49,8 @@ Read the [final comparison](docs/experiments/DUAL_BACKBONE_COMPARISON.md),
 JointPoseAction/
 |-- e0/                 # Shared dataset/feature tools, original TCN and audit
 |-- phase1c/            # Balanced TCN, official HandFormer adapter, comparison
+|-- segmentation_pilot/ # Bounded acquisition, calibration diagnostics, native SAM 3
+|-- reconstruction/     # CPU geometry, evaluation, metadata-only model adapters
 |-- configs/            # Frozen dataset and experiment configurations
 |-- scripts/
 |   |-- cluster/        # Environment checks, Slurm and submission wrappers
@@ -43,12 +59,14 @@ JointPoseAction/
 |-- tests/              # CPU regression, synthetic-data and model tests
 |-- docs/               # Current results, protocols, setup and migration map
 |-- reproducibility/    # Pins, environments, patches, manifests and evidence
+|-- research_artifacts/ # Attributed review figures and synthetic validation
 `-- legacy_files/       # Historical reconstruction, notebooks and artifacts
 ```
 
 `e0/` and `phase1c/` are the active recognition packages. Their module names,
 imports and CLI entry points are retained to preserve tested experiment
-interfaces. No empty `src/` layer or speculative geometry API is added.
+interfaces. The geometry package is independently tested and does not alter
+these recognition interfaces or enable real reconstruction experiments.
 See the [documentation index](docs/README.md),
 [archive inventory](legacy_files/README.md),
 [file migration map](docs/reproducibility/FILE_MIGRATION_MAP.md) and

@@ -1,0 +1,296 @@
+{
+  "purpose": "unvalidated_multiview_candidate_review",
+  "multiview_dataset_ready": false,
+  "source_survey_sha256": "2bcabab3599347decf28e2515d647491d43e9745407cd2361c87aa56ac56696d",
+  "geometry_sha256": "459a1499cf3eae39857891a5c6add33719a4402fc8a992448501af610fe0c8d8",
+  "script_sha256": "128524fa2f9031016b7373397434337a21c945475debbbf4358bc37a785e4967",
+  "figures": [
+    {
+      "path": "candidate01_raw_eight_camera.jpg",
+      "sha256": "3f347086d807af65d9f543c0e72350cbf45597c2618f8e1765b7345cec086985",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "sources": [
+        {
+          "camera_id": "C10095",
+          "frame_sha256": "63909980e26d1b99fa94754246c7ba12c65cd8f75b4d3bad45d336fadf9eeb57",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10115",
+          "frame_sha256": "bddd4759cfb7bf42f12b0b3614889b559dbd93f2ed90a7182afe34c03ed20fe6",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10118",
+          "frame_sha256": "24f97faade7318a5b76dced03a91163706499f666a2613d1dcde8a2e73de2b01",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10119",
+          "frame_sha256": "57d12730a00d818117754d9666c58c1ecb189e8ab8db37c1c4bd4ef1a5644afd",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10379",
+          "frame_sha256": "5e0a4bd9ee16878b66ea88dcb71987f9bdaebbeff698454b7b0c26763418afbf",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10390",
+          "frame_sha256": "33d85809ba477e9246f7d5f97fef1cd8e9743bdd41384b8765ca2e325f81ed09",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10395",
+          "frame_sha256": "6162ebfe341abfdf649eab60e2b65ff881611f18be7a72497c2bb56d33ecf95c",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10404",
+          "frame_sha256": "e254c7f5f5b0918358b11577f210d5fe09f375199e94df9010c3833383a73571",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        }
+      ],
+      "changes": "Downsampling and external labels only. No geometric rectification, timing alignment or pixel retouching."
+    },
+    {
+      "path": "candidate02_raw_eight_camera.jpg",
+      "sha256": "69121b9dfcef06acdc45b1680701d047363b8748b778e3e6d8581af5baf9d6f4",
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "sources": [
+        {
+          "camera_id": "C10095",
+          "frame_sha256": "cce61fbfce1a626e885e3967774e51b8dfe12c0d14ae07689f0fe730e5ece1fc",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10115",
+          "frame_sha256": "95fac239b49be034d63472060a11dbe486f895892285318c356be62c706fe520",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10118",
+          "frame_sha256": "d4ca624e7a46811037369260381cc5ea9495e83234ba0d35c3e8f62e7cf99839",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10119",
+          "frame_sha256": "c241fe842ab17f747ef7bc5758d0c30aa3eab3743251b9a713ae46ecd50907b7",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10379",
+          "frame_sha256": "33e3dea84257f66fa119845afe1dd148bad2846bf8395edd1cf483eb86bf83e9",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10390",
+          "frame_sha256": "8a5b77d264bf832ee8e9afa579f0fa641689706bf0299f73ecaf8a5ee1e5e1a3",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10395",
+          "frame_sha256": "3a204d16e906448fff98553391f4ea2a35ad45474bdcdd936341f24433c98d39",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10404",
+          "frame_sha256": "cf04b0088b880fd16ac1e5dcf2ec9ede77703b3775dcafc3ecc23510a9306049",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        }
+      ],
+      "changes": "Downsampling and external labels only. No geometric rectification, timing alignment or pixel retouching."
+    },
+    {
+      "path": "candidate03_raw_eight_camera.jpg",
+      "sha256": "8c1d9ceeaf701970800d4e7d83612cf282bfece9a28e96da66fda40166be9704",
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "sources": [
+        {
+          "camera_id": "C10095",
+          "frame_sha256": "8f4bc45a5f21fd83af855f68d2474fe780161efe5a054e5870665b4aac3b2712",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10115",
+          "frame_sha256": "0d84ed7f46aa9ad8f6ca6c0950fcb385b8549cc6ec486596c28bbc4fcd520505",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10118",
+          "frame_sha256": "fd3692c1570359f436995f69448d351faf8ccd5d0c13aded64759696ff1709df",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10119",
+          "frame_sha256": "8ddc0ac44e3819e4a2de07ddf2e90e4f2bc8690298dfe4dc854953b65195a01a",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10379",
+          "frame_sha256": "37d0e1a53792ea4aac8e7fb6656dfd98b41559bc4d68e6a224293505fd964bc8",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10390",
+          "frame_sha256": "3b73169cd3e430e83b3a272a47e0647e646edeb21990301cd895ebe9df9dd424",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10395",
+          "frame_sha256": "f77f406a197af5f2dc3e5cc2d879656d00ffc6ca52a3105b09bc235a1b527fc5",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        },
+        {
+          "camera_id": "C10404",
+          "frame_sha256": "58e77e83edd1c124e4d586347cda7b114e56fdff3b77443bbef30d124ebd7a98",
+          "pts": 0,
+          "time_base": [
+            1,
+            15360
+          ]
+        }
+      ],
+      "changes": "Downsampling and external labels only. No geometric rectification, timing alignment or pixel retouching."
+    },
+    {
+      "path": "green01_C10119_C10390_candidate_patches.jpg",
+      "sha256": "5bf131081765854ba88daf099ef4fc8a2acbdee61796034821b801315cfcb8f7",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "source_image_sha256": [
+        "cdea3ee225cce75a564fadc4df9e8037f33d93bb645f0f0787def75ac5c1240d",
+        "3a3b39a63fc5113614aa42e3c0d82158b3aad2b1240a53126b887359b2382b42"
+      ],
+      "correspondence_indices": [
+        0,
+        2,
+        4,
+        9,
+        10,
+        12,
+        13,
+        14,
+        16
+      ],
+      "changes": "96 x 96 native patches enlarged to 128 x 128 for inspection; yellow location markers. Original photos unchanged.",
+      "independently_verified_correspondences": false
+    },
+    {
+      "path": "green01_C10119_C10404_candidate_patches.jpg",
+      "sha256": "9bb67a853b9209ca070e6197e359ed7ceafdee7e267f8c86f08b56c48cb90fa4",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "source_image_sha256": [
+        "cdea3ee225cce75a564fadc4df9e8037f33d93bb645f0f0787def75ac5c1240d",
+        "b34d7df73ef77abba583320fe97de4cc2608226ca07b15a8dc153f9eb9e030b0"
+      ],
+      "correspondence_indices": [
+        0,
+        1,
+        10,
+        11,
+        13,
+        14,
+        15,
+        19,
+        20,
+        23,
+        26,
+        27
+      ],
+      "changes": "96 x 96 native patches enlarged to 128 x 128 for inspection; yellow location markers. Original photos unchanged.",
+      "independently_verified_correspondences": false
+    }
+  ]
+}

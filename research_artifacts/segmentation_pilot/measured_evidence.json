@@ -1,0 +1,2634 @@
+{
+  "schema_version": 1,
+  "purpose": "measured_pre_inference_evidence",
+  "multiview_dataset_ready": false,
+  "calibration_accuracy_verified": false,
+  "temporal_sync_verified": false,
+  "dataset_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+  "toolkit_revision": "8d4b7f1bce3f99874514199aae7504f78ebf3517",
+  "source_reports": {
+    "survey.json": {
+      "sha256": "2bcabab3599347decf28e2515d647491d43e9745407cd2361c87aa56ac56696d"
+    },
+    "geometry-268824.json": {
+      "sha256": "459a1499cf3eae39857891a5c6add33719a4402fc8a992448501af610fe0c8d8"
+    },
+    "stability-270038.json": {
+      "sha256": "2e8e1278c4a02d0934abdfa0edbf740b8ea0cf6d3acf4560137c570a92f48bb4"
+    },
+    "environment-269431.json": {
+      "sha256": "ff09712af5979ed57315e5e37cd735c0ea5b8e6fc0ecef25939472c2897dabd7"
+    },
+    "checkpoint-269584.json": {
+      "sha256": "7b9ef9551bef4cc48116bbe5b652afdfdf132ba1683e9fbdf22d93cde0f18010"
+    }
+  },
+  "recordings": [
+    {
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "recognition_split": "train",
+      "calibration_sha256": "5adef00cf6030247f76ab89f00e52c27ee6a0eea0fe03f7532c0bd3263c9e18f",
+      "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+      "calibration_structural_checks_passed": true,
+      "synchronization_verified": false,
+      "segmentation_ready": false,
+      "views": [
+        {
+          "camera_id": "C10095",
+          "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10095_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "63703f21e4ec4096bab050f2924693d408c88715ef17178400b6d05528b161bb",
+          "source_bytes": 857912509,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 9437184,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10095_elapsed-00.0_pts-0.png",
+              "sha256": "63909980e26d1b99fa94754246c7ba12c65cd8f75b4d3bad45d336fadf9eeb57",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10095_elapsed-01.0_pts-15360.png",
+              "sha256": "dce4763a8c4a83ee93922e58415205d11cb3f86752e7f5ddcea1044efee92682",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10095_elapsed-02.5_pts-38400.png",
+              "sha256": "ebd8f27f98f41cd5aae3f93b5335ac52e9a8de15c96c712992a7856bff0950a0",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10115",
+          "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10115_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "840b221832b2664ba035cad6b209486e092ddfc344188cc20499787272d21eeb",
+          "source_bytes": 803274018,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 8912896,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10115_elapsed-00.0_pts-0.png",
+              "sha256": "bddd4759cfb7bf42f12b0b3614889b559dbd93f2ed90a7182afe34c03ed20fe6",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10115_elapsed-01.0_pts-15360.png",
+              "sha256": "a4440c00fa40bab02582480e6957cedd7aed61a2b406ee44a23d77aacc8b5328",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10115_elapsed-02.5_pts-38400.png",
+              "sha256": "a92aa2eec3cf5b8e430f9c58c83fec5e0f999d9b5851752968eca70c41bb30dd",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10118",
+          "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10118_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "4c9dd6b882f8f63c46360411e24fc4214330e8f67a3d9ec5103591c7fb64f460",
+          "source_bytes": 1260605474,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 14155776,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10118_elapsed-00.0_pts-0.png",
+              "sha256": "24f97faade7318a5b76dced03a91163706499f666a2613d1dcde8a2e73de2b01",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10118_elapsed-01.0_pts-15360.png",
+              "sha256": "859a9554492f03ee9756f2998319985f00b17d092c405d60b37ab3270dc003c8",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10118_elapsed-02.5_pts-38400.png",
+              "sha256": "23c293d9fc55f31fe38aa0615aa19658d0f2e72cd2dd205c12764d92c6357eca",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10119",
+          "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10119_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "340a5c18ac08782014a8d8b62be2fac71b58521c0f6c929690638020dbb5693b",
+          "source_bytes": 721517572,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 7864320,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10119_elapsed-00.0_pts-0.png",
+              "sha256": "57d12730a00d818117754d9666c58c1ecb189e8ab8db37c1c4bd4ef1a5644afd",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10119_elapsed-01.0_pts-15360.png",
+              "sha256": "cdea3ee225cce75a564fadc4df9e8037f33d93bb645f0f0787def75ac5c1240d",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10119_elapsed-02.5_pts-38400.png",
+              "sha256": "fc3322f1b511e204614bcf48f5343ffe78697f2e6d8f72accf5608edc4143d81",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10379",
+          "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10379_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "a080945d59f63ffbd29a879456f07ab5f5c9729d8434c34db0274ef441f02fbc",
+          "source_bytes": 808373321,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 9961472,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10379_elapsed-00.0_pts-0.png",
+              "sha256": "5e0a4bd9ee16878b66ea88dcb71987f9bdaebbeff698454b7b0c26763418afbf",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10379_elapsed-01.0_pts-15360.png",
+              "sha256": "c63fc2d117f0b58107509771a57593f77803a86778dde9f224039f32d52c7e19",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10379_elapsed-02.5_pts-38400.png",
+              "sha256": "2a2c358cfa2bf9060abe5831cc69e680d756aa3dbf1e0dd4d07a8489ce9c10f1",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10390",
+          "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10390_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "36e5d181133cb5f689dd369e0c05e7187c9ff4a1cb1f4e894506cea127e291f9",
+          "source_bytes": 547060803,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 6815744,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10390_elapsed-00.0_pts-0.png",
+              "sha256": "33d85809ba477e9246f7d5f97fef1cd8e9743bdd41384b8765ca2e325f81ed09",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10390_elapsed-01.0_pts-15360.png",
+              "sha256": "3a3b39a63fc5113614aa42e3c0d82158b3aad2b1240a53126b887359b2382b42",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10390_elapsed-02.5_pts-38400.png",
+              "sha256": "c8683f9a7f4ed50923872ac905d42c6636774037d637a43b8969d7d1f681b4c7",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10395",
+          "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10395_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "b320f519a58b9f2584a2c36ed215856f0abded5f60a9f99d67aef05a341ba646",
+          "source_bytes": 770498754,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 9961472,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10395_elapsed-00.0_pts-0.png",
+              "sha256": "6162ebfe341abfdf649eab60e2b65ff881611f18be7a72497c2bb56d33ecf95c",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10395_elapsed-01.0_pts-15360.png",
+              "sha256": "45892bb498de4ef528efdbf5ad80d3eaeda2aad57593a24e81442e6f2b2d2a1b",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10395_elapsed-02.5_pts-38400.png",
+              "sha256": "37dbf10ea4966823b2f865e56b81a13427927d3769d132ece9145d97481f3069",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10404",
+          "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10404_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "90601984388f79a092119de9c73be33db8d0aef04cb7ec39e23cd4a162ced5ce",
+          "source_bytes": 514584823,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 5767168,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10404_elapsed-00.0_pts-0.png",
+              "sha256": "e254c7f5f5b0918358b11577f210d5fe09f375199e94df9010c3833383a73571",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10404_elapsed-01.0_pts-15360.png",
+              "sha256": "b34d7df73ef77abba583320fe97de4cc2608226ca07b15a8dc153f9eb9e030b0",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10404_elapsed-02.5_pts-38400.png",
+              "sha256": "a655bb3bb3e73fefcf0fac1f5cc572bf7cc7c7ac593303bce183f6aa2c131014",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        }
+      ],
+      "automatic_epipolar_diagnostics": [
+        {
+          "camera_ids": [
+            "C10119",
+            "C10095"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 39,
+          "image_fitted_ransac_inlier_count": 25,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 25,
+            "median_px": 0.3358449113844045,
+            "p95_px": 8.093994000058215,
+            "mean_px": 3.6794472972133696,
+            "max_px": 69.90512235692312
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10115"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 34,
+          "image_fitted_ransac_inlier_count": 21,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 21,
+            "median_px": 1.5715905475975351,
+            "p95_px": 106.14431429385392,
+            "mean_px": 30.885175674076912,
+            "max_px": 511.97408865352577
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10118"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 50,
+          "image_fitted_ransac_inlier_count": 36,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 36,
+            "median_px": 0.4534934784330135,
+            "p95_px": 2.8519603921946284,
+            "mean_px": 1.1478574126006738,
+            "max_px": 16.493570080316683
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10379"
+          ],
+          "status": "insufficient_candidate_matches",
+          "mutual_ratio_match_count": 7
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10390"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 19,
+          "image_fitted_ransac_inlier_count": 9,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 9,
+            "median_px": 96.80655945512882,
+            "p95_px": 641.0660245925669,
+            "mean_px": 200.643700461773,
+            "max_px": 684.374837918039
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10395"
+          ],
+          "status": "insufficient_candidate_matches",
+          "mutual_ratio_match_count": 5
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10404"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 58,
+          "image_fitted_ransac_inlier_count": 35,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 35,
+            "median_px": 2.1500011649825024,
+            "p95_px": 2.7812087274333788,
+            "mean_px": 2.1157443041503172,
+            "max_px": 3.044661198197901
+          },
+          "calibration_accuracy_verified": false
+        }
+      ]
+    },
+    {
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "recognition_split": "train",
+      "calibration_sha256": "b7a9aba37397861c1cb57bc93b9ef2d7cd7478c4de9359f8f8c1c6658305ce34",
+      "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.json",
+      "calibration_structural_checks_passed": true,
+      "synchronization_verified": false,
+      "segmentation_ready": false,
+      "views": [
+        {
+          "camera_id": "C10095",
+          "source_path": "recordings/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/C10095_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "9e0023ddb77981634bac687e232620ae37e72901cb2a294b31d435498b8c658f",
+          "source_bytes": 1715887144,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 9961472,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10095_elapsed-00.0_pts-0.png",
+              "sha256": "cce61fbfce1a626e885e3967774e51b8dfe12c0d14ae07689f0fe730e5ece1fc",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10095_elapsed-01.0_pts-15360.png",
+              "sha256": "6b3277b9711f23aba0e0e1f8d7b306ad0b342d8ea5e1d26fee62aac1387710e1",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10095_elapsed-02.5_pts-38400.png",
+              "sha256": "bd5e286c9349d9f860176926ced42062ae91f498e42508bbfa03d85749d04a7f",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10115",
+          "source_path": "recordings/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/C10115_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "80dae26f6f947c7f31e89137c3048d826a38371079a363d09899d1a6b09fc701",
+          "source_bytes": 1623640011,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 9437184,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10115_elapsed-00.0_pts-0.png",
+              "sha256": "95fac239b49be034d63472060a11dbe486f895892285318c356be62c706fe520",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10115_elapsed-01.0_pts-15360.png",
+              "sha256": "14fd7dbc5badaae4579d6d7a44bcd220045524e0473a0cdda5d6e2772803ffd7",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10115_elapsed-02.5_pts-38400.png",
+              "sha256": "645ced0a452b7f7f927093acf0081d2c8b1436ae6f82f5a1e313176a24f7ad3a",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10118",
+          "source_path": "recordings/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/C10118_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "5ea75ddca57b47b5153b4163e3c97cffce425751af7c07a431e9ba2a9cc05188",
+          "source_bytes": 2581626614,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 14155776,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10118_elapsed-00.0_pts-0.png",
+              "sha256": "d4ca624e7a46811037369260381cc5ea9495e83234ba0d35c3e8f62e7cf99839",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10118_elapsed-01.0_pts-15360.png",
+              "sha256": "1d833d2408cb965774706ceeddc9c6351d1cfba0d30806d7e5b1df44e9ece3fe",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10118_elapsed-02.5_pts-38400.png",
+              "sha256": "b0c1855532c9fb9bdf926c57adfe9918a81bd152458c4611447c09e9334231b7",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10119",
+          "source_path": "recordings/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/C10119_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "a51722101247ba7594b82e66c5e1be901e9a7c7509adb392fb337332f415e0f0",
+          "source_bytes": 1355540845,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 8388608,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10119_elapsed-00.0_pts-0.png",
+              "sha256": "c241fe842ab17f747ef7bc5758d0c30aa3eab3743251b9a713ae46ecd50907b7",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10119_elapsed-01.0_pts-15360.png",
+              "sha256": "ad2e7ecae7048fea228c36cbb72b7e89360fca6fa079797301f3876ccbf10df5",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10119_elapsed-02.5_pts-38400.png",
+              "sha256": "5a085e935821a3aee0669c2a749e41a3b49606dbf8f7625c910a07f2f0b59bad",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10379",
+          "source_path": "recordings/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/C10379_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "2d242f8149bf2830358e9a3ff98b2e91d0ac85b59f9b7d84c7466b3c2d204e44",
+          "source_bytes": 1602646970,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 9437184,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10379_elapsed-00.0_pts-0.png",
+              "sha256": "33e3dea84257f66fa119845afe1dd148bad2846bf8395edd1cf483eb86bf83e9",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10379_elapsed-01.0_pts-15360.png",
+              "sha256": "d902153f007f4d47d67b954d265c9e28601274075adda5450852d95df47f6021",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10379_elapsed-02.5_pts-38400.png",
+              "sha256": "87a6546d0346b13094ae232aa5e953513ea1b821936126c6d931ed49269b3d97",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10390",
+          "source_path": "recordings/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/C10390_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "fb23c235d567a74e50e764c614c84298ec16af2faa46613209b8a25b326153dd",
+          "source_bytes": 1201085908,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 6815744,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10390_elapsed-00.0_pts-0.png",
+              "sha256": "8a5b77d264bf832ee8e9afa579f0fa641689706bf0299f73ecaf8a5ee1e5e1a3",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10390_elapsed-01.0_pts-15360.png",
+              "sha256": "952d7ece35524208de8e28d68c6aa26173092b52472e635b1843320f6e4c940b",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10390_elapsed-02.5_pts-38400.png",
+              "sha256": "2b8763e32b3e005b919b49eb8063cc2d39425e47b8b4d72f8f839dec9dddcbac",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10395",
+          "source_path": "recordings/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/C10395_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "4dd206c78e4595f954eeec8f40e9a01b82a7403e3ce5acb502eb5ebe0145227e",
+          "source_bytes": 1582713778,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 8912896,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10395_elapsed-00.0_pts-0.png",
+              "sha256": "3a204d16e906448fff98553391f4ea2a35ad45474bdcdd936341f24433c98d39",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10395_elapsed-01.0_pts-15360.png",
+              "sha256": "b9c519b91c1287d454fb106f5c466412e54a89d77fb1b18bcaa1915ad1e26393",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10395_elapsed-02.5_pts-38400.png",
+              "sha256": "3d7c2a56aaf895da6326e4c2f7960e1f6a834400a71a6e62c4754ccd441e44be",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10404",
+          "source_path": "recordings/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/C10404_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "e398a3d24a1b9e766992997e0a3867e8c99653c3fe1879a858a1400e9ab12267",
+          "source_bytes": 1113663925,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 6815744,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10404_elapsed-00.0_pts-0.png",
+              "sha256": "cf04b0088b880fd16ac1e5dcf2ec9ede77703b3775dcafc3ecc23510a9306049",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10404_elapsed-01.0_pts-15360.png",
+              "sha256": "29c7b44498ec71053cd8b6f8bc1d0c937f09e94975000ce17eb2bebbac8a5df8",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10404_elapsed-02.5_pts-38400.png",
+              "sha256": "c7aa847cdcf9fb02e21086639a418a4994a43c1e08f978fc324e15f522dcf757",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        }
+      ],
+      "automatic_epipolar_diagnostics": [
+        {
+          "camera_ids": [
+            "C10119",
+            "C10095"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 23,
+          "image_fitted_ransac_inlier_count": 11,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 11,
+            "median_px": 0.7542434836198397,
+            "p95_px": 104.31833166585042,
+            "mean_px": 22.979006178546737,
+            "max_px": 139.4653704814917
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10115"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 44,
+          "image_fitted_ransac_inlier_count": 33,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 33,
+            "median_px": 0.542474155249089,
+            "p95_px": 129.07525728656978,
+            "mean_px": 48.69447165357848,
+            "max_px": 1266.485088888295
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10118"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 21,
+          "image_fitted_ransac_inlier_count": 11,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 11,
+            "median_px": 156.09962730299327,
+            "p95_px": 525.756834980942,
+            "mean_px": 162.22934744947074,
+            "max_px": 611.9157607455912
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10379"
+          ],
+          "status": "insufficient_candidate_matches",
+          "mutual_ratio_match_count": 10
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10390"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 19,
+          "image_fitted_ransac_inlier_count": 8,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 8,
+            "median_px": 570.7414942231508,
+            "p95_px": 1072.7256194021845,
+            "mean_px": 518.7517362845108,
+            "max_px": 1198.2000695056986
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10395"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 15,
+          "image_fitted_ransac_inlier_count": 10,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 10,
+            "median_px": 265.0854936562994,
+            "p95_px": 571.9563800795013,
+            "mean_px": 310.79344657275874,
+            "max_px": 664.9675657901831
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10404"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 56,
+          "image_fitted_ransac_inlier_count": 41,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 41,
+            "median_px": 1.1773858619843456,
+            "p95_px": 2.2856136755392775,
+            "mean_px": 1.2351213322183316,
+            "max_px": 5.714170285381675
+          },
+          "calibration_accuracy_verified": false
+        }
+      ]
+    },
+    {
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "recognition_split": "train",
+      "calibration_sha256": "92777143be4150018768f5fb4d1cc110cf2ae73a53dca35926eb572848f5353a",
+      "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726.json",
+      "calibration_structural_checks_passed": true,
+      "synchronization_verified": false,
+      "segmentation_ready": false,
+      "views": [
+        {
+          "camera_id": "C10095",
+          "source_path": "recordings/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/C10095_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "126e24e7cb9df9291979b7f2fd0bb2d4178e1767f6abc52293566261c3cbe66f",
+          "source_bytes": 799186730,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 8912896,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10095_elapsed-00.0_pts-0.png",
+              "sha256": "8f4bc45a5f21fd83af855f68d2474fe780161efe5a054e5870665b4aac3b2712",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10095_elapsed-01.0_pts-15360.png",
+              "sha256": "4d1e493e0d7fa1de3bff64bef6b3429f1310224918b122cb1214df975230a5b1",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10095_elapsed-02.5_pts-38400.png",
+              "sha256": "a84a0dd378ffb88577a22c2c5cd5a00f198b1c04a288a0892ff47f598221b976",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10115",
+          "source_path": "recordings/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/C10115_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "a9aebcc77e252dc9d116baa8802c4b70246aa1db5ba2f338b9acb869ce955bb0",
+          "source_bytes": 837300465,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 8912896,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10115_elapsed-00.0_pts-0.png",
+              "sha256": "0d84ed7f46aa9ad8f6ca6c0950fcb385b8549cc6ec486596c28bbc4fcd520505",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10115_elapsed-01.0_pts-15360.png",
+              "sha256": "77e40b19b41c5ced9865659c4aaf89dc0c634ceb2df6fe9d3922da830e1fa5c9",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10115_elapsed-02.5_pts-38400.png",
+              "sha256": "262abb30de3f05543a9d3c58bf49104cff7d8ae23a9abad8409814f0d29f190f",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10118",
+          "source_path": "recordings/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/C10118_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "4930fe5c3b6d0e9a3237b1f5c45928f7efd8954c2fc003aa66b411c32a0c310f",
+          "source_bytes": 1248219123,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 13107200,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10118_elapsed-00.0_pts-0.png",
+              "sha256": "fd3692c1570359f436995f69448d351faf8ccd5d0c13aded64759696ff1709df",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10118_elapsed-01.0_pts-15360.png",
+              "sha256": "c6eeb0fbe6ca025c91c92faa2486a6aa39cf55e902746f2385ef001971c5e429",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10118_elapsed-02.5_pts-38400.png",
+              "sha256": "83221c5372ad5a04250fa75f47f7de618eb1cab344ad974b2b3ae8e8bbc7128e",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10119",
+          "source_path": "recordings/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/C10119_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "61958509a367858cbf83ea2224b9e561376ffbc82f3c231b547179a6db96d425",
+          "source_bytes": 671391090,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 7340032,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10119_elapsed-00.0_pts-0.png",
+              "sha256": "8ddc0ac44e3819e4a2de07ddf2e90e4f2bc8690298dfe4dc854953b65195a01a",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10119_elapsed-01.0_pts-15360.png",
+              "sha256": "390e421d799dc4a73f20d6d8af65eb342aed6bae0d5344af0848a425fb507208",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10119_elapsed-02.5_pts-38400.png",
+              "sha256": "efdeff1b45fa39edfc35b45e8b6867bf311cc3197c0891aa235aeab6d56c69c4",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10379",
+          "source_path": "recordings/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/C10379_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "8afa41831cdc180e91a43ce374c08de19cd725854b3af6a8742f37e1c40a6574",
+          "source_bytes": 724217768,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 8388608,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10379_elapsed-00.0_pts-0.png",
+              "sha256": "37d0e1a53792ea4aac8e7fb6656dfd98b41559bc4d68e6a224293505fd964bc8",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10379_elapsed-01.0_pts-15360.png",
+              "sha256": "1ed4fab40a274d609005eadc7873f1e660d7c530226821e2eb1c81f19c9d32ad",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10379_elapsed-02.5_pts-38400.png",
+              "sha256": "ca5c2e7332fdb6b681b1c967d9ae7414a659184c54a75c3fa67c641e1bd788e9",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10390",
+          "source_path": "recordings/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/C10390_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "34dd1b379a787bd8fa07285fba3aad2ae04780a36372ef891f5f17e234d969be",
+          "source_bytes": 605161561,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 6815744,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10390_elapsed-00.0_pts-0.png",
+              "sha256": "3b73169cd3e430e83b3a272a47e0647e646edeb21990301cd895ebe9df9dd424",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10390_elapsed-01.0_pts-15360.png",
+              "sha256": "08d5155fc4d52a47daab4e4227ce5dcbf49ad410838006212308180fda736c19",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10390_elapsed-02.5_pts-38400.png",
+              "sha256": "2ab82c51f802055451ea16ad52b1bc44a3b3c739cdbb723d553358dc39b1c401",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10395",
+          "source_path": "recordings/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/C10395_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "7e87b770ed28249bbae99f8bcfece1e2e8d85eba239697a73525ff9c1d5b0549",
+          "source_bytes": 746203076,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 8912896,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10395_elapsed-00.0_pts-0.png",
+              "sha256": "f77f406a197af5f2dc3e5cc2d879656d00ffc6ca52a3105b09bc235a1b527fc5",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10395_elapsed-01.0_pts-15360.png",
+              "sha256": "e30dee1c38d4390fe978e95d5ecadfa70a49032f185a4babd75b6e8cf217fe0c",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10395_elapsed-02.5_pts-38400.png",
+              "sha256": "5fa0b537350f96f1f871869bcaba9a68fe7890e9b84d3f213525fd85f53cf9a5",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        },
+        {
+          "camera_id": "C10404",
+          "source_path": "recordings/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/C10404_rgb.mp4",
+          "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+          "source_etag": "ebbbba9a5e68dc14a74504b13e7653cdce134abd7ad19fe4d42ef9260d5765df",
+          "source_bytes": 513199375,
+          "image_size": [
+            1920,
+            1080
+          ],
+          "first_decoded_pts_seconds": 0.0,
+          "network_payload_bytes": 5767168,
+          "samples": [
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10404_elapsed-00.0_pts-0.png",
+              "sha256": "58e77e83edd1c124e4d586347cda7b114e56fdff3b77443bbef30d124ebd7a98",
+              "pts": 0,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 0.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10404_elapsed-01.0_pts-15360.png",
+              "sha256": "4b2d35f654118263cfa5921d93e81b3a3b263f73064693cd8e7dd6478c0cb297",
+              "pts": 15360,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 1.0
+            },
+            {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10404_elapsed-02.5_pts-38400.png",
+              "sha256": "da5b509c7501c68df9a67ae805f81fe527f597bc70fd025100bc6728094b2ae4",
+              "pts": 38400,
+              "time_base_numerator": 1,
+              "time_base_denominator": 15360,
+              "pts_seconds": 2.5
+            }
+          ]
+        }
+      ],
+      "automatic_epipolar_diagnostics": [
+        {
+          "camera_ids": [
+            "C10119",
+            "C10095"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 26,
+          "image_fitted_ransac_inlier_count": 10,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 10,
+            "median_px": 18.213553906883558,
+            "p95_px": 697.5642713502356,
+            "mean_px": 144.98621555688302,
+            "max_px": 1157.6663964344207
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10115"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 16,
+          "image_fitted_ransac_inlier_count": 8,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 8,
+            "median_px": 267.99683199261756,
+            "p95_px": 896.4470204181484,
+            "mean_px": 360.19324639984023,
+            "max_px": 905.2533823802005
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10118"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 18,
+          "image_fitted_ransac_inlier_count": 9,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 9,
+            "median_px": 1.3179160454146108,
+            "p95_px": 797.8069632418283,
+            "mean_px": 195.91194978843137,
+            "max_px": 1122.4659576364393
+          },
+          "calibration_accuracy_verified": false
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10379"
+          ],
+          "status": "insufficient_image_ransac_inliers",
+          "mutual_ratio_match_count": 13,
+          "image_fitted_ransac_inlier_count": 7
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10390"
+          ],
+          "status": "insufficient_image_ransac_inliers",
+          "mutual_ratio_match_count": 12,
+          "image_fitted_ransac_inlier_count": 7
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10395"
+          ],
+          "status": "insufficient_candidate_matches",
+          "mutual_ratio_match_count": 11
+        },
+        {
+          "camera_ids": [
+            "C10119",
+            "C10404"
+          ],
+          "status": "descriptive_correspondences_available",
+          "mutual_ratio_match_count": 37,
+          "image_fitted_ransac_inlier_count": 17,
+          "calibration_epipolar_residuals_on_image_ransac_inliers": {
+            "count": 17,
+            "median_px": 0.8813793802930868,
+            "p95_px": 2.45761511418603,
+            "mean_px": 0.9461449269141908,
+            "max_px": 2.71697342118496
+          },
+          "calibration_accuracy_verified": false
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "slurm_job_id": "269431",
+    "python": "3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]",
+    "source_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "requirements_sha256": "d218664be7f0ad10e39679a59b2e5b8f8618e12c6cb8e211ddeb907c1c3caff3",
+    "pip_check_exit_code": 0,
+    "numpy": "1.26.4",
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "opencv": "4.11.0",
+    "av": "16.0.1",
+    "storage_bytes": {
+      "overlay": 427558864,
+      "source": 6961455
+    }
+  },
+  "checkpoint": {
+    "status": "verified",
+    "repo": "facebook/sam3",
+    "revision": "3c879f39826c281e95690f02c7821c4de09afae7",
+    "filename": "sam3.pt",
+    "expected_bytes": 3450062241,
+    "expected_sha256": "9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e",
+    "quota_used_before": 36260902985,
+    "quota_limit_bytes": 50000000000,
+    "job_id": "269584",
+    "gpu_used": false,
+    "path": "/projects/_ssd/jointposeaction/cache/huggingface/hub/models--facebook--sam3/blobs/9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e",
+    "sha256": "9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e",
+    "bytes": 3450062241,
+    "elapsed_seconds": 35.075446897011716,
+    "quota_used_after": 39134005330
+  },
+  "jobs": {
+    "survey": "268336",
+    "geometry": "268824",
+    "stability": "270038",
+    "environment": "269431",
+    "checkpoint": "269584",
+    "inference": "270796",
+    "review": "271689"
+  },
+  "inference_status_at_capture": "PENDING",
+  "review_status_at_capture": "PENDING_DEPENDENCY",
+  "google_synced_release_access": "User confirmed no access; no release files downloaded",
+  "local_stability": {
+    "schema_version": 1,
+    "dataset_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+    "thresholds": {
+      "maximum_displacement_native_px": 2.0,
+      "maximum_forward_backward_native_px": 0.75,
+      "minimum_valid_tracking_fraction": 0.95,
+      "minimum_landmark_span_fraction_of_roi_each_axis": 0.2,
+      "minimum_manually_identified_landmarks": 4,
+      "claim_elapsed_seconds": [
+        0.0,
+        1.0
+      ],
+      "thresholds_predeclared_not_tuned_on_results": true
+    },
+    "quota_before": {
+      "quota_bytes": 50000000000,
+      "used_bytes": 39710994507,
+      "free_bytes": 10289005493,
+      "output_reservation_bytes": 134217728,
+      "required_headroom_bytes": 2000000000
+    },
+    "landmarks_sha256": "3a0e4e939cce12cc1f70634b828e257f91f2c99774fae7e2e71ee186099d9b0e",
+    "survey_sha256": "2bcabab3599347decf28e2515d647491d43e9745407cd2361c87aa56ac56696d",
+    "script_sha256": "6c0d1c4af56177278f749600c671559696aba3c9a89ddd452833cf8c223391ad",
+    "job_id": "270038",
+    "recordings": [
+      {
+        "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+        "object_id": "green_white_garbage_truck_c07c",
+        "identity_evidence": {
+          "source": "agent visual review of native initial RGB frames and eight-camera contact sheet",
+          "manually_verified": true,
+          "description": "One green and white assembled toy garbage truck, gray cab roof and black wheels; screwdriver is a separate excluded object. Shared visible body configuration inspected without action labels."
+        },
+        "views": [
+          {
+            "camera_id": "C10095",
+            "status": "measured",
+            "static_state_local_stability_passed": true,
+            "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10095_rgb.mp4",
+            "source_etag": "63703f21e4ec4096bab050f2924693d408c88715ef17178400b6d05528b161bb",
+            "source_bytes": 857912509,
+            "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+            "reference_frame_sha256": "63909980e26d1b99fa94754246c7ba12c65cd8f75b4d3bad45d336fadf9eeb57",
+            "reference_pts": 0,
+            "reference_pts_seconds": 0.0,
+            "roi_xyxy": [
+              820.0,
+              360.0,
+              1080.0,
+              700.0
+            ],
+            "initial_points_xy": [
+              [
+                892.0,
+                418.0
+              ],
+              [
+                953.0,
+                417.0
+              ],
+              [
+                885.0,
+                481.0
+              ],
+              [
+                892.0,
+                571.0
+              ],
+              [
+                988.0,
+                584.0
+              ],
+              [
+                979.0,
+                607.0
+              ]
+            ],
+            "point_names": [
+              "cab_roof_left",
+              "cab_roof_right",
+              "upper_body_left",
+              "tailgate_panel_left",
+              "rear_wheel_center",
+              "tailgate_lower_right"
+            ],
+            "roi_landmark_span_fraction": [
+              0.39615384615384613,
+              0.5588235294117647
+            ],
+            "claim_first_second": {
+              "static_state_local_stability_passed": true,
+              "elapsed_span_seconds": [
+                0.0,
+                1.0
+              ],
+              "sampled_frames": 61,
+              "per_point": [
+                {
+                  "point_name": "cab_roof_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.0498821921646595,
+                  "maximum_forward_backward_native_px": 0.001041628886014223,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_right",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.06367728859186172,
+                  "maximum_forward_backward_native_px": 0.001270059379749,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "upper_body_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.03853359818458557,
+                  "maximum_forward_backward_native_px": 0.0017437798669561744,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_panel_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.1980958729982376,
+                  "maximum_forward_backward_native_px": 0.004584142472594976,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "rear_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.20770876109600067,
+                  "maximum_forward_backward_native_px": 0.006043713539838791,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_lower_right",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.16896264255046844,
+                  "maximum_forward_backward_native_px": 0.0023265525233000517,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "full_window": {
+              "static_state_local_stability_passed": true,
+              "elapsed_span_seconds": [
+                0.0,
+                2.9833333333333334
+              ],
+              "sampled_frames": 180,
+              "per_point": [
+                {
+                  "point_name": "cab_roof_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 1.299921989440918,
+                  "maximum_forward_backward_native_px": 0.7416619658470154,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_right",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.9450564980506897,
+                  "maximum_forward_backward_native_px": 0.3673783540725708,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "upper_body_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.1448325663805008,
+                  "maximum_forward_backward_native_px": 0.0017437798669561744,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_panel_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.21219325065612793,
+                  "maximum_forward_backward_native_px": 0.004584142472594976,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "rear_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.22698600590229034,
+                  "maximum_forward_backward_native_px": 0.006043713539838791,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_lower_right",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.16896264255046844,
+                  "maximum_forward_backward_native_px": 0.003739617532119155,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "trace": {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/stability-270038/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10095_landmark_trace.json",
+              "bytes": 473331,
+              "sha256": "54343f246132caca0246e17c26e451e613890eb497f04be52c54cdf02045d502"
+            },
+            "network_payload_bytes": 8912896
+          },
+          {
+            "camera_id": "C10115",
+            "status": "measured",
+            "static_state_local_stability_passed": true,
+            "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10115_rgb.mp4",
+            "source_etag": "840b221832b2664ba035cad6b209486e092ddfc344188cc20499787272d21eeb",
+            "source_bytes": 803274018,
+            "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+            "reference_frame_sha256": "bddd4759cfb7bf42f12b0b3614889b559dbd93f2ed90a7182afe34c03ed20fe6",
+            "reference_pts": 0,
+            "reference_pts_seconds": 0.0,
+            "roi_xyxy": [
+              740.0,
+              320.0,
+              1110.0,
+              670.0
+            ],
+            "initial_points_xy": [
+              [
+                941.0,
+                438.0
+              ],
+              [
+                988.0,
+                450.0
+              ],
+              [
+                849.0,
+                557.0
+              ],
+              [
+                885.0,
+                570.0
+              ],
+              [
+                890.0,
+                498.0
+              ],
+              [
+                996.0,
+                476.0
+              ]
+            ],
+            "point_names": [
+              "cab_roof_left",
+              "cab_roof_right",
+              "tailgate_left",
+              "tailgate_lower",
+              "upper_body_left",
+              "front_wheel_edge"
+            ],
+            "roi_landmark_span_fraction": [
+              0.3972972972972973,
+              0.37714285714285717
+            ],
+            "claim_first_second": {
+              "static_state_local_stability_passed": true,
+              "elapsed_span_seconds": [
+                0.0,
+                1.0
+              ],
+              "sampled_frames": 61,
+              "per_point": [
+                {
+                  "point_name": "cab_roof_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.09011222422122955,
+                  "maximum_forward_backward_native_px": 0.0026090298779308796,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_right",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.04020434617996216,
+                  "maximum_forward_backward_native_px": 0.002605457790195942,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.09146490693092346,
+                  "maximum_forward_backward_native_px": 0.002463432028889656,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_lower",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.23036350309848785,
+                  "maximum_forward_backward_native_px": 0.00524192163720727,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "upper_body_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.2040332406759262,
+                  "maximum_forward_backward_native_px": 0.0269858930259943,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "front_wheel_edge",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.08406995981931686,
+                  "maximum_forward_backward_native_px": 0.0021187199745327234,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "full_window": {
+              "static_state_local_stability_passed": true,
+              "elapsed_span_seconds": [
+                0.0,
+                2.9833333333333334
+              ],
+              "sampled_frames": 180,
+              "per_point": [
+                {
+                  "point_name": "cab_roof_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.16689731180667877,
+                  "maximum_forward_backward_native_px": 0.0026090298779308796,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_right",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.24811211228370667,
+                  "maximum_forward_backward_native_px": 0.002605457790195942,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.1409831941127777,
+                  "maximum_forward_backward_native_px": 0.002463432028889656,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_lower",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.23036350309848785,
+                  "maximum_forward_backward_native_px": 0.007622555363923311,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "upper_body_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.42742982506752014,
+                  "maximum_forward_backward_native_px": 0.0269858930259943,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "front_wheel_edge",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.10954367369413376,
+                  "maximum_forward_backward_native_px": 0.0021187199745327234,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "trace": {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/stability-270038/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10115_landmark_trace.json",
+              "bytes": 471905,
+              "sha256": "78b6a03bd92e56ef63b2e477f87d29d25a506be02f22cc1ccd8a019a1013f365"
+            },
+            "network_payload_bytes": 8912896
+          },
+          {
+            "camera_id": "C10118",
+            "status": "measured",
+            "static_state_local_stability_passed": false,
+            "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10118_rgb.mp4",
+            "source_etag": "4c9dd6b882f8f63c46360411e24fc4214330e8f67a3d9ec5103591c7fb64f460",
+            "source_bytes": 1260605474,
+            "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+            "reference_frame_sha256": "24f97faade7318a5b76dced03a91163706499f666a2613d1dcde8a2e73de2b01",
+            "reference_pts": 0,
+            "reference_pts_seconds": 0.0,
+            "roi_xyxy": [
+              760.0,
+              600.0,
+              1320.0,
+              1000.0
+            ],
+            "initial_points_xy": [
+              [
+                868.0,
+                764.0
+              ],
+              [
+                1026.0,
+                746.0
+              ],
+              [
+                1020.0,
+                826.0
+              ],
+              [
+                1130.0,
+                699.0
+              ],
+              [
+                1147.0,
+                876.0
+              ],
+              [
+                1072.0,
+                911.0
+              ]
+            ],
+            "point_names": [
+              "tailgate_upper_left",
+              "white_body_upper_hole",
+              "white_body_lower_hole",
+              "cab_roof_corner",
+              "front_wheel_center",
+              "rear_wheel_center"
+            ],
+            "roi_landmark_span_fraction": [
+              0.4982142857142857,
+              0.53
+            ],
+            "claim_first_second": {
+              "static_state_local_stability_passed": false,
+              "elapsed_span_seconds": [
+                0.0,
+                1.0
+              ],
+              "sampled_frames": 61,
+              "per_point": [
+                {
+                  "point_name": "tailgate_upper_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 6.6973395347595215,
+                  "maximum_forward_backward_native_px": 0.47783979773521423,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": false
+                },
+                {
+                  "point_name": "white_body_upper_hole",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.07971715182065964,
+                  "maximum_forward_backward_native_px": 0.00091552734375,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "white_body_lower_hole",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.1806776076555252,
+                  "maximum_forward_backward_native_px": 0.009655908681452274,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_corner",
+                  "valid_fraction": 0.8524590163934426,
+                  "valid_frames": 52,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.1724793016910553,
+                  "maximum_forward_backward_native_px": 1.7219882011413574,
+                  "tracking_lost_or_occluded_frames": 9,
+                  "passed": false
+                },
+                {
+                  "point_name": "front_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.057894282042980194,
+                  "maximum_forward_backward_native_px": 0.0010986328125,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "rear_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.06895168125629425,
+                  "maximum_forward_backward_native_px": 0.0008886852883733809,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "full_window": {
+              "static_state_local_stability_passed": false,
+              "elapsed_span_seconds": [
+                0.0,
+                2.9833333333333334
+              ],
+              "sampled_frames": 180,
+              "per_point": [
+                {
+                  "point_name": "tailgate_upper_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 10.442024230957031,
+                  "maximum_forward_backward_native_px": 0.47783979773521423,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": false
+                },
+                {
+                  "point_name": "white_body_upper_hole",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.25838807225227356,
+                  "maximum_forward_backward_native_px": 0.002078782534226775,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "white_body_lower_hole",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.3689655661582947,
+                  "maximum_forward_backward_native_px": 0.009655908681452274,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_corner",
+                  "valid_fraction": 0.28888888888888886,
+                  "valid_frames": 52,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.1724793016910553,
+                  "maximum_forward_backward_native_px": 1.7219882011413574,
+                  "tracking_lost_or_occluded_frames": 128,
+                  "passed": false
+                },
+                {
+                  "point_name": "front_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.19932930171489716,
+                  "maximum_forward_backward_native_px": 0.0010986328125,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "rear_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.23695917427539825,
+                  "maximum_forward_backward_native_px": 0.0011660750024020672,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "trace": {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/stability-270038/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10118_landmark_trace.json",
+              "bytes": 467232,
+              "sha256": "1699dafc34788eda6ae0c770ab45d844077bbed0faf4110ab86cb07dfb77a251"
+            },
+            "network_payload_bytes": 13631488
+          },
+          {
+            "camera_id": "C10119",
+            "status": "measured",
+            "static_state_local_stability_passed": true,
+            "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10119_rgb.mp4",
+            "source_etag": "340a5c18ac08782014a8d8b62be2fac71b58521c0f6c929690638020dbb5693b",
+            "source_bytes": 721517572,
+            "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+            "reference_frame_sha256": "57d12730a00d818117754d9666c58c1ecb189e8ab8db37c1c4bd4ef1a5644afd",
+            "reference_pts": 0,
+            "reference_pts_seconds": 0.0,
+            "roi_xyxy": [
+              780.0,
+              350.0,
+              1250.0,
+              800.0
+            ],
+            "initial_points_xy": [
+              [
+                880.0,
+                595.0
+              ],
+              [
+                944.0,
+                590.0
+              ],
+              [
+                934.0,
+                523.0
+              ],
+              [
+                1085.0,
+                531.0
+              ],
+              [
+                1071.0,
+                666.0
+              ],
+              [
+                952.0,
+                684.0
+              ]
+            ],
+            "point_names": [
+              "tailgate_corner",
+              "white_body_hole",
+              "upper_body_corner",
+              "cab_roof_corner",
+              "front_wheel_center",
+              "rear_wheel_center"
+            ],
+            "roi_landmark_span_fraction": [
+              0.43617021276595747,
+              0.35777777777777775
+            ],
+            "claim_first_second": {
+              "static_state_local_stability_passed": true,
+              "elapsed_span_seconds": [
+                0.0,
+                1.0
+              ],
+              "sampled_frames": 61,
+              "per_point": [
+                {
+                  "point_name": "tailgate_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.18638448417186737,
+                  "maximum_forward_backward_native_px": 0.0026945483405143023,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "white_body_hole",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.09066730737686157,
+                  "maximum_forward_backward_native_px": 0.0012448778143152595,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "upper_body_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.09739124774932861,
+                  "maximum_forward_backward_native_px": 0.002659060060977936,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.08527082949876785,
+                  "maximum_forward_backward_native_px": 0.0011724471114575863,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "front_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.0894453302025795,
+                  "maximum_forward_backward_native_px": 0.0006601961795240641,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "rear_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.06329584121704102,
+                  "maximum_forward_backward_native_px": 0.0007425247458741069,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "full_window": {
+              "static_state_local_stability_passed": true,
+              "elapsed_span_seconds": [
+                0.0,
+                2.9833333333333334
+              ],
+              "sampled_frames": 180,
+              "per_point": [
+                {
+                  "point_name": "tailgate_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.20900705456733704,
+                  "maximum_forward_backward_native_px": 0.003772841766476631,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "white_body_hole",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.3114161193370819,
+                  "maximum_forward_backward_native_px": 0.0012448778143152595,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "upper_body_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.24616217613220215,
+                  "maximum_forward_backward_native_px": 0.0040674335323274136,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.1800537109375,
+                  "maximum_forward_backward_native_px": 0.0027104008477181196,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "front_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.24923738837242126,
+                  "maximum_forward_backward_native_px": 0.000984162325039506,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "rear_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.26465505361557007,
+                  "maximum_forward_backward_native_px": 0.0008566692122258246,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "trace": {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/stability-270038/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10119_landmark_trace.json",
+              "bytes": 473047,
+              "sha256": "625a27691150260471c1c8bbb3da69c85993cc1ad9c28b6109e802ba35dbe4b6"
+            },
+            "network_payload_bytes": 7864320
+          },
+          {
+            "camera_id": "C10390",
+            "status": "measured",
+            "static_state_local_stability_passed": true,
+            "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10390_rgb.mp4",
+            "source_etag": "36e5d181133cb5f689dd369e0c05e7187c9ff4a1cb1f4e894506cea127e291f9",
+            "source_bytes": 547060803,
+            "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+            "reference_frame_sha256": "33d85809ba477e9246f7d5f97fef1cd8e9743bdd41384b8765ca2e325f81ed09",
+            "reference_pts": 0,
+            "reference_pts_seconds": 0.0,
+            "roi_xyxy": [
+              700.0,
+              300.0,
+              1100.0,
+              700.0
+            ],
+            "initial_points_xy": [
+              [
+                827.0,
+                486.0
+              ],
+              [
+                854.0,
+                494.0
+              ],
+              [
+                879.0,
+                516.0
+              ],
+              [
+                960.0,
+                557.0
+              ],
+              [
+                893.0,
+                613.0
+              ],
+              [
+                811.0,
+                568.0
+              ]
+            ],
+            "point_names": [
+              "cab_roof_left",
+              "cab_roof_right",
+              "white_body_corner",
+              "tailgate_corner",
+              "rear_wheel_center",
+              "front_wheel_center"
+            ],
+            "roi_landmark_span_fraction": [
+              0.3725,
+              0.3175
+            ],
+            "claim_first_second": {
+              "static_state_local_stability_passed": true,
+              "elapsed_span_seconds": [
+                0.0,
+                1.0
+              ],
+              "sampled_frames": 61,
+              "per_point": [
+                {
+                  "point_name": "cab_roof_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.13589920103549957,
+                  "maximum_forward_backward_native_px": 0.004012104123830795,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_right",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.24808929860591888,
+                  "maximum_forward_backward_native_px": 0.011133396066725254,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "white_body_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.10074471682310104,
+                  "maximum_forward_backward_native_px": 0.004455984570086002,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.13225248456001282,
+                  "maximum_forward_backward_native_px": 0.01335233822464943,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "rear_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.05112330988049507,
+                  "maximum_forward_backward_native_px": 0.001287537976168096,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "front_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.07056036591529846,
+                  "maximum_forward_backward_native_px": 0.0014248801162466407,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "full_window": {
+              "static_state_local_stability_passed": true,
+              "elapsed_span_seconds": [
+                0.0,
+                2.9833333333333334
+              ],
+              "sampled_frames": 180,
+              "per_point": [
+                {
+                  "point_name": "cab_roof_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.13589920103549957,
+                  "maximum_forward_backward_native_px": 0.004012104123830795,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_right",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.27704134583473206,
+                  "maximum_forward_backward_native_px": 0.016749007627367973,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "white_body_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.18252193927764893,
+                  "maximum_forward_backward_native_px": 0.004455984570086002,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.23051762580871582,
+                  "maximum_forward_backward_native_px": 0.018690017983317375,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "rear_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.12934541702270508,
+                  "maximum_forward_backward_native_px": 0.0019387671491131186,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "front_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.11266772449016571,
+                  "maximum_forward_backward_native_px": 0.0019009291427209973,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "trace": {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/stability-270038/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10390_landmark_trace.json",
+              "bytes": 473062,
+              "sha256": "c3b97ddeffef6550d7bed930c89edf042f3bc7720e95a5dcb372a3b75b020ba0"
+            },
+            "network_payload_bytes": 6291456
+          },
+          {
+            "camera_id": "C10395",
+            "status": "measured",
+            "static_state_local_stability_passed": true,
+            "source_path": "recordings/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10395_rgb.mp4",
+            "source_etag": "b320f519a58b9f2584a2c36ed215856f0abded5f60a9f99d67aef05a341ba646",
+            "source_bytes": 770498754,
+            "source_revision": "bfc15ea5e3f0bc8f8c232af6c1b45aa137a9d967",
+            "reference_frame_sha256": "6162ebfe341abfdf649eab60e2b65ff881611f18be7a72497c2bb56d33ecf95c",
+            "reference_pts": 0,
+            "reference_pts_seconds": 0.0,
+            "roi_xyxy": [
+              720.0,
+              650.0,
+              1220.0,
+              1060.0
+            ],
+            "initial_points_xy": [
+              [
+                782.0,
+                814.0
+              ],
+              [
+                827.0,
+                823.0
+              ],
+              [
+                846.0,
+                871.0
+              ],
+              [
+                873.0,
+                939.0
+              ],
+              [
+                765.0,
+                925.0
+              ],
+              [
+                928.0,
+                819.0
+              ]
+            ],
+            "point_names": [
+              "cab_roof_left",
+              "cab_roof_right",
+              "white_body_hole",
+              "rear_wheel_center",
+              "front_wheel_center",
+              "tailgate_upper_corner"
+            ],
+            "roi_landmark_span_fraction": [
+              0.326,
+              0.3048780487804878
+            ],
+            "claim_first_second": {
+              "static_state_local_stability_passed": true,
+              "elapsed_span_seconds": [
+                0.0,
+                1.0
+              ],
+              "sampled_frames": 61,
+              "per_point": [
+                {
+                  "point_name": "cab_roof_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.019513407722115517,
+                  "maximum_forward_backward_native_px": 0.00030517578125,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_right",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.19632254540920258,
+                  "maximum_forward_backward_native_px": 0.009541027247905731,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "white_body_hole",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.09987696260213852,
+                  "maximum_forward_backward_native_px": 0.0012582719791680574,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "rear_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.05541965365409851,
+                  "maximum_forward_backward_native_px": 0.0028162284288555384,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "front_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.09808402508497238,
+                  "maximum_forward_backward_native_px": 0.001477504731155932,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_upper_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 61,
+                  "total_frames": 61,
+                  "maximum_displacement_native_px": 0.06126835197210312,
+                  "maximum_forward_backward_native_px": 0.0013647875748574734,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "full_window": {
+              "static_state_local_stability_passed": true,
+              "elapsed_span_seconds": [
+                0.0,
+                2.9833333333333334
+              ],
+              "sampled_frames": 180,
+              "per_point": [
+                {
+                  "point_name": "cab_roof_left",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.033558569848537445,
+                  "maximum_forward_backward_native_px": 0.0004094362666364759,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "cab_roof_right",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.2522798776626587,
+                  "maximum_forward_backward_native_px": 0.010576707310974598,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "white_body_hole",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.15149296820163727,
+                  "maximum_forward_backward_native_px": 0.00198716064915061,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "rear_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.2581566870212555,
+                  "maximum_forward_backward_native_px": 0.005769678857177496,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "front_wheel_center",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.16934062540531158,
+                  "maximum_forward_backward_native_px": 0.001477504731155932,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                },
+                {
+                  "point_name": "tailgate_upper_corner",
+                  "valid_fraction": 1.0,
+                  "valid_frames": 180,
+                  "total_frames": 180,
+                  "maximum_displacement_native_px": 0.24813348054885864,
+                  "maximum_forward_backward_native_px": 0.001893074018880725,
+                  "tracking_lost_or_occluded_frames": 0,
+                  "passed": true
+                }
+              ],
+              "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+            },
+            "trace": {
+              "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/stability-270038/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/C10395_landmark_trace.json",
+              "bytes": 472821,
+              "sha256": "1a5aac384bbc83811afcbe1e7bce4554c5877096cb1403d5e261b724c5c668d5"
+            },
+            "network_payload_bytes": 9961472
+          }
+        ],
+        "unassessed_cameras": [
+          "C10379",
+          "C10404"
+        ],
+        "segmentation_ready": false,
+        "temporal_sync_verified": false
+      }
+    ],
+    "temporal_sync_verified": false,
+    "segmentation_ready": false,
+    "limitations": [
+      "Local object landmark stability is not proof of cross-camera correspondence or physical synchronization.",
+      "Untracked/occluded/moving parts may invalidate whole-object rigidity despite stable selected landmarks.",
+      "Cross-view object identity, configuration and camera validity require separate evidence.",
+      "Optical flow is a descriptive measurement, not independent segmentation ground truth.",
+      "Acceptance applies only to local first 0..1-second intervals; full 3-second traces remain available."
+    ],
+    "network_payload_bytes": 55574528,
+    "output_bytes_before_manifest": 2831398
+  }
+}

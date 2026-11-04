@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "python": "3.12.16 | packaged by Anaconda, Inc. | (main, Oct 26 2026, 20:13:05) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "tests_run": 214,
+  "elapsed_seconds": 11.329,
+  "opencv_tests_skipped": 2,
+  "real_model_training": false,
+  "real_reconstruction": false,
+  "log": "data/segmentation_source_review/full_cpu_validation.log"
+}

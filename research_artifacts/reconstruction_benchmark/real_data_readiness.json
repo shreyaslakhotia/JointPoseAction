@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "phase": "implementation_and_synthetic_validation_only",
+  "real_execution_allowed": false,
+  "pilots": [
+    {
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "object_id": "green_white_garbage_truck_c07c",
+      "camera_ids": [
+        "C10095",
+        "C10115",
+        "C10118",
+        "C10119",
+        "C10379",
+        "C10390",
+        "C10395",
+        "C10404"
+      ],
+      "checks": {
+        "native_mask_review": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "calibration_accuracy": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "temporal_or_static_correspondence": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "coordinate_frame_and_scale": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "source_integrity": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        }
+      }
+    },
+    {
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "object_id": "yellow_red_crane_truck_b05b",
+      "camera_ids": [
+        "C10095",
+        "C10115",
+        "C10118",
+        "C10119",
+        "C10379",
+        "C10390",
+        "C10395",
+        "C10404"
+      ],
+      "checks": {
+        "native_mask_review": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "calibration_accuracy": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "temporal_or_static_correspondence": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "coordinate_frame_and_scale": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "source_integrity": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        }
+      }
+    },
+    {
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "object_id": "green_white_garbage_truck_c08b",
+      "camera_ids": [
+        "C10095",
+        "C10115",
+        "C10118",
+        "C10119",
+        "C10379",
+        "C10390",
+        "C10395",
+        "C10404"
+      ],
+      "checks": {
+        "native_mask_review": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "calibration_accuracy": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "temporal_or_static_correspondence": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "coordinate_frame_and_scale": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        },
+        "source_integrity": {
+          "status": "pending",
+          "evidence_path": null,
+          "evidence_sha256": null
+        }
+      }
+    }
+  ]
+}

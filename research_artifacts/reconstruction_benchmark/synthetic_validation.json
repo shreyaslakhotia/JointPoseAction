@@ -1,0 +1,1824 @@
+{
+  "schema_version": 1,
+  "data_kind": "synthetic",
+  "real_data_execution": false,
+  "real_pilot_ready": false,
+  "config_sha256": "a2d69186ca542924c17502a9c3bcbab5ebeccfa89e03d0ebb7f00f4de7182960",
+  "config": {
+    "schema_version": 1,
+    "data_kind": "synthetic",
+    "real_data_execution": false,
+    "primitives": [
+      "box",
+      "sphere"
+    ],
+    "resolutions": [
+      16,
+      32
+    ],
+    "image_size": 65,
+    "focal_pixels": 58.0,
+    "camera_radius": 4.0,
+    "camera_y": -1.5,
+    "bounds_xyz": [
+      [
+        -1.4,
+        1.4
+      ],
+      [
+        -1.4,
+        1.4
+      ],
+      [
+        -1.4,
+        1.4
+      ]
+    ],
+    "primitive_half_extent_or_radius": 0.8,
+    "input_camera_indices": [
+      0,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "heldout_camera_indices": [
+      1,
+      5
+    ],
+    "boundary_tolerance_px": 1
+  },
+  "python": "3.11.4 | packaged by Anaconda, Inc. | (main, Jul  5 2023, 13:38:37) [MSC v.1916 64 bit (AMD64)]",
+  "numpy": "1.24.3",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "source_sha256": {
+    "adapters.py": "479b8c8a159f63357b713788bb4c5214a1083e05648fd3ca6d0218546bea4773",
+    "alignment.py": "004da05796c6cff1a29377f7e566e71de1e3dccb9af586e24cd8b5da3d920458",
+    "cameras.py": "f1a8b1110b9378c0910a2addeadd94864a3622a400fc1239e3f2e5bd324888b5",
+    "evaluation.py": "9685ded84de4ba38a4883f72b3190ed33ab099076592d791763d5e3b0ee41356",
+    "figures.py": "579f8175b9c236e858e96ceb2a7af0f09f023cd6a1178e34708a857d2f8c6faf",
+    "io.py": "e4ccda280eae171103444641d0c4e2b92ad91d0579e7c9dca1f3095aa5a68ae2",
+    "readiness.py": "07bba086198e97b70b4cfa6c058e52ff27e400703599d5d3f7bca1495f2909b4",
+    "rendering.py": "847345aad2cba70acd9694d89723a436bf8cba343e82625cbcaa84a5b91d87f1",
+    "synthetic_validation.py": "c4af08037e1495caceeab2b8fdd196b315ce7be69b2bd963ea46ce7ca4c12362",
+    "visual_hull.py": "ab1344a646b727c580a9d1c61e4440cfdc0186f80dee32b45a89bc6b7fb3ffc7",
+    "__init__.py": "41bf5ba587629ff3ac71a8dd4fa55cf2c35064693465f790b8a910b0ec13dc6c"
+  },
+  "camera_calibration": {
+    "V00": {
+      "camera_id": "V00",
+      "K": [
+        [
+          58.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          58.0,
+          32.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_to_camera": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9363291775690445,
+          0.3511234415883917,
+          0.0
+        ],
+        [
+          -0.0,
+          0.3511234415883917,
+          -0.9363291775690445,
+          4.272001872658766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image_size": [
+        65,
+        65
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_order": [
+        "k1",
+        "k2",
+        "p1",
+        "p2",
+        "k3"
+      ],
+      "coordinate_frame": "synthetic_world",
+      "units": "synthetic_length_unit",
+      "camera_axes": "right_down_forward",
+      "pixel_convention": "integer_centres"
+    },
+    "V01": {
+      "camera_id": "V01",
+      "K": [
+        [
+          58.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          58.0,
+          32.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_to_camera": [
+        [
+          -0.7071067811865476,
+          0.0,
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.24828176658071038,
+          0.9363291775690445,
+          0.24828176658071038,
+          0.0
+        ],
+        [
+          -0.6620847108818944,
+          0.35112344158839165,
+          -0.6620847108818944,
+          4.272001872658766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image_size": [
+        65,
+        65
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_order": [
+        "k1",
+        "k2",
+        "p1",
+        "p2",
+        "k3"
+      ],
+      "coordinate_frame": "synthetic_world",
+      "units": "synthetic_length_unit",
+      "camera_axes": "right_down_forward",
+      "pixel_convention": "integer_centres"
+    },
+    "V02": {
+      "camera_id": "V02",
+      "K": [
+        [
+          58.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          58.0,
+          32.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_to_camera": [
+        [
+          -6.123233995736766e-17,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.3511234415883917,
+          0.9363291775690445,
+          2.1500109942341327e-17,
+          -5.266008164440898e-33
+        ],
+        [
+          -0.9363291775690445,
+          0.3511234415883917,
+          -5.733362651291021e-17,
+          4.272001872658766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image_size": [
+        65,
+        65
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_order": [
+        "k1",
+        "k2",
+        "p1",
+        "p2",
+        "k3"
+      ],
+      "coordinate_frame": "synthetic_world",
+      "units": "synthetic_length_unit",
+      "camera_axes": "right_down_forward",
+      "pixel_convention": "integer_centres"
+    },
+    "V03": {
+      "camera_id": "V03",
+      "K": [
+        [
+          58.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          58.0,
+          32.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_to_camera": [
+        [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.2482817665807104,
+          0.9363291775690445,
+          -0.24828176658071038,
+          0.0
+        ],
+        [
+          -0.6620847108818945,
+          0.3511234415883917,
+          0.6620847108818944,
+          4.272001872658766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image_size": [
+        65,
+        65
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_order": [
+        "k1",
+        "k2",
+        "p1",
+        "p2",
+        "k3"
+      ],
+      "coordinate_frame": "synthetic_world",
+      "units": "synthetic_length_unit",
+      "camera_axes": "right_down_forward",
+      "pixel_convention": "integer_centres"
+    },
+    "V04": {
+      "camera_id": "V04",
+      "K": [
+        [
+          58.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          58.0,
+          32.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_to_camera": [
+        [
+          1.0,
+          0.0,
+          1.2246467991473532e-16,
+          0.0
+        ],
+        [
+          4.3000219884682655e-17,
+          0.9363291775690445,
+          -0.3511234415883917,
+          0.0
+        ],
+        [
+          -1.1466725302582041e-16,
+          0.3511234415883917,
+          0.9363291775690445,
+          4.272001872658766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image_size": [
+        65,
+        65
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_order": [
+        "k1",
+        "k2",
+        "p1",
+        "p2",
+        "k3"
+      ],
+      "coordinate_frame": "synthetic_world",
+      "units": "synthetic_length_unit",
+      "camera_axes": "right_down_forward",
+      "pixel_convention": "integer_centres"
+    },
+    "V05": {
+      "camera_id": "V05",
+      "K": [
+        [
+          58.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          58.0,
+          32.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_to_camera": [
+        [
+          0.7071067811865477,
+          0.0,
+          -0.7071067811865475,
+          0.0
+        ],
+        [
+          -0.24828176658071038,
+          0.9363291775690448,
+          -0.24828176658071044,
+          2.220446049250313e-16
+        ],
+        [
+          0.6620847108818944,
+          0.3511234415883917,
+          0.6620847108818946,
+          4.272001872658766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image_size": [
+        65,
+        65
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_order": [
+        "k1",
+        "k2",
+        "p1",
+        "p2",
+        "k3"
+      ],
+      "coordinate_frame": "synthetic_world",
+      "units": "synthetic_length_unit",
+      "camera_axes": "right_down_forward",
+      "pixel_convention": "integer_centres"
+    },
+    "V06": {
+      "camera_id": "V06",
+      "K": [
+        [
+          58.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          58.0,
+          32.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_to_camera": [
+        [
+          1.83697019872103e-16,
+          0.0,
+          -1.0,
+          9.860761315262648e-32
+        ],
+        [
+          -0.3511234415883917,
+          0.9363291775690445,
+          -6.450032982702398e-17,
+          -4.739407347996808e-32
+        ],
+        [
+          0.9363291775690445,
+          0.3511234415883917,
+          1.7200087953873062e-16,
+          4.272001872658766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image_size": [
+        65,
+        65
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_order": [
+        "k1",
+        "k2",
+        "p1",
+        "p2",
+        "k3"
+      ],
+      "coordinate_frame": "synthetic_world",
+      "units": "synthetic_length_unit",
+      "camera_axes": "right_down_forward",
+      "pixel_convention": "integer_centres"
+    },
+    "V07": {
+      "camera_id": "V07",
+      "K": [
+        [
+          58.0,
+          0.0,
+          32.0
+        ],
+        [
+          0.0,
+          58.0,
+          32.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_to_camera": [
+        [
+          -0.7071067811865472,
+          -0.0,
+          -0.7071067811865477,
+          4.440892098500626e-16
+        ],
+        [
+          -0.24828176658071044,
+          0.9363291775690445,
+          0.2482817665807103,
+          1.1102230246251565e-16
+        ],
+        [
+          0.6620847108818946,
+          0.3511234415883917,
+          -0.6620847108818942,
+          4.272001872658766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image_size": [
+        65,
+        65
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_order": [
+        "k1",
+        "k2",
+        "p1",
+        "p2",
+        "k3"
+      ],
+      "coordinate_frame": "synthetic_world",
+      "units": "synthetic_length_unit",
+      "camera_axes": "right_down_forward",
+      "pixel_convention": "integer_centres"
+    }
+  },
+  "cases": [
+    {
+      "name": "box_16",
+      "primitive": "box",
+      "resolution": 16,
+      "data_kind": "synthetic",
+      "occupied_voxels": 1088,
+      "analytic_primitive_volume": 4.096000000000001,
+      "occupied_volume": 5.830999999999999,
+      "relative_volume_difference": 0.42358398437499933,
+      "fraction_retained_centres_inside_true_primitive": 0.9007352941176471,
+      "scores": {
+        "schema_version": 1,
+        "per_camera": [
+          {
+            "camera_id": "V00",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "71c93742d3dce1e4b0a4edfd28fe89e5cfa65b5b9106db472fd0b57a8625f67f",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V00",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8173719376391982,
+              "dice": 0.8995098039215687,
+              "boundary_f1": 0.5726141078838174
+            },
+            "rendered_foreground_pixels": 898,
+            "reference_foreground_pixels": 734
+          },
+          {
+            "camera_id": "V01",
+            "partition": "heldout",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "0fb9c906fc6405dd510843c2ee7edd53f91d882ce09221bea65030ab57c06f95",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V01",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8467995802728226,
+              "dice": 0.9170454545454545,
+              "boundary_f1": 0.6962962962962962
+            },
+            "rendered_foreground_pixels": 953,
+            "reference_foreground_pixels": 807
+          },
+          {
+            "camera_id": "V02",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "71c93742d3dce1e4b0a4edfd28fe89e5cfa65b5b9106db472fd0b57a8625f67f",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V02",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8173719376391982,
+              "dice": 0.8995098039215687,
+              "boundary_f1": 0.5726141078838174
+            },
+            "rendered_foreground_pixels": 898,
+            "reference_foreground_pixels": 734
+          },
+          {
+            "camera_id": "V03",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "0fb9c906fc6405dd510843c2ee7edd53f91d882ce09221bea65030ab57c06f95",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V03",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8548728813559322,
+              "dice": 0.92175899486008,
+              "boundary_f1": 0.7488061127029609
+            },
+            "rendered_foreground_pixels": 944,
+            "reference_foreground_pixels": 807
+          },
+          {
+            "camera_id": "V04",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "71c93742d3dce1e4b0a4edfd28fe89e5cfa65b5b9106db472fd0b57a8625f67f",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V04",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8173719376391982,
+              "dice": 0.8995098039215687,
+              "boundary_f1": 0.5726141078838174
+            },
+            "rendered_foreground_pixels": 898,
+            "reference_foreground_pixels": 734
+          },
+          {
+            "camera_id": "V05",
+            "partition": "heldout",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "0fb9c906fc6405dd510843c2ee7edd53f91d882ce09221bea65030ab57c06f95",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V05",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8467995802728226,
+              "dice": 0.9170454545454545,
+              "boundary_f1": 0.6962962962962962
+            },
+            "rendered_foreground_pixels": 953,
+            "reference_foreground_pixels": 807
+          },
+          {
+            "camera_id": "V06",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "71c93742d3dce1e4b0a4edfd28fe89e5cfa65b5b9106db472fd0b57a8625f67f",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V06",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8173719376391982,
+              "dice": 0.8995098039215687,
+              "boundary_f1": 0.5726141078838174
+            },
+            "rendered_foreground_pixels": 898,
+            "reference_foreground_pixels": 734
+          },
+          {
+            "camera_id": "V07",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "0fb9c906fc6405dd510843c2ee7edd53f91d882ce09221bea65030ab57c06f95",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V07",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8548728813559322,
+              "dice": 0.92175899486008,
+              "boundary_f1": 0.7488061127029609
+            },
+            "rendered_foreground_pixels": 944,
+            "reference_foreground_pixels": 807
+          }
+        ],
+        "summaries": {
+          "input_predicted": {
+            "available_cameras": 0,
+            "camera_ids": [],
+            "mean": {
+              "iou": null,
+              "dice": null,
+              "boundary_f1": null
+            }
+          },
+          "input_independent_verified": {
+            "available_cameras": 6,
+            "camera_ids": [
+              "V00",
+              "V02",
+              "V03",
+              "V04",
+              "V06",
+              "V07"
+            ],
+            "mean": {
+              "iou": 0.8298722522114429,
+              "dice": 0.9069262009010725,
+              "boundary_f1": 0.6313447761568652
+            }
+          },
+          "heldout_predicted": {
+            "available_cameras": 0,
+            "camera_ids": [],
+            "mean": {
+              "iou": null,
+              "dice": null,
+              "boundary_f1": null
+            }
+          },
+          "heldout_independent_verified": {
+            "available_cameras": 2,
+            "camera_ids": [
+              "V01",
+              "V05"
+            ],
+            "mean": {
+              "iou": 0.8467995802728226,
+              "dice": 0.9170454545454545,
+              "boundary_f1": 0.6962962962962962
+            }
+          }
+        },
+        "expected_cameras": 8,
+        "available_cameras": 8,
+        "missing_camera_ids": [],
+        "input_camera_ids": [
+          "V00",
+          "V02",
+          "V03",
+          "V04",
+          "V06",
+          "V07"
+        ],
+        "heldout_camera_ids": [
+          "V01",
+          "V05"
+        ],
+        "reconstruction_input_camera_ids": [
+          "V00",
+          "V02",
+          "V03",
+          "V04",
+          "V06",
+          "V07"
+        ],
+        "alignment_camera_ids": [],
+        "boundary_tolerance_px": 1,
+        "empty_mask_convention": "both_empty=1; one_empty=0",
+        "aggregation": "arithmetic mean over available cameras within partition and reference kind; missing views never zero-imputed"
+      },
+      "resource": {
+        "status": "completed",
+        "elapsed_seconds": 0.26546659995801747,
+        "peak_memory_bytes": 1849634,
+        "memory_measurement": "Python tracemalloc peak during carve/evaluation/export; not process RSS or GPU memory",
+        "output_bytes": 77151,
+        "failure_reason": null
+      }
+    },
+    {
+      "name": "box_32",
+      "primitive": "box",
+      "resolution": 32,
+      "data_kind": "synthetic",
+      "occupied_voxels": 8276,
+      "analytic_primitive_volume": 4.096000000000001,
+      "occupied_volume": 5.5442734374999985,
+      "relative_volume_difference": 0.3535823822021477,
+      "fraction_retained_centres_inside_true_primitive": 0.7046882551957467,
+      "scores": {
+        "schema_version": 1,
+        "per_camera": [
+          {
+            "camera_id": "V00",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "71c93742d3dce1e4b0a4edfd28fe89e5cfa65b5b9106db472fd0b57a8625f67f",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V00",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8918590522478737,
+              "dice": 0.9428387925497752,
+              "boundary_f1": 0.9651491365777081
+            },
+            "rendered_foreground_pixels": 823,
+            "reference_foreground_pixels": 734
+          },
+          {
+            "camera_id": "V01",
+            "partition": "heldout",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "0fb9c906fc6405dd510843c2ee7edd53f91d882ce09221bea65030ab57c06f95",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V01",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.9606674612634089,
+              "dice": 0.9799392097264438,
+              "boundary_f1": 1.0
+            },
+            "rendered_foreground_pixels": 838,
+            "reference_foreground_pixels": 807
+          },
+          {
+            "camera_id": "V02",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "71c93742d3dce1e4b0a4edfd28fe89e5cfa65b5b9106db472fd0b57a8625f67f",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V02",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8918590522478737,
+              "dice": 0.9428387925497752,
+              "boundary_f1": 0.9651491365777081
+            },
+            "rendered_foreground_pixels": 823,
+            "reference_foreground_pixels": 734
+          },
+          {
+            "camera_id": "V03",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "0fb9c906fc6405dd510843c2ee7edd53f91d882ce09221bea65030ab57c06f95",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V03",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.9538461538461539,
+              "dice": 0.9763779527559056,
+              "boundary_f1": 1.0
+            },
+            "rendered_foreground_pixels": 844,
+            "reference_foreground_pixels": 807
+          },
+          {
+            "camera_id": "V04",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "71c93742d3dce1e4b0a4edfd28fe89e5cfa65b5b9106db472fd0b57a8625f67f",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V04",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8918590522478737,
+              "dice": 0.9428387925497752,
+              "boundary_f1": 0.9651491365777081
+            },
+            "rendered_foreground_pixels": 823,
+            "reference_foreground_pixels": 734
+          },
+          {
+            "camera_id": "V05",
+            "partition": "heldout",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "0fb9c906fc6405dd510843c2ee7edd53f91d882ce09221bea65030ab57c06f95",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V05",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.9606674612634089,
+              "dice": 0.9799392097264438,
+              "boundary_f1": 1.0
+            },
+            "rendered_foreground_pixels": 838,
+            "reference_foreground_pixels": 807
+          },
+          {
+            "camera_id": "V06",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "71c93742d3dce1e4b0a4edfd28fe89e5cfa65b5b9106db472fd0b57a8625f67f",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V06",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8918590522478737,
+              "dice": 0.9428387925497752,
+              "boundary_f1": 0.9651491365777081
+            },
+            "rendered_foreground_pixels": 823,
+            "reference_foreground_pixels": 734
+          },
+          {
+            "camera_id": "V07",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "0fb9c906fc6405dd510843c2ee7edd53f91d882ce09221bea65030ab57c06f95",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_box_V07",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.9538461538461539,
+              "dice": 0.9763779527559056,
+              "boundary_f1": 1.0
+            },
+            "rendered_foreground_pixels": 844,
+            "reference_foreground_pixels": 807
+          }
+        ],
+        "summaries": {
+          "input_predicted": {
+            "available_cameras": 0,
+            "camera_ids": [],
+            "mean": {
+              "iou": null,
+              "dice": null,
+              "boundary_f1": null
+            }
+          },
+          "input_independent_verified": {
+            "available_cameras": 6,
+            "camera_ids": [
+              "V00",
+              "V02",
+              "V03",
+              "V04",
+              "V06",
+              "V07"
+            ],
+            "mean": {
+              "iou": 0.9125214194473004,
+              "dice": 0.9540185126184854,
+              "boundary_f1": 0.9767660910518053
+            }
+          },
+          "heldout_predicted": {
+            "available_cameras": 0,
+            "camera_ids": [],
+            "mean": {
+              "iou": null,
+              "dice": null,
+              "boundary_f1": null
+            }
+          },
+          "heldout_independent_verified": {
+            "available_cameras": 2,
+            "camera_ids": [
+              "V01",
+              "V05"
+            ],
+            "mean": {
+              "iou": 0.9606674612634089,
+              "dice": 0.9799392097264438,
+              "boundary_f1": 1.0
+            }
+          }
+        },
+        "expected_cameras": 8,
+        "available_cameras": 8,
+        "missing_camera_ids": [],
+        "input_camera_ids": [
+          "V00",
+          "V02",
+          "V03",
+          "V04",
+          "V06",
+          "V07"
+        ],
+        "heldout_camera_ids": [
+          "V01",
+          "V05"
+        ],
+        "reconstruction_input_camera_ids": [
+          "V00",
+          "V02",
+          "V03",
+          "V04",
+          "V06",
+          "V07"
+        ],
+        "alignment_camera_ids": [],
+        "boundary_tolerance_px": 1,
+        "empty_mask_convention": "both_empty=1; one_empty=0",
+        "aggregation": "arithmetic mean over available cameras within partition and reference kind; missing views never zero-imputed"
+      },
+      "resource": {
+        "status": "completed",
+        "elapsed_seconds": 0.7867393000051379,
+        "peak_memory_bytes": 6197160,
+        "memory_measurement": "Python tracemalloc peak during carve/evaluation/export; not process RSS or GPU memory",
+        "output_bytes": 469627,
+        "failure_reason": null
+      }
+    },
+    {
+      "name": "sphere_16",
+      "primitive": "sphere",
+      "resolution": 16,
+      "data_kind": "synthetic",
+      "occupied_voxels": 420,
+      "analytic_primitive_volume": 2.1446605848506324,
+      "occupied_volume": 2.2509374999999996,
+      "relative_volume_difference": 0.049554188620839046,
+      "fraction_retained_centres_inside_true_primitive": 0.9476190476190476,
+      "scores": {
+        "schema_version": 1,
+        "per_camera": [
+          {
+            "camera_id": "V00",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V00",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8480176211453745,
+              "dice": 0.9177592371871275,
+              "boundary_f1": 0.8652690612898919
+            },
+            "rendered_foreground_pixels": 454,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V01",
+            "partition": "heldout",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V01",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.7559055118110236,
+              "dice": 0.8609865470852018,
+              "boundary_f1": 0.5208333333333334
+            },
+            "rendered_foreground_pixels": 507,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V02",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V02",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8480176211453745,
+              "dice": 0.9177592371871275,
+              "boundary_f1": 0.8652690612898919
+            },
+            "rendered_foreground_pixels": 454,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V03",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V03",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8574610244988864,
+              "dice": 0.9232613908872902,
+              "boundary_f1": 0.8937043210668035
+            },
+            "rendered_foreground_pixels": 449,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V04",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V04",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8498896247240618,
+              "dice": 0.918854415274463,
+              "boundary_f1": 0.8652690612898919
+            },
+            "rendered_foreground_pixels": 453,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V05",
+            "partition": "heldout",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V05",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.7578740157480315,
+              "dice": 0.8622620380739082,
+              "boundary_f1": 0.5148005148005148
+            },
+            "rendered_foreground_pixels": 508,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V06",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V06",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8480176211453745,
+              "dice": 0.9177592371871275,
+              "boundary_f1": 0.8652690612898919
+            },
+            "rendered_foreground_pixels": 454,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V07",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V07",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8574610244988864,
+              "dice": 0.9232613908872902,
+              "boundary_f1": 0.8937043210668035
+            },
+            "rendered_foreground_pixels": 449,
+            "reference_foreground_pixels": 385
+          }
+        ],
+        "summaries": {
+          "input_predicted": {
+            "available_cameras": 0,
+            "camera_ids": [],
+            "mean": {
+              "iou": null,
+              "dice": null,
+              "boundary_f1": null
+            }
+          },
+          "input_independent_verified": {
+            "available_cameras": 6,
+            "camera_ids": [
+              "V00",
+              "V02",
+              "V03",
+              "V04",
+              "V06",
+              "V07"
+            ],
+            "mean": {
+              "iou": 0.8514774228596597,
+              "dice": 0.9197758181017376,
+              "boundary_f1": 0.874747481215529
+            }
+          },
+          "heldout_predicted": {
+            "available_cameras": 0,
+            "camera_ids": [],
+            "mean": {
+              "iou": null,
+              "dice": null,
+              "boundary_f1": null
+            }
+          },
+          "heldout_independent_verified": {
+            "available_cameras": 2,
+            "camera_ids": [
+              "V01",
+              "V05"
+            ],
+            "mean": {
+              "iou": 0.7568897637795275,
+              "dice": 0.861624292579555,
+              "boundary_f1": 0.5178169240669241
+            }
+          }
+        },
+        "expected_cameras": 8,
+        "available_cameras": 8,
+        "missing_camera_ids": [],
+        "input_camera_ids": [
+          "V00",
+          "V02",
+          "V03",
+          "V04",
+          "V06",
+          "V07"
+        ],
+        "heldout_camera_ids": [
+          "V01",
+          "V05"
+        ],
+        "reconstruction_input_camera_ids": [
+          "V00",
+          "V02",
+          "V03",
+          "V04",
+          "V06",
+          "V07"
+        ],
+        "alignment_camera_ids": [],
+        "boundary_tolerance_px": 1,
+        "empty_mask_convention": "both_empty=1; one_empty=0",
+        "aggregation": "arithmetic mean over available cameras within partition and reference kind; missing views never zero-imputed"
+      },
+      "resource": {
+        "status": "completed",
+        "elapsed_seconds": 0.24771649995818734,
+        "peak_memory_bytes": 1835555,
+        "memory_measurement": "Python tracemalloc peak during carve/evaluation/export; not process RSS or GPU memory",
+        "output_bytes": 39985,
+        "failure_reason": null
+      }
+    },
+    {
+      "name": "sphere_32",
+      "primitive": "sphere",
+      "resolution": 32,
+      "data_kind": "synthetic",
+      "occupied_voxels": 3378,
+      "analytic_primitive_volume": 2.1446605848506324,
+      "occupied_volume": 2.2629960937499995,
+      "relative_volume_difference": 0.05517680034559352,
+      "fraction_retained_centres_inside_true_primitive": 0.9200710479573713,
+      "scores": {
+        "schema_version": 1,
+        "per_camera": [
+          {
+            "camera_id": "V00",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V00",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8810068649885584,
+              "dice": 0.9367396593673966,
+              "boundary_f1": 0.9837680102133869
+            },
+            "rendered_foreground_pixels": 437,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V01",
+            "partition": "heldout",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V01",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8174097664543525,
+              "dice": 0.8995327102803738,
+              "boundary_f1": 0.7517162471395881
+            },
+            "rendered_foreground_pixels": 471,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V02",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V02",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8810068649885584,
+              "dice": 0.9367396593673966,
+              "boundary_f1": 0.9837680102133869
+            },
+            "rendered_foreground_pixels": 437,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V03",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V03",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8810068649885584,
+              "dice": 0.9367396593673966,
+              "boundary_f1": 0.9785337243401759
+            },
+            "rendered_foreground_pixels": 437,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V04",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V04",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8789954337899544,
+              "dice": 0.9356014580801945,
+              "boundary_f1": 0.983878729547642
+            },
+            "rendered_foreground_pixels": 438,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V05",
+            "partition": "heldout",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V05",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8174097664543525,
+              "dice": 0.8995327102803738,
+              "boundary_f1": 0.7517162471395881
+            },
+            "rendered_foreground_pixels": 471,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V06",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V06",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8810068649885584,
+              "dice": 0.9367396593673966,
+              "boundary_f1": 0.9837680102133869
+            },
+            "rendered_foreground_pixels": 437,
+            "reference_foreground_pixels": 385
+          },
+          {
+            "camera_id": "V07",
+            "partition": "input",
+            "status": "available",
+            "reference_kind": "independent_verified",
+            "reference_sha256": "c39cb0fe734600c7cc94395c94e0fd1b55a7975c50161938b3272a090326ecd6",
+            "reference_provenance": {
+              "kind": "independent_dataset_annotation",
+              "data_kind": "synthetic",
+              "verified_independent": true,
+              "derived_from_prediction": false,
+              "source_id": "analytic_sphere_V07",
+              "reviewer": "analytic primitive generator, not a human mask annotation",
+              "evidence": "Known virtual primitive intersected by camera rays; masks are not generated from the carved voxels."
+            },
+            "measurement_kind": "independent_reference_accuracy",
+            "accuracy_established": true,
+            "metrics": {
+              "iou": 0.8810068649885584,
+              "dice": 0.9367396593673966,
+              "boundary_f1": 0.9785337243401759
+            },
+            "rendered_foreground_pixels": 437,
+            "reference_foreground_pixels": 385
+          }
+        ],
+        "summaries": {
+          "input_predicted": {
+            "available_cameras": 0,
+            "camera_ids": [],
+            "mean": {
+              "iou": null,
+              "dice": null,
+              "boundary_f1": null
+            }
+          },
+          "input_independent_verified": {
+            "available_cameras": 6,
+            "camera_ids": [
+              "V00",
+              "V02",
+              "V03",
+              "V04",
+              "V06",
+              "V07"
+            ],
+            "mean": {
+              "iou": 0.8806716264554577,
+              "dice": 0.9365499591528629,
+              "boundary_f1": 0.9820417014780257
+            }
+          },
+          "heldout_predicted": {
+            "available_cameras": 0,
+            "camera_ids": [],
+            "mean": {
+              "iou": null,
+              "dice": null,
+              "boundary_f1": null
+            }
+          },
+          "heldout_independent_verified": {
+            "available_cameras": 2,
+            "camera_ids": [
+              "V01",
+              "V05"
+            ],
+            "mean": {
+              "iou": 0.8174097664543525,
+              "dice": 0.8995327102803738,
+              "boundary_f1": 0.7517162471395881
+            }
+          }
+        },
+        "expected_cameras": 8,
+        "available_cameras": 8,
+        "missing_camera_ids": [],
+        "input_camera_ids": [
+          "V00",
+          "V02",
+          "V03",
+          "V04",
+          "V06",
+          "V07"
+        ],
+        "heldout_camera_ids": [
+          "V01",
+          "V05"
+        ],
+        "reconstruction_input_camera_ids": [
+          "V00",
+          "V02",
+          "V03",
+          "V04",
+          "V06",
+          "V07"
+        ],
+        "alignment_camera_ids": [],
+        "boundary_tolerance_px": 1,
+        "empty_mask_convention": "both_empty=1; one_empty=0",
+        "aggregation": "arithmetic mean over available cameras within partition and reference kind; missing views never zero-imputed"
+      },
+      "resource": {
+        "status": "completed",
+        "elapsed_seconds": 0.6276214001700282,
+        "peak_memory_bytes": 6197160,
+        "memory_measurement": "Python tracemalloc peak during carve/evaluation/export; not process RSS or GPU memory",
+        "output_bytes": 202862,
+        "failure_reason": null
+      }
+    }
+  ],
+  "figure_sha256": {
+    "box_16_iou.png": "89576ddf661c3195fffb3118011132906c6defc07b2560e8c98116d9c7562e46",
+    "box_16_silhouettes.png": "98edf984134147ae9794a390f233f5f321c0a36333bc2ddbfadd686cd238ee9c",
+    "box_32_iou.png": "a151258bbc5fe268dd7f030973631f0e0b643e3cb4ef9bdd444ed63c38b5cc18",
+    "box_32_points.png": "2252030bc694131a8d334974a058ba58b2a59dc3eb6dbc8c92effa64e6e6bc18",
+    "box_32_silhouettes.png": "dd327d4ac34cbbcd0ad1e5a19d283393f129382942cb55efbf69b011f63c6c3d",
+    "sphere_16_iou.png": "89b376b7a1b8b0ee3d1d4bdd4dc0a4792d3389dadfc3c5e381753bcc2fc140d8",
+    "sphere_16_silhouettes.png": "2fcfdd38e27fbdfa452b2989ab093347f65f481f703737f90b052055964f7e3a",
+    "sphere_32_iou.png": "04fca648cdefb07529da6d197762df10278d3d82f7777f61a13b14b6b71dcd39",
+    "sphere_32_points.png": "ba49cad06b7bc59d2dcc5a0af9932b482981c5b4ed03f1e91308f1772cc8d8cc",
+    "sphere_32_silhouettes.png": "e1e7737a3e6c0f5013bc9cc4b848ebfc89e0a31d8da8a6cb9832d0a6daf3251a"
+  }
+}

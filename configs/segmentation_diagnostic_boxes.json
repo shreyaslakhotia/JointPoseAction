@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "purpose": "diagnostic_2d_review",
+  "annotation_method": "agent visual inspection of native initial RGB frames; boxes identify physical toys and exclude separate tools and printed illustrations where separable",
+  "source_pts_seconds": 0.0,
+  "prompt": "toy truck",
+  "objects": [
+    {
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "object_id": "green_white_garbage_truck_c07c",
+      "description": "Green and white assembled garbage truck, gray cab roof, black wheels. C10379 has substantial paper occlusion.",
+      "boxes_xyxy": {
+        "C10095": [850,400,1020,660], "C10115": [810,375,1045,615],
+        "C10118": [840,685,1200,970], "C10119": [850,490,1140,705],
+        "C10379": [1020,730,1340,880], "C10390": [770,435,1000,650],
+        "C10395": [710,795,1010,990], "C10404": [1080,360,1330,575]
+      }
+    },
+    {
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "object_id": "yellow_red_crane_truck_b05b",
+      "description": "Yellow and white toy crane truck with folded red boom; articulated configuration requires further static-state checks.",
+      "boxes_xyxy": {
+        "C10095": [735,365,950,540], "C10115": [830,270,1040,460],
+        "C10118": [880,630,1160,910], "C10119": [1015,395,1175,650],
+        "C10379": [1200,690,1520,960], "C10390": [660,445,850,660],
+        "C10395": [570,765,800,995], "C10404": [1245,340,1405,570]
+      }
+    },
+    {
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "object_id": "green_white_garbage_truck_c08b",
+      "description": "Second green and white garbage-truck geometry with side label; separate yellow screwdriver excluded.",
+      "boxes_xyxy": {
+        "C10095": [950,415,1215,660], "C10115": [880,525,1120,685],
+        "C10118": [970,695,1470,1040], "C10119": [845,580,1160,900],
+        "C10379": [900,735,1120,970], "C10390": [910,360,1045,590],
+        "C10395": [880,795,1090,995], "C10404": [1020,425,1195,680]
+      }
+    }
+  ]
+}

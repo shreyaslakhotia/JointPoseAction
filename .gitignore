@@ -84,6 +84,11 @@ experiments/sam2_test/mask_overlays/
 # Isolated experiment artifacts and external runtime dependencies
 /experiments/e0/
 /experiments/phase1c/
+/experiments/segmentation_pilot/
+/experiments/reconstruction_benchmark/
+/research_artifacts/segmentation_pilot/native_display_examples/
+/research_artifacts/segmentation_pilot/native_masks/
+/research_artifacts/reconstruction_benchmark/full_resolution/
 /environments/
 /cache/
 /upstreams/

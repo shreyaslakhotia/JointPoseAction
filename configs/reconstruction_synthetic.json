@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "data_kind": "synthetic",
+  "real_data_execution": false,
+  "primitives": ["box", "sphere"],
+  "resolutions": [16, 32],
+  "image_size": 65,
+  "focal_pixels": 58.0,
+  "camera_radius": 4.0,
+  "camera_y": -1.5,
+  "bounds_xyz": [[-1.4, 1.4], [-1.4, 1.4], [-1.4, 1.4]],
+  "primitive_half_extent_or_radius": 0.8,
+  "input_camera_indices": [0, 2, 3, 4, 6, 7],
+  "heldout_camera_indices": [1, 5],
+  "boundary_tolerance_px": 1
+}

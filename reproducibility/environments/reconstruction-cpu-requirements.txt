@@ -1,0 +1,6 @@
+# Existing local CPU plotting environment used for synthetic_validation.json.
+# No model packages, GPU environments or checkpoint downloads are required.
+# Python 3.11.4, Windows; unittest is in the standard library.
+numpy==1.24.3
+Pillow==9.4.0
+matplotlib==3.7.1
