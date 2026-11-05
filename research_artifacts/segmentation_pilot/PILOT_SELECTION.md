@@ -5,6 +5,9 @@ candidates, zero accepted reconstruction benchmark pilots**. Calibration
 accuracy and temporal correspondence remain unresolved. No real reconstruction
 has been run.
 
+SAM 3 and CPU review jobs have since completed. See the
+[completed inspection and mask comparison sheets](INSPECTION_270796.md).
+
 | ID | Recording | RGB target and assessment |
 |---|---|---|
 | green01 | `nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345` | Green/white garbage truck with gray cab roof; visible in several views, substantially hidden by instruction paper in C10379. Five of six assessed views pass local landmark stability; C10118 fails. |
@@ -72,10 +75,9 @@ Complete cluster directory:
 - `geometry-268824.json`: all automatic correspondences and residuals.
 - `stability-270038/`: local landmark measurements and complete point tracks.
 - `environment-269431/`, `checkpoint-269584/`: successful setup provenance.
-- `inputs-270796/`: exact 24-image manifest and calibration assessment, created
-  only when the queued inference job starts.
-- `sam3-270796/`: native text-only/refined predictions after successful inference.
-- `review-271689/`: CPU-generated visual package after successful inference.
+- `inputs-270796/`: exact 24-image manifest and calibration assessment.
+- `sam3-270796/`: completed native text-only/refined predictions.
+- `review-271689/`: completed CPU-generated visual package.
 
 [Prompt boxes](../../configs/segmentation_diagnostic_boxes.json) were drawn by
 agent visual inspection before inference, then checked as RGB crop montages.

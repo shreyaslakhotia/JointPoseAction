@@ -1,0 +1,3884 @@
+{
+  "source_repository": "https://github.com/facebookresearch/sam3",
+  "source_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+  "source_path": "/projects/_ssd/jointposeaction/upstreams/sam3",
+  "source_files_sha256": {
+    "sam3/model_builder.py": "60cef72b1f7e4a2162d1c3f1ad2c0451bbbdc10e3484433a9aa2d016fed6b448",
+    "sam3/model/sam3_image_processor.py": "d8738a0efb6138b01c0dc5deceffd29de9e675860a9a1ed3822b08766373333b",
+    "pyproject.toml": "255f5d8d1db011459878e3de296a6afc84e03a8dda2bfa756a4de304aaff6366"
+  },
+  "checkpoint_repository": "facebook/sam3",
+  "checkpoint_revision": "3c879f39826c281e95690f02c7821c4de09afae7",
+  "checkpoint_filename": "sam3.pt",
+  "checkpoint_path": "/projects/_ssd/jointposeaction/cache/huggingface/hub/models--facebook--sam3/blobs/9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e",
+  "checkpoint_bytes": 3450062241,
+  "checkpoint_sha256": "9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e",
+  "images_manifest_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/inputs-270796/images.json",
+  "images_manifest_sha256": "b33ece45cfeb344b940666759d6d47e897e3e2ea063f61c6bf4dd6a3c157d026",
+  "gate_evidence": {
+    "purpose": "diagnostic_2d_review",
+    "diagnostic_2d_review": true,
+    "multiview_dataset_ready": false,
+    "calibration_accuracy_verified": false,
+    "temporal_sync_verified": false,
+    "correspondence_scope": "diagnostic_2d_review",
+    "source_survey": {
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/survey.json",
+      "sha256": "2bcabab3599347decf28e2515d647491d43e9745407cd2361c87aa56ac56696d"
+    },
+    "calibration_assessment": {
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/inputs-270796/calibration_assessment.json",
+      "sha256": "636ae6c38d2ed6a1382db07eca91fcca2965a79e90fa78f503ee9845fcf57a2e"
+    },
+    "tracking_stability": {
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/stability-270038/stability.json",
+      "sha256": "2e8e1278c4a02d0934abdfa0edbf740b8ea0cf6d3acf4560137c570a92f48bb4"
+    },
+    "diagnostic_image_evidence": {
+      "pilot01_C10095_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10095_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "63909980e26d1b99fa94754246c7ba12c65cd8f75b4d3bad45d336fadf9eeb57",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+          "object_id": "green_white_garbage_truck_c07c",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+          "calibration_sha256": "5adef00cf6030247f76ab89f00e52c27ee6a0eea0fe03f7532c0bd3263c9e18f",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 39,
+              "image_fitted_ransac_inlier_count": 25,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 25,
+                "median_px": 0.3358449113844045,
+                "p95_px": 8.093994000058215,
+                "mean_px": 3.6794472972133696,
+                "max_px": 69.90512235692312
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 34,
+              "image_fitted_ransac_inlier_count": 21,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 21,
+                "median_px": 1.5715905475975351,
+                "p95_px": 106.14431429385392,
+                "mean_px": 30.885175674076912,
+                "max_px": 511.97408865352577
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 50,
+              "image_fitted_ransac_inlier_count": 36,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 36,
+                "median_px": 0.4534934784330135,
+                "p95_px": 2.8519603921946284,
+                "mean_px": 1.1478574126006738,
+                "max_px": 16.493570080316683
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 96.80655945512882,
+                "p95_px": 641.0660245925669,
+                "mean_px": 200.643700461773,
+                "max_px": 684.374837918039
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 5
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 58,
+              "image_fitted_ransac_inlier_count": 35,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 35,
+                "median_px": 2.1500011649825024,
+                "p95_px": 2.7812087274333788,
+                "mean_px": 2.1157443041503172,
+                "max_px": 3.044661198197901
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": true,
+          "status": "measured",
+          "static_state_local_stability_passed": true,
+          "reference_frame_sha256": "63909980e26d1b99fa94754246c7ba12c65cd8f75b4d3bad45d336fadf9eeb57",
+          "claim_first_second": {
+            "static_state_local_stability_passed": true,
+            "elapsed_span_seconds": [
+              0.0,
+              1.0
+            ],
+            "sampled_frames": 61,
+            "per_point": [
+              {
+                "point_name": "cab_roof_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.0498821921646595,
+                "maximum_forward_backward_native_px": 0.001041628886014223,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_right",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.06367728859186172,
+                "maximum_forward_backward_native_px": 0.001270059379749,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "upper_body_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.03853359818458557,
+                "maximum_forward_backward_native_px": 0.0017437798669561744,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_panel_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.1980958729982376,
+                "maximum_forward_backward_native_px": 0.004584142472594976,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "rear_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.20770876109600067,
+                "maximum_forward_backward_native_px": 0.006043713539838791,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_lower_right",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.16896264255046844,
+                "maximum_forward_backward_native_px": 0.0023265525233000517,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "full_window": {
+            "static_state_local_stability_passed": true,
+            "elapsed_span_seconds": [
+              0.0,
+              2.9833333333333334
+            ],
+            "sampled_frames": 180,
+            "per_point": [
+              {
+                "point_name": "cab_roof_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 1.299921989440918,
+                "maximum_forward_backward_native_px": 0.7416619658470154,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_right",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.9450564980506897,
+                "maximum_forward_backward_native_px": 0.3673783540725708,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "upper_body_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.1448325663805008,
+                "maximum_forward_backward_native_px": 0.0017437798669561744,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_panel_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.21219325065612793,
+                "maximum_forward_backward_native_px": 0.004584142472594976,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "rear_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.22698600590229034,
+                "maximum_forward_backward_native_px": 0.006043713539838791,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_lower_right",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.16896264255046844,
+                "maximum_forward_backward_native_px": 0.003739617532119155,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "not_an_acceptance_gate": true
+        }
+      },
+      "pilot01_C10115_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10115_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "bddd4759cfb7bf42f12b0b3614889b559dbd93f2ed90a7182afe34c03ed20fe6",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+          "object_id": "green_white_garbage_truck_c07c",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+          "calibration_sha256": "5adef00cf6030247f76ab89f00e52c27ee6a0eea0fe03f7532c0bd3263c9e18f",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 39,
+              "image_fitted_ransac_inlier_count": 25,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 25,
+                "median_px": 0.3358449113844045,
+                "p95_px": 8.093994000058215,
+                "mean_px": 3.6794472972133696,
+                "max_px": 69.90512235692312
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 34,
+              "image_fitted_ransac_inlier_count": 21,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 21,
+                "median_px": 1.5715905475975351,
+                "p95_px": 106.14431429385392,
+                "mean_px": 30.885175674076912,
+                "max_px": 511.97408865352577
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 50,
+              "image_fitted_ransac_inlier_count": 36,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 36,
+                "median_px": 0.4534934784330135,
+                "p95_px": 2.8519603921946284,
+                "mean_px": 1.1478574126006738,
+                "max_px": 16.493570080316683
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 96.80655945512882,
+                "p95_px": 641.0660245925669,
+                "mean_px": 200.643700461773,
+                "max_px": 684.374837918039
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 5
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 58,
+              "image_fitted_ransac_inlier_count": 35,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 35,
+                "median_px": 2.1500011649825024,
+                "p95_px": 2.7812087274333788,
+                "mean_px": 2.1157443041503172,
+                "max_px": 3.044661198197901
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": true,
+          "status": "measured",
+          "static_state_local_stability_passed": true,
+          "reference_frame_sha256": "bddd4759cfb7bf42f12b0b3614889b559dbd93f2ed90a7182afe34c03ed20fe6",
+          "claim_first_second": {
+            "static_state_local_stability_passed": true,
+            "elapsed_span_seconds": [
+              0.0,
+              1.0
+            ],
+            "sampled_frames": 61,
+            "per_point": [
+              {
+                "point_name": "cab_roof_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.09011222422122955,
+                "maximum_forward_backward_native_px": 0.0026090298779308796,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_right",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.04020434617996216,
+                "maximum_forward_backward_native_px": 0.002605457790195942,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.09146490693092346,
+                "maximum_forward_backward_native_px": 0.002463432028889656,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_lower",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.23036350309848785,
+                "maximum_forward_backward_native_px": 0.00524192163720727,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "upper_body_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.2040332406759262,
+                "maximum_forward_backward_native_px": 0.0269858930259943,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "front_wheel_edge",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.08406995981931686,
+                "maximum_forward_backward_native_px": 0.0021187199745327234,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "full_window": {
+            "static_state_local_stability_passed": true,
+            "elapsed_span_seconds": [
+              0.0,
+              2.9833333333333334
+            ],
+            "sampled_frames": 180,
+            "per_point": [
+              {
+                "point_name": "cab_roof_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.16689731180667877,
+                "maximum_forward_backward_native_px": 0.0026090298779308796,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_right",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.24811211228370667,
+                "maximum_forward_backward_native_px": 0.002605457790195942,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.1409831941127777,
+                "maximum_forward_backward_native_px": 0.002463432028889656,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_lower",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.23036350309848785,
+                "maximum_forward_backward_native_px": 0.007622555363923311,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "upper_body_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.42742982506752014,
+                "maximum_forward_backward_native_px": 0.0269858930259943,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "front_wheel_edge",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.10954367369413376,
+                "maximum_forward_backward_native_px": 0.0021187199745327234,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "not_an_acceptance_gate": true
+        }
+      },
+      "pilot01_C10118_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10118_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "24f97faade7318a5b76dced03a91163706499f666a2613d1dcde8a2e73de2b01",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+          "object_id": "green_white_garbage_truck_c07c",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+          "calibration_sha256": "5adef00cf6030247f76ab89f00e52c27ee6a0eea0fe03f7532c0bd3263c9e18f",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 39,
+              "image_fitted_ransac_inlier_count": 25,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 25,
+                "median_px": 0.3358449113844045,
+                "p95_px": 8.093994000058215,
+                "mean_px": 3.6794472972133696,
+                "max_px": 69.90512235692312
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 34,
+              "image_fitted_ransac_inlier_count": 21,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 21,
+                "median_px": 1.5715905475975351,
+                "p95_px": 106.14431429385392,
+                "mean_px": 30.885175674076912,
+                "max_px": 511.97408865352577
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 50,
+              "image_fitted_ransac_inlier_count": 36,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 36,
+                "median_px": 0.4534934784330135,
+                "p95_px": 2.8519603921946284,
+                "mean_px": 1.1478574126006738,
+                "max_px": 16.493570080316683
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 96.80655945512882,
+                "p95_px": 641.0660245925669,
+                "mean_px": 200.643700461773,
+                "max_px": 684.374837918039
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 5
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 58,
+              "image_fitted_ransac_inlier_count": 35,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 35,
+                "median_px": 2.1500011649825024,
+                "p95_px": 2.7812087274333788,
+                "mean_px": 2.1157443041503172,
+                "max_px": 3.044661198197901
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": true,
+          "status": "measured",
+          "static_state_local_stability_passed": false,
+          "reference_frame_sha256": "24f97faade7318a5b76dced03a91163706499f666a2613d1dcde8a2e73de2b01",
+          "claim_first_second": {
+            "static_state_local_stability_passed": false,
+            "elapsed_span_seconds": [
+              0.0,
+              1.0
+            ],
+            "sampled_frames": 61,
+            "per_point": [
+              {
+                "point_name": "tailgate_upper_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 6.6973395347595215,
+                "maximum_forward_backward_native_px": 0.47783979773521423,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": false
+              },
+              {
+                "point_name": "white_body_upper_hole",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.07971715182065964,
+                "maximum_forward_backward_native_px": 0.00091552734375,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "white_body_lower_hole",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.1806776076555252,
+                "maximum_forward_backward_native_px": 0.009655908681452274,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_corner",
+                "valid_fraction": 0.8524590163934426,
+                "valid_frames": 52,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.1724793016910553,
+                "maximum_forward_backward_native_px": 1.7219882011413574,
+                "tracking_lost_or_occluded_frames": 9,
+                "passed": false
+              },
+              {
+                "point_name": "front_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.057894282042980194,
+                "maximum_forward_backward_native_px": 0.0010986328125,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "rear_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.06895168125629425,
+                "maximum_forward_backward_native_px": 0.0008886852883733809,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "full_window": {
+            "static_state_local_stability_passed": false,
+            "elapsed_span_seconds": [
+              0.0,
+              2.9833333333333334
+            ],
+            "sampled_frames": 180,
+            "per_point": [
+              {
+                "point_name": "tailgate_upper_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 10.442024230957031,
+                "maximum_forward_backward_native_px": 0.47783979773521423,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": false
+              },
+              {
+                "point_name": "white_body_upper_hole",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.25838807225227356,
+                "maximum_forward_backward_native_px": 0.002078782534226775,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "white_body_lower_hole",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.3689655661582947,
+                "maximum_forward_backward_native_px": 0.009655908681452274,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_corner",
+                "valid_fraction": 0.28888888888888886,
+                "valid_frames": 52,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.1724793016910553,
+                "maximum_forward_backward_native_px": 1.7219882011413574,
+                "tracking_lost_or_occluded_frames": 128,
+                "passed": false
+              },
+              {
+                "point_name": "front_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.19932930171489716,
+                "maximum_forward_backward_native_px": 0.0010986328125,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "rear_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.23695917427539825,
+                "maximum_forward_backward_native_px": 0.0011660750024020672,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "not_an_acceptance_gate": true
+        }
+      },
+      "pilot01_C10119_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10119_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "57d12730a00d818117754d9666c58c1ecb189e8ab8db37c1c4bd4ef1a5644afd",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+          "object_id": "green_white_garbage_truck_c07c",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+          "calibration_sha256": "5adef00cf6030247f76ab89f00e52c27ee6a0eea0fe03f7532c0bd3263c9e18f",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 39,
+              "image_fitted_ransac_inlier_count": 25,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 25,
+                "median_px": 0.3358449113844045,
+                "p95_px": 8.093994000058215,
+                "mean_px": 3.6794472972133696,
+                "max_px": 69.90512235692312
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 34,
+              "image_fitted_ransac_inlier_count": 21,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 21,
+                "median_px": 1.5715905475975351,
+                "p95_px": 106.14431429385392,
+                "mean_px": 30.885175674076912,
+                "max_px": 511.97408865352577
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 50,
+              "image_fitted_ransac_inlier_count": 36,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 36,
+                "median_px": 0.4534934784330135,
+                "p95_px": 2.8519603921946284,
+                "mean_px": 1.1478574126006738,
+                "max_px": 16.493570080316683
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 96.80655945512882,
+                "p95_px": 641.0660245925669,
+                "mean_px": 200.643700461773,
+                "max_px": 684.374837918039
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 5
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 58,
+              "image_fitted_ransac_inlier_count": 35,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 35,
+                "median_px": 2.1500011649825024,
+                "p95_px": 2.7812087274333788,
+                "mean_px": 2.1157443041503172,
+                "max_px": 3.044661198197901
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": true,
+          "status": "measured",
+          "static_state_local_stability_passed": true,
+          "reference_frame_sha256": "57d12730a00d818117754d9666c58c1ecb189e8ab8db37c1c4bd4ef1a5644afd",
+          "claim_first_second": {
+            "static_state_local_stability_passed": true,
+            "elapsed_span_seconds": [
+              0.0,
+              1.0
+            ],
+            "sampled_frames": 61,
+            "per_point": [
+              {
+                "point_name": "tailgate_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.18638448417186737,
+                "maximum_forward_backward_native_px": 0.0026945483405143023,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "white_body_hole",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.09066730737686157,
+                "maximum_forward_backward_native_px": 0.0012448778143152595,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "upper_body_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.09739124774932861,
+                "maximum_forward_backward_native_px": 0.002659060060977936,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.08527082949876785,
+                "maximum_forward_backward_native_px": 0.0011724471114575863,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "front_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.0894453302025795,
+                "maximum_forward_backward_native_px": 0.0006601961795240641,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "rear_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.06329584121704102,
+                "maximum_forward_backward_native_px": 0.0007425247458741069,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "full_window": {
+            "static_state_local_stability_passed": true,
+            "elapsed_span_seconds": [
+              0.0,
+              2.9833333333333334
+            ],
+            "sampled_frames": 180,
+            "per_point": [
+              {
+                "point_name": "tailgate_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.20900705456733704,
+                "maximum_forward_backward_native_px": 0.003772841766476631,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "white_body_hole",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.3114161193370819,
+                "maximum_forward_backward_native_px": 0.0012448778143152595,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "upper_body_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.24616217613220215,
+                "maximum_forward_backward_native_px": 0.0040674335323274136,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.1800537109375,
+                "maximum_forward_backward_native_px": 0.0027104008477181196,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "front_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.24923738837242126,
+                "maximum_forward_backward_native_px": 0.000984162325039506,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "rear_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.26465505361557007,
+                "maximum_forward_backward_native_px": 0.0008566692122258246,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "not_an_acceptance_gate": true
+        }
+      },
+      "pilot01_C10379_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10379_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "5e0a4bd9ee16878b66ea88dcb71987f9bdaebbeff698454b7b0c26763418afbf",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+          "object_id": "green_white_garbage_truck_c07c",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+          "calibration_sha256": "5adef00cf6030247f76ab89f00e52c27ee6a0eea0fe03f7532c0bd3263c9e18f",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 39,
+              "image_fitted_ransac_inlier_count": 25,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 25,
+                "median_px": 0.3358449113844045,
+                "p95_px": 8.093994000058215,
+                "mean_px": 3.6794472972133696,
+                "max_px": 69.90512235692312
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 34,
+              "image_fitted_ransac_inlier_count": 21,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 21,
+                "median_px": 1.5715905475975351,
+                "p95_px": 106.14431429385392,
+                "mean_px": 30.885175674076912,
+                "max_px": 511.97408865352577
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 50,
+              "image_fitted_ransac_inlier_count": 36,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 36,
+                "median_px": 0.4534934784330135,
+                "p95_px": 2.8519603921946284,
+                "mean_px": 1.1478574126006738,
+                "max_px": 16.493570080316683
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 96.80655945512882,
+                "p95_px": 641.0660245925669,
+                "mean_px": 200.643700461773,
+                "max_px": 684.374837918039
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 5
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 58,
+              "image_fitted_ransac_inlier_count": 35,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 35,
+                "median_px": 2.1500011649825024,
+                "p95_px": 2.7812087274333788,
+                "mean_px": 2.1157443041503172,
+                "max_px": 3.044661198197901
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot01_C10390_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10390_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "33d85809ba477e9246f7d5f97fef1cd8e9743bdd41384b8765ca2e325f81ed09",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+          "object_id": "green_white_garbage_truck_c07c",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+          "calibration_sha256": "5adef00cf6030247f76ab89f00e52c27ee6a0eea0fe03f7532c0bd3263c9e18f",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 39,
+              "image_fitted_ransac_inlier_count": 25,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 25,
+                "median_px": 0.3358449113844045,
+                "p95_px": 8.093994000058215,
+                "mean_px": 3.6794472972133696,
+                "max_px": 69.90512235692312
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 34,
+              "image_fitted_ransac_inlier_count": 21,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 21,
+                "median_px": 1.5715905475975351,
+                "p95_px": 106.14431429385392,
+                "mean_px": 30.885175674076912,
+                "max_px": 511.97408865352577
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 50,
+              "image_fitted_ransac_inlier_count": 36,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 36,
+                "median_px": 0.4534934784330135,
+                "p95_px": 2.8519603921946284,
+                "mean_px": 1.1478574126006738,
+                "max_px": 16.493570080316683
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 96.80655945512882,
+                "p95_px": 641.0660245925669,
+                "mean_px": 200.643700461773,
+                "max_px": 684.374837918039
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 5
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 58,
+              "image_fitted_ransac_inlier_count": 35,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 35,
+                "median_px": 2.1500011649825024,
+                "p95_px": 2.7812087274333788,
+                "mean_px": 2.1157443041503172,
+                "max_px": 3.044661198197901
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": true,
+          "status": "measured",
+          "static_state_local_stability_passed": true,
+          "reference_frame_sha256": "33d85809ba477e9246f7d5f97fef1cd8e9743bdd41384b8765ca2e325f81ed09",
+          "claim_first_second": {
+            "static_state_local_stability_passed": true,
+            "elapsed_span_seconds": [
+              0.0,
+              1.0
+            ],
+            "sampled_frames": 61,
+            "per_point": [
+              {
+                "point_name": "cab_roof_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.13589920103549957,
+                "maximum_forward_backward_native_px": 0.004012104123830795,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_right",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.24808929860591888,
+                "maximum_forward_backward_native_px": 0.011133396066725254,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "white_body_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.10074471682310104,
+                "maximum_forward_backward_native_px": 0.004455984570086002,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.13225248456001282,
+                "maximum_forward_backward_native_px": 0.01335233822464943,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "rear_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.05112330988049507,
+                "maximum_forward_backward_native_px": 0.001287537976168096,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "front_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.07056036591529846,
+                "maximum_forward_backward_native_px": 0.0014248801162466407,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "full_window": {
+            "static_state_local_stability_passed": true,
+            "elapsed_span_seconds": [
+              0.0,
+              2.9833333333333334
+            ],
+            "sampled_frames": 180,
+            "per_point": [
+              {
+                "point_name": "cab_roof_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.13589920103549957,
+                "maximum_forward_backward_native_px": 0.004012104123830795,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_right",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.27704134583473206,
+                "maximum_forward_backward_native_px": 0.016749007627367973,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "white_body_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.18252193927764893,
+                "maximum_forward_backward_native_px": 0.004455984570086002,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.23051762580871582,
+                "maximum_forward_backward_native_px": 0.018690017983317375,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "rear_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.12934541702270508,
+                "maximum_forward_backward_native_px": 0.0019387671491131186,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "front_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.11266772449016571,
+                "maximum_forward_backward_native_px": 0.0019009291427209973,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "not_an_acceptance_gate": true
+        }
+      },
+      "pilot01_C10395_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10395_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "6162ebfe341abfdf649eab60e2b65ff881611f18be7a72497c2bb56d33ecf95c",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+          "object_id": "green_white_garbage_truck_c07c",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+          "calibration_sha256": "5adef00cf6030247f76ab89f00e52c27ee6a0eea0fe03f7532c0bd3263c9e18f",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 39,
+              "image_fitted_ransac_inlier_count": 25,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 25,
+                "median_px": 0.3358449113844045,
+                "p95_px": 8.093994000058215,
+                "mean_px": 3.6794472972133696,
+                "max_px": 69.90512235692312
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 34,
+              "image_fitted_ransac_inlier_count": 21,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 21,
+                "median_px": 1.5715905475975351,
+                "p95_px": 106.14431429385392,
+                "mean_px": 30.885175674076912,
+                "max_px": 511.97408865352577
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 50,
+              "image_fitted_ransac_inlier_count": 36,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 36,
+                "median_px": 0.4534934784330135,
+                "p95_px": 2.8519603921946284,
+                "mean_px": 1.1478574126006738,
+                "max_px": 16.493570080316683
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 96.80655945512882,
+                "p95_px": 641.0660245925669,
+                "mean_px": 200.643700461773,
+                "max_px": 684.374837918039
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 5
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 58,
+              "image_fitted_ransac_inlier_count": 35,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 35,
+                "median_px": 2.1500011649825024,
+                "p95_px": 2.7812087274333788,
+                "mean_px": 2.1157443041503172,
+                "max_px": 3.044661198197901
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": true,
+          "status": "measured",
+          "static_state_local_stability_passed": true,
+          "reference_frame_sha256": "6162ebfe341abfdf649eab60e2b65ff881611f18be7a72497c2bb56d33ecf95c",
+          "claim_first_second": {
+            "static_state_local_stability_passed": true,
+            "elapsed_span_seconds": [
+              0.0,
+              1.0
+            ],
+            "sampled_frames": 61,
+            "per_point": [
+              {
+                "point_name": "cab_roof_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.019513407722115517,
+                "maximum_forward_backward_native_px": 0.00030517578125,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_right",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.19632254540920258,
+                "maximum_forward_backward_native_px": 0.009541027247905731,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "white_body_hole",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.09987696260213852,
+                "maximum_forward_backward_native_px": 0.0012582719791680574,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "rear_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.05541965365409851,
+                "maximum_forward_backward_native_px": 0.0028162284288555384,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "front_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.09808402508497238,
+                "maximum_forward_backward_native_px": 0.001477504731155932,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_upper_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 61,
+                "total_frames": 61,
+                "maximum_displacement_native_px": 0.06126835197210312,
+                "maximum_forward_backward_native_px": 0.0013647875748574734,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "full_window": {
+            "static_state_local_stability_passed": true,
+            "elapsed_span_seconds": [
+              0.0,
+              2.9833333333333334
+            ],
+            "sampled_frames": 180,
+            "per_point": [
+              {
+                "point_name": "cab_roof_left",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.033558569848537445,
+                "maximum_forward_backward_native_px": 0.0004094362666364759,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "cab_roof_right",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.2522798776626587,
+                "maximum_forward_backward_native_px": 0.010576707310974598,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "white_body_hole",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.15149296820163727,
+                "maximum_forward_backward_native_px": 0.00198716064915061,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "rear_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.2581566870212555,
+                "maximum_forward_backward_native_px": 0.005769678857177496,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "front_wheel_center",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.16934062540531158,
+                "maximum_forward_backward_native_px": 0.001477504731155932,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              },
+              {
+                "point_name": "tailgate_upper_corner",
+                "valid_fraction": 1.0,
+                "valid_frames": 180,
+                "total_frames": 180,
+                "maximum_displacement_native_px": 0.24813348054885864,
+                "maximum_forward_backward_native_px": 0.001893074018880725,
+                "tracking_lost_or_occluded_frames": 0,
+                "passed": true
+              }
+            ],
+            "scope": "Local 2D landmark stability only; no absolute or cross-camera clock alignment"
+          },
+          "not_an_acceptance_gate": true
+        }
+      },
+      "pilot01_C10404_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10404_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "e254c7f5f5b0918358b11577f210d5fe09f375199e94df9010c3833383a73571",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+          "object_id": "green_white_garbage_truck_c07c",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345.json",
+          "calibration_sha256": "5adef00cf6030247f76ab89f00e52c27ee6a0eea0fe03f7532c0bd3263c9e18f",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 39,
+              "image_fitted_ransac_inlier_count": 25,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 25,
+                "median_px": 0.3358449113844045,
+                "p95_px": 8.093994000058215,
+                "mean_px": 3.6794472972133696,
+                "max_px": 69.90512235692312
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 34,
+              "image_fitted_ransac_inlier_count": 21,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 21,
+                "median_px": 1.5715905475975351,
+                "p95_px": 106.14431429385392,
+                "mean_px": 30.885175674076912,
+                "max_px": 511.97408865352577
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 50,
+              "image_fitted_ransac_inlier_count": 36,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 36,
+                "median_px": 0.4534934784330135,
+                "p95_px": 2.8519603921946284,
+                "mean_px": 1.1478574126006738,
+                "max_px": 16.493570080316683
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 96.80655945512882,
+                "p95_px": 641.0660245925669,
+                "mean_px": 200.643700461773,
+                "max_px": 684.374837918039
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 5
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 58,
+              "image_fitted_ransac_inlier_count": 35,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 35,
+                "median_px": 2.1500011649825024,
+                "p95_px": 2.7812087274333788,
+                "mean_px": 2.1157443041503172,
+                "max_px": 3.044661198197901
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot02_C10095_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10095_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "cce61fbfce1a626e885e3967774e51b8dfe12c0d14ae07689f0fe730e5ece1fc",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+          "object_id": "yellow_red_crane_truck_b05b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.json",
+          "calibration_sha256": "b7a9aba37397861c1cb57bc93b9ef2d7cd7478c4de9359f8f8c1c6658305ce34",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 23,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 0.7542434836198397,
+                "p95_px": 104.31833166585042,
+                "mean_px": 22.979006178546737,
+                "max_px": 139.4653704814917
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 44,
+              "image_fitted_ransac_inlier_count": 33,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 33,
+                "median_px": 0.542474155249089,
+                "p95_px": 129.07525728656978,
+                "mean_px": 48.69447165357848,
+                "max_px": 1266.485088888295
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 21,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 156.09962730299327,
+                "p95_px": 525.756834980942,
+                "mean_px": 162.22934744947074,
+                "max_px": 611.9157607455912
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 10
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 570.7414942231508,
+                "p95_px": 1072.7256194021845,
+                "mean_px": 518.7517362845108,
+                "max_px": 1198.2000695056986
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 15,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 265.0854936562994,
+                "p95_px": 571.9563800795013,
+                "mean_px": 310.79344657275874,
+                "max_px": 664.9675657901831
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 56,
+              "image_fitted_ransac_inlier_count": 41,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 41,
+                "median_px": 1.1773858619843456,
+                "p95_px": 2.2856136755392775,
+                "mean_px": 1.2351213322183316,
+                "max_px": 5.714170285381675
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot02_C10115_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10115_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "95fac239b49be034d63472060a11dbe486f895892285318c356be62c706fe520",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+          "object_id": "yellow_red_crane_truck_b05b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.json",
+          "calibration_sha256": "b7a9aba37397861c1cb57bc93b9ef2d7cd7478c4de9359f8f8c1c6658305ce34",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 23,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 0.7542434836198397,
+                "p95_px": 104.31833166585042,
+                "mean_px": 22.979006178546737,
+                "max_px": 139.4653704814917
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 44,
+              "image_fitted_ransac_inlier_count": 33,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 33,
+                "median_px": 0.542474155249089,
+                "p95_px": 129.07525728656978,
+                "mean_px": 48.69447165357848,
+                "max_px": 1266.485088888295
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 21,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 156.09962730299327,
+                "p95_px": 525.756834980942,
+                "mean_px": 162.22934744947074,
+                "max_px": 611.9157607455912
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 10
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 570.7414942231508,
+                "p95_px": 1072.7256194021845,
+                "mean_px": 518.7517362845108,
+                "max_px": 1198.2000695056986
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 15,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 265.0854936562994,
+                "p95_px": 571.9563800795013,
+                "mean_px": 310.79344657275874,
+                "max_px": 664.9675657901831
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 56,
+              "image_fitted_ransac_inlier_count": 41,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 41,
+                "median_px": 1.1773858619843456,
+                "p95_px": 2.2856136755392775,
+                "mean_px": 1.2351213322183316,
+                "max_px": 5.714170285381675
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot02_C10118_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10118_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "d4ca624e7a46811037369260381cc5ea9495e83234ba0d35c3e8f62e7cf99839",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+          "object_id": "yellow_red_crane_truck_b05b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.json",
+          "calibration_sha256": "b7a9aba37397861c1cb57bc93b9ef2d7cd7478c4de9359f8f8c1c6658305ce34",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 23,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 0.7542434836198397,
+                "p95_px": 104.31833166585042,
+                "mean_px": 22.979006178546737,
+                "max_px": 139.4653704814917
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 44,
+              "image_fitted_ransac_inlier_count": 33,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 33,
+                "median_px": 0.542474155249089,
+                "p95_px": 129.07525728656978,
+                "mean_px": 48.69447165357848,
+                "max_px": 1266.485088888295
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 21,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 156.09962730299327,
+                "p95_px": 525.756834980942,
+                "mean_px": 162.22934744947074,
+                "max_px": 611.9157607455912
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 10
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 570.7414942231508,
+                "p95_px": 1072.7256194021845,
+                "mean_px": 518.7517362845108,
+                "max_px": 1198.2000695056986
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 15,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 265.0854936562994,
+                "p95_px": 571.9563800795013,
+                "mean_px": 310.79344657275874,
+                "max_px": 664.9675657901831
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 56,
+              "image_fitted_ransac_inlier_count": 41,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 41,
+                "median_px": 1.1773858619843456,
+                "p95_px": 2.2856136755392775,
+                "mean_px": 1.2351213322183316,
+                "max_px": 5.714170285381675
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot02_C10119_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10119_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "c241fe842ab17f747ef7bc5758d0c30aa3eab3743251b9a713ae46ecd50907b7",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+          "object_id": "yellow_red_crane_truck_b05b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.json",
+          "calibration_sha256": "b7a9aba37397861c1cb57bc93b9ef2d7cd7478c4de9359f8f8c1c6658305ce34",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 23,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 0.7542434836198397,
+                "p95_px": 104.31833166585042,
+                "mean_px": 22.979006178546737,
+                "max_px": 139.4653704814917
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 44,
+              "image_fitted_ransac_inlier_count": 33,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 33,
+                "median_px": 0.542474155249089,
+                "p95_px": 129.07525728656978,
+                "mean_px": 48.69447165357848,
+                "max_px": 1266.485088888295
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 21,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 156.09962730299327,
+                "p95_px": 525.756834980942,
+                "mean_px": 162.22934744947074,
+                "max_px": 611.9157607455912
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 10
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 570.7414942231508,
+                "p95_px": 1072.7256194021845,
+                "mean_px": 518.7517362845108,
+                "max_px": 1198.2000695056986
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 15,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 265.0854936562994,
+                "p95_px": 571.9563800795013,
+                "mean_px": 310.79344657275874,
+                "max_px": 664.9675657901831
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 56,
+              "image_fitted_ransac_inlier_count": 41,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 41,
+                "median_px": 1.1773858619843456,
+                "p95_px": 2.2856136755392775,
+                "mean_px": 1.2351213322183316,
+                "max_px": 5.714170285381675
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot02_C10379_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10379_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "33e3dea84257f66fa119845afe1dd148bad2846bf8395edd1cf483eb86bf83e9",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+          "object_id": "yellow_red_crane_truck_b05b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.json",
+          "calibration_sha256": "b7a9aba37397861c1cb57bc93b9ef2d7cd7478c4de9359f8f8c1c6658305ce34",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 23,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 0.7542434836198397,
+                "p95_px": 104.31833166585042,
+                "mean_px": 22.979006178546737,
+                "max_px": 139.4653704814917
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 44,
+              "image_fitted_ransac_inlier_count": 33,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 33,
+                "median_px": 0.542474155249089,
+                "p95_px": 129.07525728656978,
+                "mean_px": 48.69447165357848,
+                "max_px": 1266.485088888295
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 21,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 156.09962730299327,
+                "p95_px": 525.756834980942,
+                "mean_px": 162.22934744947074,
+                "max_px": 611.9157607455912
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 10
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 570.7414942231508,
+                "p95_px": 1072.7256194021845,
+                "mean_px": 518.7517362845108,
+                "max_px": 1198.2000695056986
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 15,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 265.0854936562994,
+                "p95_px": 571.9563800795013,
+                "mean_px": 310.79344657275874,
+                "max_px": 664.9675657901831
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 56,
+              "image_fitted_ransac_inlier_count": 41,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 41,
+                "median_px": 1.1773858619843456,
+                "p95_px": 2.2856136755392775,
+                "mean_px": 1.2351213322183316,
+                "max_px": 5.714170285381675
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot02_C10390_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10390_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "8a5b77d264bf832ee8e9afa579f0fa641689706bf0299f73ecaf8a5ee1e5e1a3",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+          "object_id": "yellow_red_crane_truck_b05b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.json",
+          "calibration_sha256": "b7a9aba37397861c1cb57bc93b9ef2d7cd7478c4de9359f8f8c1c6658305ce34",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 23,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 0.7542434836198397,
+                "p95_px": 104.31833166585042,
+                "mean_px": 22.979006178546737,
+                "max_px": 139.4653704814917
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 44,
+              "image_fitted_ransac_inlier_count": 33,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 33,
+                "median_px": 0.542474155249089,
+                "p95_px": 129.07525728656978,
+                "mean_px": 48.69447165357848,
+                "max_px": 1266.485088888295
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 21,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 156.09962730299327,
+                "p95_px": 525.756834980942,
+                "mean_px": 162.22934744947074,
+                "max_px": 611.9157607455912
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 10
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 570.7414942231508,
+                "p95_px": 1072.7256194021845,
+                "mean_px": 518.7517362845108,
+                "max_px": 1198.2000695056986
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 15,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 265.0854936562994,
+                "p95_px": 571.9563800795013,
+                "mean_px": 310.79344657275874,
+                "max_px": 664.9675657901831
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 56,
+              "image_fitted_ransac_inlier_count": 41,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 41,
+                "median_px": 1.1773858619843456,
+                "p95_px": 2.2856136755392775,
+                "mean_px": 1.2351213322183316,
+                "max_px": 5.714170285381675
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot02_C10395_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10395_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "3a204d16e906448fff98553391f4ea2a35ad45474bdcdd936341f24433c98d39",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+          "object_id": "yellow_red_crane_truck_b05b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.json",
+          "calibration_sha256": "b7a9aba37397861c1cb57bc93b9ef2d7cd7478c4de9359f8f8c1c6658305ce34",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 23,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 0.7542434836198397,
+                "p95_px": 104.31833166585042,
+                "mean_px": 22.979006178546737,
+                "max_px": 139.4653704814917
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 44,
+              "image_fitted_ransac_inlier_count": 33,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 33,
+                "median_px": 0.542474155249089,
+                "p95_px": 129.07525728656978,
+                "mean_px": 48.69447165357848,
+                "max_px": 1266.485088888295
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 21,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 156.09962730299327,
+                "p95_px": 525.756834980942,
+                "mean_px": 162.22934744947074,
+                "max_px": 611.9157607455912
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 10
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 570.7414942231508,
+                "p95_px": 1072.7256194021845,
+                "mean_px": 518.7517362845108,
+                "max_px": 1198.2000695056986
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 15,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 265.0854936562994,
+                "p95_px": 571.9563800795013,
+                "mean_px": 310.79344657275874,
+                "max_px": 664.9675657901831
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 56,
+              "image_fitted_ransac_inlier_count": 41,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 41,
+                "median_px": 1.1773858619843456,
+                "p95_px": 2.2856136755392775,
+                "mean_px": 1.2351213322183316,
+                "max_px": 5.714170285381675
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot02_C10404_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10404_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "cf04b0088b880fd16ac1e5dcf2ec9ede77703b3775dcafc3ecc23510a9306049",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+          "object_id": "yellow_red_crane_truck_b05b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800.json",
+          "calibration_sha256": "b7a9aba37397861c1cb57bc93b9ef2d7cd7478c4de9359f8f8c1c6658305ce34",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 23,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 0.7542434836198397,
+                "p95_px": 104.31833166585042,
+                "mean_px": 22.979006178546737,
+                "max_px": 139.4653704814917
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 44,
+              "image_fitted_ransac_inlier_count": 33,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 33,
+                "median_px": 0.542474155249089,
+                "p95_px": 129.07525728656978,
+                "mean_px": 48.69447165357848,
+                "max_px": 1266.485088888295
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 21,
+              "image_fitted_ransac_inlier_count": 11,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 11,
+                "median_px": 156.09962730299327,
+                "p95_px": 525.756834980942,
+                "mean_px": 162.22934744947074,
+                "max_px": 611.9157607455912
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 10
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 19,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 570.7414942231508,
+                "p95_px": 1072.7256194021845,
+                "mean_px": 518.7517362845108,
+                "max_px": 1198.2000695056986
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 15,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 265.0854936562994,
+                "p95_px": 571.9563800795013,
+                "mean_px": 310.79344657275874,
+                "max_px": 664.9675657901831
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 56,
+              "image_fitted_ransac_inlier_count": 41,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 41,
+                "median_px": 1.1773858619843456,
+                "p95_px": 2.2856136755392775,
+                "mean_px": 1.2351213322183316,
+                "max_px": 5.714170285381675
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot03_C10095_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10095_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "8f4bc45a5f21fd83af855f68d2474fe780161efe5a054e5870665b4aac3b2712",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+          "object_id": "green_white_garbage_truck_c08b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726.json",
+          "calibration_sha256": "92777143be4150018768f5fb4d1cc110cf2ae73a53dca35926eb572848f5353a",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 26,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 18.213553906883558,
+                "p95_px": 697.5642713502356,
+                "mean_px": 144.98621555688302,
+                "max_px": 1157.6663964344207
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 16,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 267.99683199261756,
+                "p95_px": 896.4470204181484,
+                "mean_px": 360.19324639984023,
+                "max_px": 905.2533823802005
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 18,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 1.3179160454146108,
+                "p95_px": 797.8069632418283,
+                "mean_px": 195.91194978843137,
+                "max_px": 1122.4659576364393
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 13,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 12,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 11
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 37,
+              "image_fitted_ransac_inlier_count": 17,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 17,
+                "median_px": 0.8813793802930868,
+                "p95_px": 2.45761511418603,
+                "mean_px": 0.9461449269141908,
+                "max_px": 2.71697342118496
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot03_C10115_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10115_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "0d84ed7f46aa9ad8f6ca6c0950fcb385b8549cc6ec486596c28bbc4fcd520505",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+          "object_id": "green_white_garbage_truck_c08b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726.json",
+          "calibration_sha256": "92777143be4150018768f5fb4d1cc110cf2ae73a53dca35926eb572848f5353a",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 26,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 18.213553906883558,
+                "p95_px": 697.5642713502356,
+                "mean_px": 144.98621555688302,
+                "max_px": 1157.6663964344207
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 16,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 267.99683199261756,
+                "p95_px": 896.4470204181484,
+                "mean_px": 360.19324639984023,
+                "max_px": 905.2533823802005
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 18,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 1.3179160454146108,
+                "p95_px": 797.8069632418283,
+                "mean_px": 195.91194978843137,
+                "max_px": 1122.4659576364393
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 13,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 12,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 11
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 37,
+              "image_fitted_ransac_inlier_count": 17,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 17,
+                "median_px": 0.8813793802930868,
+                "p95_px": 2.45761511418603,
+                "mean_px": 0.9461449269141908,
+                "max_px": 2.71697342118496
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot03_C10118_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10118_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "fd3692c1570359f436995f69448d351faf8ccd5d0c13aded64759696ff1709df",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+          "object_id": "green_white_garbage_truck_c08b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726.json",
+          "calibration_sha256": "92777143be4150018768f5fb4d1cc110cf2ae73a53dca35926eb572848f5353a",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 26,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 18.213553906883558,
+                "p95_px": 697.5642713502356,
+                "mean_px": 144.98621555688302,
+                "max_px": 1157.6663964344207
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 16,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 267.99683199261756,
+                "p95_px": 896.4470204181484,
+                "mean_px": 360.19324639984023,
+                "max_px": 905.2533823802005
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 18,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 1.3179160454146108,
+                "p95_px": 797.8069632418283,
+                "mean_px": 195.91194978843137,
+                "max_px": 1122.4659576364393
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 13,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 12,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 11
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 37,
+              "image_fitted_ransac_inlier_count": 17,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 17,
+                "median_px": 0.8813793802930868,
+                "p95_px": 2.45761511418603,
+                "mean_px": 0.9461449269141908,
+                "max_px": 2.71697342118496
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot03_C10119_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10119_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "8ddc0ac44e3819e4a2de07ddf2e90e4f2bc8690298dfe4dc854953b65195a01a",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+          "object_id": "green_white_garbage_truck_c08b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726.json",
+          "calibration_sha256": "92777143be4150018768f5fb4d1cc110cf2ae73a53dca35926eb572848f5353a",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 26,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 18.213553906883558,
+                "p95_px": 697.5642713502356,
+                "mean_px": 144.98621555688302,
+                "max_px": 1157.6663964344207
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 16,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 267.99683199261756,
+                "p95_px": 896.4470204181484,
+                "mean_px": 360.19324639984023,
+                "max_px": 905.2533823802005
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 18,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 1.3179160454146108,
+                "p95_px": 797.8069632418283,
+                "mean_px": 195.91194978843137,
+                "max_px": 1122.4659576364393
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 13,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 12,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 11
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 37,
+              "image_fitted_ransac_inlier_count": 17,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 17,
+                "median_px": 0.8813793802930868,
+                "p95_px": 2.45761511418603,
+                "mean_px": 0.9461449269141908,
+                "max_px": 2.71697342118496
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot03_C10379_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10379_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "37d0e1a53792ea4aac8e7fb6656dfd98b41559bc4d68e6a224293505fd964bc8",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+          "object_id": "green_white_garbage_truck_c08b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726.json",
+          "calibration_sha256": "92777143be4150018768f5fb4d1cc110cf2ae73a53dca35926eb572848f5353a",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 26,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 18.213553906883558,
+                "p95_px": 697.5642713502356,
+                "mean_px": 144.98621555688302,
+                "max_px": 1157.6663964344207
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 16,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 267.99683199261756,
+                "p95_px": 896.4470204181484,
+                "mean_px": 360.19324639984023,
+                "max_px": 905.2533823802005
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 18,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 1.3179160454146108,
+                "p95_px": 797.8069632418283,
+                "mean_px": 195.91194978843137,
+                "max_px": 1122.4659576364393
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 13,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 12,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 11
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 37,
+              "image_fitted_ransac_inlier_count": 17,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 17,
+                "median_px": 0.8813793802930868,
+                "p95_px": 2.45761511418603,
+                "mean_px": 0.9461449269141908,
+                "max_px": 2.71697342118496
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot03_C10390_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10390_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "3b73169cd3e430e83b3a272a47e0647e646edeb21990301cd895ebe9df9dd424",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+          "object_id": "green_white_garbage_truck_c08b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726.json",
+          "calibration_sha256": "92777143be4150018768f5fb4d1cc110cf2ae73a53dca35926eb572848f5353a",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 26,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 18.213553906883558,
+                "p95_px": 697.5642713502356,
+                "mean_px": 144.98621555688302,
+                "max_px": 1157.6663964344207
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 16,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 267.99683199261756,
+                "p95_px": 896.4470204181484,
+                "mean_px": 360.19324639984023,
+                "max_px": 905.2533823802005
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 18,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 1.3179160454146108,
+                "p95_px": 797.8069632418283,
+                "mean_px": 195.91194978843137,
+                "max_px": 1122.4659576364393
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 13,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 12,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 11
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 37,
+              "image_fitted_ransac_inlier_count": 17,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 17,
+                "median_px": 0.8813793802930868,
+                "p95_px": 2.45761511418603,
+                "mean_px": 0.9461449269141908,
+                "max_px": 2.71697342118496
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot03_C10395_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10395_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "f77f406a197af5f2dc3e5cc2d879656d00ffc6ca52a3105b09bc235a1b527fc5",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+          "object_id": "green_white_garbage_truck_c08b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726.json",
+          "calibration_sha256": "92777143be4150018768f5fb4d1cc110cf2ae73a53dca35926eb572848f5353a",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 26,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 18.213553906883558,
+                "p95_px": 697.5642713502356,
+                "mean_px": 144.98621555688302,
+                "max_px": 1157.6663964344207
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 16,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 267.99683199261756,
+                "p95_px": 896.4470204181484,
+                "mean_px": 360.19324639984023,
+                "max_px": 905.2533823802005
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 18,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 1.3179160454146108,
+                "p95_px": 797.8069632418283,
+                "mean_px": 195.91194978843137,
+                "max_px": 1122.4659576364393
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 13,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 12,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 11
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 37,
+              "image_fitted_ransac_inlier_count": 17,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 17,
+                "median_px": 0.8813793802930868,
+                "p95_px": 2.45761511418603,
+                "mean_px": 0.9461449269141908,
+                "max_px": 2.71697342118496
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      },
+      "pilot03_C10404_pts0": {
+        "source_survey_frame_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10404_elapsed-00.0_pts-0.png",
+        "source_frame_sha256": "58e77e83edd1c124e4d586347cda7b114e56fdff3b77443bbef30d124ebd7a98",
+        "source_pts_seconds": 0.0,
+        "native_image_size": [
+          1920,
+          1080
+        ],
+        "calibration_assessment_record": {
+          "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+          "object_id": "green_white_garbage_truck_c08b",
+          "calibration_path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/discovery-267862/calibration/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726.json",
+          "calibration_sha256": "92777143be4150018768f5fb4d1cc110cf2ae73a53dca35926eb572848f5353a",
+          "vendor_calibration_provenance_verified": true,
+          "calibration_structure_verified": true,
+          "calibration_accuracy_verified": false,
+          "temporal_sync_verified": false,
+          "multiview_dataset_ready": false,
+          "image_diagnostics": [
+            {
+              "camera_ids": [
+                "C10119",
+                "C10095"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 26,
+              "image_fitted_ransac_inlier_count": 10,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 10,
+                "median_px": 18.213553906883558,
+                "p95_px": 697.5642713502356,
+                "mean_px": 144.98621555688302,
+                "max_px": 1157.6663964344207
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10115"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 16,
+              "image_fitted_ransac_inlier_count": 8,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 8,
+                "median_px": 267.99683199261756,
+                "p95_px": 896.4470204181484,
+                "mean_px": 360.19324639984023,
+                "max_px": 905.2533823802005
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10118"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 18,
+              "image_fitted_ransac_inlier_count": 9,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 9,
+                "median_px": 1.3179160454146108,
+                "p95_px": 797.8069632418283,
+                "mean_px": 195.91194978843137,
+                "max_px": 1122.4659576364393
+              }
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10379"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 13,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10390"
+              ],
+              "status": "insufficient_image_ransac_inliers",
+              "mutual_ratio_match_count": 12,
+              "image_fitted_ransac_inlier_count": 7
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10395"
+              ],
+              "status": "insufficient_candidate_matches",
+              "mutual_ratio_match_count": 11
+            },
+            {
+              "camera_ids": [
+                "C10119",
+                "C10404"
+              ],
+              "status": "descriptive_correspondences_available",
+              "mutual_ratio_match_count": 37,
+              "image_fitted_ransac_inlier_count": 17,
+              "calibration_epipolar_residuals_on_image_ransac_inliers": {
+                "count": 17,
+                "median_px": 0.8813793802930868,
+                "p95_px": 2.45761511418603,
+                "mean_px": 0.9461449269141908,
+                "max_px": 2.71697342118496
+              }
+            }
+          ]
+        },
+        "tracking_diagnostics": {
+          "available": false,
+          "status": "not_assessed_for_this_object_view"
+        }
+      }
+    },
+    "scope_limitations": [
+      "Diagnostic independent 2D segmentation only; not an accepted calibrated multiview dataset.",
+      "Camera calibration accuracy and temporal synchronization remain unverified.",
+      "Inference completion does not pass temporal/static gates or authorize reconstruction benchmarks.",
+      "Local tracking status is descriptive; no segmentation accuracy is established without independent references."
+    ]
+  },
+  "purpose": "diagnostic_2d_review",
+  "diagnostic_2d_review": true,
+  "multiview_dataset_ready": false,
+  "calibration_accuracy_verified": false,
+  "correspondence_scope": "diagnostic_2d_review",
+  "temporal_sync_verified": false,
+  "scope_limitations": [
+    "Diagnostic independent 2D segmentation only; not an accepted calibrated multiview dataset.",
+    "Camera calibration accuracy and temporal synchronization remain unverified.",
+    "Inference completion does not pass temporal/static gates or authorize reconstruction benchmarks.",
+    "Local tracking status is descriptive; no segmentation accuracy is established without independent references."
+  ],
+  "slurm_job_id": "270796",
+  "python": "3.12.16 (main, Oct 26 2026, 11:37:43) [GCC 15.3.0]",
+  "torch": "2.14.1+cu130",
+  "torch_cuda": "13.0",
+  "gpu": "NVIDIA RTX A6000",
+  "precision": "bfloat16_autocast",
+  "save_probabilities": false,
+  "max_candidates": 200,
+  "worst_case_packed_mask_bytes": 2488320000,
+  "worst_case_probability_bytes": 0,
+  "training_performed": false,
+  "reconstruction_performed": false
+}

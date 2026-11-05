@@ -10,9 +10,11 @@ validated by these recognition results.
 
 The [research-artifact index](research_artifacts/README.md) records three
 diagnostic Assembly101 segmentation candidates. SAM 3 inference job `270796`
-and dependent CPU review job `271689` are prepared; consult Slurm for live
-completion. Camera accuracy and temporal correspondence remain unresolved,
-and no pilot is accepted for reconstruction yet.
+and CPU review job `271689` completed. The
+[inspection report](research_artifacts/segmentation_pilot/INSPECTION_270796.md)
+preserves successful predictions and background/tool failures. Camera accuracy,
+temporal correspondence and final mask approval remain unresolved; no pilot is
+accepted for reconstruction yet.
 
 The new [reconstruction implementation](research_artifacts/reconstruction_benchmark/READINESS.md)
 is validated on synthetic primitives only. It provides calibrated voxel carving,

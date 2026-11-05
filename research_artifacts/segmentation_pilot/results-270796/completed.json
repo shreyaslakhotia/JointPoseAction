@@ -1,0 +1,1030 @@
+{
+  "status": "diagnostic_2d_inference_completed_review_pending",
+  "purpose": "diagnostic_2d_review",
+  "diagnostic_2d_review": true,
+  "multiview_dataset_ready": false,
+  "calibration_accuracy_verified": false,
+  "images": [
+    {
+      "image_id": "pilot01_C10095_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10095_elapsed-00.0_pts-0.png",
+      "sha256": "63909980e26d1b99fa94754246c7ba12c65cd8f75b4d3bad45d336fadf9eeb57",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c07c",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "camera_id": "C10095",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Green and white assembled garbage truck, gray cab roof, black wheels. C10379 has substantial paper occlusion.",
+      "refinement": {
+        "box_xyxy": [
+          850,
+          400,
+          1020,
+          660
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot01_C10095_pts0/frame.png",
+      "frame_sha256": "c3a5dfaf8a6a83e9092cca01680fc18bc40061d6cfe27b37f48eb0d5c6d0edea",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10095_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10095_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot01_C10115_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10115_elapsed-00.0_pts-0.png",
+      "sha256": "bddd4759cfb7bf42f12b0b3614889b559dbd93f2ed90a7182afe34c03ed20fe6",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c07c",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "camera_id": "C10115",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Green and white assembled garbage truck, gray cab roof, black wheels. C10379 has substantial paper occlusion.",
+      "refinement": {
+        "box_xyxy": [
+          810,
+          375,
+          1045,
+          615
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot01_C10115_pts0/frame.png",
+      "frame_sha256": "67dd34948ece7fe83a98efb0f521d2956094c8be450ef2d6546c72e48bcd063a",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10115_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10115_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot01_C10118_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10118_elapsed-00.0_pts-0.png",
+      "sha256": "24f97faade7318a5b76dced03a91163706499f666a2613d1dcde8a2e73de2b01",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c07c",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "camera_id": "C10118",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Green and white assembled garbage truck, gray cab roof, black wheels. C10379 has substantial paper occlusion.",
+      "refinement": {
+        "box_xyxy": [
+          840,
+          685,
+          1200,
+          970
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot01_C10118_pts0/frame.png",
+      "frame_sha256": "f14578f966e95bc64c52970269b2d5bd5052dba2a224be6c30669361062ff2df",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10118_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10118_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot01_C10119_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10119_elapsed-00.0_pts-0.png",
+      "sha256": "57d12730a00d818117754d9666c58c1ecb189e8ab8db37c1c4bd4ef1a5644afd",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c07c",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "camera_id": "C10119",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Green and white assembled garbage truck, gray cab roof, black wheels. C10379 has substantial paper occlusion.",
+      "refinement": {
+        "box_xyxy": [
+          850,
+          490,
+          1140,
+          705
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot01_C10119_pts0/frame.png",
+      "frame_sha256": "d6490fc7ab179679cfc594a167712e84564f3872e75a823a14374e7fc564530f",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10119_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10119_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot01_C10379_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10379_elapsed-00.0_pts-0.png",
+      "sha256": "5e0a4bd9ee16878b66ea88dcb71987f9bdaebbeff698454b7b0c26763418afbf",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c07c",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "camera_id": "C10379",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Green and white assembled garbage truck, gray cab roof, black wheels. C10379 has substantial paper occlusion.",
+      "refinement": {
+        "box_xyxy": [
+          1020,
+          730,
+          1340,
+          880
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot01_C10379_pts0/frame.png",
+      "frame_sha256": "e74725a05bca8ad7c5a288e977475fb885bd7ba8f95094c53191eb63738109c3",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10379_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10379_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot01_C10390_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10390_elapsed-00.0_pts-0.png",
+      "sha256": "33d85809ba477e9246f7d5f97fef1cd8e9743bdd41384b8765ca2e325f81ed09",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c07c",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "camera_id": "C10390",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Green and white assembled garbage truck, gray cab roof, black wheels. C10379 has substantial paper occlusion.",
+      "refinement": {
+        "box_xyxy": [
+          770,
+          435,
+          1000,
+          650
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot01_C10390_pts0/frame.png",
+      "frame_sha256": "9edaf0f28af0033b45d2abd683a2f405eaf3a31be24ef2befdb2f0b1ca2dda1b",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10390_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10390_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot01_C10395_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10395_elapsed-00.0_pts-0.png",
+      "sha256": "6162ebfe341abfdf649eab60e2b65ff881611f18be7a72497c2bb56d33ecf95c",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c07c",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "camera_id": "C10395",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Green and white assembled garbage truck, gray cab roof, black wheels. C10379 has substantial paper occlusion.",
+      "refinement": {
+        "box_xyxy": [
+          710,
+          795,
+          1010,
+          990
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot01_C10395_pts0/frame.png",
+      "frame_sha256": "7ada18aa53c0d100baa68dfa51e2d7385af1c8ea3dc02d232aad0e3a5b7860ac",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10395_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10395_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot01_C10404_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345/native_frames/C10404_elapsed-00.0_pts-0.png",
+      "sha256": "e254c7f5f5b0918358b11577f210d5fe09f375199e94df9010c3833383a73571",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c07c",
+      "recording_id": "nusar-2021_action_both_9012-c07c_9012_user_id_2021-02-01_164345",
+      "camera_id": "C10404",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Green and white assembled garbage truck, gray cab roof, black wheels. C10379 has substantial paper occlusion.",
+      "refinement": {
+        "box_xyxy": [
+          1080,
+          360,
+          1330,
+          575
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot01_C10404_pts0/frame.png",
+      "frame_sha256": "6e1a0e3caccf69794219bd9623ac1b2217645fc19bc917a1f34eff2dc0c982d9",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10404_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot01_C10404_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot02_C10095_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10095_elapsed-00.0_pts-0.png",
+      "sha256": "cce61fbfce1a626e885e3967774e51b8dfe12c0d14ae07689f0fe730e5ece1fc",
+      "source_pts_seconds": 0.0,
+      "object_id": "yellow_red_crane_truck_b05b",
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "camera_id": "C10095",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Yellow and white toy crane truck with folded red boom; articulated configuration requires further static-state checks.",
+      "refinement": {
+        "box_xyxy": [
+          735,
+          365,
+          950,
+          540
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot02_C10095_pts0/frame.png",
+      "frame_sha256": "a1c408220198d4401f974358132ac7a5f34cb262886904a0e60bbc8c2e16c48e",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10095_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10095_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot02_C10115_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10115_elapsed-00.0_pts-0.png",
+      "sha256": "95fac239b49be034d63472060a11dbe486f895892285318c356be62c706fe520",
+      "source_pts_seconds": 0.0,
+      "object_id": "yellow_red_crane_truck_b05b",
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "camera_id": "C10115",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Yellow and white toy crane truck with folded red boom; articulated configuration requires further static-state checks.",
+      "refinement": {
+        "box_xyxy": [
+          830,
+          270,
+          1040,
+          460
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot02_C10115_pts0/frame.png",
+      "frame_sha256": "d6e8866e9400d2b3683ff613f8d84d630236c133aadcf0bef5d529bea599bf8c",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10115_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10115_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot02_C10118_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10118_elapsed-00.0_pts-0.png",
+      "sha256": "d4ca624e7a46811037369260381cc5ea9495e83234ba0d35c3e8f62e7cf99839",
+      "source_pts_seconds": 0.0,
+      "object_id": "yellow_red_crane_truck_b05b",
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "camera_id": "C10118",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Yellow and white toy crane truck with folded red boom; articulated configuration requires further static-state checks.",
+      "refinement": {
+        "box_xyxy": [
+          880,
+          630,
+          1160,
+          910
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot02_C10118_pts0/frame.png",
+      "frame_sha256": "bef48355baadef4a5b9d9cd3b2c00c9b04999b8bd41eaf748d99aaa26bc61f25",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10118_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10118_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot02_C10119_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10119_elapsed-00.0_pts-0.png",
+      "sha256": "c241fe842ab17f747ef7bc5758d0c30aa3eab3743251b9a713ae46ecd50907b7",
+      "source_pts_seconds": 0.0,
+      "object_id": "yellow_red_crane_truck_b05b",
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "camera_id": "C10119",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Yellow and white toy crane truck with folded red boom; articulated configuration requires further static-state checks.",
+      "refinement": {
+        "box_xyxy": [
+          1015,
+          395,
+          1175,
+          650
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot02_C10119_pts0/frame.png",
+      "frame_sha256": "a4b5989dc053fca6e5d5a63d6cbdaff0925b9730a65a9f24ada3585fe1568b4c",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10119_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10119_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot02_C10379_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10379_elapsed-00.0_pts-0.png",
+      "sha256": "33e3dea84257f66fa119845afe1dd148bad2846bf8395edd1cf483eb86bf83e9",
+      "source_pts_seconds": 0.0,
+      "object_id": "yellow_red_crane_truck_b05b",
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "camera_id": "C10379",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Yellow and white toy crane truck with folded red boom; articulated configuration requires further static-state checks.",
+      "refinement": {
+        "box_xyxy": [
+          1200,
+          690,
+          1520,
+          960
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot02_C10379_pts0/frame.png",
+      "frame_sha256": "b41f334e19e81d63f8f0154f15e6c51e5e886615cfd6aa5c667901fb6ae0ea7c",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10379_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10379_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot02_C10390_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10390_elapsed-00.0_pts-0.png",
+      "sha256": "8a5b77d264bf832ee8e9afa579f0fa641689706bf0299f73ecaf8a5ee1e5e1a3",
+      "source_pts_seconds": 0.0,
+      "object_id": "yellow_red_crane_truck_b05b",
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "camera_id": "C10390",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Yellow and white toy crane truck with folded red boom; articulated configuration requires further static-state checks.",
+      "refinement": {
+        "box_xyxy": [
+          660,
+          445,
+          850,
+          660
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot02_C10390_pts0/frame.png",
+      "frame_sha256": "f806f38934c69b904f2823e067260155d496f07c7adcc603965f7ab79759833f",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10390_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10390_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot02_C10395_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10395_elapsed-00.0_pts-0.png",
+      "sha256": "3a204d16e906448fff98553391f4ea2a35ad45474bdcdd936341f24433c98d39",
+      "source_pts_seconds": 0.0,
+      "object_id": "yellow_red_crane_truck_b05b",
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "camera_id": "C10395",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Yellow and white toy crane truck with folded red boom; articulated configuration requires further static-state checks.",
+      "refinement": {
+        "box_xyxy": [
+          570,
+          765,
+          800,
+          995
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot02_C10395_pts0/frame.png",
+      "frame_sha256": "9450349c7df0776744e7c044ac301e00384b6821f0d685d7d2e92d20ce914f40",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10395_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10395_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot02_C10404_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800/native_frames/C10404_elapsed-00.0_pts-0.png",
+      "sha256": "cf04b0088b880fd16ac1e5dcf2ec9ede77703b3775dcafc3ecc23510a9306049",
+      "source_pts_seconds": 0.0,
+      "object_id": "yellow_red_crane_truck_b05b",
+      "recording_id": "nusar-2021_action_both_9015-b05b_9015_user_id_2021-02-02_161800",
+      "camera_id": "C10404",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Yellow and white toy crane truck with folded red boom; articulated configuration requires further static-state checks.",
+      "refinement": {
+        "box_xyxy": [
+          1245,
+          340,
+          1405,
+          570
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot02_C10404_pts0/frame.png",
+      "frame_sha256": "d82d330d3b5bc93d2cac3f8063c9c15e5363457671f5117e809464e2e63305cc",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10404_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot02_C10404_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot03_C10095_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10095_elapsed-00.0_pts-0.png",
+      "sha256": "8f4bc45a5f21fd83af855f68d2474fe780161efe5a054e5870665b4aac3b2712",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c08b",
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "camera_id": "C10095",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Second green and white garbage-truck geometry with side label; separate yellow screwdriver excluded.",
+      "refinement": {
+        "box_xyxy": [
+          950,
+          415,
+          1215,
+          660
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot03_C10095_pts0/frame.png",
+      "frame_sha256": "758bfd66a1fc23e4f2705bcc72fe515c3f2cb6e136f609ef98e7bbd17a47ddec",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10095_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10095_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot03_C10115_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10115_elapsed-00.0_pts-0.png",
+      "sha256": "0d84ed7f46aa9ad8f6ca6c0950fcb385b8549cc6ec486596c28bbc4fcd520505",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c08b",
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "camera_id": "C10115",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Second green and white garbage-truck geometry with side label; separate yellow screwdriver excluded.",
+      "refinement": {
+        "box_xyxy": [
+          880,
+          525,
+          1120,
+          685
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot03_C10115_pts0/frame.png",
+      "frame_sha256": "8adf6cd66ba47209cdb9830e58e7b31f2becba13a609b29494d1bd5047d01c88",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10115_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10115_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot03_C10118_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10118_elapsed-00.0_pts-0.png",
+      "sha256": "fd3692c1570359f436995f69448d351faf8ccd5d0c13aded64759696ff1709df",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c08b",
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "camera_id": "C10118",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Second green and white garbage-truck geometry with side label; separate yellow screwdriver excluded.",
+      "refinement": {
+        "box_xyxy": [
+          970,
+          695,
+          1470,
+          1040
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot03_C10118_pts0/frame.png",
+      "frame_sha256": "3ec740f62fb9ed28f2551b1f8b3d76d9dc573ce1e0d81ea687035574d7225752",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10118_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10118_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot03_C10119_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10119_elapsed-00.0_pts-0.png",
+      "sha256": "8ddc0ac44e3819e4a2de07ddf2e90e4f2bc8690298dfe4dc854953b65195a01a",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c08b",
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "camera_id": "C10119",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Second green and white garbage-truck geometry with side label; separate yellow screwdriver excluded.",
+      "refinement": {
+        "box_xyxy": [
+          845,
+          580,
+          1160,
+          900
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot03_C10119_pts0/frame.png",
+      "frame_sha256": "0bf553a2083f687de41f87621ff4d06c2d6c139c4d71b3de7cc03ab41b1c3d85",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10119_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10119_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot03_C10379_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10379_elapsed-00.0_pts-0.png",
+      "sha256": "37d0e1a53792ea4aac8e7fb6656dfd98b41559bc4d68e6a224293505fd964bc8",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c08b",
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "camera_id": "C10379",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Second green and white garbage-truck geometry with side label; separate yellow screwdriver excluded.",
+      "refinement": {
+        "box_xyxy": [
+          900,
+          735,
+          1120,
+          970
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot03_C10379_pts0/frame.png",
+      "frame_sha256": "6348f306bf3858f5a573ee108cd8e512e33b9e80b4906c8bb36b4786532e89df",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10379_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10379_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot03_C10390_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10390_elapsed-00.0_pts-0.png",
+      "sha256": "3b73169cd3e430e83b3a272a47e0647e646edeb21990301cd895ebe9df9dd424",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c08b",
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "camera_id": "C10390",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Second green and white garbage-truck geometry with side label; separate yellow screwdriver excluded.",
+      "refinement": {
+        "box_xyxy": [
+          910,
+          360,
+          1045,
+          590
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot03_C10390_pts0/frame.png",
+      "frame_sha256": "1e834339f9468217c9597d8673a952339e17d9955df3d3d3f22fa871faf5e458",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10390_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10390_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot03_C10395_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10395_elapsed-00.0_pts-0.png",
+      "sha256": "f77f406a197af5f2dc3e5cc2d879656d00ffc6ca52a3105b09bc235a1b527fc5",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c08b",
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "camera_id": "C10395",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Second green and white garbage-truck geometry with side label; separate yellow screwdriver excluded.",
+      "refinement": {
+        "box_xyxy": [
+          880,
+          795,
+          1090,
+          995
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot03_C10395_pts0/frame.png",
+      "frame_sha256": "7de5f193c6f353a997df25f8f58a89f2484714f1132fcf9691187ed5cfa92ec4",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10395_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10395_pts0/refined/candidates.json"
+        }
+      ]
+    },
+    {
+      "image_id": "pilot03_C10404_pts0",
+      "path": "/projects/_ssd/jointposeaction/experiments/segmentation_pilot/survey-268336/nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726/native_frames/C10404_elapsed-00.0_pts-0.png",
+      "sha256": "58e77e83edd1c124e4d586347cda7b114e56fdff3b77443bbef30d124ebd7a98",
+      "source_pts_seconds": 0.0,
+      "object_id": "green_white_garbage_truck_c08b",
+      "recording_id": "nusar-2021_action_both_9034-c08b_9034_user_id_2021-02-04_161726",
+      "camera_id": "C10404",
+      "prompt": "toy truck",
+      "object_description_from_rgb": "Second green and white garbage-truck geometry with side label; separate yellow screwdriver excluded.",
+      "refinement": {
+        "box_xyxy": [
+          1020,
+          425,
+          1195,
+          680
+        ],
+        "reason": "Select the physical toy; exclude separate screwdriver and printed illustration where separable. Visible surface only; no amodal completion.",
+        "intervention": "agent_visual_review"
+      },
+      "correspondence_scope": "diagnostic_2d_review",
+      "diagnostic_2d_review": true,
+      "multiview_dataset_ready": false,
+      "calibration_accuracy_verified": false,
+      "temporal_sync_verified": false,
+      "frame_path": "pilot03_C10404_pts0/frame.png",
+      "frame_sha256": "9ed53e0550958591f3c6e361202f6f7550dd49a2ad84eed8d33b91e87c9dfea2",
+      "width": 1920,
+      "height": 1080,
+      "stages": [
+        {
+          "stage": "text_only",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10404_pts0/text_only/candidates.json"
+        },
+        {
+          "stage": "refined",
+          "candidate_count": 200,
+          "candidates_path": "pilot03_C10404_pts0/refined/candidates.json"
+        }
+      ]
+    }
+  ],
+  "correspondence_scope": "diagnostic_2d_review",
+  "temporal_sync_verified": false,
+  "scope_limitations": [
+    "Diagnostic independent 2D segmentation only; not an accepted calibrated multiview dataset.",
+    "Camera calibration accuracy and temporal synchronization remain unverified.",
+    "Inference completion does not pass temporal/static gates or authorize reconstruction benchmarks.",
+    "Local tracking status is descriptive; no segmentation accuracy is established without independent references."
+  ],
+  "image_count": 24,
+  "elapsed_seconds": 329.70018115779385,
+  "peak_cuda_allocated_bytes": 9160383488,
+  "accuracy_established": false,
+  "independent_reference_available": false
+}

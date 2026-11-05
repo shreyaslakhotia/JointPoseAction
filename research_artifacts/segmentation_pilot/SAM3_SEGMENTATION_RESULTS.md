@@ -1,8 +1,9 @@
 # SAM 3 diagnostic segmentation: execution record
 
-**Status: inference queued; no measured SAM 3 prediction results yet.**
-This document describes the prepared run, not an accuracy result. Job status
-must be checked in Slurm; successful setup is not successful inference.
+**Status: both jobs completed, outputs inspected; reconstruction readiness remains
+false.** See [the completed inspection](INSPECTION_270796.md) for measured results,
+before/after figures and concrete failures. The preparation details below remain
+the reproducibility record, not a claim of independent segmentation accuracy.
 
 ## Model and inputs
 
@@ -21,7 +22,7 @@ must be checked in Slurm; successful setup is not successful inference.
 - Native source RGB remains 1920 x 1080. SAM's internal image preprocessing is
   the official processor; saved masks return to native source dimensions.
 
-## Jobs and expected artifacts
+## Completed jobs and artifacts
 
 | Job | Stage | Request | Dependency |
 |---|---|---|---|
@@ -51,10 +52,10 @@ available for reviewing wrong-instance cases, including printed toy pictures.
 
 | Quantity | Current result |
 |---|---|
-| Correct physical object segmentation success | Not measured; inference and visual review pending |
-| Confidence / mask coverage / predicted instance counts | Will be read from native candidates after inference |
-| Text-only versus box-refined change | Not measured yet |
-| Cross-camera object-instance consistency | Review pending |
+| Correct physical object segmentation success | Agent qualitative inspection complete; user approval and independent accuracy unavailable |
+| Confidence / mask coverage / predicted instance counts | 48 per-view/stage rows saved; see inspection report |
+| Text-only versus box-refined change | 19/24 to 24/24 views with a score > 0.5; background/tool inclusion prevents interpreting this as accuracy gain |
+| Cross-camera object-instance consistency | Toys generally located; silhouette quality varies and user review remains pending |
 | IoU, Dice, boundary F1 against independent reference masks | Unavailable; no independent reference masks |
 | Accepted reconstruction-ready pilots | **0** |
 
